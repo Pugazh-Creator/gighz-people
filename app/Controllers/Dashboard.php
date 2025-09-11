@@ -14,6 +14,7 @@ use App\Models\UserModel;
 use App\Models\VersionUpdateModel;
 use CodeIgniter\HTTP\ResponseInterface;
 use DateTime;
+use CodeIgniter\Controller;
 use mysqli;
 
 class Dashboard extends BaseController
@@ -39,7 +40,10 @@ class Dashboard extends BaseController
 
 
 
-        return view('dashboard/index', $datas);
+        echo view('templates/header', $datas);
+        echo view('templates/sidebar', $datas);
+        echo view('dashboard/index', $datas);
+        echo view('templates/footer', $datas);
         // // return session()->get('staff_id');
     }
 
@@ -188,6 +192,12 @@ class Dashboard extends BaseController
         return $cleanVersion; // Or sanitize remove v 
     }
 
+
+    public function getAppVersions()
+    {
+        $version = $this->getAppVersion();
+        return $this->response->setJSON(['status' => 'success', 'version' => $version]);
+    }
 
     function dynamicVersion()
     {

@@ -76,7 +76,7 @@
         <div><a href="https://www.facebook.com/people/GigHz/61568394910577/"><img src="<?= base_url() ?>/asset/icons/facebook.png" alt="Facebook"></a></div>
         <div><a href="https://www.youtube.com/@GighzTechnologies"><img src="<?= base_url() ?>/asset/icons/youtube.png" alt="Youtube"></a></div>
         <div><a href="https://www.linkedin.com/in/chandra-thimma/"><img src="<?= base_url() ?>/asset/icons/linkedin.png" alt="linked in"></a></div>
-        <div>3.0.1</div>
+        <div id="version"></div>
     </div>
 
 
@@ -85,9 +85,28 @@
 
     <script>
         $(document).ready(function() {
+            $.ajax({
+                url: '<?= base_url() ?>dashboard/getAppVersions',
+                method: 'GET',
+                success: function(res) {
+                    if (res.status == 'success') {
+                        $('#version').text(res.version);
+                        
+                    } else {
+                        $('#version').text('0.0.0');
+                    }
+                },
+                error: function(err) {
+                    console.log(err);
+                }
+            });
+        });
 
 
-            $('#login-form').on('submit', function() {
+        $(document).ready(function() {
+
+            $('#login-form').on('submit', function(e) {
+                e.preventDefault();
                 let id = $('#gighz-id').val();
                 $('.error').text('');
                 let password = $('#login-password').val();
@@ -117,6 +136,7 @@
                         console.log('stage 3');
                         if (res.status == 'success') {
                             $('.popup-msg').text(res.message);
+                            $('.popup-msg').css('background-color', 'Green');
                             $('.popup-msg').fadeIn().delay(2000).fadeOut()
                             window.location.href = "<?php
 
@@ -125,7 +145,9 @@
                                                     echo base_url(); ?>/dashboard";
 
                         } else {
-                            console.log(res.message);
+                            $('.popup-msg').text(res.message);
+                            $('.popup-msg').css('background-color', 'RED');
+                            $('.popup-msg').fadeIn().delay(3000).fadeOut()
                         }
                     },
                     error: function(error) {

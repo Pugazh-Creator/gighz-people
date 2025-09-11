@@ -1,0 +1,98 @@
+DEBUG - 2025-04-07 04:07:25 --> User IP: ::1
+DEBUG - 2025-04-07 04:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-07 04:07:32 --> User IP: ::1
+DEBUG - 2025-04-07 04:07:34 --> User IP: ::1
+DEBUG - 2025-04-07 04:10:16 --> User IP: ::1
+DEBUG - 2025-04-07 04:10:19 --> User IP: ::1
+DEBUG - 2025-04-07 04:10:57 --> User IP: ::1
+DEBUG - 2025-04-07 04:10:58 --> User IP: ::1
+DEBUG - 2025-04-07 04:15:17 --> User IP: ::1
+DEBUG - 2025-04-07 04:18:04 --> User IP: ::1
+DEBUG - 2025-04-07 04:20:32 --> User IP: ::1
+DEBUG - 2025-04-07 04:20:48 --> User IP: ::1
+DEBUG - 2025-04-07 04:20:55 --> User IP: ::1
+DEBUG - 2025-04-07 04:22:15 --> User IP: ::1
+DEBUG - 2025-04-07 04:24:08 --> User IP: ::1
+DEBUG - 2025-04-07 04:28:40 --> User IP: ::1
+DEBUG - 2025-04-07 04:30:35 --> User IP: ::1
+DEBUG - 2025-04-07 04:30:55 --> User IP: ::1
+DEBUG - 2025-04-07 04:31:57 --> User IP: ::1
+DEBUG - 2025-04-07 04:32:07 --> User IP: ::1
+DEBUG - 2025-04-07 04:32:09 --> User IP: ::1
+DEBUG - 2025-04-07 04:32:50 --> User IP: ::1
+DEBUG - 2025-04-07 04:32:51 --> User IP: ::1
+DEBUG - 2025-04-07 04:33:56 --> User IP: ::1
+DEBUG - 2025-04-07 04:33:59 --> User IP: ::1
+DEBUG - 2025-04-07 04:35:46 --> User IP: ::1
+DEBUG - 2025-04-07 06:02:36 --> User IP: ::1
+DEBUG - 2025-04-07 06:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-07 06:02:40 --> User IP: ::1
+CRITICAL - 2025-04-07 06:02:40 --> ErrorException: file_get_contents(/full/path/to/status.txt): Failed to open stream: No such file or directory
+[Method: GET, Route: biometric/check]
+in APPPATH\Controllers\Dashboard.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(/full/path/to/status.txt): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\Dashboard.php', 153)
+ 2 APPPATH\Controllers\Dashboard.php(153): file_get_contents('/full/path/to/status.txt')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->checkDevice()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-07 06:03:09 --> User IP: ::1
+DEBUG - 2025-04-07 06:03:12 --> User IP: ::1
+DEBUG - 2025-04-07 06:05:34 --> User IP: ::1
+DEBUG - 2025-04-07 06:07:04 --> User IP: ::1
+DEBUG - 2025-04-07 06:08:10 --> User IP: ::1
+DEBUG - 2025-04-07 06:13:38 --> User IP: ::1
+DEBUG - 2025-04-07 06:13:42 --> User IP: ::1
+DEBUG - 2025-04-07 06:13:46 --> User IP: ::1
+DEBUG - 2025-04-07 06:14:09 --> User IP: ::1
+DEBUG - 2025-04-07 06:20:22 --> User IP: ::1
+DEBUG - 2025-04-07 06:20:33 --> User IP: ::1
+DEBUG - 2025-04-07 06:21:20 --> User IP: ::1
+DEBUG - 2025-04-07 06:30:43 --> User IP: ::1
+DEBUG - 2025-04-07 06:31:42 --> User IP: ::1
+DEBUG - 2025-04-07 06:39:50 --> User IP: ::1
+DEBUG - 2025-04-07 06:39:54 --> User IP: ::1
+DEBUG - 2025-04-07 06:39:56 --> User IP: ::1
+DEBUG - 2025-04-07 06:39:56 --> User IP: ::1
+DEBUG - 2025-04-07 06:39:57 --> User IP: ::1
+DEBUG - 2025-04-07 06:43:52 --> User IP: ::1
+DEBUG - 2025-04-07 06:43:55 --> User IP: ::1
+DEBUG - 2025-04-07 06:44:02 --> User IP: ::1
+DEBUG - 2025-04-07 07:55:17 --> User IP: ::1
+DEBUG - 2025-04-07 07:55:18 --> User IP: ::1
+WARNING - 2025-04-07 07:55:19 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Controllers\Dashboard.php on line 157.
+ 1 APPPATH\Controllers\Dashboard.php(157): strpos(null, 'Device is connected')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->checkDevice()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-07 07:55:34 --> User IP: ::1
+WARNING - 2025-04-07 07:55:34 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Controllers\Dashboard.php on line 157.
+ 1 APPPATH\Controllers\Dashboard.php(157): strpos(null, 'Device is connected')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->checkDevice()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-07 07:55:35 --> User IP: ::1
+DEBUG - 2025-04-07 07:55:37 --> User IP: ::1
+WARNING - 2025-04-07 07:55:37 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Controllers\Dashboard.php on line 157.
+ 1 APPPATH\Controllers\Dashboard.php(157): strpos(null, 'Device is connected')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->checkDevice()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-07 07:56:24 --> User IP: ::1
+DEBUG - 2025-04-07 07:56:25 --> User IP: ::1
+DEBUG - 2025-04-07 09:38:07 --> User IP: ::1

@@ -1,0 +1,123 @@
+DEBUG - 2025-06-09 11:55:22 --> User IP: ::1
+DEBUG - 2025-06-09 11:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-09 11:55:29 --> User IP: ::1
+ERROR - 2025-06-09 11:55:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+WHERE `emp_id` = 'GZ21'
+AND `start_date` >= '2025-4-25'
+AND `start_date` <= '2' at line 3 in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `num_of_...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `num_of_...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `num_of_...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `num_of_...', Array, false)
+#4 C:\xampp\htdocs\gighz\app\Models\CompensationModel.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(214): App\Models\CompensationModel->getEmployeeCompensation('GZ21', '2025-4-25', '2025-5-24')
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-06-09 11:55:29 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+WHERE `emp_id` = 'GZ21'
+AND `start_date` >= '2025-4-25'
+AND `start_date` <= '2' at line 3
+[Method: GET, Route: payrole/getattendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `num_of_days`
+FROM `compensation_request`
+JOIN `attendance` USING ()
+WHERE `emp_id` = :emp_id:
+AND `start_date` >= :start_date:
+AND `start_date` <= :start_date.1:
+AND `status` = :status:', [...], false)
+ 2 APPPATH\Models\CompensationModel.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\PayRole.php(214): App\Models\CompensationModel->getEmployeeCompensation('GZ21', '2025-4-25', '2025-5-24')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-09 11:55:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+WHERE `emp_id` = 'GZ21'
+AND `start_date` >= '2025-4-25'
+AND `start_date` <= '2' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `num_of_days`
+FROM `compensation_request`
+JOIN `attendance` USING ()
+WHERE `emp_id` = \'GZ21\'
+AND `start_date` >= \'2025-4-25\'
+AND `start_date` <= \'2025-5-24\'
+AND `status` = \'approved\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `num_of_days`
+FROM `compensation_request`
+JOIN `attendance` USING ()
+WHERE `emp_id` = \'GZ21\'
+AND `start_date` >= \'2025-4-25\'
+AND `start_date` <= \'2025-5-24\'
+AND `status` = \'approved\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `num_of_days`
+FROM `compensation_request`
+JOIN `attendance` USING ()
+WHERE `emp_id` = :emp_id:
+AND `start_date` >= :start_date:
+AND `start_date` <= :start_date.1:
+AND `status` = :status:', [...], false)
+ 4 APPPATH\Models\CompensationModel.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\PayRole.php(214): App\Models\CompensationModel->getEmployeeCompensation('GZ21', '2025-4-25', '2025-5-24')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-09 11:55:29 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+WHERE `emp_id` = 'GZ21'
+AND `start_date` >= '2025-4-25'
+AND `start_date` <= '2' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `num_of_days`
+FROM `compensation_request`
+JOIN `attendance` USING ()
+WHERE `emp_id` = \'GZ21\'
+AND `start_date` >= \'2025-4-25\'
+AND `start_date` <= \'2025-5-24\'
+AND `status` = \'approved\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `num_of_days`
+FROM `compensation_request`
+JOIN `attendance` USING ()
+WHERE `emp_id` = \'GZ21\'
+AND `start_date` >= \'2025-4-25\'
+AND `start_date` <= \'2025-5-24\'
+AND `status` = \'approved\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `num_of_days`
+FROM `compensation_request`
+JOIN `attendance` USING ()
+WHERE `emp_id` = \'GZ21\'
+AND `start_date` >= \'2025-4-25\'
+AND `start_date` <= \'2025-5-24\'
+AND `status` = \'approved\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `num_of_days`
+FROM `compensation_request`
+JOIN `attendance` USING ()
+WHERE `emp_id` = :emp_id:
+AND `start_date` >= :start_date:
+AND `start_date` <= :start_date.1:
+AND `status` = :status:', [...], false)
+ 5 APPPATH\Models\CompensationModel.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\PayRole.php(214): App\Models\CompensationModel->getEmployeeCompensation('GZ21', '2025-4-25', '2025-5-24')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-09 11:55:32 --> User IP: ::1
+DEBUG - 2025-06-09 12:04:09 --> User IP: ::1

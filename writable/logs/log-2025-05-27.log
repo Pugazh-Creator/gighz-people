@@ -1,0 +1,229 @@
+DEBUG - 2025-05-27 06:46:33 --> User IP: ::1
+DEBUG - 2025-05-27 06:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-27 06:46:45 --> User IP: ::1
+DEBUG - 2025-05-27 06:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-27 06:46:45 --> User IP: ::1
+DEBUG - 2025-05-27 06:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-27 06:51:12 --> User IP: ::1
+DEBUG - 2025-05-27 06:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-27 06:54:11 --> User IP: ::1
+DEBUG - 2025-05-27 07:16:14 --> User IP: ::1
+DEBUG - 2025-05-27 07:24:07 --> User IP: ::1
+DEBUG - 2025-05-27 07:25:38 --> User IP: ::1
+DEBUG - 2025-05-27 07:26:26 --> User IP: ::1
+DEBUG - 2025-05-27 07:27:15 --> User IP: ::1
+DEBUG - 2025-05-27 07:38:23 --> User IP: ::1
+DEBUG - 2025-05-27 07:38:39 --> User IP: ::1
+DEBUG - 2025-05-27 07:39:36 --> User IP: ::1
+DEBUG - 2025-05-27 07:41:18 --> User IP: ::1
+DEBUG - 2025-05-27 07:43:15 --> User IP: ::1
+DEBUG - 2025-05-27 07:47:44 --> User IP: ::1
+DEBUG - 2025-05-27 07:48:14 --> User IP: ::1
+DEBUG - 2025-05-27 07:48:17 --> User IP: ::1
+DEBUG - 2025-05-27 07:48:22 --> User IP: ::1
+DEBUG - 2025-05-27 07:53:15 --> User IP: ::1
+DEBUG - 2025-05-27 07:53:20 --> User IP: ::1
+DEBUG - 2025-05-27 07:55:00 --> User IP: ::1
+DEBUG - 2025-05-27 07:55:11 --> User IP: ::1
+DEBUG - 2025-05-27 07:59:23 --> User IP: ::1
+DEBUG - 2025-05-27 08:00:57 --> User IP: ::1
+DEBUG - 2025-05-27 08:11:30 --> User IP: ::1
+DEBUG - 2025-05-27 08:19:16 --> User IP: ::1
+DEBUG - 2025-05-27 08:22:14 --> User IP: ::1
+DEBUG - 2025-05-27 08:23:06 --> User IP: ::1
+DEBUG - 2025-05-27 08:24:08 --> User IP: ::1
+DEBUG - 2025-05-27 09:13:29 --> User IP: ::1
+DEBUG - 2025-05-27 09:16:58 --> User IP: ::1
+DEBUG - 2025-05-27 09:20:22 --> User IP: ::1
+DEBUG - 2025-05-27 09:21:27 --> User IP: ::1
+DEBUG - 2025-05-27 09:23:40 --> User IP: ::1
+DEBUG - 2025-05-27 09:24:47 --> User IP: ::1
+DEBUG - 2025-05-27 09:27:22 --> User IP: ::1
+DEBUG - 2025-05-27 09:31:31 --> User IP: ::1
+DEBUG - 2025-05-27 09:55:46 --> User IP: ::1
+CRITICAL - 2025-05-27 09:55:46 --> ArgumentCountError: Too few arguments to function App\Controllers\BiometricController::calculateWorkHours(), 0 passed in C:\xampp\htdocs\gighz\system\CodeIgniter.php on line 933 and exactly 2 expected
+[Method: GET, Route: biometriccontroller/calculateWorkHours]
+in APPPATH\Controllers\BiometricController.php on line 522.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->calculateWorkHours()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-05-27 09:57:12 --> User IP: ::1
+CRITICAL - 2025-05-27 09:57:12 --> Exception: Failed to parse time string (1) at position 0 (1): Unexpected character
+[Method: GET, Route: biometriccontroller/calculateWorkHours]
+in APPPATH\Controllers\BiometricController.php on line 524.
+ 1 APPPATH\Controllers\BiometricController.php(524): DateTime->__construct('1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->calculateWorkHours()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-05-27 09:57:26 --> User IP: ::1
+DEBUG - 2025-05-27 09:57:33 --> User IP: ::1
+DEBUG - 2025-05-27 09:57:44 --> User IP: ::1
+DEBUG - 2025-05-27 09:57:57 --> User IP: ::1
+DEBUG - 2025-05-27 10:00:04 --> User IP: ::1
+DEBUG - 2025-05-27 10:00:14 --> User IP: ::1
+DEBUG - 2025-05-27 10:00:54 --> User IP: ::1
+DEBUG - 2025-05-27 10:01:00 --> User IP: ::1
+DEBUG - 2025-05-27 10:01:19 --> User IP: ::1
+DEBUG - 2025-05-27 10:05:03 --> User IP: ::1
+DEBUG - 2025-05-27 10:05:30 --> User IP: ::1
+DEBUG - 2025-05-27 10:05:42 --> User IP: ::1
+DEBUG - 2025-05-27 10:08:02 --> User IP: ::1
+DEBUG - 2025-05-27 10:08:35 --> User IP: ::1
+DEBUG - 2025-05-27 10:38:03 --> User IP: ::1
+DEBUG - 2025-05-27 10:45:48 --> User IP: ::1
+DEBUG - 2025-05-27 11:05:06 --> User IP: ::1
+INFO - 2025-05-27 11:05:06 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Present)
+DEBUG - 2025-05-27 11:58:43 --> User IP: ::1
+INFO - 2025-05-27 11:58:43 --> ✅ Processed: Srimugan N (27) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 11:58:43 --> ✅ Processed: Srimugan N (27) - 2025-05-23 - 09:08 (Present)
+INFO - 2025-05-27 11:58:43 --> ✅ Processed: Srimugan N (27) - 2025-05-24 - 09:01 (Present)
+INFO - 2025-05-27 11:58:43 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 11:58:43 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-27 11:58:43 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Offday)
+DEBUG - 2025-05-27 11:59:09 --> User IP: ::1
+DEBUG - 2025-05-27 11:59:30 --> User IP: ::1
+INFO - 2025-05-27 11:59:30 --> ✅ Processed: Srimugan N (27) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 11:59:30 --> ✅ Processed: Srimugan N (27) - 2025-05-23 - 09:08 (Present)
+INFO - 2025-05-27 11:59:30 --> ✅ Processed: Srimugan N (27) - 2025-05-24 - 09:01 (Present)
+INFO - 2025-05-27 11:59:30 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 11:59:30 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-27 11:59:30 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Offday)
+DEBUG - 2025-05-27 12:00:44 --> User IP: ::1
+INFO - 2025-05-27 12:00:44 --> ✅ Processed: Srimugan N (27) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:00:44 --> ✅ Processed: Srimugan N (27) - 2025-05-23 - 09:08 (Present)
+INFO - 2025-05-27 12:00:44 --> ✅ Processed: Srimugan N (27) - 2025-05-24 - 09:01 (Present)
+INFO - 2025-05-27 12:00:44 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:00:44 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-27 12:00:44 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Offday)
+DEBUG - 2025-05-27 12:01:43 --> User IP: ::1
+INFO - 2025-05-27 12:01:43 --> ✅ Processed: Srimugan N (27) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:01:43 --> ✅ Processed: Srimugan N (27) - 2025-05-23 - 09:08 (Present)
+INFO - 2025-05-27 12:01:43 --> ✅ Processed: Srimugan N (27) - 2025-05-24 - 09:01 (Present)
+INFO - 2025-05-27 12:01:43 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:01:43 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-27 12:01:43 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Offday)
+DEBUG - 2025-05-27 12:02:24 --> User IP: ::1
+INFO - 2025-05-27 12:02:24 --> ✅ Processed: Srimugan N (27) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:02:24 --> ✅ Processed: Srimugan N (27) - 2025-05-23 - 09:08 (Present)
+INFO - 2025-05-27 12:02:24 --> ✅ Processed: Srimugan N (27) - 2025-05-24 - 09:01 (Present)
+INFO - 2025-05-27 12:02:24 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:02:24 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-27 12:02:24 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Offday)
+DEBUG - 2025-05-27 12:08:37 --> User IP: ::1
+INFO - 2025-05-27 12:08:37 --> ✅ Processed: Srimugan N (27) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:08:37 --> ✅ Processed: Srimugan N (27) - 2025-05-23 - 09:08 (Present)
+INFO - 2025-05-27 12:08:37 --> ✅ Processed: Srimugan N (27) - 2025-05-24 - 09:01 (Present)
+INFO - 2025-05-27 12:08:37 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:08:37 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-27 12:08:37 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Offday)
+DEBUG - 2025-05-27 12:11:19 --> User IP: ::1
+INFO - 2025-05-27 12:11:20 --> ✅ Processed: Srimugan N (27) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:11:20 --> ✅ Processed: Srimugan N (27) - 2025-05-23 - 09:08 (Present)
+INFO - 2025-05-27 12:11:20 --> ✅ Processed: Srimugan N (27) - 2025-05-24 - 09:01 (Present)
+INFO - 2025-05-27 12:11:20 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:11:20 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-27 12:11:20 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Offday)
+DEBUG - 2025-05-27 12:19:57 --> User IP: ::1
+INFO - 2025-05-27 12:19:57 --> ✅ Processed: Srimugan N (27) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:19:57 --> ✅ Processed: Srimugan N (27) - 2025-05-23 - 09:08 (Present)
+INFO - 2025-05-27 12:19:57 --> ✅ Processed: Srimugan N (27) - 2025-05-24 - 09:01 (Present)
+INFO - 2025-05-27 12:19:57 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:19:57 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-27 12:19:57 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Offday)
+DEBUG - 2025-05-27 12:23:41 --> User IP: ::1
+INFO - 2025-05-27 12:23:41 --> ✅ Processed: Srimugan N (27) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:23:41 --> ✅ Processed: Srimugan N (27) - 2025-05-23 - 09:08 (Present)
+INFO - 2025-05-27 12:23:41 --> ✅ Processed: Srimugan N (27) - 2025-05-24 - 09:01 (Present)
+INFO - 2025-05-27 12:23:41 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:23:41 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-27 12:23:41 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Offday)
+DEBUG - 2025-05-27 12:25:22 --> User IP: ::1
+INFO - 2025-05-27 12:25:22 --> ✅ Processed: Srimugan N (27) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:25:22 --> ✅ Processed: Srimugan N (27) - 2025-05-23 - 09:08 (Present)
+INFO - 2025-05-27 12:25:22 --> ✅ Processed: Srimugan N (27) - 2025-05-24 - 09:01 (Present)
+INFO - 2025-05-27 12:25:22 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:25:22 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-27 12:25:22 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Offday)
+DEBUG - 2025-05-27 12:25:24 --> User IP: ::1
+INFO - 2025-05-27 12:25:24 --> ✅ Processed: Srimugan N (27) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:25:24 --> ✅ Processed: Srimugan N (27) - 2025-05-23 - 09:08 (Present)
+INFO - 2025-05-27 12:25:24 --> ✅ Processed: Srimugan N (27) - 2025-05-24 - 09:01 (Present)
+INFO - 2025-05-27 12:25:24 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:25:24 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-27 12:25:24 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Offday)
+DEBUG - 2025-05-27 12:25:25 --> User IP: ::1
+INFO - 2025-05-27 12:25:25 --> ✅ Processed: Srimugan N (27) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:25:25 --> ✅ Processed: Srimugan N (27) - 2025-05-23 - 09:08 (Present)
+INFO - 2025-05-27 12:25:25 --> ✅ Processed: Srimugan N (27) - 2025-05-24 - 09:01 (Present)
+INFO - 2025-05-27 12:25:25 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:25:25 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-27 12:25:25 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Offday)
+DEBUG - 2025-05-27 12:27:24 --> User IP: ::1
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Srimugan N (27) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Srimugan N (27) - 2025-05-23 - 09:08 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Srimugan N (27) - 2025-05-24 - 09:01 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - 00:52 (Offday)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Vanitha (4) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Vanitha (4) - 2025-05-23 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Vanitha (4) - 2025-05-24 - 02:28 (Offday)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Vanitha (4) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Vanitha (4) - 2025-05-26 - 08:30 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Vanitha (4) - 2025-05-27 - 02:17 (Offday)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Karthikeyan (13) - 2025-05-22 - 08:36 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Karthikeyan (13) - 2025-05-23 - 07:57 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Karthikeyan (13) - 2025-05-24 - 08:06 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Karthikeyan (13) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Karthikeyan (13) - 2025-05-26 - 07:41 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Karthikeyan (13) - 2025-05-27 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Muniyappan (16) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Muniyappan (16) - 2025-05-23 - 08:06 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Muniyappan (16) - 2025-05-24 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Muniyappan (16) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Muniyappan (16) - 2025-05-26 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Muniyappan (16) - 2025-05-27 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Gokul (17) - 2025-05-22 - 08:40 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Gokul (17) - 2025-05-23 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Gokul (17) - 2025-05-24 - 07:50 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Gokul (17) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Gokul (17) - 2025-05-26 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Gokul (17) - 2025-05-27 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Manisha V (1) - 2025-05-22 - 08:14 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Manisha V (1) - 2025-05-23 - 07:47 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Manisha V (1) - 2025-05-24 - 07:44 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Manisha V (1) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Manisha V (1) - 2025-05-26 - 08:22 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Manisha V (1) - 2025-05-27 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Gnanamugilan (9) - 2025-05-22 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Gnanamugilan (9) - 2025-05-23 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Gnanamugilan (9) - 2025-05-24 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Gnanamugilan (9) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Gnanamugilan (9) - 2025-05-26 - 08:09 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Gnanamugilan (9) - 2025-05-27 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Arun (5) - 2025-05-22 - 08:24 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Arun (5) - 2025-05-23 - 07:49 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Arun (5) - 2025-05-24 - 08:22 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Arun (5) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Arun (5) - 2025-05-26 - 07:56 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Arun (5) - 2025-05-27 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Magendiran (23) - 2025-05-22 - 08:10 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Magendiran (23) - 2025-05-23 - 08:22 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Magendiran (23) - 2025-05-24 - 08:53 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Magendiran (23) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Magendiran (23) - 2025-05-26 - 08:21 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Magendiran (23) - 2025-05-27 - Error (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Kokila (45) - 2025-05-22 - 08:49 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Kokila (45) - 2025-05-23 - 08:24 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Kokila (45) - 2025-05-24 - 08:29 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Kokila (45) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Kokila (45) - 2025-05-26 - 08:38 (Present)
+INFO - 2025-05-27 12:27:24 --> ✅ Processed: Kokila (45) - 2025-05-27 - Error (Present)

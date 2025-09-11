@@ -1,0 +1,506 @@
+DEBUG - 2025-06-04 07:58:01 --> User IP: ::1
+DEBUG - 2025-06-04 07:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 07:58:27 --> User IP: ::1
+CRITICAL - 2025-06-04 07:58:27 --> TypeError: Unsupported operand types: string - int
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 148.
+ 1 APPPATH\Controllers\PayRole.php(22): App\Controllers\PayRole->getStartAndEndDate('', '')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-04 07:59:21 --> User IP: ::1
+ERROR - 2025-06-04 07:59:21 --> mysqli_sql_exception: Incorrect DATE value: '0-0-24' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `attenda...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attenda...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attenda...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attenda...', Array, false)
+#4 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-06-04 07:59:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Incorrect DATE value: '0-0-24'
+[Method: GET, Route: payrole/getattendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `work_type`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `attendance_users`.`employee_status`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `attendance_users`.`employee_status` = :attendance_users.employee_status:
+AND `date` >= :date:
+AND `date` <= :date.1:
+ORDER BY `date` ASC', [...], false)
+ 2 APPPATH\Controllers\PayRole.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-04 07:59:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Incorrect DATE value: '0-0-24'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `work_type`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `attendance_users`.`employee_status`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `attendance_users`.`employee_status` = \'1\'
+AND `date` >= \'0--1-25\'
+AND `date` <= \'0-0-24\'
+ORDER BY `date` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `work_type`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `attendance_users`.`employee_status`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `attendance_users`.`employee_status` = \'1\'
+AND `date` >= \'0--1-25\'
+AND `date` <= \'0-0-24\'
+ORDER BY `date` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `work_type`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `attendance_users`.`employee_status`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `attendance_users`.`employee_status` = :attendance_users.employee_status:
+AND `date` >= :date:
+AND `date` <= :date.1:
+ORDER BY `date` ASC', [...], false)
+ 4 APPPATH\Controllers\PayRole.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-04 07:59:21 --> [Caused by] mysqli_sql_exception: Incorrect DATE value: '0-0-24'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `work_type`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `attendance_users`.`employee_status`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `attendance_users`.`employee_status` = \'1\'
+AND `date` >= \'0--1-25\'
+AND `date` <= \'0-0-24\'
+ORDER BY `date` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `work_type`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `attendance_users`.`employee_status`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `attendance_users`.`employee_status` = \'1\'
+AND `date` >= \'0--1-25\'
+AND `date` <= \'0-0-24\'
+ORDER BY `date` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `work_type`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `attendance_users`.`employee_status`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `attendance_users`.`employee_status` = \'1\'
+AND `date` >= \'0--1-25\'
+AND `date` <= \'0-0-24\'
+ORDER BY `date` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `work_type`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `attendance_users`.`employee_status`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `attendance_users`.`employee_status` = :attendance_users.employee_status:
+AND `date` >= :date:
+AND `date` <= :date.1:
+ORDER BY `date` ASC', [...], false)
+ 5 APPPATH\Controllers\PayRole.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-04 07:59:51 --> User IP: ::1
+DEBUG - 2025-06-04 08:00:56 --> User IP: ::1
+DEBUG - 2025-06-04 08:01:33 --> User IP: ::1
+CRITICAL - 2025-06-04 08:01:33 --> Error: Cannot use object of type CodeIgniter\HTTP\Response as array
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-04 08:01:53 --> User IP: ::1
+DEBUG - 2025-06-04 09:12:46 --> User IP: ::1
+DEBUG - 2025-06-04 09:13:53 --> User IP: ::1
+DEBUG - 2025-06-04 09:17:57 --> User IP: ::1
+DEBUG - 2025-06-04 09:20:53 --> User IP: ::1
+DEBUG - 2025-06-04 09:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:21:28 --> User IP: ::1
+DEBUG - 2025-06-04 09:22:11 --> User IP: ::1
+DEBUG - 2025-06-04 09:22:11 --> User ID: 1, Date: 2025-05-31
+DEBUG - 2025-06-04 09:22:32 --> User IP: ::1
+DEBUG - 2025-06-04 09:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:22:55 --> User IP: ::1
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Srimugan N (27) - 2025-05-30 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Srimugan N (27) - 2025-05-31 - 08:38 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Srimugan N (27) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Srimugan N (27) - 2025-06-02 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Srimugan N (27) - 2025-06-03 - 08:25 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Chakravarthy (3) - 2025-05-30 - 10:19 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Chakravarthy (3) - 2025-05-31 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Chakravarthy (3) - 2025-06-01 - 00:14 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Chakravarthy (3) - 2025-06-02 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Chakravarthy (3) - 2025-06-03 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Vanitha (4) - 2025-05-30 - 02:34 (Offday)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Vanitha (4) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Vanitha (4) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Vanitha (4) - 2025-06-02 - 08:21 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Vanitha (4) - 2025-06-03 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Balu (8) - 2025-05-30 - 10:20 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Balu (8) - 2025-05-31 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Balu (8) - 2025-06-01 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Balu (8) - 2025-06-02 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Balu (8) - 2025-06-03 - 10:19 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Karthikeyan (13) - 2025-05-30 - 08:26 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Karthikeyan (13) - 2025-05-31 - 07:49 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Karthikeyan (13) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Karthikeyan (13) - 2025-06-02 - 06:39 (Permission)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Karthikeyan (13) - 2025-06-03 - 07:46 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Muniyappan (16) - 2025-05-30 - 08:03 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Muniyappan (16) - 2025-05-31 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Muniyappan (16) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Muniyappan (16) - 2025-06-02 - 08:10 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Muniyappan (16) - 2025-06-03 - 07:58 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Gokul (17) - 2025-05-30 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Gokul (17) - 2025-05-31 - 08:25 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Gokul (17) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Gokul (17) - 2025-06-02 - 08:37 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Gokul (17) - 2025-06-03 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Manisha V (1) - 2025-05-30 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Manisha V (1) - 2025-05-31 - 07:46 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Manisha V (1) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Manisha V (1) - 2025-06-02 - 08:17 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Manisha V (1) - 2025-06-03 - 08:04 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Gnanamugilan (9) - 2025-05-30 - 07:59 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Gnanamugilan (9) - 2025-05-31 - 08:59 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Gnanamugilan (9) - 2025-06-01 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Gnanamugilan (9) - 2025-06-02 - 08:23 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Gnanamugilan (9) - 2025-06-03 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Arun (5) - 2025-05-30 - 07:58 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Arun (5) - 2025-05-31 - 07:50 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Arun (5) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Arun (5) - 2025-06-02 - 00:00 (NA)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Arun (5) - 2025-06-03 - 00:00 (NA)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Magendiran (23) - 2025-05-30 - 08:21 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Magendiran (23) - 2025-05-31 - 08:27 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Magendiran (23) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Magendiran (23) - 2025-06-02 - 08:15 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Magendiran (23) - 2025-06-03 - 05:50 (Permission)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Kokila (45) - 2025-05-30 - 08:34 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Kokila (45) - 2025-05-31 - 09:25 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Kokila (45) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Kokila (45) - 2025-06-02 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Kokila (45) - 2025-06-03 - 08:34 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Pugazh (48) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Pugazh (48) - 2025-05-31 - 07:40 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Pugazh (48) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Pugazh (48) - 2025-06-02 - 08:03 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Pugazh (48) - 2025-06-03 - 07:32 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Akshay (49) - 2025-05-30 - 07:38 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Akshay (49) - 2025-05-31 - 08:06 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Akshay (49) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Akshay (49) - 2025-06-02 - 07:59 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Akshay (49) - 2025-06-03 - 07:60 (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Bhagath (50) - 2025-05-30 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Bhagath (50) - 2025-05-31 - Error (Present)
+INFO - 2025-06-04 09:23:30 --> ✅ Processed: Bhagath (50) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-04 09:23:31 --> ✅ Processed: Bhagath (50) - 2025-06-02 - 08:01 (Present)
+INFO - 2025-06-04 09:23:31 --> ✅ Processed: Bhagath (50) - 2025-06-03 - 08:02 (Present)
+DEBUG - 2025-06-04 09:23:38 --> User IP: ::1
+DEBUG - 2025-06-04 09:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:25:32 --> User IP: ::1
+DEBUG - 2025-06-04 09:25:32 --> User ID: 45, Date: 2025-05-28
+DEBUG - 2025-06-04 09:25:35 --> User IP: ::1
+DEBUG - 2025-06-04 09:25:35 --> User ID: 48, Date: 2025-05-28
+DEBUG - 2025-06-04 09:25:37 --> User IP: ::1
+DEBUG - 2025-06-04 09:25:37 --> User ID: 49, Date: 2025-05-29
+DEBUG - 2025-06-04 09:25:42 --> User IP: ::1
+DEBUG - 2025-06-04 09:25:42 --> User ID: 9, Date: 2025-05-29
+DEBUG - 2025-06-04 09:25:44 --> User IP: ::1
+DEBUG - 2025-06-04 09:25:44 --> User ID: 17, Date: 2025-05-29
+DEBUG - 2025-06-04 09:25:48 --> User IP: ::1
+DEBUG - 2025-06-04 09:25:48 --> User ID: 27, Date: 2025-05-29
+DEBUG - 2025-06-04 09:25:53 --> User IP: ::1
+DEBUG - 2025-06-04 09:25:53 --> User ID: 45, Date: 2025-05-29
+DEBUG - 2025-06-04 09:25:56 --> User IP: ::1
+DEBUG - 2025-06-04 09:25:56 --> User ID: 23, Date: 2025-05-29
+DEBUG - 2025-06-04 09:25:59 --> User IP: ::1
+DEBUG - 2025-06-04 09:25:59 --> User ID: 5, Date: 2025-05-29
+DEBUG - 2025-06-04 09:26:00 --> User IP: ::1
+DEBUG - 2025-06-04 09:26:00 --> User ID: 9, Date: 2025-05-30
+DEBUG - 2025-06-04 09:26:03 --> User IP: ::1
+DEBUG - 2025-06-04 09:26:03 --> User ID: 9, Date: 2025-05-29
+DEBUG - 2025-06-04 09:26:06 --> User IP: ::1
+DEBUG - 2025-06-04 09:26:06 --> User ID: 9, Date: 2025-05-27
+DEBUG - 2025-06-04 09:26:11 --> User IP: ::1
+DEBUG - 2025-06-04 09:26:11 --> User ID: 9, Date: 2025-05-29
+DEBUG - 2025-06-04 09:26:29 --> User IP: ::1
+DEBUG - 2025-06-04 09:26:29 --> User ID: 49, Date: 2025-05-30
+DEBUG - 2025-06-04 09:26:30 --> User IP: ::1
+DEBUG - 2025-06-04 09:26:31 --> User ID: 48, Date: 2025-05-28
+DEBUG - 2025-06-04 09:26:32 --> User IP: ::1
+DEBUG - 2025-06-04 09:26:32 --> User ID: 49, Date: 2025-05-31
+DEBUG - 2025-06-04 09:26:34 --> User IP: ::1
+DEBUG - 2025-06-04 09:26:34 --> User ID: 49, Date: 2025-06-01
+DEBUG - 2025-06-04 09:26:37 --> User IP: ::1
+DEBUG - 2025-06-04 09:26:37 --> User ID: 48, Date: 2025-06-02
+DEBUG - 2025-06-04 09:26:49 --> User IP: ::1
+INFO - 2025-06-04 09:27:18 --> ✅ Processed: Srimugan N (27) - 2025-05-29 - Error (Present)
+INFO - 2025-06-04 09:27:18 --> ✅ Processed: Chakravarthy (3) - 2025-05-29 - 10:34 (Present)
+INFO - 2025-06-04 09:27:18 --> ✅ Processed: Vanitha (4) - 2025-05-29 - 08:54 (Present)
+INFO - 2025-06-04 09:27:18 --> ✅ Processed: Balu (8) - 2025-05-29 - 10:33 (Present)
+INFO - 2025-06-04 09:27:18 --> ✅ Processed: Karthikeyan (13) - 2025-05-29 - Error (Present)
+INFO - 2025-06-04 09:27:18 --> ✅ Processed: Muniyappan (16) - 2025-05-29 - Error (Present)
+INFO - 2025-06-04 09:27:18 --> ✅ Processed: Gokul (17) - 2025-05-29 - Error (Present)
+INFO - 2025-06-04 09:27:18 --> ✅ Processed: Manisha V (1) - 2025-05-29 - 08:30 (Present)
+INFO - 2025-06-04 09:27:18 --> ✅ Processed: Gnanamugilan (9) - 2025-05-29 - Error (Present)
+INFO - 2025-06-04 09:27:18 --> ✅ Processed: Arun (5) - 2025-05-29 - 08:41 (Present)
+INFO - 2025-06-04 09:27:19 --> ✅ Processed: Magendiran (23) - 2025-05-29 - 08:36 (Present)
+INFO - 2025-06-04 09:27:19 --> ✅ Processed: Kokila (45) - 2025-05-29 - 09:11 (Present)
+INFO - 2025-06-04 09:27:19 --> ✅ Processed: Pugazh (48) - 2025-05-29 - Error (Present)
+INFO - 2025-06-04 09:27:19 --> ✅ Processed: Akshay (49) - 2025-05-29 - Error (Present)
+INFO - 2025-06-04 09:27:19 --> ✅ Processed: Bhagath (50) - 2025-05-29 - 06:56 (Permission)
+DEBUG - 2025-06-04 09:27:26 --> User IP: ::1
+DEBUG - 2025-06-04 09:27:26 --> User ID: 9, Date: 2025-05-29
+DEBUG - 2025-06-04 09:27:29 --> User IP: ::1
+DEBUG - 2025-06-04 09:27:29 --> User ID: 5, Date: 2025-05-29
+DEBUG - 2025-06-04 09:27:31 --> User IP: ::1
+DEBUG - 2025-06-04 09:27:32 --> User ID: 45, Date: 2025-05-29
+DEBUG - 2025-06-04 09:27:35 --> User IP: ::1
+DEBUG - 2025-06-04 09:27:35 --> User ID: 45, Date: 2025-05-30
+DEBUG - 2025-06-04 09:27:38 --> User IP: ::1
+DEBUG - 2025-06-04 09:27:38 --> User ID: 5, Date: 2025-05-28
+DEBUG - 2025-06-04 09:33:07 --> User IP: ::1
+DEBUG - 2025-06-04 09:33:08 --> User ID: 16, Date: 2025-05-26
+DEBUG - 2025-06-04 09:33:14 --> User IP: ::1
+DEBUG - 2025-06-04 09:33:14 --> User ID: 16, Date: 2025-05-26
+DEBUG - 2025-06-04 09:33:16 --> User IP: ::1
+DEBUG - 2025-06-04 09:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:33:20 --> User IP: ::1
+DEBUG - 2025-06-04 09:33:20 --> User ID: 17, Date: 2025-05-26
+DEBUG - 2025-06-04 09:33:32 --> User IP: ::1
+DEBUG - 2025-06-04 09:33:32 --> User ID: 17, Date: 2025-05-26
+DEBUG - 2025-06-04 09:33:33 --> User IP: ::1
+DEBUG - 2025-06-04 09:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:33:36 --> User IP: ::1
+DEBUG - 2025-06-04 09:33:36 --> User ID: 3, Date: 2025-05-25
+DEBUG - 2025-06-04 09:33:44 --> User IP: ::1
+DEBUG - 2025-06-04 09:33:44 --> User ID: 4, Date: 2025-05-27
+DEBUG - 2025-06-04 09:33:52 --> User IP: ::1
+DEBUG - 2025-06-04 09:33:52 --> User ID: 4, Date: 2025-05-27
+DEBUG - 2025-06-04 09:33:53 --> User IP: ::1
+DEBUG - 2025-06-04 09:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:34:00 --> User IP: ::1
+DEBUG - 2025-06-04 09:34:00 --> User ID: 4, Date: 2025-05-28
+DEBUG - 2025-06-04 09:34:03 --> User IP: ::1
+DEBUG - 2025-06-04 09:34:03 --> User ID: 4, Date: 2025-05-28
+DEBUG - 2025-06-04 09:34:05 --> User IP: ::1
+DEBUG - 2025-06-04 09:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:34:10 --> User IP: ::1
+DEBUG - 2025-06-04 09:34:10 --> User ID: 45, Date: 2025-05-28
+DEBUG - 2025-06-04 09:34:24 --> User IP: ::1
+DEBUG - 2025-06-04 09:34:24 --> User ID: 45, Date: 2025-05-28
+DEBUG - 2025-06-04 09:34:29 --> User IP: ::1
+DEBUG - 2025-06-04 09:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:34:34 --> User IP: ::1
+DEBUG - 2025-06-04 09:34:34 --> User ID: 48, Date: 2025-05-28
+DEBUG - 2025-06-04 09:34:41 --> User IP: ::1
+DEBUG - 2025-06-04 09:34:41 --> User ID: 48, Date: 2025-05-28
+DEBUG - 2025-06-04 09:34:43 --> User IP: ::1
+DEBUG - 2025-06-04 09:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:34:48 --> User IP: ::1
+DEBUG - 2025-06-04 09:34:48 --> User ID: 27, Date: 2025-05-29
+DEBUG - 2025-06-04 09:35:01 --> User IP: ::1
+DEBUG - 2025-06-04 09:35:01 --> User ID: 27, Date: 2025-05-29
+DEBUG - 2025-06-04 09:35:02 --> User IP: ::1
+DEBUG - 2025-06-04 09:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:35:05 --> User IP: ::1
+DEBUG - 2025-06-04 09:35:05 --> User ID: 13, Date: 2025-05-29
+DEBUG - 2025-06-04 09:38:58 --> User IP: ::1
+DEBUG - 2025-06-04 09:38:58 --> User ID: 13, Date: 2025-05-29
+CRITICAL - 2025-06-04 09:38:58 --> ErrorException: Undefined variable $work_status
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 208.
+ 1 APPPATH\Controllers\BiometricController.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $work_status', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 208)
+ 2 APPPATH\Controllers\BiometricController.php(135): App\Controllers\BiometricController->recalculatePunchTime('13', '2025-05-29')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-04 09:39:06 --> User IP: ::1
+CRITICAL - 2025-06-04 09:39:06 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 133.
+ 1 APPPATH\Controllers\BiometricController.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 133)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-04 09:39:10 --> User IP: ::1
+DEBUG - 2025-06-04 09:39:10 --> User ID: 13, Date: 2025-05-29
+CRITICAL - 2025-06-04 09:39:10 --> ErrorException: Undefined variable $work_status
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 208.
+ 1 APPPATH\Controllers\BiometricController.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $work_status', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 208)
+ 2 APPPATH\Controllers\BiometricController.php(135): App\Controllers\BiometricController->recalculatePunchTime('13', '2025-05-29')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-04 09:39:13 --> User IP: ::1
+DEBUG - 2025-06-04 09:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:39:15 --> User IP: ::1
+DEBUG - 2025-06-04 09:39:15 --> User ID: 17, Date: 2025-05-29
+DEBUG - 2025-06-04 09:39:19 --> User IP: ::1
+DEBUG - 2025-06-04 09:39:19 --> User ID: 17, Date: 2025-05-29
+CRITICAL - 2025-06-04 09:39:19 --> ErrorException: Undefined variable $work_status
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 208.
+ 1 APPPATH\Controllers\BiometricController.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $work_status', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 208)
+ 2 APPPATH\Controllers\BiometricController.php(135): App\Controllers\BiometricController->recalculatePunchTime('17', '2025-05-29')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-04 09:42:53 --> User IP: ::1
+DEBUG - 2025-06-04 09:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:42:55 --> User IP: ::1
+DEBUG - 2025-06-04 09:42:55 --> User ID: 13, Date: 2025-05-29
+DEBUG - 2025-06-04 09:42:59 --> User IP: ::1
+DEBUG - 2025-06-04 09:42:59 --> User ID: 13, Date: 2025-05-29
+DEBUG - 2025-06-04 09:43:01 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:43:03 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:03 --> User ID: 16, Date: 2025-05-29
+DEBUG - 2025-06-04 09:43:20 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:20 --> User ID: 16, Date: 2025-05-29
+DEBUG - 2025-06-04 09:43:21 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:43:23 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:24 --> User ID: 17, Date: 2025-05-29
+DEBUG - 2025-06-04 09:43:29 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:29 --> User ID: 17, Date: 2025-05-29
+DEBUG - 2025-06-04 09:43:36 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:36 --> User ID: 9, Date: 2025-05-29
+DEBUG - 2025-06-04 09:43:39 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:39 --> User ID: 9, Date: 2025-05-29
+DEBUG - 2025-06-04 09:43:44 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:45 --> User ID: 9, Date: 2025-05-29
+DEBUG - 2025-06-04 09:43:46 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:43:48 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:48 --> User ID: 48, Date: 2025-05-29
+DEBUG - 2025-06-04 09:43:54 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:54 --> User ID: 48, Date: 2025-05-29
+DEBUG - 2025-06-04 09:43:55 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:43:57 --> User IP: ::1
+DEBUG - 2025-06-04 09:43:57 --> User ID: 49, Date: 2025-05-29
+DEBUG - 2025-06-04 09:44:04 --> User IP: ::1
+DEBUG - 2025-06-04 09:44:04 --> User ID: 49, Date: 2025-05-29
+DEBUG - 2025-06-04 09:44:05 --> User IP: ::1
+DEBUG - 2025-06-04 09:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:44:08 --> User IP: ::1
+DEBUG - 2025-06-04 09:44:08 --> User ID: 17, Date: 2025-05-29
+DEBUG - 2025-06-04 09:44:16 --> User IP: ::1
+DEBUG - 2025-06-04 09:44:16 --> User ID: 17, Date: 2025-05-29
+DEBUG - 2025-06-04 09:44:17 --> User IP: ::1
+DEBUG - 2025-06-04 09:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:44:21 --> User IP: ::1
+DEBUG - 2025-06-04 09:44:21 --> User ID: 17, Date: 2025-05-29
+DEBUG - 2025-06-04 09:44:28 --> User IP: ::1
+DEBUG - 2025-06-04 09:44:28 --> User ID: 27, Date: 2025-05-30
+DEBUG - 2025-06-04 09:44:48 --> User IP: ::1
+DEBUG - 2025-06-04 09:44:48 --> User ID: 27, Date: 2025-05-30
+DEBUG - 2025-06-04 09:44:49 --> User IP: ::1
+DEBUG - 2025-06-04 09:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:44:51 --> User IP: ::1
+DEBUG - 2025-06-04 09:44:51 --> User ID: 17, Date: 2025-05-30
+DEBUG - 2025-06-04 09:45:04 --> User IP: ::1
+DEBUG - 2025-06-04 09:45:04 --> User ID: 17, Date: 2025-05-30
+DEBUG - 2025-06-04 09:45:05 --> User IP: ::1
+DEBUG - 2025-06-04 09:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:45:06 --> User IP: ::1
+DEBUG - 2025-06-04 09:45:07 --> User ID: 1, Date: 2025-05-30
+DEBUG - 2025-06-04 09:45:20 --> User IP: ::1
+DEBUG - 2025-06-04 09:45:20 --> User ID: 1, Date: 2025-05-30
+DEBUG - 2025-06-04 09:45:21 --> User IP: ::1
+DEBUG - 2025-06-04 09:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:45:24 --> User IP: ::1
+DEBUG - 2025-06-04 09:45:24 --> User ID: 16, Date: 2025-05-31
+DEBUG - 2025-06-04 09:45:33 --> User IP: ::1
+DEBUG - 2025-06-04 09:45:33 --> User ID: 16, Date: 2025-05-31
+DEBUG - 2025-06-04 09:45:34 --> User IP: ::1
+DEBUG - 2025-06-04 09:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:45:37 --> User IP: ::1
+DEBUG - 2025-06-04 09:45:37 --> User ID: 50, Date: 2025-05-30
+DEBUG - 2025-06-04 09:46:23 --> User IP: ::1
+DEBUG - 2025-06-04 09:46:23 --> User ID: 50, Date: 2025-05-30
+DEBUG - 2025-06-04 09:46:24 --> User IP: ::1
+DEBUG - 2025-06-04 09:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:46:27 --> User IP: ::1
+DEBUG - 2025-06-04 09:46:27 --> User ID: 50, Date: 2025-05-31
+DEBUG - 2025-06-04 09:46:38 --> User IP: ::1
+DEBUG - 2025-06-04 09:46:38 --> User ID: 50, Date: 2025-05-31
+DEBUG - 2025-06-04 09:46:39 --> User IP: ::1
+DEBUG - 2025-06-04 09:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:46:42 --> User IP: ::1
+DEBUG - 2025-06-04 09:46:42 --> User ID: 9, Date: 2025-06-01
+DEBUG - 2025-06-04 09:46:46 --> User IP: ::1
+DEBUG - 2025-06-04 09:46:47 --> User ID: 9, Date: 2025-06-01
+DEBUG - 2025-06-04 09:46:48 --> User IP: ::1
+DEBUG - 2025-06-04 09:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:46:51 --> User IP: ::1
+DEBUG - 2025-06-04 09:46:51 --> User ID: 9, Date: 2025-06-03
+DEBUG - 2025-06-04 09:46:54 --> User IP: ::1
+DEBUG - 2025-06-04 09:46:54 --> User ID: 9, Date: 2025-06-03
+DEBUG - 2025-06-04 09:46:54 --> User IP: ::1
+DEBUG - 2025-06-04 09:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:46:59 --> User IP: ::1
+DEBUG - 2025-06-04 09:46:59 --> User ID: 17, Date: 2025-06-03
+DEBUG - 2025-06-04 09:55:08 --> User IP: ::1
+DEBUG - 2025-06-04 09:55:08 --> User ID: 27, Date: 2025-06-02
+DEBUG - 2025-06-04 09:55:18 --> User IP: ::1
+DEBUG - 2025-06-04 09:55:18 --> User ID: 27, Date: 2025-06-02
+DEBUG - 2025-06-04 09:55:19 --> User IP: ::1
+DEBUG - 2025-06-04 09:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:55:20 --> User IP: ::1
+DEBUG - 2025-06-04 09:55:20 --> User ID: 4, Date: 2025-06-03
+DEBUG - 2025-06-04 09:55:24 --> User IP: ::1
+DEBUG - 2025-06-04 09:55:24 --> User ID: 4, Date: 2025-06-03
+DEBUG - 2025-06-04 09:55:25 --> User IP: ::1
+DEBUG - 2025-06-04 09:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:55:27 --> User IP: ::1
+DEBUG - 2025-06-04 09:55:27 --> User ID: 17, Date: 2025-06-03
+DEBUG - 2025-06-04 09:56:00 --> User IP: ::1
+DEBUG - 2025-06-04 09:56:00 --> User ID: 17, Date: 2025-06-03
+DEBUG - 2025-06-04 09:56:01 --> User IP: ::1
+DEBUG - 2025-06-04 09:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 09:56:09 --> User IP: ::1
+DEBUG - 2025-06-04 09:56:10 --> User ID: 45, Date: 2025-06-02
+DEBUG - 2025-06-04 09:56:13 --> User IP: ::1
+DEBUG - 2025-06-04 09:56:13 --> User ID: 45, Date: 2025-06-02
+DEBUG - 2025-06-04 09:56:14 --> User IP: ::1
+DEBUG - 2025-06-04 09:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-04 10:01:43 --> User IP: ::1

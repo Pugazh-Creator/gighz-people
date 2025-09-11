@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', 'sans-serif';
+}
+
+:root {
+    --brand-color--: #da2442;
+    --composit-color--: #2ddbbd;
+    --white-color--: #fff;
+    --toggle-color: #fff;
+    --font-color: #fff;
+    --bg-color-: #FBE9EC;
+    --h1--: 43px;
+    --h2--: 34px;
+    --h3--: 28px;
+    --h4--: 23px;
+    --para--: 18px;
+    --border-radius--: 20px;
+    --brand-shadow--: 0 0 20px #da2442ab,
+        0 0 30px #da2442ab,
+        0 0 40px #da2442ab,
+        0 0 50px #da2442ab,
+        0 0 70px #da2442ab,
+        0 0 100px #da2442ab,
+        0 0 150px #da2442ab;
+    --brand-shadow--: 0 0 20px #24dbbdab,
+        0 0 30px #24dbbdab,
+        0 0 40px #24dbbdab,
+        0 0 50px #24dbbdab,
+        0 0 70px #24dbbdab,
+        0 0 100px #24dbbdab,
+        0 0 150px #24dbbdab;
+
+    --tran-03: all 0.2s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.4s ease;
+    --tran-06: all 0.5s ease;
+}
+
+
+.leaverequest_header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    text-transform: capitalize;
+    justify-content: space-between;
+
+}
+
+.leaverequest_header button {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background: var(--brand-color--);
+    border: none;
+    cursor: pointer;
+    color: var(--white-color--);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.leaverequest_tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+
+.leaveRequest_search {
+    height: 40px;
+    background: #fff;
+    width: 300px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leaveRequest_search input {
+    height: 100%;
+    width: 250px;
+    border-radius: 50px 0px 0px 50px;
+    padding: 0px 0px 0px 10px;
+    border: none;
+    outline: none;
+}
+
+.leaveRequest_search button {
+    position: relative;
+    border-radius: 0px 50px 50px 0px;
+    width: 50px;
+    height: 100%;
+    border: none;
+    font-size: 28px;
+    background: var(--brand-color--);
+    color: white;
+    cursor: pointer;
+}
+
+.leaveRequest_search button ion-icon {
+    position: absolute;
+    top: 5px;
+    left: 7px
+}
+
+.leaveRequest_sorting {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 450px;
+}
+
+.leaveRequest_sorting select {
+    height: 90%;
+    width: 200px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.leaveRequest_sorting button {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: var(--brand-color--);
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    font-size: 28px;
+
+}
+
+.leaveRequest_sorting button ion-icon {
+    position: absolute;
+    top: 7px;
+    left: 6px;
+}
+
+.leaverequest_table {
+    position: relative;
+    padding: 5px;
+    /* background: var(--white-color--); */
+    width: 95%;
+    height: 65vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+
+}
+
+.leaverequest_table table {
+    border: none;
+    width: 100%;
+    max-height: 100%;
+    border-collapse: collapse;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.leaverequest_table table th {
+    background-color: var(--brand-color--);
+    height: 40px;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 150px;
+    color: var(--white-color--);
+}
+
+/* .leaverequest_table table  tbody{
+} */
+.leaverequest_table td {
+    /* height: 100px; */
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+.leaverequest_table table tbody tr:nth-of-type(even) {
+    background-color: #eba7a746;
+}
+
+.leaverequest_table table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--brand-color--);
+}
+
+.leaverequest_table .approve,
+.leaverequest_table .reject {
+    background: rgb(148, 231, 148);
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: rgb(15, 109, 15);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.leaverequest_table .reject {
+    background: rgb(221, 150, 150);
+    color: rgb(142, 17, 17);
+}
+
+.leaverequest_table .reason {
+    max-width: 250px;
+    width: 250px;
+}
+.leaverequest_table .td-reason {
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.leaverequest_table .td-reason.full {
+        white-space: normal;
+}
+
+
+.pager-container {
+    position: absolute;
+    right: 50px;
+    /* width: 10%; */
+}
+
+.pagerbtn {
+    text-align: center;
+    background: #da2442;
+    color: white;
+    font-weight: 500;
+    width: 80px;
+    height: 30px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    margin: 0 2%;
+    font-size: 500;
+    font-size: 16px;
+}
+
+.edit-input {
+    outline: none;
+    border: none;
+    background: var(--white-color--);
+    border-radius: 3px;
+    width: 30%;
+    height: 30px;
+}
+
+.save-btn {
+    background: transparent;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: green;
+    cursor: pointer;
+
+}
+
+.actions {
+    display: flex;
+    justify-content: space-evenly;
+    width: 120px;
+    align-items: center;
+}
+
+.delete {
+    color: red;
+}
+
+.leabe-balence {
+    max-width: 150px;
+    width: 150px;
+}
+
+.leaverequest_table.compen_table .actions {
+    width: 100%;
+    gap: 2px;
+    margin: auto;
+}
+
+.leaverequest_table.compen_table table tr {
+    width: 100%;
+}
+
+.leaverequest .availabel-leave {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.leaverequest .availabel-leave form {
+    border: none;
+    background: var(--white-color--);
+    height: 30px;
+    width: 100px;
+    padding: 0px 0px 0px 5px;
+    border-radius: 5px;
+}
+
+.leaverequest .availabel-leave form select {
+    border: none;
+    outline: none;
+    width: 60%;
+}
+
+.leaverequest .availabel-leave form button {
+    border: none;
+    background: var(--brand-color--);
+    width: 30%;
+    cursor: pointer;
+    margin-left: 3px;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+}

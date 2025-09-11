@@ -1,0 +1,536 @@
+DEBUG - 2025-08-26 10:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:13:22 --> User IP: ::1
+DEBUG - 2025-08-26 10:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:13:33 --> User IP: ::1
+DEBUG - 2025-08-26 10:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:13:34 --> User IP: ::1
+DEBUG - 2025-08-26 10:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:13:50 --> User IP: ::1
+DEBUG - 2025-08-26 10:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:14:47 --> User IP: ::1
+DEBUG - 2025-08-26 10:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:15:16 --> User IP: ::1
+DEBUG - 2025-08-26 10:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:15:20 --> User IP: ::1
+DEBUG - 2025-08-26 10:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:15:24 --> User IP: ::1
+DEBUG - 2025-08-26 10:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:15:28 --> User IP: ::1
+DEBUG - 2025-08-26 10:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:15:57 --> User IP: ::1
+DEBUG - 2025-08-26 10:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:16:03 --> User IP: ::1
+DEBUG - 2025-08-26 10:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:16:28 --> User IP: ::1
+DEBUG - 2025-08-26 10:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:16:34 --> User IP: ::1
+DEBUG - 2025-08-26 10:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:16:44 --> User IP: ::1
+DEBUG - 2025-08-26 10:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:18:50 --> User IP: ::1
+DEBUG - 2025-08-26 10:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:18:54 --> User IP: ::1
+DEBUG - 2025-08-26 10:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:19:07 --> User IP: ::1
+DEBUG - 2025-08-26 10:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:19:10 --> User IP: ::1
+DEBUG - 2025-08-26 10:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:19:16 --> User IP: ::1
+DEBUG - 2025-08-26 10:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:19:27 --> User IP: ::1
+DEBUG - 2025-08-26 10:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:20:01 --> User IP: ::1
+DEBUG - 2025-08-26 10:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:20:13 --> User IP: ::1
+ERROR - 2025-08-26 10:20:13 --> mysqli_sql_exception: Unknown column 'permission_id' in 'order clause' in C:\xampp\htdocs\ems\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\ems\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `leave_r...', 0)
+#1 C:\xampp\htdocs\ems\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `leave_r...')
+#2 C:\xampp\htdocs\ems\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `leave_r...')
+#3 C:\xampp\htdocs\ems\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `leave_r...', Array, false)
+#4 C:\xampp\htdocs\ems\app\Models\LeaveRquestModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ems\app\Controllers\HRController.php(289): App\Models\LeaveRquestModel->getAllLeaveRequests('', 'permission_id', 'desc', 8, 8)
+#6 C:\xampp\htdocs\ems\system\CodeIgniter.php(933): App\Controllers\HRController->ShowingLeaveRequests()
+#7 C:\xampp\htdocs\ems\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HRController))
+#8 C:\xampp\htdocs\ems\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ems\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ems\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ems\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-08-26 10:20:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'permission_id' in 'order clause'
+[Method: GET, Route: leave-request]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `leave_request`.*, `employees`.`name`, `employees`.`remaining_leaves`
+FROM `leave_request`
+JOIN `employees` ON `leave_request`.`emp_id` = `employees`.`emp_id`
+ORDER BY `permission_id` DESC
+ LIMIT 8, 8', [], false)
+ 2 APPPATH\Models\LeaveRquestModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\HRController.php(289): App\Models\LeaveRquestModel->getAllLeaveRequests('', 'permission_id', 'desc', 8, 8)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HRController->ShowingLeaveRequests()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HRController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-26 10:20:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'permission_id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `leave_request`.*, `employees`.`name`, `employees`.`remaining_leaves`
+FROM `leave_request`
+JOIN `employees` ON `leave_request`.`emp_id` = `employees`.`emp_id`
+ORDER BY `permission_id` DESC
+ LIMIT 8, 8')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `leave_request`.*, `employees`.`name`, `employees`.`remaining_leaves`
+FROM `leave_request`
+JOIN `employees` ON `leave_request`.`emp_id` = `employees`.`emp_id`
+ORDER BY `permission_id` DESC
+ LIMIT 8, 8')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `leave_request`.*, `employees`.`name`, `employees`.`remaining_leaves`
+FROM `leave_request`
+JOIN `employees` ON `leave_request`.`emp_id` = `employees`.`emp_id`
+ORDER BY `permission_id` DESC
+ LIMIT 8, 8', [], false)
+ 4 APPPATH\Models\LeaveRquestModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\HRController.php(289): App\Models\LeaveRquestModel->getAllLeaveRequests('', 'permission_id', 'desc', 8, 8)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HRController->ShowingLeaveRequests()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HRController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-26 10:20:13 --> [Caused by] mysqli_sql_exception: Unknown column 'permission_id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `leave_request`.*, `employees`.`name`, `employees`.`remaining_leaves`
+FROM `leave_request`
+JOIN `employees` ON `leave_request`.`emp_id` = `employees`.`emp_id`
+ORDER BY `permission_id` DESC
+ LIMIT 8, 8', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `leave_request`.*, `employees`.`name`, `employees`.`remaining_leaves`
+FROM `leave_request`
+JOIN `employees` ON `leave_request`.`emp_id` = `employees`.`emp_id`
+ORDER BY `permission_id` DESC
+ LIMIT 8, 8')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `leave_request`.*, `employees`.`name`, `employees`.`remaining_leaves`
+FROM `leave_request`
+JOIN `employees` ON `leave_request`.`emp_id` = `employees`.`emp_id`
+ORDER BY `permission_id` DESC
+ LIMIT 8, 8')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `leave_request`.*, `employees`.`name`, `employees`.`remaining_leaves`
+FROM `leave_request`
+JOIN `employees` ON `leave_request`.`emp_id` = `employees`.`emp_id`
+ORDER BY `permission_id` DESC
+ LIMIT 8, 8', [], false)
+ 5 APPPATH\Models\LeaveRquestModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\HRController.php(289): App\Models\LeaveRquestModel->getAllLeaveRequests('', 'permission_id', 'desc', 8, 8)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HRController->ShowingLeaveRequests()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HRController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-08-26 10:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:20:59 --> User IP: ::1
+DEBUG - 2025-08-26 10:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:21:08 --> User IP: ::1
+DEBUG - 2025-08-26 10:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:21:17 --> User IP: ::1
+DEBUG - 2025-08-26 10:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:23:17 --> User IP: ::1
+DEBUG - 2025-08-26 10:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:23:21 --> User IP: ::1
+DEBUG - 2025-08-26 10:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:23:30 --> User IP: ::1
+DEBUG - 2025-08-26 10:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:23:34 --> User IP: ::1
+DEBUG - 2025-08-26 10:23:34 --> User ID: 1, Date: 2025-07-23
+DEBUG - 2025-08-26 10:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:23:58 --> User IP: ::1
+DEBUG - 2025-08-26 10:23:58 --> User ID: 9, Date: 2025-07-22
+DEBUG - 2025-08-26 10:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:24:09 --> User IP: ::1
+DEBUG - 2025-08-26 10:24:09 --> User ID: 9, Date: 2025-07-23
+DEBUG - 2025-08-26 10:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:24:29 --> User IP: ::1
+DEBUG - 2025-08-26 10:24:29 --> User ID: 8, Date: 2025-07-21
+DEBUG - 2025-08-26 10:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:24:52 --> User IP: ::1
+DEBUG - 2025-08-26 10:24:52 --> User ID: 49, Date: 2025-07-22
+DEBUG - 2025-08-26 10:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:26:03 --> User IP: ::1
+DEBUG - 2025-08-26 10:26:03 --> User ID: 8, Date: 2025-07-21
+DEBUG - 2025-08-26 10:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:26:31 --> User IP: ::1
+DEBUG - 2025-08-26 10:26:31 --> User ID: 13, Date: 2025-07-21
+DEBUG - 2025-08-26 10:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:29:12 --> User IP: ::1
+DEBUG - 2025-08-26 10:29:12 --> User ID: 8, Date: 2025-07-05
+DEBUG - 2025-08-26 10:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:29:18 --> User IP: ::1
+DEBUG - 2025-08-26 10:29:18 --> User ID: 8, Date: 2025-07-05
+DEBUG - 2025-08-26 10:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:29:20 --> User IP: ::1
+DEBUG - 2025-08-26 10:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:30:06 --> User IP: ::1
+DEBUG - 2025-08-26 10:30:06 --> User ID: 8, Date: 2025-06-27
+DEBUG - 2025-08-26 10:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:30:24 --> User IP: ::1
+DEBUG - 2025-08-26 10:30:24 --> User ID: 8, Date: 2025-06-28
+DEBUG - 2025-08-26 10:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:30:25 --> User IP: ::1
+DEBUG - 2025-08-26 10:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:30:26 --> User IP: ::1
+DEBUG - 2025-08-26 10:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:30:34 --> User IP: ::1
+DEBUG - 2025-08-26 10:30:34 --> User ID: 8, Date: 2025-06-26
+DEBUG - 2025-08-26 10:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:30:37 --> User IP: ::1
+DEBUG - 2025-08-26 10:30:37 --> User ID: 8, Date: 2025-06-26
+DEBUG - 2025-08-26 10:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:30:38 --> User IP: ::1
+DEBUG - 2025-08-26 10:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:30:43 --> User IP: ::1
+DEBUG - 2025-08-26 10:30:43 --> User ID: 8, Date: 2025-06-27
+DEBUG - 2025-08-26 10:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:30:46 --> User IP: ::1
+DEBUG - 2025-08-26 10:30:46 --> User ID: 8, Date: 2025-06-28
+DEBUG - 2025-08-26 10:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:30:50 --> User IP: ::1
+DEBUG - 2025-08-26 10:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:30:50 --> User IP: ::1
+DEBUG - 2025-08-26 10:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:34:28 --> User IP: ::1
+DEBUG - 2025-08-26 10:34:28 --> User ID: 3, Date: 2025-06-29
+DEBUG - 2025-08-26 10:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:34:31 --> User IP: ::1
+DEBUG - 2025-08-26 10:34:31 --> User ID: 3, Date: 2025-06-29
+DEBUG - 2025-08-26 10:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:34:32 --> User IP: ::1
+DEBUG - 2025-08-26 10:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:34:39 --> User IP: ::1
+DEBUG - 2025-08-26 10:34:39 --> User ID: 8, Date: 2025-07-20
+DEBUG - 2025-08-26 10:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:34:42 --> User IP: ::1
+DEBUG - 2025-08-26 10:34:42 --> User ID: 8, Date: 2025-07-20
+DEBUG - 2025-08-26 10:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:34:44 --> User IP: ::1
+DEBUG - 2025-08-26 10:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:34:46 --> User IP: ::1
+DEBUG - 2025-08-26 10:34:46 --> User ID: 8, Date: 2025-07-20
+DEBUG - 2025-08-26 10:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:34:48 --> User IP: ::1
+DEBUG - 2025-08-26 10:34:48 --> User ID: 8, Date: 2025-07-20
+DEBUG - 2025-08-26 10:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:34:49 --> User IP: ::1
+DEBUG - 2025-08-26 10:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:34:56 --> User IP: ::1
+DEBUG - 2025-08-26 10:34:56 --> User ID: 8, Date: 2025-07-20
+DEBUG - 2025-08-26 10:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:40:59 --> User IP: ::1
+DEBUG - 2025-08-26 10:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:41:01 --> User IP: ::1
+DEBUG - 2025-08-26 10:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:45:47 --> User IP: ::1
+DEBUG - 2025-08-26 10:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:45:48 --> User IP: ::1
+DEBUG - 2025-08-26 10:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:46:48 --> User IP: ::1
+DEBUG - 2025-08-26 10:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:56:51 --> User IP: ::1
+DEBUG - 2025-08-26 10:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:57:50 --> User IP: ::1
+DEBUG - 2025-08-26 10:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 10:57:51 --> User IP: ::1
+DEBUG - 2025-08-26 11:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:02:06 --> User IP: ::1
+DEBUG - 2025-08-26 11:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:02:06 --> User IP: ::1
+DEBUG - 2025-08-26 11:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:08:15 --> User IP: ::1
+DEBUG - 2025-08-26 11:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:09:26 --> User IP: ::1
+DEBUG - 2025-08-26 11:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:09:26 --> User IP: ::1
+DEBUG - 2025-08-26 11:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:10:42 --> User IP: ::1
+DEBUG - 2025-08-26 11:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:10:43 --> User IP: ::1
+DEBUG - 2025-08-26 11:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:12:05 --> User IP: ::1
+DEBUG - 2025-08-26 11:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:12:05 --> User IP: ::1
+DEBUG - 2025-08-26 11:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:12:44 --> User IP: ::1
+DEBUG - 2025-08-26 11:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:12:44 --> User IP: ::1
+DEBUG - 2025-08-26 11:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:12:52 --> User IP: ::1
+DEBUG - 2025-08-26 11:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:13:19 --> User IP: ::1
+DEBUG - 2025-08-26 11:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:13:27 --> User IP: ::1
+DEBUG - 2025-08-26 11:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:14:11 --> User IP: ::1
+ERROR - 2025-08-26 11:14:28 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in C:\xampp\htdocs\ems\system\Email\Email.php:1918
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'C:\\xampp\\htdocs...', 1918)
+#1 C:\xampp\htdocs\ems\system\Email\Email.php(1918): stream_socket_enable_crypto(Resource id #179, true, 121)
+#2 C:\xampp\htdocs\ems\system\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\ems\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\ems\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\ems\app\Controllers\Hrms.php(581): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\ems\app\Controllers\Hrms.php(507): App\Controllers\Hrms->connecthrmail('lajeni3349@amcr...', 'GigHz IT soluti...', '\n              ...')
+#7 C:\xampp\htdocs\ems\system\CodeIgniter.php(933): App\Controllers\Hrms->sendofferletter()
+#8 C:\xampp\htdocs\ems\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hrms))
+#9 C:\xampp\htdocs\ems\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ems\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ems\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\ems\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-08-26 11:14:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-08-26 11:14:28 --> 220 ESMTP smtp.hostinger.com
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 220 2.0.0 Ready to start TLS
+
+ERROR - 2025-08-26 11:14:28 --> Language.invalidMessageFormat: $message: "The following SMTP error was encountered: {0}", $args: "oÉ³jØµ®FGÓJùÆ5Óq}š€±ð@[à ~‹Ø9Å,óuÁÿþŒÂ!Ñæ^ë$öU=V†×uÔ?˜Ísñh‡v›Y[Ò.ÈÃ´¹¦‹3p^•–ªo†Äé‘qŒµM™…Òƒìæ„c'6Š—vÁÿ|Té~éö¼j“ñ^`ƒ½U6E‘ÄZ—®W%KB#°Ú=î›Ùù¨Pµ¯…ò“ãb×Ô"µ‰ÒfÝWM+`AÆóÊõK•LL{Ï'Ù*õAÕ³çº¨ë ÅF¨¼á@tUªå‰¯_Æêñ0Ì²lŒê”¡½6Ö¾–cŸm%;_ô˜Ä'1(óç·y†Ãk'¦F_.ç°+V¦PôÅ{ EÏóÎ§K:•ÛDL_b_jÁ[]çÈ¢Ç¶ íþ_©(Âe¾¯ž7$Ž…t /¤iž¹qt>èc_UÌ×ÿt}ÐÄð" (urlencoded: "%17%03%03%01%19o%C9%B3j%D8%B5%AEFG%D3J%F9%C65%D3q%90%7D%9A%80%B1%F0%40%5B%E0%20~%06%8B%D89%C5%2C%F3u%C1%0B%FF%FE%8C%C2%04%21%D1%E6%0D%1B%5E%EB%24%01%F6U%3DV%03%86%D7u%8D%D4%3F%04%98%7F%04%CD%1Fs%F1h%04%87v%9BY%5B%D2.%C8%C3%B4%B9%A6%8B3p%8D%03%5E%95%96%AAo%86%7F%0B%C4%13%E9%91q%8C%B5M%11%01%05%99%85%D2%83%EC%E6%84c%1A%276%8A%97v%C1%FF%7CT%E9~%03%E9%90%F6%BC%8Dj%0E%93%05%F1%5E%60%83%BDU6E%91%C4Z%07%97%1F%81%AEW%25K%16B%23%B0%DA%3D%EE%9B%D9%F9%A8P%B5%0C%AF%85%F2%93%E3b%15%D7%D4%22%B5%89%D2f%DDWM%2B%60A%C6%F3%CA%F5K%95%8FLL%7B%CF%27%D9%2A%F5A%D5%B3%E7%BA%A8%EB%00%C5F%A8%BC%E1%40tU%AA%E5%89%AF_%C6%EA%F10%03%CC%B2l%8C%EA%94%0C%A1%BD6%D6%BE%0C%96c%9Fm%25%3B_%F4%98%C4%271%28%F3%E7%B7y%86%C3k%27%A6F%0E_.%E7%B0%2BV%A6P%F4%C5%7B%0F%17%03%03%00E%1D%CF%F3%CE%A7K%3A%95%0F%DBDL_b%0E_j%C1%5B%9D%5D%E7%C8%A2%C7%B6%00%ED%FE_%A9%28%C2e%8D%0F%0B%BE%AF%81%9E%8D7%24%8E%85t%00%2F%A4i%05%9E%B9qt%3E%E8c_U%CC%D7%FFt%7D%D0%C4%F0"), MessageFormatter Error: "Invalid UTF-8 data in string argument: 'oÉ³jØµ®FGÓJùÆ5Óq}š€±ð@[à ~‹Ø9Å,óuÁÿþŒÂ!Ñæ^ë$öU=V†×uÔ?˜Ísñh‡v›Y[Ò.ÈÃ´¹¦‹3p^•–ªo†Äé‘qŒµM™…Òƒìæ„c'6Š—vÁÿ|Té~éö¼j“ñ^`ƒ½U6E‘ÄZ—®W%KB#°Ú=î›Ùù¨Pµ¯…ò“ãb×Ô"µ‰ÒfÝWM+`AÆóÊõK•LL{Ï'Ù*õAÕ³çº¨ë': U_INVALID_CHAR_FOUND" (10)
+DEBUG - 2025-08-26 11:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:14:39 --> User IP: ::1
+DEBUG - 2025-08-26 11:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:14:59 --> User IP: ::1
+DEBUG - 2025-08-26 11:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:15:00 --> User IP: ::1
+DEBUG - 2025-08-26 11:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:18:10 --> User IP: ::1
+DEBUG - 2025-08-26 11:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:18:18 --> User IP: ::1
+DEBUG - 2025-08-26 11:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:18:18 --> User IP: ::1
+DEBUG - 2025-08-26 11:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:24:14 --> User IP: ::1
+DEBUG - 2025-08-26 11:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:24:22 --> User IP: ::1
+DEBUG - 2025-08-26 11:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:24:27 --> User IP: ::1
+DEBUG - 2025-08-26 11:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:24:31 --> User IP: ::1
+DEBUG - 2025-08-26 11:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:24:44 --> User IP: ::1
+DEBUG - 2025-08-26 11:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:25:29 --> User IP: ::1
+DEBUG - 2025-08-26 11:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:25:29 --> User IP: ::1
+DEBUG - 2025-08-26 11:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:25:31 --> User IP: ::1
+DEBUG - 2025-08-26 11:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:25:38 --> User IP: ::1
+DEBUG - 2025-08-26 11:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:25:47 --> User IP: ::1
+DEBUG - 2025-08-26 11:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:25:49 --> User IP: ::1
+DEBUG - 2025-08-26 11:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:27:05 --> User IP: ::1
+DEBUG - 2025-08-26 11:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:27:09 --> User IP: ::1
+DEBUG - 2025-08-26 11:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:27:13 --> User IP: ::1
+DEBUG - 2025-08-26 11:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:27:16 --> User IP: ::1
+DEBUG - 2025-08-26 11:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:27:49 --> User IP: ::1
+DEBUG - 2025-08-26 11:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:27:50 --> User IP: ::1
+DEBUG - 2025-08-26 11:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:28:10 --> User IP: ::1
+DEBUG - 2025-08-26 11:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:28:10 --> User IP: ::1
+DEBUG - 2025-08-26 11:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:28:10 --> User IP: ::1
+DEBUG - 2025-08-26 11:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:33:36 --> User IP: ::1
+DEBUG - 2025-08-26 11:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:33:36 --> User IP: ::1
+DEBUG - 2025-08-26 11:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:33:36 --> User IP: ::1
+DEBUG - 2025-08-26 11:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:33:57 --> User IP: ::1
+DEBUG - 2025-08-26 11:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:33:57 --> User IP: ::1
+DEBUG - 2025-08-26 11:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:33:57 --> User IP: ::1
+DEBUG - 2025-08-26 11:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:34:05 --> User IP: ::1
+DEBUG - 2025-08-26 11:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:34:05 --> User IP: ::1
+DEBUG - 2025-08-26 11:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:34:05 --> User IP: ::1
+DEBUG - 2025-08-26 11:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:34:43 --> User IP: ::1
+DEBUG - 2025-08-26 11:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:34:45 --> User IP: ::1
+DEBUG - 2025-08-26 11:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:34:47 --> User IP: ::1
+DEBUG - 2025-08-26 11:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:34:47 --> User IP: ::1
+DEBUG - 2025-08-26 11:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:34:47 --> User IP: ::1
+DEBUG - 2025-08-26 11:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:46:29 --> User IP: ::1
+DEBUG - 2025-08-26 11:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:46:33 --> User IP: ::1
+DEBUG - 2025-08-26 11:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:46:39 --> User IP: ::1
+DEBUG - 2025-08-26 11:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:46:39 --> User IP: ::1
+DEBUG - 2025-08-26 11:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:46:39 --> User IP: ::1
+DEBUG - 2025-08-26 11:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:47:21 --> User IP: ::1
+DEBUG - 2025-08-26 11:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:47:21 --> User IP: ::1
+DEBUG - 2025-08-26 11:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:47:23 --> User IP: ::1
+DEBUG - 2025-08-26 11:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:47:31 --> User IP: ::1
+DEBUG - 2025-08-26 11:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:47:58 --> User IP: ::1
+DEBUG - 2025-08-26 11:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:48:15 --> User IP: ::1
+DEBUG - 2025-08-26 11:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:48:19 --> User IP: ::1
+DEBUG - 2025-08-26 11:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:48:53 --> User IP: ::1
+DEBUG - 2025-08-26 11:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:48:56 --> User IP: ::1
+DEBUG - 2025-08-26 11:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:48:58 --> User IP: ::1
+DEBUG - 2025-08-26 11:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:52:53 --> User IP: ::1
+DEBUG - 2025-08-26 11:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:52:53 --> User IP: ::1
+DEBUG - 2025-08-26 11:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:52:53 --> User IP: ::1
+DEBUG - 2025-08-26 11:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:52:58 --> User IP: ::1
+DEBUG - 2025-08-26 11:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:52:58 --> User IP: ::1
+DEBUG - 2025-08-26 11:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:52:58 --> User IP: ::1
+DEBUG - 2025-08-26 11:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:53:21 --> User IP: ::1
+DEBUG - 2025-08-26 11:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:53:21 --> User IP: ::1
+DEBUG - 2025-08-26 11:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:53:22 --> User IP: ::1
+DEBUG - 2025-08-26 11:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:53:44 --> User IP: ::1
+DEBUG - 2025-08-26 11:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:53:45 --> User IP: ::1
+DEBUG - 2025-08-26 11:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:53:45 --> User IP: ::1
+DEBUG - 2025-08-26 11:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:53:59 --> User IP: ::1
+DEBUG - 2025-08-26 11:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:53:59 --> User IP: ::1
+DEBUG - 2025-08-26 11:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:53:59 --> User IP: ::1
+DEBUG - 2025-08-26 11:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:57:12 --> User IP: ::1
+DEBUG - 2025-08-26 11:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:57:12 --> User IP: ::1
+DEBUG - 2025-08-26 11:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:57:12 --> User IP: ::1
+DEBUG - 2025-08-26 11:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:57:16 --> User IP: ::1
+WARNING - 2025-08-26 11:57:17 --> [DEPRECATED] json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in APPPATH\Controllers\Hrms.php on line 1019.
+ 1 APPPATH\Controllers\Hrms.php(1019): json_decode(null, true)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Hrms->getEmployeeDocs('GZ58')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hrms))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-08-26 11:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:58:10 --> User IP: ::1
+DEBUG - 2025-08-26 11:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:59:27 --> User IP: ::1
+DEBUG - 2025-08-26 11:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:59:27 --> User IP: ::1
+DEBUG - 2025-08-26 11:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:59:32 --> User IP: ::1
+DEBUG - 2025-08-26 11:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 11:59:40 --> User IP: ::1
+DEBUG - 2025-08-26 12:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:01:46 --> User IP: ::1
+DEBUG - 2025-08-26 12:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:05:17 --> User IP: ::1
+DEBUG - 2025-08-26 12:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:05:19 --> User IP: ::1
+DEBUG - 2025-08-26 12:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:13:03 --> User IP: ::1
+DEBUG - 2025-08-26 12:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:14:02 --> User IP: ::1
+DEBUG - 2025-08-26 12:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:14:02 --> User IP: ::1
+DEBUG - 2025-08-26 12:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:15:24 --> User IP: ::1
+DEBUG - 2025-08-26 12:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:15:24 --> User IP: ::1
+DEBUG - 2025-08-26 12:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:15:46 --> User IP: ::1
+DEBUG - 2025-08-26 12:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:15:47 --> User IP: ::1
+DEBUG - 2025-08-26 12:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:15:51 --> User IP: ::1
+DEBUG - 2025-08-26 12:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:15:52 --> User IP: ::1
+DEBUG - 2025-08-26 12:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:15:52 --> User IP: ::1
+DEBUG - 2025-08-26 12:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:17:55 --> User IP: ::1
+DEBUG - 2025-08-26 12:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:18:06 --> User IP: ::1
+DEBUG - 2025-08-26 12:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:18:06 --> User IP: ::1
+DEBUG - 2025-08-26 12:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:18:11 --> User IP: ::1
+DEBUG - 2025-08-26 12:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:19:17 --> User IP: ::1
+DEBUG - 2025-08-26 12:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:19:19 --> User IP: ::1
+DEBUG - 2025-08-26 12:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:19:20 --> User IP: ::1
+DEBUG - 2025-08-26 12:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:19:33 --> User IP: ::1
+DEBUG - 2025-08-26 12:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:19:33 --> User IP: ::1
+DEBUG - 2025-08-26 12:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:20:24 --> User IP: ::1
+DEBUG - 2025-08-26 12:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:22:16 --> User IP: ::1
+DEBUG - 2025-08-26 12:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:22:19 --> User IP: ::1
+DEBUG - 2025-08-26 12:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:22:19 --> User IP: ::1
+DEBUG - 2025-08-26 12:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:22:36 --> User IP: ::1
+DEBUG - 2025-08-26 12:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:22:54 --> User IP: ::1
+DEBUG - 2025-08-26 12:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:23:00 --> User IP: ::1
+DEBUG - 2025-08-26 12:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:23:01 --> User IP: ::1
+DEBUG - 2025-08-26 12:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:23:11 --> User IP: ::1
+DEBUG - 2025-08-26 12:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-26 12:23:11 --> User IP: ::1

@@ -1,0 +1,118 @@
+:root {
+    --brand-color--: #da2442;
+    --composit-color--: #2ddbbd;
+    --white-color--: #fff;
+    --toggle-color: #fff;
+    --font-color: #fff;
+    --bg-color-: #FBE9EC;
+    --h1--: 43px;
+    --h2--: 34px;
+    --h3--: 28px;
+    --h4--: 23px;
+    --para--: 18px;
+    --border-radius--: 20px;
+    --brand-shadow--: 0 0 20px #da2442ab,
+        0 0 30px #da2442ab,
+        0 0 40px #da2442ab,
+        0 0 50px #da2442ab,
+        0 0 70px #da2442ab,
+        0 0 100px #da2442ab,
+        0 0 150px #da2442ab;
+    --brand-shadow--: 0 0 20px #24dbbdab,
+        0 0 30px #24dbbdab,
+        0 0 40px #24dbbdab,
+        0 0 50px #24dbbdab,
+        0 0 70px #24dbbdab,
+        0 0 100px #24dbbdab,
+        0 0 150px #24dbbdab;
+
+    --tran-03: all 0.2s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.4s ease;
+    --tran-06: all 0.5s ease;
+}
+
+.applyleave{
+    margin-top: 30px;
+}
+
+.applyleave .form-box{
+    margin-top: 50px;
+    height: 70vh;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0 0 10px gray;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+.applyleave form{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.applyleave .input-box{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.applyleave .input-box input,.applyleave .input-box select,.applyleave .input-box textarea{
+    width: 70%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.applyleave .textarea{
+    height: 200px;
+}
+.applyleave .input-box textarea{
+    height: 100%;
+    width: 400px;
+    padding-top: 4px;
+}
+.applyleave .form-box button{
+    height: 40px;
+    width: 130px;
+    background: var(--brand-color--);
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+.error-text{
+    color: red;
+}
+.toggleBtn{
+    display:flex;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    gap: 20px;
+}
+.toggleBtn button{
+    height: 100%;
+    width: 140px;
+    background: var(--brand-color--);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--white-color--);
+    font-size: 16px;
+    transition: all .5s ease;
+}
+/* .toggleBtn button:hover{
+    background: transparent;
+    border: 2px solid var(--brand-color--);
+    color: var(--brand-color--);
+} */

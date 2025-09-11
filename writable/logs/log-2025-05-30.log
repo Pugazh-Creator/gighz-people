@@ -1,0 +1,693 @@
+DEBUG - 2025-05-30 05:07:35 --> User IP: ::1
+DEBUG - 2025-05-30 05:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 05:07:46 --> User IP: ::1
+DEBUG - 2025-05-30 05:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 05:07:47 --> User IP: ::1
+DEBUG - 2025-05-30 05:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 05:08:32 --> User IP: ::1
+DEBUG - 2025-05-30 05:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 05:08:34 --> User IP: ::1
+DEBUG - 2025-05-30 05:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 05:49:34 --> User IP: ::1
+DEBUG - 2025-05-30 05:49:34 --> User ID: 23, Date: 2025-05-27
+DEBUG - 2025-05-30 05:55:55 --> User IP: ::1
+ERROR - 2025-05-30 05:55:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gighz`.`employees`, CONSTRAINT `emp_id` FOREIGN KEY (`emp_id`) REFERENCES `user` (`emp_id`)) in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gighz\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(793): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->saveemployee()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-05-30 05:55:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gighz`.`employees`, CONSTRAINT `emp_id` FOREIGN KEY (`emp_id`) REFERENCES `user` (`emp_id`))
+[Method: GET, Route: biometriccontroller/saveemployee]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employees` (`no`, `role`, `emp_id`, `name`, `dob`, `doj`, `gender`, `age`, `official_mail`, `personal_mail`, `marriage`, `blood_group`, `phone_no`, `alternate_no`, `designation`, `dept`, `grade`, `source_hire`, `exprience`, `residential_address`, `permanent_address`, `city`, `pincode`, `aadhaar`, `pan`, `course_name`, `institute`, `course_completed_date`, `course_grade`, `guradian_name`, `emergency_contact`, `alter_contact`, `image`, `created_at`, `emp_status`, `additional_dept`) VALUES (:no:, :role:, :emp_id:, :name:, :dob:, :doj:, :gender:, :age:, :official_mail:, :personal_mail:, :marriage:, :blood_group:, :phone_no:, :alternate_no:, :designation:, :dept:, :grade:, :source_hire:, :exprience:, :residential_address:, :permanent_address:, :city:, :pincode:, :aadhaar:, :pan:, :course_name:, :institute:, :course_completed_date:, :course_grade:, :guradian_name:, :emergency_contact:, :alter_contact:, :image:, :created_at:, :emp_status:, :additional_dept:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BiometricController.php(793): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->saveemployee()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-05-30 05:55:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gighz`.`employees`, CONSTRAINT `emp_id` FOREIGN KEY (`emp_id`) REFERENCES `user` (`emp_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `employees` (`no`, `role`, `emp_id`, `name`, `dob`, `doj`, `gender`, `age`, `official_mail`, `personal_mail`, `marriage`, `blood_group`, `phone_no`, `alternate_no`, `designation`, `dept`, `grade`, `source_hire`, `exprience`, `residential_address`, `permanent_address`, `city`, `pincode`, `aadhaar`, `pan`, `course_name`, `institute`, `course_completed_date`, `course_grade`, `guradian_name`, `emergency_contact`, `alter_contact`, `image`, `created_at`, `emp_status`, `additional_dept`) VALUES (40, \'3\', \'GZ48\', \'Narpugazh Gnanam P\', \'2005-01-31\', \'2025-04-28\', \'Male\', 20, \'\', \'pugazhstanly@gmail.com\', \'UnMarried\', \'B+\', \'8610487221\', \'9976974184\', \'19\', \'4\', \'E0\', \'On Campus Drive\', 0, \'Madhaepalli, Bargur, Krishnagiri.\', \'4/277 ,Madha Kovil Street,Kallakurichi.\', \'Kallakurichi\', \'605702\', \'4717 9421 4090\', \'HORPP9847A\', \'B.sc Computer Science\', \'Sacred Heart College\', \'2025-04\', \'80.57%\', \'Paramandam G\', \'9976974184\', \'8610487221\', \'ph.jpg\', \'2025-05-29 11:13:03\', 1, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `employees` (`no`, `role`, `emp_id`, `name`, `dob`, `doj`, `gender`, `age`, `official_mail`, `personal_mail`, `marriage`, `blood_group`, `phone_no`, `alternate_no`, `designation`, `dept`, `grade`, `source_hire`, `exprience`, `residential_address`, `permanent_address`, `city`, `pincode`, `aadhaar`, `pan`, `course_name`, `institute`, `course_completed_date`, `course_grade`, `guradian_name`, `emergency_contact`, `alter_contact`, `image`, `created_at`, `emp_status`, `additional_dept`) VALUES (40, \'3\', \'GZ48\', \'Narpugazh Gnanam P\', \'2005-01-31\', \'2025-04-28\', \'Male\', 20, \'\', \'pugazhstanly@gmail.com\', \'UnMarried\', \'B+\', \'8610487221\', \'9976974184\', \'19\', \'4\', \'E0\', \'On Campus Drive\', 0, \'Madhaepalli, Bargur, Krishnagiri.\', \'4/277 ,Madha Kovil Street,Kallakurichi.\', \'Kallakurichi\', \'605702\', \'4717 9421 4090\', \'HORPP9847A\', \'B.sc Computer Science\', \'Sacred Heart College\', \'2025-04\', \'80.57%\', \'Paramandam G\', \'9976974184\', \'8610487221\', \'ph.jpg\', \'2025-05-29 11:13:03\', 1, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employees` (`no`, `role`, `emp_id`, `name`, `dob`, `doj`, `gender`, `age`, `official_mail`, `personal_mail`, `marriage`, `blood_group`, `phone_no`, `alternate_no`, `designation`, `dept`, `grade`, `source_hire`, `exprience`, `residential_address`, `permanent_address`, `city`, `pincode`, `aadhaar`, `pan`, `course_name`, `institute`, `course_completed_date`, `course_grade`, `guradian_name`, `emergency_contact`, `alter_contact`, `image`, `created_at`, `emp_status`, `additional_dept`) VALUES (:no:, :role:, :emp_id:, :name:, :dob:, :doj:, :gender:, :age:, :official_mail:, :personal_mail:, :marriage:, :blood_group:, :phone_no:, :alternate_no:, :designation:, :dept:, :grade:, :source_hire:, :exprience:, :residential_address:, :permanent_address:, :city:, :pincode:, :aadhaar:, :pan:, :course_name:, :institute:, :course_completed_date:, :course_grade:, :guradian_name:, :emergency_contact:, :alter_contact:, :image:, :created_at:, :emp_status:, :additional_dept:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BiometricController.php(793): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->saveemployee()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-05-30 05:55:55 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gighz`.`employees`, CONSTRAINT `emp_id` FOREIGN KEY (`emp_id`) REFERENCES `user` (`emp_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `employees` (`no`, `role`, `emp_id`, `name`, `dob`, `doj`, `gender`, `age`, `official_mail`, `personal_mail`, `marriage`, `blood_group`, `phone_no`, `alternate_no`, `designation`, `dept`, `grade`, `source_hire`, `exprience`, `residential_address`, `permanent_address`, `city`, `pincode`, `aadhaar`, `pan`, `course_name`, `institute`, `course_completed_date`, `course_grade`, `guradian_name`, `emergency_contact`, `alter_contact`, `image`, `created_at`, `emp_status`, `additional_dept`) VALUES (40, \'3\', \'GZ48\', \'Narpugazh Gnanam P\', \'2005-01-31\', \'2025-04-28\', \'Male\', 20, \'\', \'pugazhstanly@gmail.com\', \'UnMarried\', \'B+\', \'8610487221\', \'9976974184\', \'19\', \'4\', \'E0\', \'On Campus Drive\', 0, \'Madhaepalli, Bargur, Krishnagiri.\', \'4/277 ,Madha Kovil Street,Kallakurichi.\', \'Kallakurichi\', \'605702\', \'4717 9421 4090\', \'HORPP9847A\', \'B.sc Computer Science\', \'Sacred Heart College\', \'2025-04\', \'80.57%\', \'Paramandam G\', \'9976974184\', \'8610487221\', \'ph.jpg\', \'2025-05-29 11:13:03\', 1, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `employees` (`no`, `role`, `emp_id`, `name`, `dob`, `doj`, `gender`, `age`, `official_mail`, `personal_mail`, `marriage`, `blood_group`, `phone_no`, `alternate_no`, `designation`, `dept`, `grade`, `source_hire`, `exprience`, `residential_address`, `permanent_address`, `city`, `pincode`, `aadhaar`, `pan`, `course_name`, `institute`, `course_completed_date`, `course_grade`, `guradian_name`, `emergency_contact`, `alter_contact`, `image`, `created_at`, `emp_status`, `additional_dept`) VALUES (40, \'3\', \'GZ48\', \'Narpugazh Gnanam P\', \'2005-01-31\', \'2025-04-28\', \'Male\', 20, \'\', \'pugazhstanly@gmail.com\', \'UnMarried\', \'B+\', \'8610487221\', \'9976974184\', \'19\', \'4\', \'E0\', \'On Campus Drive\', 0, \'Madhaepalli, Bargur, Krishnagiri.\', \'4/277 ,Madha Kovil Street,Kallakurichi.\', \'Kallakurichi\', \'605702\', \'4717 9421 4090\', \'HORPP9847A\', \'B.sc Computer Science\', \'Sacred Heart College\', \'2025-04\', \'80.57%\', \'Paramandam G\', \'9976974184\', \'8610487221\', \'ph.jpg\', \'2025-05-29 11:13:03\', 1, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `employees` (`no`, `role`, `emp_id`, `name`, `dob`, `doj`, `gender`, `age`, `official_mail`, `personal_mail`, `marriage`, `blood_group`, `phone_no`, `alternate_no`, `designation`, `dept`, `grade`, `source_hire`, `exprience`, `residential_address`, `permanent_address`, `city`, `pincode`, `aadhaar`, `pan`, `course_name`, `institute`, `course_completed_date`, `course_grade`, `guradian_name`, `emergency_contact`, `alter_contact`, `image`, `created_at`, `emp_status`, `additional_dept`) VALUES (40, \'3\', \'GZ48\', \'Narpugazh Gnanam P\', \'2005-01-31\', \'2025-04-28\', \'Male\', 20, \'\', \'pugazhstanly@gmail.com\', \'UnMarried\', \'B+\', \'8610487221\', \'9976974184\', \'19\', \'4\', \'E0\', \'On Campus Drive\', 0, \'Madhaepalli, Bargur, Krishnagiri.\', \'4/277 ,Madha Kovil Street,Kallakurichi.\', \'Kallakurichi\', \'605702\', \'4717 9421 4090\', \'HORPP9847A\', \'B.sc Computer Science\', \'Sacred Heart College\', \'2025-04\', \'80.57%\', \'Paramandam G\', \'9976974184\', \'8610487221\', \'ph.jpg\', \'2025-05-29 11:13:03\', 1, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employees` (`no`, `role`, `emp_id`, `name`, `dob`, `doj`, `gender`, `age`, `official_mail`, `personal_mail`, `marriage`, `blood_group`, `phone_no`, `alternate_no`, `designation`, `dept`, `grade`, `source_hire`, `exprience`, `residential_address`, `permanent_address`, `city`, `pincode`, `aadhaar`, `pan`, `course_name`, `institute`, `course_completed_date`, `course_grade`, `guradian_name`, `emergency_contact`, `alter_contact`, `image`, `created_at`, `emp_status`, `additional_dept`) VALUES (:no:, :role:, :emp_id:, :name:, :dob:, :doj:, :gender:, :age:, :official_mail:, :personal_mail:, :marriage:, :blood_group:, :phone_no:, :alternate_no:, :designation:, :dept:, :grade:, :source_hire:, :exprience:, :residential_address:, :permanent_address:, :city:, :pincode:, :aadhaar:, :pan:, :course_name:, :institute:, :course_completed_date:, :course_grade:, :guradian_name:, :emergency_contact:, :alter_contact:, :image:, :created_at:, :emp_status:, :additional_dept:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BiometricController.php(793): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->saveemployee()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-05-30 06:05:19 --> User IP: ::1
+DEBUG - 2025-05-30 06:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 06:05:21 --> User IP: ::1
+DEBUG - 2025-05-30 06:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 06:05:27 --> User IP: ::1
+DEBUG - 2025-05-30 06:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 06:06:24 --> User IP: ::1
+DEBUG - 2025-05-30 06:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 06:06:29 --> User IP: ::1
+DEBUG - 2025-05-30 06:06:29 --> User ID: 50, Date: 2025-05-29
+DEBUG - 2025-05-30 06:06:46 --> User IP: ::1
+DEBUG - 2025-05-30 06:06:46 --> User ID: 50, Date: 2025-05-29
+DEBUG - 2025-05-30 06:07:55 --> User IP: ::1
+DEBUG - 2025-05-30 06:07:55 --> User ID: 48, Date: 2025-05-25
+DEBUG - 2025-05-30 06:10:07 --> User IP: ::1
+DEBUG - 2025-05-30 06:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 06:10:21 --> User IP: ::1
+DEBUG - 2025-05-30 06:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 06:10:24 --> User IP: ::1
+DEBUG - 2025-05-30 06:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 06:10:26 --> User IP: ::1
+DEBUG - 2025-05-30 06:10:26 --> User ID: 27, Date: 2025-05-29
+DEBUG - 2025-05-30 06:10:40 --> User IP: ::1
+DEBUG - 2025-05-30 06:10:40 --> User ID: 27, Date: 2025-05-30
+DEBUG - 2025-05-30 06:10:54 --> User IP: ::1
+DEBUG - 2025-05-30 06:10:54 --> User IP: ::1
+DEBUG - 2025-05-30 06:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 06:12:16 --> User IP: ::1
+INFO - 2025-05-30 06:12:46 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-30 06:12:46 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - Error (Present)
+INFO - 2025-05-30 06:12:46 --> ✅ Processed: Srimugan N (27) - 2025-05-28 - 08:39 (Present)
+INFO - 2025-05-30 06:12:46 --> ✅ Processed: Srimugan N (27) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 06:12:46 --> ✅ Processed: Vanitha (4) - 2025-05-26 - 08:30 (Present)
+INFO - 2025-05-30 06:12:46 --> ✅ Processed: Vanitha (4) - 2025-05-27 - Error (Present)
+INFO - 2025-05-30 06:12:46 --> ✅ Processed: Vanitha (4) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 06:12:46 --> ✅ Processed: Vanitha (4) - 2025-05-29 - 08:54 (Present)
+INFO - 2025-05-30 06:12:46 --> ✅ Processed: Karthikeyan (13) - 2025-05-26 - 07:41 (Present)
+INFO - 2025-05-30 06:12:46 --> ✅ Processed: Karthikeyan (13) - 2025-05-27 - 07:40 (Present)
+INFO - 2025-05-30 06:12:46 --> ✅ Processed: Karthikeyan (13) - 2025-05-28 - 08:18 (Present)
+INFO - 2025-05-30 06:12:46 --> ✅ Processed: Karthikeyan (13) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 06:12:46 --> ✅ Processed: Muniyappan (16) - 2025-05-26 - Error (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Muniyappan (16) - 2025-05-27 - 08:05 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Muniyappan (16) - 2025-05-28 - 07:52 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Muniyappan (16) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Gokul (17) - 2025-05-26 - Error (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Gokul (17) - 2025-05-27 - 08:23 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Gokul (17) - 2025-05-28 - 08:14 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Gokul (17) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Manisha V (1) - 2025-05-26 - 08:22 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Manisha V (1) - 2025-05-27 - 08:00 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Manisha V (1) - 2025-05-28 - 08:19 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Manisha V (1) - 2025-05-29 - 08:30 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Gnanamugilan (9) - 2025-05-26 - 08:09 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Gnanamugilan (9) - 2025-05-27 - 07:52 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Gnanamugilan (9) - 2025-05-28 - 08:14 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Gnanamugilan (9) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Arun (5) - 2025-05-26 - 07:56 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Arun (5) - 2025-05-27 - 07:58 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Arun (5) - 2025-05-28 - 07:54 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Arun (5) - 2025-05-29 - 08:41 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Magendiran (23) - 2025-05-26 - 08:21 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Magendiran (23) - 2025-05-27 - 08:14 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Magendiran (23) - 2025-05-28 - 08:12 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Magendiran (23) - 2025-05-29 - 08:36 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Kokila (45) - 2025-05-26 - 08:38 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Kokila (45) - 2025-05-27 - 08:41 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Kokila (45) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Kokila (45) - 2025-05-29 - 09:11 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Pugazh (48) - 2025-05-26 - 07:56 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Pugazh (48) - 2025-05-27 - 07:48 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Pugazh (48) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Pugazh (48) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Akshay (49) - 2025-05-26 - 08:20 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Akshay (49) - 2025-05-27 - 07:52 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Akshay (49) - 2025-05-28 - 07:53 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Akshay (49) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Bhagath (50) - 2025-05-26 - 08:21 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Bhagath (50) - 2025-05-27 - 07:54 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Bhagath (50) - 2025-05-28 - 07:53 (Present)
+INFO - 2025-05-30 06:12:47 --> ✅ Processed: Bhagath (50) - 2025-05-29 - 06:56 (Permission)
+DEBUG - 2025-05-30 06:12:47 --> User IP: ::1
+DEBUG - 2025-05-30 06:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 06:12:51 --> User IP: ::1
+DEBUG - 2025-05-30 06:12:51 --> User ID: 27, Date: 2025-05-29
+DEBUG - 2025-05-30 06:13:02 --> User IP: ::1
+DEBUG - 2025-05-30 06:13:02 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-30 06:15:17 --> User IP: ::1
+DEBUG - 2025-05-30 06:15:17 --> User ID: 27, Date: 2025-05-29
+DEBUG - 2025-05-30 06:31:55 --> User IP: ::1
+DEBUG - 2025-05-30 06:31:55 --> User ID: 27, Date: 2025-05-28
+DEBUG - 2025-05-30 06:51:09 --> User IP: ::1
+DEBUG - 2025-05-30 06:51:09 --> User ID: 9, Date: 2025-05-26
+DEBUG - 2025-05-30 07:44:47 --> User IP: ::1
+DEBUG - 2025-05-30 07:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 07:44:50 --> User IP: ::1
+DEBUG - 2025-05-30 07:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 07:45:17 --> User IP: ::1
+DEBUG - 2025-05-30 07:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 07:45:19 --> User IP: ::1
+DEBUG - 2025-05-30 07:45:19 --> User ID: 1, Date: 2025-05-27
+DEBUG - 2025-05-30 07:50:04 --> User IP: ::1
+DEBUG - 2025-05-30 07:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:08:15 --> User IP: ::1
+DEBUG - 2025-05-30 08:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:08:56 --> User IP: ::1
+DEBUG - 2025-05-30 08:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:09:54 --> User IP: ::1
+DEBUG - 2025-05-30 08:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:09:59 --> User IP: ::1
+DEBUG - 2025-05-30 08:09:59 --> User ID: 48, Date: 2025-05-28
+DEBUG - 2025-05-30 08:11:44 --> User IP: ::1
+CRITICAL - 2025-05-30 08:11:44 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: attendance]
+in APPPATH\Views\Attendance\attendanceLogs.php on line 99.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/attendanceLogs', [], true)
+ 3 APPPATH\Controllers\BiometricController.php(71): view('Attendance/attendanceLogs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-05-30 08:11:52 --> User IP: ::1
+CRITICAL - 2025-05-30 08:11:52 --> ParseError: syntax error, unexpected token ";", expecting ")"
+[Method: GET, Route: attendance]
+in APPPATH\Views\Attendance\attendanceLogs.php on line 99.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/attendanceLogs', [], true)
+ 3 APPPATH\Controllers\BiometricController.php(71): view('Attendance/attendanceLogs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-05-30 08:11:59 --> User IP: ::1
+DEBUG - 2025-05-30 08:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:13:21 --> User IP: ::1
+DEBUG - 2025-05-30 08:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:13:58 --> User IP: ::1
+DEBUG - 2025-05-30 08:13:58 --> User ID: 48, Date: 2025-05-28
+DEBUG - 2025-05-30 08:14:10 --> User IP: ::1
+DEBUG - 2025-05-30 08:14:10 --> User ID: 48, Date: 2025-05-29
+DEBUG - 2025-05-30 08:14:58 --> User IP: ::1
+DEBUG - 2025-05-30 08:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:15:00 --> User IP: ::1
+DEBUG - 2025-05-30 08:15:00 --> User ID: 9, Date: 2025-05-29
+DEBUG - 2025-05-30 08:21:24 --> User IP: ::1
+DEBUG - 2025-05-30 08:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:21:26 --> User IP: ::1
+DEBUG - 2025-05-30 08:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:21:33 --> User IP: ::1
+DEBUG - 2025-05-30 08:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:22:22 --> User IP: ::1
+CRITICAL - 2025-05-30 08:22:22 --> ErrorException: Undefined variable $query
+[Method: GET, Route: attendance]
+in APPPATH\Models\AttendanceModel.php on line 150.
+ 1 APPPATH\Models\AttendanceModel.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'C:\\xampp\\htdocs\\gighz\\app\\Models\\AttendanceModel.php', 150)
+ 2 APPPATH\Controllers\BiometricController.php(65): App\Models\AttendanceModel->getMonthlyAttendance(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-05-30 08:22:35 --> User IP: ::1
+DEBUG - 2025-05-30 08:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:24:26 --> User IP: ::1
+DEBUG - 2025-05-30 08:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:24:47 --> User IP: ::1
+CRITICAL - 2025-05-30 08:24:47 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: attendance]
+in APPPATH\Views\Attendance\attendanceLogs.php on line 75.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/attendanceLogs', [], true)
+ 3 APPPATH\Controllers\BiometricController.php(71): view('Attendance/attendanceLogs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-05-30 08:24:55 --> User IP: ::1
+DEBUG - 2025-05-30 08:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:25:37 --> User IP: ::1
+DEBUG - 2025-05-30 08:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 08:25:37 --> ErrorException: Array to string conversion
+[Method: GET, Route: attendance]
+in APPPATH\Views\Attendance\attendanceLogs.php on line 69.
+ 1 APPPATH\Views\Attendance\attendanceLogs.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\attendanceLogs.php', 69)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\attendanceLogs.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/attendanceLogs', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(71): view('Attendance/attendanceLogs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-05-30 08:26:08 --> User IP: ::1
+DEBUG - 2025-05-30 08:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 08:26:08 --> ErrorException: Array to string conversion
+[Method: GET, Route: attendance]
+in APPPATH\Views\Attendance\attendanceLogs.php on line 70.
+ 1 APPPATH\Views\Attendance\attendanceLogs.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\attendanceLogs.php', 70)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\attendanceLogs.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/attendanceLogs', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(71): view('Attendance/attendanceLogs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-05-30 08:27:56 --> User IP: ::1
+DEBUG - 2025-05-30 09:27:16 --> User IP: ::1
+DEBUG - 2025-05-30 09:27:48 --> User IP: ::1
+DEBUG - 2025-05-30 09:27:52 --> User IP: ::1
+DEBUG - 2025-05-30 09:28:08 --> User IP: ::1
+DEBUG - 2025-05-30 09:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:28:23 --> User IP: ::1
+DEBUG - 2025-05-30 09:28:23 --> User ID: 8, Date: 2025-05-28
+DEBUG - 2025-05-30 09:28:40 --> User IP: ::1
+DEBUG - 2025-05-30 09:28:40 --> User ID: 8, Date: 2025-05-28
+DEBUG - 2025-05-30 09:28:47 --> User IP: ::1
+DEBUG - 2025-05-30 09:28:53 --> User IP: ::1
+DEBUG - 2025-05-30 09:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:28:55 --> User IP: ::1
+DEBUG - 2025-05-30 09:28:55 --> User ID: 8, Date: 2025-05-28
+DEBUG - 2025-05-30 09:29:06 --> User IP: ::1
+DEBUG - 2025-05-30 09:29:08 --> User IP: ::1
+DEBUG - 2025-05-30 09:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:29:10 --> User IP: ::1
+DEBUG - 2025-05-30 09:29:10 --> User ID: 8, Date: 2025-05-28
+DEBUG - 2025-05-30 09:29:12 --> User IP: ::1
+DEBUG - 2025-05-30 09:29:12 --> User ID: 8, Date: 2025-05-28
+DEBUG - 2025-05-30 09:29:14 --> User IP: ::1
+DEBUG - 2025-05-30 09:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:29:16 --> User IP: ::1
+DEBUG - 2025-05-30 09:29:16 --> User ID: 8, Date: 2025-05-28
+DEBUG - 2025-05-30 09:29:20 --> User IP: ::1
+DEBUG - 2025-05-30 09:29:21 --> User IP: ::1
+DEBUG - 2025-05-30 09:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:29:28 --> User IP: ::1
+DEBUG - 2025-05-30 09:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:29:31 --> User IP: ::1
+DEBUG - 2025-05-30 09:29:31 --> User ID: 8, Date: 2025-05-28
+DEBUG - 2025-05-30 09:29:34 --> User IP: ::1
+DEBUG - 2025-05-30 09:29:39 --> User IP: ::1
+DEBUG - 2025-05-30 09:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:31:12 --> User IP: ::1
+DEBUG - 2025-05-30 09:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:31:16 --> User IP: ::1
+DEBUG - 2025-05-30 09:31:16 --> User ID: 8, Date: 2025-05-28
+DEBUG - 2025-05-30 09:31:20 --> User IP: ::1
+DEBUG - 2025-05-30 09:31:20 --> User ID: 8, Date: 2025-05-29
+DEBUG - 2025-05-30 09:34:35 --> User IP: ::1
+DEBUG - 2025-05-30 09:34:36 --> User IP: ::1
+DEBUG - 2025-05-30 09:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:34:46 --> User IP: ::1
+DEBUG - 2025-05-30 09:34:46 --> User ID: 8, Date: 2025-05-27
+DEBUG - 2025-05-30 09:37:02 --> User IP: ::1
+DEBUG - 2025-05-30 09:37:02 --> User ID: 8, Date: 2025-05-28
+DEBUG - 2025-05-30 09:37:07 --> User IP: ::1
+DEBUG - 2025-05-30 09:37:07 --> User ID: 8, Date: 2025-05-29
+DEBUG - 2025-05-30 09:37:21 --> User IP: ::1
+DEBUG - 2025-05-30 09:37:21 --> User IP: ::1
+DEBUG - 2025-05-30 09:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:42:48 --> User IP: ::1
+DEBUG - 2025-05-30 09:42:48 --> User ID: 45, Date: 2025-05-29
+DEBUG - 2025-05-30 09:43:16 --> User IP: ::1
+DEBUG - 2025-05-30 09:43:16 --> User ID: 23, Date: 2025-05-29
+DEBUG - 2025-05-30 09:43:19 --> User IP: ::1
+DEBUG - 2025-05-30 09:43:19 --> User ID: 45, Date: 2025-05-29
+DEBUG - 2025-05-30 09:43:22 --> User IP: ::1
+DEBUG - 2025-05-30 09:43:22 --> User ID: 5, Date: 2025-05-29
+DEBUG - 2025-05-30 09:43:24 --> User IP: ::1
+DEBUG - 2025-05-30 09:43:24 --> User ID: 23, Date: 2025-05-29
+DEBUG - 2025-05-30 09:43:28 --> User IP: ::1
+DEBUG - 2025-05-30 09:43:28 --> User ID: 45, Date: 2025-05-29
+DEBUG - 2025-05-30 09:43:32 --> User IP: ::1
+DEBUG - 2025-05-30 09:43:32 --> User ID: 45, Date: 2025-05-29
+DEBUG - 2025-05-30 09:44:11 --> User IP: ::1
+DEBUG - 2025-05-30 09:44:11 --> User ID: 8, Date: 2025-05-25
+DEBUG - 2025-05-30 09:44:16 --> User IP: ::1
+DEBUG - 2025-05-30 09:44:16 --> User ID: 3, Date: 2025-05-25
+DEBUG - 2025-05-30 09:44:19 --> User IP: ::1
+DEBUG - 2025-05-30 09:44:19 --> User ID: 8, Date: 2025-05-25
+DEBUG - 2025-05-30 09:44:27 --> User IP: ::1
+DEBUG - 2025-05-30 09:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:44:55 --> User IP: ::1
+DEBUG - 2025-05-30 09:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:45:10 --> User IP: ::1
+DEBUG - 2025-05-30 09:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:45:22 --> User IP: ::1
+DEBUG - 2025-05-30 09:45:22 --> User ID: 8, Date: 2025-05-27
+DEBUG - 2025-05-30 09:45:26 --> User IP: ::1
+DEBUG - 2025-05-30 09:45:26 --> User ID: 8, Date: 2025-05-27
+DEBUG - 2025-05-30 09:45:28 --> User IP: ::1
+DEBUG - 2025-05-30 09:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:45:32 --> User IP: ::1
+DEBUG - 2025-05-30 09:45:32 --> User ID: 8, Date: 2025-05-25
+DEBUG - 2025-05-30 09:45:49 --> User IP: ::1
+DEBUG - 2025-05-30 09:45:49 --> User ID: 8, Date: 2025-05-26
+DEBUG - 2025-05-30 09:45:55 --> User IP: ::1
+DEBUG - 2025-05-30 09:45:55 --> User ID: 8, Date: 2025-05-25
+DEBUG - 2025-05-30 09:46:12 --> User IP: ::1
+DEBUG - 2025-05-30 09:46:13 --> User ID: 8, Date: 2025-05-25
+DEBUG - 2025-05-30 09:46:14 --> User IP: ::1
+DEBUG - 2025-05-30 09:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:46:16 --> User IP: ::1
+DEBUG - 2025-05-30 09:46:16 --> User ID: 8, Date: 2025-05-25
+DEBUG - 2025-05-30 09:46:26 --> User IP: ::1
+DEBUG - 2025-05-30 09:46:26 --> User ID: 8, Date: 2025-05-26
+DEBUG - 2025-05-30 09:46:28 --> User IP: ::1
+DEBUG - 2025-05-30 09:46:28 --> User IP: ::1
+DEBUG - 2025-05-30 09:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:46:40 --> User IP: ::1
+DEBUG - 2025-05-30 09:46:40 --> User ID: 8, Date: 2025-05-25
+DEBUG - 2025-05-30 09:46:45 --> User IP: ::1
+DEBUG - 2025-05-30 09:46:45 --> User ID: 8, Date: 2025-05-25
+DEBUG - 2025-05-30 09:46:46 --> User IP: ::1
+DEBUG - 2025-05-30 09:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:46:48 --> User IP: ::1
+DEBUG - 2025-05-30 09:46:48 --> User ID: 8, Date: 2025-05-25
+DEBUG - 2025-05-30 09:46:55 --> User IP: ::1
+DEBUG - 2025-05-30 09:46:55 --> User ID: 8, Date: 2025-05-25
+DEBUG - 2025-05-30 09:46:56 --> User IP: ::1
+DEBUG - 2025-05-30 09:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:09:06 --> User IP: ::1
+INFO - 2025-05-30 12:09:36 --> ✅ Processed: Srimugan N (27) - 2025-05-28 - 08:39 (Present)
+INFO - 2025-05-30 12:09:36 --> ✅ Processed: Vanitha (4) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 12:09:36 --> ✅ Processed: Karthikeyan (13) - 2025-05-28 - 08:18 (Present)
+INFO - 2025-05-30 12:09:36 --> ✅ Processed: Muniyappan (16) - 2025-05-28 - 07:52 (Present)
+INFO - 2025-05-30 12:09:36 --> ✅ Processed: Gokul (17) - 2025-05-28 - 08:14 (Present)
+INFO - 2025-05-30 12:09:36 --> ✅ Processed: Manisha V (1) - 2025-05-28 - 08:19 (Present)
+INFO - 2025-05-30 12:09:36 --> ✅ Processed: Gnanamugilan (9) - 2025-05-28 - 08:14 (Present)
+INFO - 2025-05-30 12:09:36 --> ✅ Processed: Arun (5) - 2025-05-28 - 07:54 (Present)
+INFO - 2025-05-30 12:09:36 --> ✅ Processed: Magendiran (23) - 2025-05-28 - 08:12 (Present)
+INFO - 2025-05-30 12:09:36 --> ✅ Processed: Kokila (45) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 12:09:36 --> ✅ Processed: Pugazh (48) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 12:09:36 --> ✅ Processed: Akshay (49) - 2025-05-28 - 07:53 (Present)
+INFO - 2025-05-30 12:09:36 --> ✅ Processed: Bhagath (50) - 2025-05-28 - 07:53 (Present)
+DEBUG - 2025-05-30 12:15:07 --> User IP: ::1
+INFO - 2025-05-30 12:15:38 --> ✅ Processed: Srimugan N (27) - 2025-05-28 - 08:39 (Present)
+INFO - 2025-05-30 12:15:38 --> ✅ Processed: Vanitha (4) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 12:15:38 --> ✅ Processed: Karthikeyan (13) - 2025-05-28 - 08:18 (Present)
+INFO - 2025-05-30 12:15:38 --> ✅ Processed: Muniyappan (16) - 2025-05-28 - 07:52 (Present)
+INFO - 2025-05-30 12:15:38 --> ✅ Processed: Gokul (17) - 2025-05-28 - 08:14 (Present)
+INFO - 2025-05-30 12:15:38 --> ✅ Processed: Manisha V (1) - 2025-05-28 - 08:19 (Present)
+INFO - 2025-05-30 12:15:38 --> ✅ Processed: Gnanamugilan (9) - 2025-05-28 - 08:14 (Present)
+INFO - 2025-05-30 12:15:38 --> ✅ Processed: Arun (5) - 2025-05-28 - 07:54 (Present)
+INFO - 2025-05-30 12:15:38 --> ✅ Processed: Magendiran (23) - 2025-05-28 - 08:12 (Present)
+INFO - 2025-05-30 12:15:38 --> ✅ Processed: Kokila (45) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 12:15:38 --> ✅ Processed: Pugazh (48) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 12:15:38 --> ✅ Processed: Akshay (49) - 2025-05-28 - 07:53 (Present)
+INFO - 2025-05-30 12:15:38 --> ✅ Processed: Bhagath (50) - 2025-05-28 - 07:53 (Present)
+DEBUG - 2025-05-30 12:22:53 --> User IP: ::1
+ERROR - 2025-05-30 12:22:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND date(timestamp) < IS NULL' at line 3 in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `id`\nFRO...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`\nFRO...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`\nFRO...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `id`\nFRO...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(474): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(408): App\Controllers\BiometricController->fetchLogs(NULL, NULL)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->refreachBimetric()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-05-30 12:22:53 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND date(timestamp) < IS NULL' at line 3
+[Method: GET, Route: biometriccontroller/refreachBimetric]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\BiometricController.php(474): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\BiometricController.php(408): App\Controllers\BiometricController->fetchLogs(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->refreachBimetric()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-05-30 12:22:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND date(timestamp) < IS NULL' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\BiometricController.php(474): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\BiometricController.php(408): App\Controllers\BiometricController->fetchLogs(null, null)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->refreachBimetric()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-05-30 12:22:53 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND date(timestamp) < IS NULL' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\BiometricController.php(474): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\BiometricController.php(408): App\Controllers\BiometricController->fetchLogs(null, null)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->refreachBimetric()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-05-30 12:23:58 --> User IP: ::1
+ERROR - 2025-05-30 12:23:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND date(timestamp) < IS NULL' at line 3 in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `id`\nFRO...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`\nFRO...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`\nFRO...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `id`\nFRO...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(474): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(408): App\Controllers\BiometricController->fetchLogs(NULL, NULL)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->refreachBimetric()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-05-30 12:23:58 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND date(timestamp) < IS NULL' at line 3
+[Method: GET, Route: biometriccontroller/refreachBimetric]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\BiometricController.php(474): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\BiometricController.php(408): App\Controllers\BiometricController->fetchLogs(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->refreachBimetric()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-05-30 12:23:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND date(timestamp) < IS NULL' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\BiometricController.php(474): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\BiometricController.php(408): App\Controllers\BiometricController->fetchLogs(null, null)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->refreachBimetric()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-05-30 12:23:58 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND date(timestamp) < IS NULL' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `id`
+FROM `attendance_logs`
+WHERE date(timestamp) > IS NULL
+AND date(timestamp) < IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\BiometricController.php(474): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\BiometricController.php(408): App\Controllers\BiometricController->fetchLogs(null, null)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->refreachBimetric()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-05-30 12:32:56 --> User IP: ::1
+DEBUG - 2025-05-30 12:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:33:05 --> User IP: ::1
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Srimugan N (27) - 2025-05-28 - 08:39 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Srimugan N (27) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Vanitha (4) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Vanitha (4) - 2025-05-29 - 08:54 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Karthikeyan (13) - 2025-05-28 - 08:18 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Karthikeyan (13) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Muniyappan (16) - 2025-05-28 - 07:52 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Muniyappan (16) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Gokul (17) - 2025-05-28 - 08:14 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Gokul (17) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Manisha V (1) - 2025-05-28 - 08:19 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Manisha V (1) - 2025-05-29 - 08:30 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Gnanamugilan (9) - 2025-05-28 - 08:14 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Gnanamugilan (9) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Arun (5) - 2025-05-28 - 07:54 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Arun (5) - 2025-05-29 - 08:41 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Magendiran (23) - 2025-05-28 - 08:12 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Magendiran (23) - 2025-05-29 - 08:36 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Kokila (45) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Kokila (45) - 2025-05-29 - 09:11 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Pugazh (48) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Pugazh (48) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Akshay (49) - 2025-05-28 - 07:53 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Akshay (49) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Bhagath (50) - 2025-05-28 - 07:53 (Present)
+INFO - 2025-05-30 12:33:35 --> ✅ Processed: Bhagath (50) - 2025-05-29 - 06:56 (Permission)
+DEBUG - 2025-05-30 12:33:35 --> User IP: ::1
+DEBUG - 2025-05-30 12:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:36:05 --> User IP: ::1
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Srimugan N (27) - 2025-05-28 - 08:39 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Srimugan N (27) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Vanitha (4) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Vanitha (4) - 2025-05-29 - 08:54 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Karthikeyan (13) - 2025-05-28 - 08:18 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Karthikeyan (13) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Muniyappan (16) - 2025-05-28 - 07:52 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Muniyappan (16) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Gokul (17) - 2025-05-28 - 08:14 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Gokul (17) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Manisha V (1) - 2025-05-28 - 08:19 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Manisha V (1) - 2025-05-29 - 08:30 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Gnanamugilan (9) - 2025-05-28 - 08:14 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Gnanamugilan (9) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Arun (5) - 2025-05-28 - 07:54 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Arun (5) - 2025-05-29 - 08:41 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Magendiran (23) - 2025-05-28 - 08:12 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Magendiran (23) - 2025-05-29 - 08:36 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Kokila (45) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Kokila (45) - 2025-05-29 - 09:11 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Pugazh (48) - 2025-05-28 - Error (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Pugazh (48) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Akshay (49) - 2025-05-28 - 07:53 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Akshay (49) - 2025-05-29 - Error (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Bhagath (50) - 2025-05-28 - 07:53 (Present)
+INFO - 2025-05-30 12:36:35 --> ✅ Processed: Bhagath (50) - 2025-05-29 - 06:56 (Permission)

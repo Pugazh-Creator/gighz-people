@@ -1,0 +1,222 @@
+DEBUG - 2025-06-20 06:22:31 --> User IP: ::1
+DEBUG - 2025-06-20 06:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 06:22:33 --> User IP: ::1
+DEBUG - 2025-06-20 06:22:33 --> User IP: ::1
+DEBUG - 2025-06-20 07:00:57 --> User IP: ::1
+CRITICAL - 2025-06-20 07:00:57 --> PhpOffice\PhpSpreadsheet\Reader\Exception: File "C:\xampp\htdocs\gighz\writable\templates/emp_id - MonthYear Payslip.xlsx" does not exist.
+[Method: GET, Route: payrole/sendPayslipToEmail]
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 147.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(145): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:\\xampp\\htdocs\\gighz\\writable\\templates/emp_id - MonthYear Payslip.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(112): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('C:\\xampp\\htdocs\\gighz\\writable\\templates/emp_id - MonthYear Payslip.xlsx', null)
+ 3 APPPATH\Controllers\PayRole.php(831): PhpOffice\PhpSpreadsheet\IOFactory::load('C:\\xampp\\htdocs\\gighz\\writable\\templates/emp_id - MonthYear Payslip.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 07:01:37 --> User IP: ::1
+CRITICAL - 2025-06-20 07:01:38 --> PhpOffice\PhpSpreadsheet\Writer\Exception: Registered writers must implement PhpOffice\PhpSpreadsheet\Writer\IWriter
+[Method: GET, Route: payrole/sendPayslipToEmail]
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 231.
+ 1 APPPATH\Controllers\PayRole.php(847): PhpOffice\PhpSpreadsheet\IOFactory::registerWriter('Pdf', 'Dompdf\\Dompdf')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 07:03:52 --> User IP: ::1
+DEBUG - 2025-06-20 07:13:57 --> User IP: ::1
+DEBUG - 2025-06-20 07:17:45 --> User IP: ::1
+DEBUG - 2025-06-20 07:23:04 --> User IP: ::1
+DEBUG - 2025-06-20 07:52:13 --> User IP: ::1
+DEBUG - 2025-06-20 07:54:50 --> User IP: ::1
+DEBUG - 2025-06-20 07:55:00 --> User IP: ::1
+DEBUG - 2025-06-20 07:55:59 --> User IP: ::1
+DEBUG - 2025-06-20 08:12:42 --> User IP: ::1
+DEBUG - 2025-06-20 08:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:12:42 --> User IP: ::1
+DEBUG - 2025-06-20 08:12:42 --> User IP: ::1
+DEBUG - 2025-06-20 08:14:02 --> User IP: ::1
+DEBUG - 2025-06-20 08:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:14:03 --> User IP: ::1
+DEBUG - 2025-06-20 08:14:03 --> User IP: ::1
+DEBUG - 2025-06-20 08:18:23 --> User IP: ::1
+DEBUG - 2025-06-20 08:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:18:24 --> User IP: ::1
+DEBUG - 2025-06-20 08:18:24 --> User IP: ::1
+DEBUG - 2025-06-20 08:20:45 --> User IP: ::1
+DEBUG - 2025-06-20 08:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:20:46 --> User IP: ::1
+DEBUG - 2025-06-20 08:20:46 --> User IP: ::1
+DEBUG - 2025-06-20 08:23:34 --> User IP: ::1
+DEBUG - 2025-06-20 08:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:23:35 --> User IP: ::1
+DEBUG - 2025-06-20 08:23:35 --> User IP: ::1
+DEBUG - 2025-06-20 08:24:56 --> User IP: ::1
+DEBUG - 2025-06-20 08:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:24:56 --> User IP: ::1
+DEBUG - 2025-06-20 08:24:56 --> User IP: ::1
+DEBUG - 2025-06-20 08:25:46 --> User IP: ::1
+DEBUG - 2025-06-20 08:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:25:46 --> User IP: ::1
+DEBUG - 2025-06-20 08:25:47 --> User IP: ::1
+DEBUG - 2025-06-20 08:29:26 --> User IP: ::1
+DEBUG - 2025-06-20 08:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:29:26 --> User IP: ::1
+DEBUG - 2025-06-20 08:29:26 --> User IP: ::1
+DEBUG - 2025-06-20 08:34:33 --> User IP: ::1
+DEBUG - 2025-06-20 08:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:34:33 --> User IP: ::1
+DEBUG - 2025-06-20 08:34:33 --> User IP: ::1
+DEBUG - 2025-06-20 08:35:36 --> User IP: ::1
+DEBUG - 2025-06-20 08:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:35:37 --> User IP: ::1
+DEBUG - 2025-06-20 08:35:37 --> User IP: ::1
+DEBUG - 2025-06-20 08:35:45 --> User IP: ::1
+DEBUG - 2025-06-20 08:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:35:46 --> User IP: ::1
+DEBUG - 2025-06-20 08:35:46 --> User IP: ::1
+DEBUG - 2025-06-20 08:41:33 --> User IP: ::1
+DEBUG - 2025-06-20 08:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:41:34 --> User IP: ::1
+DEBUG - 2025-06-20 08:41:34 --> User IP: ::1
+DEBUG - 2025-06-20 08:44:18 --> User IP: ::1
+DEBUG - 2025-06-20 08:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:44:18 --> User IP: ::1
+DEBUG - 2025-06-20 08:44:19 --> User IP: ::1
+DEBUG - 2025-06-20 08:44:46 --> User IP: ::1
+DEBUG - 2025-06-20 08:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:44:47 --> User IP: ::1
+DEBUG - 2025-06-20 08:44:47 --> User IP: ::1
+DEBUG - 2025-06-20 08:45:21 --> User IP: ::1
+DEBUG - 2025-06-20 08:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:45:21 --> User IP: ::1
+DEBUG - 2025-06-20 08:45:21 --> User IP: ::1
+DEBUG - 2025-06-20 08:45:52 --> User IP: ::1
+DEBUG - 2025-06-20 08:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:45:53 --> User IP: ::1
+DEBUG - 2025-06-20 08:45:53 --> User IP: ::1
+DEBUG - 2025-06-20 08:45:59 --> User IP: ::1
+DEBUG - 2025-06-20 08:46:29 --> User IP: ::1
+DEBUG - 2025-06-20 08:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 08:46:29 --> User IP: ::1
+DEBUG - 2025-06-20 08:46:29 --> User IP: ::1
+DEBUG - 2025-06-20 08:46:37 --> User IP: ::1
+DEBUG - 2025-06-20 08:47:09 --> User IP: ::1
+DEBUG - 2025-06-20 09:24:35 --> User IP: ::1
+DEBUG - 2025-06-20 09:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:24:35 --> User IP: ::1
+DEBUG - 2025-06-20 09:24:35 --> User IP: ::1
+DEBUG - 2025-06-20 09:24:41 --> User IP: ::1
+CRITICAL - 2025-06-20 09:24:41 --> ErrorException: Undefined array key "emp_id"
+[Method: POST, Route: payrole/sendPayslipToEmail]
+in APPPATH\Controllers\PayRole.php on line 827.
+ 1 APPPATH\Controllers\PayRole.php(827): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "emp_id"', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 827)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 09:31:34 --> User IP: ::1
+DEBUG - 2025-06-20 09:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:31:35 --> User IP: ::1
+DEBUG - 2025-06-20 09:31:35 --> User IP: ::1
+DEBUG - 2025-06-20 09:31:44 --> User IP: ::1
+DEBUG - 2025-06-20 09:32:21 --> User IP: ::1
+DEBUG - 2025-06-20 09:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:32:22 --> User IP: ::1
+DEBUG - 2025-06-20 09:32:22 --> User IP: ::1
+DEBUG - 2025-06-20 09:32:28 --> User IP: ::1
+CRITICAL - 2025-06-20 09:32:28 --> ErrorException: Attempt to read property "emp_id" on array
+[Method: POST, Route: payrole/sendPayslipToEmail]
+in APPPATH\Controllers\PayRole.php on line 829.
+ 1 APPPATH\Controllers\PayRole.php(829): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "emp_id" on array', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 829)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 09:35:43 --> User IP: ::1
+DEBUG - 2025-06-20 09:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:35:44 --> User IP: ::1
+DEBUG - 2025-06-20 09:35:44 --> User IP: ::1
+DEBUG - 2025-06-20 09:35:52 --> User IP: ::1
+DEBUG - 2025-06-20 09:36:01 --> User IP: ::1
+DEBUG - 2025-06-20 09:37:43 --> User IP: ::1
+DEBUG - 2025-06-20 09:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:37:43 --> User IP: ::1
+DEBUG - 2025-06-20 09:37:44 --> User IP: ::1
+DEBUG - 2025-06-20 09:37:49 --> User IP: ::1
+DEBUG - 2025-06-20 09:47:36 --> User IP: ::1
+DEBUG - 2025-06-20 09:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:47:36 --> User IP: ::1
+DEBUG - 2025-06-20 09:47:37 --> User IP: ::1
+DEBUG - 2025-06-20 09:47:41 --> User IP: ::1
+CRITICAL - 2025-06-20 09:47:41 --> TypeError: Cannot access offset of type string on string
+[Method: POST, Route: payrole/sendPayslipToEmail]
+in APPPATH\Controllers\PayRole.php on line 828.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 09:48:31 --> User IP: ::1
+DEBUG - 2025-06-20 09:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:48:31 --> User IP: ::1
+DEBUG - 2025-06-20 09:48:31 --> User IP: ::1
+DEBUG - 2025-06-20 09:48:49 --> User IP: ::1
+DEBUG - 2025-06-20 09:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:48:50 --> User IP: ::1
+DEBUG - 2025-06-20 09:48:50 --> User IP: ::1
+DEBUG - 2025-06-20 09:48:54 --> User IP: ::1
+DEBUG - 2025-06-20 10:12:33 --> User IP: ::1
+DEBUG - 2025-06-20 10:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:12:33 --> User IP: ::1
+DEBUG - 2025-06-20 10:12:33 --> User IP: ::1
+DEBUG - 2025-06-20 10:12:38 --> User IP: ::1
+CRITICAL - 2025-06-20 10:12:38 --> TypeError: Cannot access offset of type string on string
+[Method: POST, Route: payrole/sendPayslipToEmail]
+in APPPATH\Controllers\PayRole.php on line 840.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 10:13:00 --> User IP: ::1
+DEBUG - 2025-06-20 10:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:13:01 --> User IP: ::1
+DEBUG - 2025-06-20 10:13:01 --> User IP: ::1
+DEBUG - 2025-06-20 10:13:03 --> User IP: ::1
+DEBUG - 2025-06-20 10:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:13:04 --> User IP: ::1
+DEBUG - 2025-06-20 10:13:04 --> User IP: ::1
+DEBUG - 2025-06-20 10:13:08 --> User IP: ::1
+CRITICAL - 2025-06-20 10:13:08 --> TypeError: Cannot access offset of type string on string
+[Method: POST, Route: payrole/sendPayslipToEmail]
+in APPPATH\Controllers\PayRole.php on line 840.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 10:13:35 --> User IP: ::1
+DEBUG - 2025-06-20 10:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:13:36 --> User IP: ::1
+DEBUG - 2025-06-20 10:13:36 --> User IP: ::1
+DEBUG - 2025-06-20 10:13:40 --> User IP: ::1
+CRITICAL - 2025-06-20 10:13:40 --> TypeError: Cannot access offset of type string on string
+[Method: POST, Route: payrole/sendPayslipToEmail]
+in APPPATH\Controllers\PayRole.php on line 840.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

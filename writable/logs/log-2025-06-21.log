@@ -1,0 +1,423 @@
+DEBUG - 2025-06-21 04:11:39 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 04:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 04:11:41 --> User IP: ::1
+DEBUG - 2025-06-21 04:11:41 --> User IP: ::1
+DEBUG - 2025-06-21 04:44:22 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 04:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 04:44:23 --> User IP: ::1
+DEBUG - 2025-06-21 04:44:23 --> User IP: ::1
+DEBUG - 2025-06-21 04:44:36 --> User IP: ::1
+CRITICAL - 2025-06-21 04:44:36 --> TypeError: Cannot access offset of type string on string
+[Method: POST, Route: payrole/sendPayslipToEmail]
+in APPPATH\Controllers\PayRole.php on line 840.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-21 04:46:05 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 04:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 04:46:06 --> User IP: ::1
+DEBUG - 2025-06-21 04:46:07 --> User IP: ::1
+DEBUG - 2025-06-21 04:46:15 --> User IP: ::1
+CRITICAL - 2025-06-21 04:46:15 --> TypeError: Cannot access offset of type string on string
+[Method: POST, Route: payrole/sendPayslipToEmail]
+in APPPATH\Controllers\PayRole.php on line 840.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-21 04:47:45 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 04:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 04:47:46 --> User IP: ::1
+DEBUG - 2025-06-21 04:47:46 --> User IP: ::1
+DEBUG - 2025-06-21 04:47:51 --> User IP: ::1
+DEBUG - 2025-06-21 04:48:07 --> User IP: ::1
+DEBUG - 2025-06-21 04:48:41 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 04:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 04:48:42 --> User IP: ::1
+DEBUG - 2025-06-21 04:48:42 --> User IP: ::1
+DEBUG - 2025-06-21 04:48:50 --> User IP: ::1
+CRITICAL - 2025-06-21 04:48:50 --> TypeError: Cannot access offset of type string on string
+[Method: POST, Route: payrole/sendPayslipToEmail]
+in APPPATH\Controllers\PayRole.php on line 843.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-21 04:49:01 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 04:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 04:49:02 --> User IP: ::1
+DEBUG - 2025-06-21 04:49:02 --> User IP: ::1
+DEBUG - 2025-06-21 04:49:39 --> User IP: ::1
+DEBUG - 2025-06-21 04:53:26 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 04:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 04:53:27 --> User IP: ::1
+DEBUG - 2025-06-21 04:53:27 --> User IP: ::1
+DEBUG - 2025-06-21 04:53:32 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 04:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 04:53:32 --> User IP: ::1
+DEBUG - 2025-06-21 04:53:33 --> User IP: ::1
+DEBUG - 2025-06-21 04:53:41 --> User IP: ::1
+CRITICAL - 2025-06-21 04:53:41 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, array given
+[Method: POST, Route: payrole/sendPayslipToEmail]
+in APPPATH\Controllers\PayRole.php on line 842.
+ 1 APPPATH\Controllers\PayRole.php(842): json_decode([...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-21 04:54:58 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 04:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 04:54:59 --> User IP: ::1
+DEBUG - 2025-06-21 04:54:59 --> User IP: ::1
+DEBUG - 2025-06-21 04:55:06 --> User IP: ::1
+CRITICAL - 2025-06-21 04:55:06 --> TypeError: Cannot access offset of type string on string
+[Method: POST, Route: payrole/sendPayslipToEmail]
+in APPPATH\Controllers\PayRole.php on line 844.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-21 04:55:26 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 04:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 04:55:27 --> User IP: ::1
+DEBUG - 2025-06-21 04:55:28 --> User IP: ::1
+DEBUG - 2025-06-21 04:55:39 --> User IP: ::1
+DEBUG - 2025-06-21 04:59:06 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 04:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 04:59:06 --> User IP: ::1
+DEBUG - 2025-06-21 04:59:07 --> User IP: ::1
+DEBUG - 2025-06-21 04:59:12 --> User IP: ::1
+DEBUG - 2025-06-21 04:59:43 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 04:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 04:59:44 --> User IP: ::1
+DEBUG - 2025-06-21 04:59:44 --> User IP: ::1
+DEBUG - 2025-06-21 04:59:48 --> User IP: ::1
+DEBUG - 2025-06-21 05:00:17 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 05:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 05:00:18 --> User IP: ::1
+DEBUG - 2025-06-21 05:00:18 --> User IP: ::1
+DEBUG - 2025-06-21 05:00:25 --> User IP: ::1
+DEBUG - 2025-06-21 05:02:28 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 05:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 05:02:29 --> User IP: ::1
+DEBUG - 2025-06-21 05:02:30 --> User IP: ::1
+DEBUG - 2025-06-21 05:02:36 --> User IP: ::1
+DEBUG - 2025-06-21 05:09:00 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 05:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 05:09:01 --> User IP: ::1
+DEBUG - 2025-06-21 05:09:01 --> User IP: ::1
+DEBUG - 2025-06-21 05:09:07 --> User IP: ::1
+DEBUG - 2025-06-21 06:06:25 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 06:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:06:26 --> User IP: ::1
+DEBUG - 2025-06-21 06:06:26 --> User IP: ::1
+DEBUG - 2025-06-21 06:06:28 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 06:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:06:29 --> User IP: ::1
+DEBUG - 2025-06-21 06:06:29 --> User IP: ::1
+DEBUG - 2025-06-21 06:06:38 --> User IP: ::1
+DEBUG - 2025-06-21 06:08:42 --> User IP: ::1
+DEBUG - 2025-06-21 06:10:01 --> User IP: ::1
+DEBUG - 2025-06-21 06:20:05 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 06:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:20:06 --> User IP: ::1
+DEBUG - 2025-06-21 06:20:06 --> User IP: ::1
+DEBUG - 2025-06-21 06:20:13 --> User IP: ::1
+DEBUG - 2025-06-21 06:35:53 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 06:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:35:53 --> User IP: ::1
+DEBUG - 2025-06-21 06:35:54 --> User IP: ::1
+DEBUG - 2025-06-21 06:47:04 --> User IP: ::1
+DEBUG - 2025-06-21 06:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:47:05 --> User IP: ::1
+DEBUG - 2025-06-21 06:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:47:16 --> User IP: ::1
+DEBUG - 2025-06-21 06:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:47:16 --> User IP: ::1
+DEBUG - 2025-06-21 06:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:47:22 --> User IP: ::1
+DEBUG - 2025-06-21 06:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:52:46 --> User IP: ::1
+DEBUG - 2025-06-21 06:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:52:49 --> User IP: ::1
+DEBUG - 2025-06-21 06:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:52:57 --> User IP: ::1
+DEBUG - 2025-06-21 06:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:53:13 --> User IP: ::1
+DEBUG - 2025-06-21 06:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:53:14 --> User IP: ::1
+DEBUG - 2025-06-21 06:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:53:15 --> User IP: ::1
+DEBUG - 2025-06-21 06:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:53:17 --> User IP: ::1
+DEBUG - 2025-06-21 06:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:53:19 --> User IP: ::1
+DEBUG - 2025-06-21 06:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:53:21 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 06:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:53:21 --> User IP: ::1
+DEBUG - 2025-06-21 06:53:22 --> User IP: ::1
+DEBUG - 2025-06-21 06:57:28 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 06:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:57:28 --> User IP: ::1
+DEBUG - 2025-06-21 06:57:29 --> User IP: ::1
+DEBUG - 2025-06-21 06:57:54 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 06:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:57:54 --> User IP: ::1
+DEBUG - 2025-06-21 06:57:55 --> User IP: ::1
+DEBUG - 2025-06-21 06:58:20 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 06:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 06:58:20 --> User IP: ::1
+DEBUG - 2025-06-21 06:58:20 --> User IP: ::1
+DEBUG - 2025-06-21 07:00:29 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 07:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:00:29 --> User IP: ::1
+DEBUG - 2025-06-21 07:00:29 --> User IP: ::1
+DEBUG - 2025-06-21 07:02:09 --> User IP: ::1
+CRITICAL - 2025-06-21 07:05:47 --> Error: Class "App\Filters\Cors" not found
+[Method: GET, Route: payrole/index]
+in SYSTEMPATH\Filters\Filters.php on line 197.
+ 1 SYSTEMPATH\Filters\Filters.php(287): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH\CodeIgniter.php(389): CodeIgniter\Filters\Filters->runRequired('before')
+ 3 SYSTEMPATH\CodeIgniter.php(348): CodeIgniter\CodeIgniter->runRequiredBeforeFilters(Object(CodeIgniter\Filters\Filters))
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-21 07:06:04 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 07:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:06:04 --> User IP: ::1
+DEBUG - 2025-06-21 07:06:04 --> User IP: ::1
+DEBUG - 2025-06-21 07:09:46 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 07:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:09:46 --> User IP: ::1
+DEBUG - 2025-06-21 07:09:46 --> User IP: ::1
+DEBUG - 2025-06-21 07:11:04 --> User IP: 192.168.0.29
+DEBUG - 2025-06-21 07:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:11:05 --> User IP: ::1
+DEBUG - 2025-06-21 07:11:05 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:00 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:12:00 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:00 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:05 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:26 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:28 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:29 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:31 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:36 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:38 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:46 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:12:46 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:46 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:52 --> User IP: ::1
+DEBUG - 2025-06-21 07:12:54 --> User IP: ::1
+DEBUG - 2025-06-21 07:13:06 --> User IP: ::1
+DEBUG - 2025-06-21 07:13:06 --> User IP: ::1
+DEBUG - 2025-06-21 07:13:18 --> User IP: ::1
+DEBUG - 2025-06-21 07:13:21 --> User IP: ::1
+DEBUG - 2025-06-21 07:13:24 --> User IP: ::1
+DEBUG - 2025-06-21 07:13:27 --> User IP: ::1
+DEBUG - 2025-06-21 07:13:29 --> User IP: ::1
+DEBUG - 2025-06-21 07:13:34 --> User IP: ::1
+DEBUG - 2025-06-21 07:13:36 --> User IP: ::1
+DEBUG - 2025-06-21 07:13:41 --> User IP: ::1
+DEBUG - 2025-06-21 07:13:43 --> User IP: ::1
+DEBUG - 2025-06-21 07:13:53 --> User IP: ::1
+DEBUG - 2025-06-21 07:13:53 --> User IP: ::1
+DEBUG - 2025-06-21 07:14:11 --> User IP: ::1
+DEBUG - 2025-06-21 07:19:56 --> User IP: ::1
+DEBUG - 2025-06-21 07:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:19:56 --> User IP: ::1
+DEBUG - 2025-06-21 07:19:56 --> User IP: ::1
+DEBUG - 2025-06-21 07:20:05 --> User IP: ::1
+DEBUG - 2025-06-21 07:28:31 --> User IP: ::1
+DEBUG - 2025-06-21 07:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:28:31 --> User IP: ::1
+DEBUG - 2025-06-21 07:28:31 --> User IP: ::1
+DEBUG - 2025-06-21 07:28:37 --> User IP: ::1
+DEBUG - 2025-06-21 07:29:40 --> User IP: ::1
+DEBUG - 2025-06-21 07:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:29:40 --> User IP: ::1
+DEBUG - 2025-06-21 07:29:40 --> User IP: ::1
+DEBUG - 2025-06-21 07:29:55 --> User IP: ::1
+CRITICAL - 2025-06-21 07:29:55 --> ErrorException: Undefined array key "deduction_data"
+[Method: POST, Route: payrole/sendPayslipToEmail]
+in APPPATH\Controllers\PayRole.php on line 920.
+ 1 APPPATH\Controllers\PayRole.php(920): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deduction_data"', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 920)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-21 07:31:19 --> User IP: ::1
+DEBUG - 2025-06-21 07:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:31:20 --> User IP: ::1
+DEBUG - 2025-06-21 07:31:20 --> User IP: ::1
+DEBUG - 2025-06-21 07:31:23 --> User IP: ::1
+DEBUG - 2025-06-21 07:31:49 --> User IP: ::1
+CRITICAL - 2025-06-21 07:31:49 --> ErrorException: Undefined array key "deduction_data"
+[Method: POST, Route: payrole/sendPayslipToEmail]
+in APPPATH\Controllers\PayRole.php on line 920.
+ 1 APPPATH\Controllers\PayRole.php(920): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deduction_data"', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 920)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->sendPayslipToEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-21 07:34:36 --> User IP: ::1
+DEBUG - 2025-06-21 07:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:34:36 --> User IP: ::1
+DEBUG - 2025-06-21 07:34:36 --> User IP: ::1
+DEBUG - 2025-06-21 07:34:42 --> User IP: ::1
+DEBUG - 2025-06-21 07:35:12 --> User IP: ::1
+DEBUG - 2025-06-21 07:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:35:12 --> User IP: ::1
+DEBUG - 2025-06-21 07:35:13 --> User IP: ::1
+DEBUG - 2025-06-21 07:36:05 --> User IP: ::1
+DEBUG - 2025-06-21 07:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:36:06 --> User IP: ::1
+DEBUG - 2025-06-21 07:36:06 --> User IP: ::1
+DEBUG - 2025-06-21 07:36:12 --> User IP: ::1
+DEBUG - 2025-06-21 07:37:31 --> User IP: ::1
+DEBUG - 2025-06-21 07:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:37:31 --> User IP: ::1
+DEBUG - 2025-06-21 07:37:32 --> User IP: ::1
+DEBUG - 2025-06-21 07:37:36 --> User IP: ::1
+DEBUG - 2025-06-21 07:40:51 --> User IP: ::1
+DEBUG - 2025-06-21 07:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:40:52 --> User IP: ::1
+DEBUG - 2025-06-21 07:40:52 --> User IP: ::1
+DEBUG - 2025-06-21 07:40:56 --> User IP: ::1
+DEBUG - 2025-06-21 07:43:17 --> User IP: ::1
+DEBUG - 2025-06-21 07:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:43:17 --> User IP: ::1
+DEBUG - 2025-06-21 07:43:17 --> User IP: ::1
+DEBUG - 2025-06-21 07:43:21 --> User IP: ::1
+DEBUG - 2025-06-21 07:55:22 --> User IP: ::1
+DEBUG - 2025-06-21 07:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:55:22 --> User IP: ::1
+DEBUG - 2025-06-21 07:55:22 --> User IP: ::1
+DEBUG - 2025-06-21 07:55:30 --> User IP: ::1
+DEBUG - 2025-06-21 07:59:18 --> User IP: ::1
+DEBUG - 2025-06-21 07:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 07:59:18 --> User IP: ::1
+DEBUG - 2025-06-21 07:59:19 --> User IP: ::1
+DEBUG - 2025-06-21 07:59:26 --> User IP: ::1
+DEBUG - 2025-06-21 08:00:54 --> User IP: ::1
+DEBUG - 2025-06-21 08:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 08:00:54 --> User IP: ::1
+DEBUG - 2025-06-21 08:00:54 --> User IP: ::1
+DEBUG - 2025-06-21 08:02:08 --> User IP: ::1
+DEBUG - 2025-06-21 08:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 08:02:09 --> User IP: ::1
+DEBUG - 2025-06-21 08:02:09 --> User IP: ::1
+DEBUG - 2025-06-21 08:03:16 --> User IP: ::1
+DEBUG - 2025-06-21 08:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 08:03:17 --> User IP: ::1
+DEBUG - 2025-06-21 08:03:17 --> User IP: ::1
+DEBUG - 2025-06-21 08:03:22 --> User IP: ::1
+DEBUG - 2025-06-21 08:04:36 --> User IP: ::1
+DEBUG - 2025-06-21 08:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 08:04:36 --> User IP: ::1
+DEBUG - 2025-06-21 08:04:36 --> User IP: ::1
+DEBUG - 2025-06-21 08:04:44 --> User IP: ::1
+DEBUG - 2025-06-21 08:06:48 --> User IP: ::1
+DEBUG - 2025-06-21 08:06:51 --> User IP: ::1
+DEBUG - 2025-06-21 08:07:08 --> User IP: ::1
+DEBUG - 2025-06-21 08:07:08 --> User IP: ::1
+DEBUG - 2025-06-21 08:08:40 --> User IP: ::1
+DEBUG - 2025-06-21 08:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 08:08:40 --> User IP: ::1
+DEBUG - 2025-06-21 08:08:40 --> User IP: ::1
+DEBUG - 2025-06-21 08:08:55 --> User IP: ::1
+DEBUG - 2025-06-21 08:16:12 --> User IP: ::1
+DEBUG - 2025-06-21 08:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 08:16:12 --> User IP: ::1
+DEBUG - 2025-06-21 08:16:12 --> User IP: ::1
+DEBUG - 2025-06-21 08:16:18 --> User IP: ::1
+DEBUG - 2025-06-21 08:25:02 --> User IP: ::1
+DEBUG - 2025-06-21 08:34:23 --> User IP: ::1
+DEBUG - 2025-06-21 08:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 08:34:23 --> User IP: ::1
+DEBUG - 2025-06-21 08:34:23 --> User IP: ::1
+DEBUG - 2025-06-21 08:34:37 --> User IP: ::1
+DEBUG - 2025-06-21 09:53:47 --> User IP: ::1
+DEBUG - 2025-06-21 09:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 09:53:48 --> User IP: ::1
+DEBUG - 2025-06-21 09:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 09:53:52 --> User IP: ::1
+DEBUG - 2025-06-21 09:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 09:53:56 --> User IP: ::1
+DEBUG - 2025-06-21 09:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 09:53:56 --> User IP: ::1
+DEBUG - 2025-06-21 09:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 10:17:15 --> User IP: ::1
+DEBUG - 2025-06-21 10:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 10:17:15 --> User IP: ::1
+DEBUG - 2025-06-21 10:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 10:17:32 --> User IP: ::1
+DEBUG - 2025-06-21 10:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 10:17:34 --> User IP: ::1
+DEBUG - 2025-06-21 10:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-21 10:42:28 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: payrole/index]
+in APPPATH\Controllers\PayRole.php on line 989.
+ 1 SYSTEMPATH\Router\Router.php(563): CodeIgniter\Router\AutoRouter->getRoute('payrole/index', 'GET')
+ 2 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->autoRoute('payrole/index')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('payrole/index')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-21 10:43:16 --> User IP: ::1
+DEBUG - 2025-06-21 10:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-21 10:43:17 --> User IP: ::1
+DEBUG - 2025-06-21 10:43:17 --> User IP: ::1
+DEBUG - 2025-06-21 10:43:42 --> User IP: ::1
+DEBUG - 2025-06-21 10:43:48 --> User IP: ::1
+DEBUG - 2025-06-21 10:43:58 --> User IP: ::1
+DEBUG - 2025-06-21 10:43:58 --> User IP: ::1
+DEBUG - 2025-06-21 10:45:58 --> User IP: ::1
+DEBUG - 2025-06-21 10:46:09 --> User IP: ::1
+DEBUG - 2025-06-21 10:46:17 --> User IP: ::1
+DEBUG - 2025-06-21 10:56:24 --> User IP: ::1
+DEBUG - 2025-06-21 10:56:30 --> User IP: ::1
+DEBUG - 2025-06-21 10:56:35 --> User IP: ::1
+DEBUG - 2025-06-21 10:56:41 --> User IP: ::1
+DEBUG - 2025-06-21 10:56:50 --> User IP: ::1
+DEBUG - 2025-06-21 10:56:58 --> User IP: ::1
+DEBUG - 2025-06-21 10:57:10 --> User IP: ::1
+DEBUG - 2025-06-21 10:57:16 --> User IP: ::1
+DEBUG - 2025-06-21 10:57:24 --> User IP: ::1
+DEBUG - 2025-06-21 10:57:24 --> User IP: ::1
+DEBUG - 2025-06-21 10:57:36 --> User IP: ::1
+DEBUG - 2025-06-21 10:57:40 --> User IP: ::1
+DEBUG - 2025-06-21 10:57:44 --> User IP: ::1
+DEBUG - 2025-06-21 10:57:45 --> User IP: ::1
+DEBUG - 2025-06-21 10:57:57 --> User IP: ::1
+DEBUG - 2025-06-21 10:58:03 --> User IP: ::1
+DEBUG - 2025-06-21 10:58:06 --> User IP: ::1
+DEBUG - 2025-06-21 10:58:06 --> User IP: ::1
+DEBUG - 2025-06-21 10:58:12 --> User IP: ::1
+DEBUG - 2025-06-21 10:58:14 --> User IP: ::1
+DEBUG - 2025-06-21 10:58:18 --> User IP: ::1
+DEBUG - 2025-06-21 10:58:18 --> User IP: ::1
+DEBUG - 2025-06-21 10:58:26 --> User IP: ::1
+DEBUG - 2025-06-21 10:59:04 --> User IP: ::1
+DEBUG - 2025-06-21 10:59:08 --> User IP: ::1
+DEBUG - 2025-06-21 10:59:13 --> User IP: ::1

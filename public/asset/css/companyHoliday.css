@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'poppins','sans-serif';
+}
+:root {
+    --brand-color--: #da2442;
+    --composit-color--: #2ddbbd;
+    --white-color--: #fff;
+    --toggle-color: #fff;
+    --font-color: #fff;
+    --bg-color-: #FBE9EC;
+    --h1--: 43px;
+    --h2--: 34px;
+    --h3--: 28px;
+    --h4--: 23px;
+    --para--: 18px;
+    --border-radius--: 20px;
+    --brand-shadow--: 0 0 20px #da2442ab,
+        0 0 30px #da2442ab,
+        0 0 40px #da2442ab,
+        0 0 50px #da2442ab,
+        0 0 70px #da2442ab,
+        0 0 100px #da2442ab,
+        0 0 150px #da2442ab;
+    --brand-shadow--: 0 0 20px #24dbbdab,
+        0 0 30px #24dbbdab,
+        0 0 40px #24dbbdab,
+        0 0 50px #24dbbdab,
+        0 0 70px #24dbbdab,
+        0 0 100px #24dbbdab,
+        0 0 150px #24dbbdab;
+
+    --tran-03: all 0.2s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.4s ease;
+    --tran-06: all 0.5s ease;
+}
+
+.company-holiday-cont{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.company-holiday-heading{
+    margin: 10px 0px 10px;
+}
+.company-holiday-cont form, .company-holiday-cont .form-box{
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    height: 80px;
+    margin-left: 30px;
+}
+/* .company-holiday-cont .form-box{
+    margin: 10px 0;
+} */
+.company-holiday-cont .input-box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.company-holiday-cont .input-box input, .company-holiday-cont .input-box select{
+    height: 40px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: all .5s ease-in;
+    padding: 0px 10px;
+}
+
+.company-holiday-cont .form-box button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    background: var(--brand-color--);
+    border-radius: 10px;
+    color: var(--white-color--);
+    font-size: 18px;
+    transition: all .5s ease-in;
+    cursor: pointer;
+    margin: auto 0px;
+}
+.company-holiday-cont .form-box button:hover{
+    border: 2px solid var(--brand-color--);
+    background: transparent;
+    color: var(--brand-color--);
+}
+.company-holiday-cont .show-holiday{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-height: 70vh;
+}
+.company-holiday-cont .show-holiday .saturday_holiday{
+    height: 40px;
+}
+.company-holiday-cont .show-holiday table{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    width: 90%;
+    border-collapse: collapse;
+    text-transform: capitalize;
+}
+.company-holiday-cont .show-holiday table thead{
+    height: 40px;
+    background: var(--brand-color--);
+    color:var(--white-color--)
+
+}
+.company-holiday-cont .show-holiday table tbody td{
+    height: 40px;
+    border-bottom: 1px solid #444;
+    text-align: center;
+}
+.company-holiday-cont .show-holiday table tbody tr:nth-of-type(even) {
+    background-color: #eba7a746;
+}
+
+.company-holiday-cont .show-holiday table tbody tr:last-of-type {
+    border-bottom: 2px solid #da2442;
+}
+.company-holiday-cont .show-holiday table tbody button, .show-holiday table tbody a{
+    background: transparent;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    color: green;
+}
+.company-holiday-cont .show-holiday table tbody a{
+    color: red;
+}
+.company-holiday-cont .show-holiday table tbody td .dustbin:hover,.company-holiday-cont .show-holiday table tbody button:hover{
+    transform: rotateZ(30deg);
+}
+.edit-input{
+    border: none;
+    outline: none;
+    height: 30px;
+    border-radius: 10px;
+}
+
+

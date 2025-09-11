@@ -1,0 +1,117 @@
+ERROR - 2025-03-04 08:07:47 --> mysqli_sql_exception: Table 'gighz.leave_histry' doesn't exist in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(1564): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 C:\xampp\htdocs\gighz\app\Models\LeaveHistoryModel.php(57): CodeIgniter\Database\BaseConnection->getFieldNames('leave_histry')
+#5 C:\xampp\htdocs\gighz\app\Models\LeaveHistoryModel.php(51): App\Models\LeaveHistoryModel->getAllColumns()
+#6 C:\xampp\htdocs\gighz\app\Commands\updateEmpLeave.php(11): App\Models\LeaveHistoryModel->__construct()
+#7 C:\xampp\htdocs\gighz\app\Commands\updateEmpLeave.php(80): App\Models\updateDatabase()
+#8 C:\xampp\htdocs\gighz\system\Autoloader\Autoloader.php(316): include_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\gighz\system\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\gighz\system\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Commands\\up...')
+#11 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Commands\\up...')
+#12 C:\xampp\htdocs\gighz\system\Autoloader\FileLocator.php(310): class_exists('App\\Commands\\up...')
+#13 C:\xampp\htdocs\gighz\system\CLI\Commands.php(112): CodeIgniter\Autoloader\FileLocator->findQualifiedNameFromPath('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\gighz\system\CLI\Commands.php(49): CodeIgniter\CLI\Commands->discoverCommands()
+#15 C:\xampp\htdocs\gighz\system\Config\Services.php(178): CodeIgniter\CLI\Commands->__construct()
+#16 C:\xampp\htdocs\gighz\system\Config\BaseService.php(312): CodeIgniter\Config\Services::commands(false)
+#17 C:\xampp\htdocs\gighz\system\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('commands', Array)
+#18 C:\xampp\htdocs\gighz\system\Config\Services.php(175): CodeIgniter\Config\BaseService::getSharedInstance('commands')
+#19 C:\xampp\htdocs\gighz\system\Config\BaseService.php(321): CodeIgniter\Config\Services::commands()
+#20 C:\xampp\htdocs\gighz\system\CLI\Console.php(43): CodeIgniter\Config\BaseService::__callStatic('commands', Array)
+#21 C:\xampp\htdocs\gighz\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#22 C:\xampp\htdocs\gighz\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#23 C:\xampp\htdocs\gighz\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#24 {main}
+CRITICAL - 2025-03-04 08:07:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gighz.leave_histry' doesn't exist
+[Method: CLI, Route: serve]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseConnection.php(1564): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM `leave_histry`')
+ 2 APPPATH\Models\LeaveHistoryModel.php(57): CodeIgniter\Database\BaseConnection->getFieldNames('leave_histry')
+ 3 APPPATH\Models\LeaveHistoryModel.php(51): App\Models\LeaveHistoryModel->getAllColumns()
+ 4 APPPATH\Commands\updateEmpLeave.php(11): App\Models\LeaveHistoryModel->__construct()
+ 5 APPPATH\Commands\updateEmpLeave.php(80): App\Models\updateDatabase()
+ 6 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+ 7 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+ 8 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Commands\\updateEmpLeave')
+ 9 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Commands\\updateEmpLeave')
+10 SYSTEMPATH\Autoloader\FileLocator.php(310): class_exists('App\\Commands\\updateEmpLeave')
+11 SYSTEMPATH\CLI\Commands.php(112): CodeIgniter\Autoloader\FileLocator->findQualifiedNameFromPath('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+12 SYSTEMPATH\CLI\Commands.php(49): CodeIgniter\CLI\Commands->discoverCommands()
+13 SYSTEMPATH\Config\Services.php(178): CodeIgniter\CLI\Commands->__construct()
+14 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::commands(false)
+15 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('commands', [...])
+16 SYSTEMPATH\Config\Services.php(175): CodeIgniter\Config\BaseService::getSharedInstance('commands')
+17 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::commands()
+18 SYSTEMPATH\CLI\Console.php(43): CodeIgniter\Config\BaseService::__callStatic('commands', [])
+19 SYSTEMPATH\Boot.php(360): CodeIgniter\CLI\Console->run()
+20 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+21 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-03-04 08:07:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gighz.leave_histry' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM `leave_histry`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM `leave_histry`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(1564): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM `leave_histry`')
+ 4 APPPATH\Models\LeaveHistoryModel.php(57): CodeIgniter\Database\BaseConnection->getFieldNames('leave_histry')
+ 5 APPPATH\Models\LeaveHistoryModel.php(51): App\Models\LeaveHistoryModel->getAllColumns()
+ 6 APPPATH\Commands\updateEmpLeave.php(11): App\Models\LeaveHistoryModel->__construct()
+ 7 APPPATH\Commands\updateEmpLeave.php(80): App\Models\updateDatabase()
+ 8 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+ 9 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+10 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Commands\\updateEmpLeave')
+11 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Commands\\updateEmpLeave')
+12 SYSTEMPATH\Autoloader\FileLocator.php(310): class_exists('App\\Commands\\updateEmpLeave')
+13 SYSTEMPATH\CLI\Commands.php(112): CodeIgniter\Autoloader\FileLocator->findQualifiedNameFromPath('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+14 SYSTEMPATH\CLI\Commands.php(49): CodeIgniter\CLI\Commands->discoverCommands()
+15 SYSTEMPATH\Config\Services.php(178): CodeIgniter\CLI\Commands->__construct()
+16 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::commands(false)
+17 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('commands', [...])
+18 SYSTEMPATH\Config\Services.php(175): CodeIgniter\Config\BaseService::getSharedInstance('commands')
+19 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::commands()
+20 SYSTEMPATH\CLI\Console.php(43): CodeIgniter\Config\BaseService::__callStatic('commands', [])
+21 SYSTEMPATH\Boot.php(360): CodeIgniter\CLI\Console->run()
+22 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+23 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-03-04 08:07:47 --> [Caused by] mysqli_sql_exception: Table 'gighz.leave_histry' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SHOW COLUMNS FROM `leave_histry`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM `leave_histry`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM `leave_histry`')
+ 4 SYSTEMPATH\Database\BaseConnection.php(1564): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM `leave_histry`')
+ 5 APPPATH\Models\LeaveHistoryModel.php(57): CodeIgniter\Database\BaseConnection->getFieldNames('leave_histry')
+ 6 APPPATH\Models\LeaveHistoryModel.php(51): App\Models\LeaveHistoryModel->getAllColumns()
+ 7 APPPATH\Commands\updateEmpLeave.php(11): App\Models\LeaveHistoryModel->__construct()
+ 8 APPPATH\Commands\updateEmpLeave.php(80): App\Models\updateDatabase()
+ 9 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+10 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+11 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Commands\\updateEmpLeave')
+12 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Commands\\updateEmpLeave')
+13 SYSTEMPATH\Autoloader\FileLocator.php(310): class_exists('App\\Commands\\updateEmpLeave')
+14 SYSTEMPATH\CLI\Commands.php(112): CodeIgniter\Autoloader\FileLocator->findQualifiedNameFromPath('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+15 SYSTEMPATH\CLI\Commands.php(49): CodeIgniter\CLI\Commands->discoverCommands()
+16 SYSTEMPATH\Config\Services.php(178): CodeIgniter\CLI\Commands->__construct()
+17 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::commands(false)
+18 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('commands', [...])
+19 SYSTEMPATH\Config\Services.php(175): CodeIgniter\Config\BaseService::getSharedInstance('commands')
+20 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::commands()
+21 SYSTEMPATH\CLI\Console.php(43): CodeIgniter\Config\BaseService::__callStatic('commands', [])
+22 SYSTEMPATH\Boot.php(360): CodeIgniter\CLI\Console->run()
+23 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+24 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2025-03-04 08:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-04 08:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

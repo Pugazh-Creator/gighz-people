@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --brand-color--:#da2442;
+    --composit-color--:#2ddbbd;
+    --white-color--:#fff;
+    --bg-color-:#FBE9EC;
+    --h1--:43px;
+    --h2--:34px;
+    --h3--:28px;
+    --h4--:23px;
+    --para--:18px;
+    --border-radius--:20px;
+    --brand-shadow--:0 0 20px #da2442ab,
+    0 0 30px #da2442ab,
+    0 0 40px #da2442ab,
+    0 0 50px #da2442ab,
+    0 0 70px #da2442ab,
+    0 0 100px #da2442ab,
+    0 0 150px #da2442ab;
+    --brand-shadow--:0 0 20px #24dbbdab,
+    0 0 30px #24dbbdab,
+    0 0 40px #24dbbdab,
+    0 0 50px #24dbbdab,
+    0 0 70px #24dbbdab,
+    0 0 100px #24dbbdab,
+    0 0 150px #24dbbdab;
+
+    --tran-03:all 0.2s ease;
+    --tran-04:all 0.3s ease;
+    --tran-05:all 0.4s ease;
+    --tran-06:all 0.5s ease;
+}
+
+.password-reset-container
+{
+    background: url('../images/bg-12.jpg'), no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100vh;
+    padding-right:10% ;
+    backdrop-filter: blur(7px);
+    
+}
+.password-reset-container .form-headedr{
+    color: #444;
+}
+
+.form-box{
+    width: 35%;
+    border: none;
+    box-shadow: 0 0 20px #da244276;
+    border-radius: 10px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-box{
+    /* background: yellow; */
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    /* background: yellow; */
+    padding-left:10px ;
+
+}
+.input-box input{
+    height: 40px;
+    border: 2px solid #444;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 0 5px 0 10px;
+    /* color: #444; */
+    letter-spacing: 1px;
+    width: 90%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.input-box input::placeholder{
+    color: #444;
+}
+.input-box label{
+    text-align: left;
+    font-size: 18px;
+    color: #444;
+    letter-spacing: 1px;
+    font-weight: 600;
+}   
+
+.input-box  button{
+    height: 40px;
+    width: 30%;
+    border: none;
+    background: var(--brand-color--);
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: 65%;
+    font-weight: 600;
+    color: var(--white-color--);
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+.error-text{
+    color: var(--white-color--);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.form-headedr{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--brand-color--);
+}
+.back-login{
+    font-size: 16px;
+    margin: 15px 10%;
+}
+.footer{
+    position: fixed;
+    bottom: 10px; right: 10px;
+}
+.password-field{
+    height: 250px;
+}

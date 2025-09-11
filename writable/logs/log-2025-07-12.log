@@ -1,0 +1,871 @@
+DEBUG - 2025-07-12 03:35:57 --> User IP: ::1
+DEBUG - 2025-07-12 03:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 03:35:57 --> User IP: ::1
+DEBUG - 2025-07-12 03:35:57 --> User IP: ::1
+ERROR - 2025-07-12 03:35:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4 in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-07-12 03:35:57 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+[Method: GET, Route: payrole/getManualUsers]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 03:35:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 03:35:57 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 03:35:57 --> User IP: ::1
+DEBUG - 2025-07-12 03:36:07 --> User IP: ::1
+DEBUG - 2025-07-12 03:36:18 --> User IP: ::1
+DEBUG - 2025-07-12 03:36:18 --> User IP: ::1
+ERROR - 2025-07-12 03:36:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4 in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-07-12 03:36:18 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+[Method: GET, Route: payrole/getManualUsers]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 03:36:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 03:36:18 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 03:36:37 --> User IP: ::1
+DEBUG - 2025-07-12 03:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 03:36:37 --> User IP: ::1
+DEBUG - 2025-07-12 03:36:37 --> User IP: ::1
+DEBUG - 2025-07-12 03:36:38 --> User IP: ::1
+DEBUG - 2025-07-12 03:37:43 --> User IP: ::1
+DEBUG - 2025-07-12 03:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 03:37:43 --> User IP: ::1
+DEBUG - 2025-07-12 03:37:43 --> User IP: ::1
+ERROR - 2025-07-12 03:37:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4 in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-07-12 03:37:43 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+[Method: GET, Route: payrole/getManualUsers]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 03:37:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 03:37:43 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 03:37:44 --> User IP: ::1
+DEBUG - 2025-07-12 03:37:50 --> User IP: ::1
+ERROR - 2025-07-12 03:37:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4 in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-07-12 03:37:50 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+[Method: GET, Route: payrole/getManualUsers]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 03:37:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 03:37:50 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 03:39:05 --> User IP: ::1
+ERROR - 2025-07-12 03:39:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4 in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-07-12 03:39:05 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+[Method: GET, Route: payrole/getManualUsers]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 03:39:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 03:39:05 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PayRole.php(1605): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PayRole.php(1511): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 03:41:19 --> User IP: ::1
+CRITICAL - 2025-07-12 03:41:19 --> ArgumentCountError: Too few arguments to function App\Controllers\PayRole::getDeductionPayDetails(), 0 passed in C:\xampp\htdocs\gighz\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: payrole/getDeductionPayDetails]
+in APPPATH\Controllers\PayRole.php on line 1598.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getDeductionPayDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 03:41:29 --> User IP: ::1
+DEBUG - 2025-07-12 03:41:45 --> User IP: ::1
+DEBUG - 2025-07-12 03:41:47 --> User IP: ::1
+DEBUG - 2025-07-12 03:41:48 --> User IP: ::1
+DEBUG - 2025-07-12 03:41:49 --> User IP: ::1
+DEBUG - 2025-07-12 03:42:13 --> User IP: ::1
+DEBUG - 2025-07-12 03:46:19 --> User IP: ::1
+DEBUG - 2025-07-12 03:46:34 --> User IP: ::1
+DEBUG - 2025-07-12 03:54:24 --> User IP: ::1
+DEBUG - 2025-07-12 03:54:32 --> User IP: ::1
+DEBUG - 2025-07-12 04:08:15 --> User IP: ::1
+DEBUG - 2025-07-12 04:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 04:08:16 --> User IP: ::1
+DEBUG - 2025-07-12 04:08:16 --> User IP: ::1
+ERROR - 2025-07-12 04:08:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4 in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1610): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1512): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-07-12 04:08:16 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+[Method: GET, Route: payrole/getManualUsers]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PayRole.php(1610): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PayRole.php(1512): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 04:08:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PayRole.php(1610): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PayRole.php(1512): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 04:08:16 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PayRole.php(1610): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PayRole.php(1512): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 04:08:16 --> User IP: ::1
+CRITICAL - 2025-07-12 04:08:16 --> Error: Cannot use object of type CodeIgniter\HTTP\Response as array
+[Method: GET, Route: payrole/getattendance/6/2025]
+in APPPATH\Controllers\PayRole.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance('6', '2025')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 04:09:15 --> User IP: ::1
+DEBUG - 2025-07-12 04:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 04:09:16 --> User IP: ::1
+DEBUG - 2025-07-12 04:09:16 --> User IP: ::1
+ERROR - 2025-07-12 04:09:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4 in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1610): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(1512): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-07-12 04:09:16 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+[Method: GET, Route: payrole/getManualUsers]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PayRole.php(1610): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PayRole.php(1512): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 04:09:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PayRole.php(1610): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PayRole.php(1512): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 04:09:16 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `deducted_date` < IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `payments`
+WHERE `pay_empid` = \'GZ03\'
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `payments`
+WHERE `pay_empid` = :pay_empid:
+AND `deducted_date` > IS NULL
+AND `deducted_date` < IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PayRole.php(1610): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PayRole.php(1512): App\Controllers\PayRole->getDeductionPayDetails('GZ03')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getManualUsers()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 04:09:16 --> User IP: ::1
+DEBUG - 2025-07-12 04:09:28 --> User IP: ::1
+DEBUG - 2025-07-12 04:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 04:09:28 --> User IP: ::1
+DEBUG - 2025-07-12 04:09:28 --> User IP: ::1
+DEBUG - 2025-07-12 04:09:28 --> User IP: ::1
+DEBUG - 2025-07-12 04:11:35 --> User IP: ::1
+DEBUG - 2025-07-12 04:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 04:11:35 --> User IP: ::1
+DEBUG - 2025-07-12 04:11:35 --> User IP: ::1
+DEBUG - 2025-07-12 04:11:35 --> User IP: ::1
+DEBUG - 2025-07-12 04:20:57 --> User IP: ::1
+DEBUG - 2025-07-12 04:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 04:20:57 --> User IP: ::1
+DEBUG - 2025-07-12 04:20:57 --> User IP: ::1
+DEBUG - 2025-07-12 04:20:57 --> User IP: ::1
+DEBUG - 2025-07-12 04:22:01 --> User IP: ::1
+DEBUG - 2025-07-12 04:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 04:22:01 --> User IP: ::1
+DEBUG - 2025-07-12 04:22:01 --> User IP: ::1
+DEBUG - 2025-07-12 04:22:01 --> User IP: ::1
+DEBUG - 2025-07-12 04:30:03 --> User IP: ::1
+DEBUG - 2025-07-12 04:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 04:30:04 --> User IP: ::1
+DEBUG - 2025-07-12 04:30:04 --> User IP: ::1
+DEBUG - 2025-07-12 04:30:04 --> User IP: ::1
+DEBUG - 2025-07-12 04:32:34 --> User IP: ::1
+DEBUG - 2025-07-12 04:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 04:32:35 --> User IP: ::1
+DEBUG - 2025-07-12 04:32:35 --> User IP: ::1
+DEBUG - 2025-07-12 04:32:35 --> User IP: ::1
+DEBUG - 2025-07-12 04:34:34 --> User IP: ::1
+DEBUG - 2025-07-12 04:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 04:34:34 --> User IP: ::1
+DEBUG - 2025-07-12 04:34:34 --> User IP: ::1
+DEBUG - 2025-07-12 04:34:35 --> User IP: ::1
+DEBUG - 2025-07-12 04:38:22 --> User IP: ::1
+DEBUG - 2025-07-12 04:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 04:40:04 --> User IP: ::1
+DEBUG - 2025-07-12 04:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 04:40:04 --> User IP: ::1
+DEBUG - 2025-07-12 04:40:04 --> User IP: ::1
+DEBUG - 2025-07-12 04:40:04 --> User IP: ::1
+DEBUG - 2025-07-12 04:40:59 --> User IP: ::1
+DEBUG - 2025-07-12 04:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 04:41:00 --> User IP: ::1
+DEBUG - 2025-07-12 04:41:00 --> User IP: ::1
+DEBUG - 2025-07-12 04:41:00 --> User IP: ::1
+DEBUG - 2025-07-12 04:55:35 --> User IP: ::1
+DEBUG - 2025-07-12 04:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 04:55:36 --> User IP: ::1
+DEBUG - 2025-07-12 04:55:36 --> User IP: ::1
+DEBUG - 2025-07-12 04:55:36 --> User IP: ::1
+DEBUG - 2025-07-12 05:33:58 --> User IP: ::1
+DEBUG - 2025-07-12 05:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 05:33:58 --> User IP: ::1
+DEBUG - 2025-07-12 05:33:58 --> User IP: ::1
+DEBUG - 2025-07-12 05:33:58 --> User IP: ::1
+DEBUG - 2025-07-12 05:34:36 --> User IP: ::1
+DEBUG - 2025-07-12 05:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 05:34:37 --> User IP: ::1
+DEBUG - 2025-07-12 05:34:37 --> User IP: ::1
+DEBUG - 2025-07-12 05:34:37 --> User IP: ::1
+DEBUG - 2025-07-12 05:40:08 --> User IP: ::1
+DEBUG - 2025-07-12 05:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 05:40:09 --> User IP: ::1
+DEBUG - 2025-07-12 05:40:09 --> User IP: ::1
+DEBUG - 2025-07-12 05:40:09 --> User IP: ::1
+DEBUG - 2025-07-12 05:40:15 --> User IP: ::1
+DEBUG - 2025-07-12 05:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 05:40:16 --> User IP: ::1
+DEBUG - 2025-07-12 05:40:16 --> User IP: ::1
+DEBUG - 2025-07-12 05:40:16 --> User IP: ::1
+DEBUG - 2025-07-12 05:45:36 --> User IP: ::1
+DEBUG - 2025-07-12 05:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 05:45:36 --> User IP: ::1
+DEBUG - 2025-07-12 05:45:36 --> User IP: ::1
+DEBUG - 2025-07-12 05:45:36 --> User IP: ::1
+DEBUG - 2025-07-12 05:50:32 --> User IP: ::1
+DEBUG - 2025-07-12 05:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 05:50:32 --> User IP: ::1
+DEBUG - 2025-07-12 05:50:32 --> User IP: ::1
+DEBUG - 2025-07-12 05:50:32 --> User IP: ::1
+DEBUG - 2025-07-12 06:11:34 --> User IP: ::1
+DEBUG - 2025-07-12 06:12:25 --> User IP: ::1
+DEBUG - 2025-07-12 06:17:37 --> User IP: ::1
+DEBUG - 2025-07-12 06:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 06:17:37 --> User IP: ::1
+DEBUG - 2025-07-12 06:17:37 --> User IP: ::1
+DEBUG - 2025-07-12 06:17:37 --> User IP: ::1
+DEBUG - 2025-07-12 06:18:43 --> User IP: ::1
+DEBUG - 2025-07-12 06:19:13 --> User IP: ::1
+DEBUG - 2025-07-12 06:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 06:19:13 --> User IP: ::1
+DEBUG - 2025-07-12 06:19:13 --> User IP: ::1
+DEBUG - 2025-07-12 06:19:13 --> User IP: ::1
+DEBUG - 2025-07-12 06:20:21 --> User IP: ::1
+DEBUG - 2025-07-12 06:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 06:20:22 --> User IP: ::1
+DEBUG - 2025-07-12 06:20:22 --> User IP: ::1
+DEBUG - 2025-07-12 06:20:22 --> User IP: ::1
+DEBUG - 2025-07-12 06:20:47 --> User IP: ::1
+DEBUG - 2025-07-12 06:45:15 --> User IP: ::1
+DEBUG - 2025-07-12 06:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 06:45:16 --> User IP: ::1
+DEBUG - 2025-07-12 06:45:16 --> User IP: ::1
+DEBUG - 2025-07-12 06:45:16 --> User IP: ::1
+DEBUG - 2025-07-12 06:59:18 --> User IP: ::1
+DEBUG - 2025-07-12 06:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 06:59:18 --> User IP: ::1
+DEBUG - 2025-07-12 06:59:18 --> User IP: ::1
+DEBUG - 2025-07-12 06:59:19 --> User IP: ::1
+DEBUG - 2025-07-12 07:00:02 --> User IP: ::1
+DEBUG - 2025-07-12 07:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 07:00:02 --> User IP: ::1
+DEBUG - 2025-07-12 07:00:02 --> User IP: ::1
+DEBUG - 2025-07-12 07:00:02 --> User IP: ::1
+DEBUG - 2025-07-12 07:02:32 --> User IP: ::1
+DEBUG - 2025-07-12 07:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 07:02:32 --> User IP: ::1
+DEBUG - 2025-07-12 07:02:32 --> User IP: ::1
+DEBUG - 2025-07-12 07:02:32 --> User IP: ::1
+DEBUG - 2025-07-12 07:03:49 --> User IP: ::1
+DEBUG - 2025-07-12 07:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 07:03:50 --> User IP: ::1
+DEBUG - 2025-07-12 07:03:50 --> User IP: ::1
+DEBUG - 2025-07-12 07:03:50 --> User IP: ::1

@@ -1,0 +1,461 @@
+DEBUG - 2025-06-18 03:55:04 --> User IP: ::1
+DEBUG - 2025-06-18 04:00:09 --> User IP: ::1
+DEBUG - 2025-06-18 04:00:55 --> User IP: ::1
+DEBUG - 2025-06-18 04:15:53 --> User IP: ::1
+DEBUG - 2025-06-18 04:19:57 --> User IP: ::1
+CRITICAL - 2025-06-18 04:19:57 --> PhpOffice\PhpWord\Exception\Exception: Can not clone row, template variable not found or variable contains markup.
+[Method: GET, Route: payrole/generateNeftDocument]
+in VENDORPATH\phpoffice\phpword\src\PhpWord\TemplateProcessor.php on line 765.
+ 1 APPPATH\Controllers\PayRole.php(674): PhpOffice\PhpWord\TemplateProcessor->cloneRow('${emp_id}', 3)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->generateNeftDocument()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-18 04:28:22 --> User IP: ::1
+DEBUG - 2025-06-18 04:33:59 --> User IP: ::1
+DEBUG - 2025-06-18 04:35:33 --> User IP: ::1
+DEBUG - 2025-06-18 04:40:14 --> User IP: ::1
+DEBUG - 2025-06-18 04:44:20 --> User IP: ::1
+DEBUG - 2025-06-18 04:46:36 --> User IP: ::1
+DEBUG - 2025-06-18 04:52:04 --> User IP: ::1
+DEBUG - 2025-06-18 04:54:02 --> User IP: ::1
+DEBUG - 2025-06-18 04:58:17 --> User IP: ::1
+DEBUG - 2025-06-18 05:13:32 --> User IP: ::1
+DEBUG - 2025-06-18 05:14:34 --> User IP: ::1
+DEBUG - 2025-06-18 05:15:00 --> User IP: ::1
+DEBUG - 2025-06-18 05:16:40 --> User IP: ::1
+DEBUG - 2025-06-18 05:18:31 --> User IP: ::1
+CRITICAL - 2025-06-18 05:18:31 --> PhpOffice\PhpSpreadsheet\Reader\Exception: File "C:\xampp\htdocs\gighz\writable\templates/salary_template.xlsx" does not exist.
+[Method: GET, Route: payrole/generateNeftExcel]
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 147.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(145): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:\\xampp\\htdocs\\gighz\\writable\\templates/salary_template.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(112): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('C:\\xampp\\htdocs\\gighz\\writable\\templates/salary_template.xlsx', null)
+ 3 APPPATH\Controllers\PayRole.php(741): PhpOffice\PhpSpreadsheet\IOFactory::load('C:\\xampp\\htdocs\\gighz\\writable\\templates/salary_template.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->generateNeftExcel()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-18 05:19:00 --> User IP: ::1
+DEBUG - 2025-06-18 05:45:34 --> User IP: ::1
+CRITICAL - 2025-06-18 05:45:35 --> Error: Call to a member function setJSON() on null
+[Method: GET, Route: auth/index]
+in APPPATH\Controllers\PayRole.php on line 406.
+ 1 APPPATH\Controllers\Auth.php(27): App\Controllers\PayRole->getattendance()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-18 05:46:01 --> User IP: ::1
+CRITICAL - 2025-06-18 05:46:01 --> Error: Call to a member function setJSON() on null
+[Method: GET, Route: auth/index]
+in APPPATH\Controllers\PayRole.php on line 406.
+ 1 APPPATH\Controllers\Auth.php(27): App\Controllers\PayRole->getattendance()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-18 05:50:01 --> User IP: ::1
+DEBUG - 2025-06-18 05:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-18 05:50:01 --> ErrorException: Undefined variable $msg
+[Method: GET, Route: /]
+in APPPATH\Views\auth\login.php on line 39.
+ 1 APPPATH\Views\auth\login.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $msg', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\auth\\login.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\auth\\login.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('auth/login', [], true)
+ 5 APPPATH\Controllers\Auth.php(27): view('auth/login')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-18 05:50:17 --> User IP: ::1
+DEBUG - 2025-06-18 05:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-18 05:50:17 --> ErrorException: Undefined variable $msg
+[Method: GET, Route: /]
+in APPPATH\Views\auth\login.php on line 39.
+ 1 APPPATH\Views\auth\login.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $msg', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\auth\\login.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\auth\\login.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('auth/login', [], true)
+ 5 APPPATH\Controllers\Auth.php(27): view('auth/login')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-18 05:50:36 --> User IP: ::1
+DEBUG - 2025-06-18 05:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 05:51:17 --> User IP: ::1
+DEBUG - 2025-06-18 05:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 06:20:20 --> User IP: ::1
+DEBUG - 2025-06-18 06:20:23 --> User IP: ::1
+DEBUG - 2025-06-18 06:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 06:20:24 --> User IP: ::1
+DEBUG - 2025-06-18 06:20:44 --> User IP: ::1
+DEBUG - 2025-06-18 06:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 06:20:45 --> User IP: ::1
+DEBUG - 2025-06-18 06:20:51 --> User IP: ::1
+DEBUG - 2025-06-18 06:20:55 --> User IP: ::1
+DEBUG - 2025-06-18 06:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 06:20:56 --> User IP: ::1
+DEBUG - 2025-06-18 06:21:26 --> User IP: ::1
+DEBUG - 2025-06-18 06:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 06:21:26 --> User IP: ::1
+DEBUG - 2025-06-18 06:21:40 --> User IP: ::1
+DEBUG - 2025-06-18 06:21:40 --> User IP: ::1
+CRITICAL - 2025-06-18 06:21:40 --> PhpOffice\PhpWord\Exception\Exception: Can not clone row, template variable not found or variable contains markup.
+[Method: POST, Route: payrole/generateNeftDocument]
+in VENDORPATH\phpoffice\phpword\src\PhpWord\TemplateProcessor.php on line 765.
+ 1 APPPATH\Controllers\PayRole.php(672): PhpOffice\PhpWord\TemplateProcessor->cloneRow('${emp_id}', 3)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->generateNeftDocument()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-18 06:23:45 --> User IP: ::1
+DEBUG - 2025-06-18 06:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 06:23:46 --> User IP: ::1
+DEBUG - 2025-06-18 06:24:09 --> User IP: ::1
+CRITICAL - 2025-06-18 06:24:09 --> PhpOffice\PhpWord\Exception\Exception: Can not clone row, template variable not found or variable contains markup.
+[Method: POST, Route: payrole/generateNeftDocument]
+in VENDORPATH\phpoffice\phpword\src\PhpWord\TemplateProcessor.php on line 765.
+ 1 APPPATH\Controllers\PayRole.php(672): PhpOffice\PhpWord\TemplateProcessor->cloneRow('${emp_id}', 3)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->generateNeftDocument()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-18 06:29:02 --> User IP: ::1
+CRITICAL - 2025-06-18 06:29:02 --> PhpOffice\PhpWord\Exception\Exception: Can not clone row, template variable not found or variable contains markup.
+[Method: GET, Route: payrole/generateNeftDocument]
+in VENDORPATH\phpoffice\phpword\src\PhpWord\TemplateProcessor.php on line 765.
+ 1 APPPATH\Controllers\PayRole.php(679): PhpOffice\PhpWord\TemplateProcessor->cloneRow('${emp_id}', 3)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->generateNeftDocument()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-18 06:30:30 --> User IP: ::1
+CRITICAL - 2025-06-18 06:30:30 --> PhpOffice\PhpWord\Exception\Exception: Can not clone row, template variable not found or variable contains markup.
+[Method: GET, Route: payrole/generateNeftDocument]
+in VENDORPATH\phpoffice\phpword\src\PhpWord\TemplateProcessor.php on line 765.
+ 1 APPPATH\Controllers\PayRole.php(679): PhpOffice\PhpWord\TemplateProcessor->cloneRow('${emp_id}', 3)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->generateNeftDocument()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-18 06:31:35 --> User IP: ::1
+DEBUG - 2025-06-18 06:32:07 --> User IP: ::1
+DEBUG - 2025-06-18 06:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 06:32:08 --> User IP: ::1
+DEBUG - 2025-06-18 06:32:48 --> User IP: ::1
+DEBUG - 2025-06-18 06:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 06:32:48 --> User IP: ::1
+DEBUG - 2025-06-18 06:33:05 --> User IP: ::1
+DEBUG - 2025-06-18 06:33:50 --> User IP: ::1
+DEBUG - 2025-06-18 06:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 06:33:51 --> User IP: ::1
+DEBUG - 2025-06-18 06:34:25 --> User IP: ::1
+DEBUG - 2025-06-18 06:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 06:34:26 --> User IP: ::1
+DEBUG - 2025-06-18 06:34:37 --> User IP: ::1
+DEBUG - 2025-06-18 06:35:18 --> User IP: ::1
+DEBUG - 2025-06-18 10:21:08 --> User IP: ::1
+DEBUG - 2025-06-18 10:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 10:21:09 --> User IP: ::1
+DEBUG - 2025-06-18 10:22:52 --> User IP: ::1
+DEBUG - 2025-06-18 10:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 10:22:52 --> User IP: ::1
+DEBUG - 2025-06-18 10:23:05 --> User IP: ::1
+DEBUG - 2025-06-18 10:23:05 --> User IP: ::1
+DEBUG - 2025-06-18 10:45:02 --> User IP: ::1
+DEBUG - 2025-06-18 10:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 10:45:02 --> User IP: ::1
+DEBUG - 2025-06-18 10:45:22 --> User IP: ::1
+DEBUG - 2025-06-18 10:45:22 --> User IP: ::1
+DEBUG - 2025-06-18 10:46:29 --> User IP: ::1
+DEBUG - 2025-06-18 10:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 10:46:29 --> User IP: ::1
+DEBUG - 2025-06-18 10:51:38 --> User IP: ::1
+DEBUG - 2025-06-18 10:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 10:51:38 --> User IP: ::1
+DEBUG - 2025-06-18 10:51:51 --> User IP: ::1
+DEBUG - 2025-06-18 10:51:51 --> User IP: ::1
+DEBUG - 2025-06-18 11:16:03 --> User IP: ::1
+DEBUG - 2025-06-18 11:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:16:03 --> User IP: ::1
+DEBUG - 2025-06-18 11:17:03 --> User IP: ::1
+DEBUG - 2025-06-18 11:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:17:04 --> User IP: ::1
+DEBUG - 2025-06-18 11:33:27 --> User IP: ::1
+DEBUG - 2025-06-18 11:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:33:27 --> User IP: ::1
+DEBUG - 2025-06-18 11:33:37 --> User IP: ::1
+DEBUG - 2025-06-18 11:35:09 --> User IP: ::1
+DEBUG - 2025-06-18 11:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:35:10 --> User IP: ::1
+DEBUG - 2025-06-18 11:36:01 --> User IP: ::1
+DEBUG - 2025-06-18 11:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:36:01 --> User IP: ::1
+DEBUG - 2025-06-18 11:38:44 --> User IP: ::1
+DEBUG - 2025-06-18 11:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:38:44 --> User IP: ::1
+DEBUG - 2025-06-18 11:39:04 --> User IP: ::1
+DEBUG - 2025-06-18 11:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:39:04 --> User IP: ::1
+DEBUG - 2025-06-18 11:39:41 --> User IP: ::1
+DEBUG - 2025-06-18 11:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:39:42 --> User IP: ::1
+DEBUG - 2025-06-18 11:40:04 --> User IP: ::1
+DEBUG - 2025-06-18 11:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:40:04 --> User IP: ::1
+DEBUG - 2025-06-18 11:40:15 --> User IP: ::1
+DEBUG - 2025-06-18 11:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:40:16 --> User IP: ::1
+DEBUG - 2025-06-18 11:40:43 --> User IP: ::1
+DEBUG - 2025-06-18 11:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:40:43 --> User IP: ::1
+DEBUG - 2025-06-18 11:41:03 --> User IP: ::1
+DEBUG - 2025-06-18 11:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:41:04 --> User IP: ::1
+DEBUG - 2025-06-18 11:41:24 --> User IP: ::1
+DEBUG - 2025-06-18 11:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:41:24 --> User IP: ::1
+DEBUG - 2025-06-18 11:41:55 --> User IP: ::1
+DEBUG - 2025-06-18 11:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:41:55 --> User IP: ::1
+DEBUG - 2025-06-18 11:42:17 --> User IP: ::1
+DEBUG - 2025-06-18 11:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:42:17 --> User IP: ::1
+DEBUG - 2025-06-18 11:44:02 --> User IP: ::1
+DEBUG - 2025-06-18 11:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:44:03 --> User IP: ::1
+DEBUG - 2025-06-18 11:44:23 --> User IP: ::1
+DEBUG - 2025-06-18 11:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:44:23 --> User IP: ::1
+DEBUG - 2025-06-18 11:44:50 --> User IP: ::1
+DEBUG - 2025-06-18 11:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:44:51 --> User IP: ::1
+DEBUG - 2025-06-18 11:45:00 --> User IP: ::1
+DEBUG - 2025-06-18 11:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:45:00 --> User IP: ::1
+DEBUG - 2025-06-18 11:46:37 --> User IP: ::1
+DEBUG - 2025-06-18 11:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:46:38 --> User IP: ::1
+DEBUG - 2025-06-18 11:46:49 --> User IP: ::1
+DEBUG - 2025-06-18 11:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:46:50 --> User IP: ::1
+DEBUG - 2025-06-18 11:46:58 --> User IP: ::1
+DEBUG - 2025-06-18 11:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:46:59 --> User IP: ::1
+DEBUG - 2025-06-18 11:47:06 --> User IP: ::1
+DEBUG - 2025-06-18 11:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:47:06 --> User IP: ::1
+DEBUG - 2025-06-18 11:47:14 --> User IP: ::1
+DEBUG - 2025-06-18 11:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:47:14 --> User IP: ::1
+DEBUG - 2025-06-18 11:47:26 --> User IP: ::1
+DEBUG - 2025-06-18 11:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:47:27 --> User IP: ::1
+DEBUG - 2025-06-18 11:47:39 --> User IP: ::1
+DEBUG - 2025-06-18 11:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:47:40 --> User IP: ::1
+DEBUG - 2025-06-18 11:48:44 --> User IP: ::1
+DEBUG - 2025-06-18 11:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:48:44 --> User IP: ::1
+DEBUG - 2025-06-18 11:49:31 --> User IP: ::1
+DEBUG - 2025-06-18 11:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:49:31 --> User IP: ::1
+DEBUG - 2025-06-18 11:49:51 --> User IP: ::1
+DEBUG - 2025-06-18 11:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:49:51 --> User IP: ::1
+DEBUG - 2025-06-18 11:52:02 --> User IP: ::1
+DEBUG - 2025-06-18 11:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 11:52:03 --> User IP: ::1
+DEBUG - 2025-06-18 12:01:47 --> User IP: ::1
+DEBUG - 2025-06-18 12:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 12:01:47 --> User IP: ::1
+DEBUG - 2025-06-18 12:05:32 --> User IP: ::1
+DEBUG - 2025-06-18 12:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 12:05:33 --> User IP: ::1
+DEBUG - 2025-06-18 12:10:58 --> User IP: ::1
+DEBUG - 2025-06-18 12:11:20 --> User IP: ::1
+DEBUG - 2025-06-18 12:11:39 --> User IP: ::1
+DEBUG - 2025-06-18 12:11:39 --> User IP: ::1
+DEBUG - 2025-06-18 12:11:45 --> User IP: ::1
+DEBUG - 2025-06-18 12:11:59 --> User IP: ::1
+DEBUG - 2025-06-18 12:11:59 --> User IP: ::1
+DEBUG - 2025-06-18 12:12:14 --> User IP: ::1
+DEBUG - 2025-06-18 12:12:17 --> User IP: ::1
+DEBUG - 2025-06-18 12:12:29 --> User IP: ::1
+DEBUG - 2025-06-18 12:12:30 --> User IP: ::1
+DEBUG - 2025-06-18 12:12:57 --> User IP: ::1
+DEBUG - 2025-06-18 12:13:00 --> User IP: ::1
+DEBUG - 2025-06-18 12:13:05 --> User IP: ::1
+DEBUG - 2025-06-18 12:13:08 --> User IP: ::1
+DEBUG - 2025-06-18 12:14:06 --> User IP: ::1
+DEBUG - 2025-06-18 12:14:17 --> User IP: ::1
+DEBUG - 2025-06-18 12:14:17 --> User IP: ::1
+DEBUG - 2025-06-18 12:18:15 --> User IP: ::1
+DEBUG - 2025-06-18 12:19:10 --> User IP: ::1
+DEBUG - 2025-06-18 12:20:48 --> User IP: ::1
+DEBUG - 2025-06-18 12:21:14 --> User IP: ::1
+ERROR - 2025-06-18 12:21:14 --> mysqli_sql_exception: Unknown column 'dedection_amount' in 'field list' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(641): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->savepayments()
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-18 12:21:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dedection_amount' in 'field list'
+[Method: GET, Route: payrole/savepayments]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `payments` (`pay_empid`, `pay_type`, `pay_total_amount`, `dedection_amount`, `balence_amount`, `pay_date`, `payment_type`, `transaction_type`, `pay_notes`, `deducted_date`) VALUES (:pay_empid:, :pay_type:, :pay_total_amount:, :dedection_amount:, :balence_amount:, :pay_date:, :payment_type:, :transaction_type:, :pay_notes:, :deducted_date:)', [...], false)
+ 2 APPPATH\Controllers\PayRole.php(641): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->savepayments()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-18 12:21:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dedection_amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `payments` (`pay_empid`, `pay_type`, `pay_total_amount`, `dedection_amount`, `balence_amount`, `pay_date`, `payment_type`, `transaction_type`, `pay_notes`, `deducted_date`) VALUES (\'GZ29\', \'Loan\', \'0.00\', 0, 0, \'2025-06-18\', \'salary\', \'Debit\', \'backend verification\', \'2025-06-18\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `payments` (`pay_empid`, `pay_type`, `pay_total_amount`, `dedection_amount`, `balence_amount`, `pay_date`, `payment_type`, `transaction_type`, `pay_notes`, `deducted_date`) VALUES (\'GZ29\', \'Loan\', \'0.00\', 0, 0, \'2025-06-18\', \'salary\', \'Debit\', \'backend verification\', \'2025-06-18\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `payments` (`pay_empid`, `pay_type`, `pay_total_amount`, `dedection_amount`, `balence_amount`, `pay_date`, `payment_type`, `transaction_type`, `pay_notes`, `deducted_date`) VALUES (:pay_empid:, :pay_type:, :pay_total_amount:, :dedection_amount:, :balence_amount:, :pay_date:, :payment_type:, :transaction_type:, :pay_notes:, :deducted_date:)', [...], false)
+ 4 APPPATH\Controllers\PayRole.php(641): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->savepayments()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-18 12:21:14 --> [Caused by] mysqli_sql_exception: Unknown column 'dedection_amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `payments` (`pay_empid`, `pay_type`, `pay_total_amount`, `dedection_amount`, `balence_amount`, `pay_date`, `payment_type`, `transaction_type`, `pay_notes`, `deducted_date`) VALUES (\'GZ29\', \'Loan\', \'0.00\', 0, 0, \'2025-06-18\', \'salary\', \'Debit\', \'backend verification\', \'2025-06-18\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `payments` (`pay_empid`, `pay_type`, `pay_total_amount`, `dedection_amount`, `balence_amount`, `pay_date`, `payment_type`, `transaction_type`, `pay_notes`, `deducted_date`) VALUES (\'GZ29\', \'Loan\', \'0.00\', 0, 0, \'2025-06-18\', \'salary\', \'Debit\', \'backend verification\', \'2025-06-18\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `payments` (`pay_empid`, `pay_type`, `pay_total_amount`, `dedection_amount`, `balence_amount`, `pay_date`, `payment_type`, `transaction_type`, `pay_notes`, `deducted_date`) VALUES (\'GZ29\', \'Loan\', \'0.00\', 0, 0, \'2025-06-18\', \'salary\', \'Debit\', \'backend verification\', \'2025-06-18\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `payments` (`pay_empid`, `pay_type`, `pay_total_amount`, `dedection_amount`, `balence_amount`, `pay_date`, `payment_type`, `transaction_type`, `pay_notes`, `deducted_date`) VALUES (:pay_empid:, :pay_type:, :pay_total_amount:, :dedection_amount:, :balence_amount:, :pay_date:, :payment_type:, :transaction_type:, :pay_notes:, :deducted_date:)', [...], false)
+ 5 APPPATH\Controllers\PayRole.php(641): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->savepayments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-18 12:21:36 --> User IP: ::1
+DEBUG - 2025-06-18 12:23:31 --> User IP: ::1
+DEBUG - 2025-06-18 12:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 12:23:32 --> User IP: ::1
+DEBUG - 2025-06-18 12:24:04 --> User IP: ::1
+DEBUG - 2025-06-18 12:24:08 --> User IP: ::1
+DEBUG - 2025-06-18 12:24:24 --> User IP: ::1
+DEBUG - 2025-06-18 12:24:24 --> User IP: ::1
+DEBUG - 2025-06-18 12:26:30 --> User IP: ::1
+DEBUG - 2025-06-18 12:26:32 --> User IP: ::1
+DEBUG - 2025-06-18 12:26:34 --> User IP: ::1
+DEBUG - 2025-06-18 12:26:36 --> User IP: ::1
+DEBUG - 2025-06-18 12:26:42 --> User IP: ::1
+DEBUG - 2025-06-18 12:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 12:26:42 --> User IP: ::1
+DEBUG - 2025-06-18 12:26:50 --> User IP: ::1
+DEBUG - 2025-06-18 12:26:54 --> User IP: ::1
+DEBUG - 2025-06-18 12:27:01 --> User IP: ::1
+DEBUG - 2025-06-18 12:27:01 --> User IP: ::1
+DEBUG - 2025-06-18 12:27:14 --> User IP: ::1
+DEBUG - 2025-06-18 12:27:16 --> User IP: ::1
+DEBUG - 2025-06-18 12:44:22 --> User IP: ::1
+DEBUG - 2025-06-18 12:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 12:44:23 --> User IP: ::1
+DEBUG - 2025-06-18 12:44:31 --> User IP: ::1
+DEBUG - 2025-06-18 12:44:35 --> User IP: ::1
+DEBUG - 2025-06-18 12:44:53 --> User IP: ::1
+DEBUG - 2025-06-18 12:46:44 --> User IP: ::1
+DEBUG - 2025-06-18 12:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 12:46:45 --> User IP: ::1
+DEBUG - 2025-06-18 12:46:51 --> User IP: ::1
+DEBUG - 2025-06-18 12:46:54 --> User IP: ::1
+DEBUG - 2025-06-18 12:47:02 --> User IP: ::1
+DEBUG - 2025-06-18 12:47:48 --> User IP: ::1
+DEBUG - 2025-06-18 12:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 12:47:49 --> User IP: ::1
+DEBUG - 2025-06-18 12:47:54 --> User IP: ::1
+DEBUG - 2025-06-18 12:48:38 --> User IP: ::1
+DEBUG - 2025-06-18 12:48:41 --> User IP: ::1
+DEBUG - 2025-06-18 12:49:29 --> User IP: ::1
+DEBUG - 2025-06-18 12:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 12:49:29 --> User IP: ::1
+DEBUG - 2025-06-18 12:49:42 --> User IP: ::1
+DEBUG - 2025-06-18 12:55:45 --> User IP: ::1
+DEBUG - 2025-06-18 12:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 12:55:45 --> User IP: ::1
+DEBUG - 2025-06-18 12:55:50 --> User IP: ::1
+DEBUG - 2025-06-18 12:55:52 --> User IP: ::1
+DEBUG - 2025-06-18 12:55:59 --> User IP: ::1
+DEBUG - 2025-06-18 12:57:34 --> User IP: ::1
+DEBUG - 2025-06-18 12:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 12:57:34 --> User IP: ::1
+DEBUG - 2025-06-18 12:57:39 --> User IP: ::1
+DEBUG - 2025-06-18 12:57:41 --> User IP: ::1
+DEBUG - 2025-06-18 12:58:11 --> User IP: ::1
+DEBUG - 2025-06-18 12:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 12:58:11 --> User IP: ::1
+DEBUG - 2025-06-18 12:58:15 --> User IP: ::1
+DEBUG - 2025-06-18 12:58:16 --> User IP: ::1
+DEBUG - 2025-06-18 12:58:23 --> User IP: ::1
+DEBUG - 2025-06-18 12:59:55 --> User IP: ::1
+DEBUG - 2025-06-18 12:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 12:59:55 --> User IP: ::1
+DEBUG - 2025-06-18 12:59:59 --> User IP: ::1
+DEBUG - 2025-06-18 13:00:02 --> User IP: ::1
+DEBUG - 2025-06-18 13:00:07 --> User IP: ::1
+DEBUG - 2025-06-18 13:04:25 --> User IP: ::1
+DEBUG - 2025-06-18 13:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 13:04:25 --> User IP: ::1
+DEBUG - 2025-06-18 13:04:30 --> User IP: ::1
+DEBUG - 2025-06-18 13:04:33 --> User IP: ::1
+DEBUG - 2025-06-18 13:04:38 --> User IP: ::1
+DEBUG - 2025-06-18 13:06:14 --> User IP: ::1
+DEBUG - 2025-06-18 13:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 13:06:14 --> User IP: ::1
+DEBUG - 2025-06-18 13:06:19 --> User IP: ::1
+DEBUG - 2025-06-18 13:06:20 --> User IP: ::1
+DEBUG - 2025-06-18 13:06:31 --> User IP: ::1
+DEBUG - 2025-06-18 13:08:56 --> User IP: ::1
+DEBUG - 2025-06-18 13:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 13:08:56 --> User IP: ::1
+DEBUG - 2025-06-18 13:09:00 --> User IP: ::1
+DEBUG - 2025-06-18 13:09:02 --> User IP: ::1
+DEBUG - 2025-06-18 13:09:18 --> User IP: ::1
+DEBUG - 2025-06-18 13:11:05 --> User IP: ::1
+DEBUG - 2025-06-18 13:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 13:11:05 --> User IP: ::1
+DEBUG - 2025-06-18 13:11:24 --> User IP: ::1
+DEBUG - 2025-06-18 13:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 13:11:25 --> User IP: ::1
+DEBUG - 2025-06-18 13:11:28 --> User IP: ::1
+DEBUG - 2025-06-18 13:11:30 --> User IP: ::1
+DEBUG - 2025-06-18 13:11:36 --> User IP: ::1

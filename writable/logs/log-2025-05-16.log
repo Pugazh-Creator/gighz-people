@@ -1,0 +1,48 @@
+DEBUG - 2025-05-16 04:11:47 --> User IP: ::1
+DEBUG - 2025-05-16 04:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-16 04:13:52 --> User IP: ::1
+DEBUG - 2025-05-16 04:14:23 --> User IP: ::1
+DEBUG - 2025-05-16 04:26:54 --> User IP: ::1
+DEBUG - 2025-05-16 04:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-16 04:26:54 --> User IP: ::1
+DEBUG - 2025-05-16 04:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-16 04:27:03 --> User IP: ::1
+DEBUG - 2025-05-16 04:27:38 --> User IP: ::1
+DEBUG - 2025-05-16 04:28:18 --> User IP: ::1
+CRITICAL - 2025-05-16 04:28:18 --> ArgumentCountError: Too few arguments to function App\Controllers\Dashboard::sendattendancedatatotimesheet(), 0 passed in C:\xampp\htdocs\gighz\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: dashboard/sendattendancedatatotimesheet/]
+in APPPATH\Controllers\Dashboard.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->sendattendancedatatotimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-05-16 04:28:24 --> User IP: ::1
+DEBUG - 2025-05-16 04:28:30 --> User IP: ::1
+DEBUG - 2025-05-16 04:29:06 --> User IP: ::1
+DEBUG - 2025-05-16 04:29:08 --> User IP: ::1
+DEBUG - 2025-05-16 04:29:08 --> User IP: ::1
+DEBUG - 2025-05-16 04:32:55 --> User IP: ::1
+DEBUG - 2025-05-16 04:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-16 04:33:06 --> User IP: ::1
+DEBUG - 2025-05-16 04:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-16 04:33:06 --> User IP: ::1
+DEBUG - 2025-05-16 04:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-16 04:33:09 --> User IP: ::1
+DEBUG - 2025-05-16 04:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-16 04:33:18 --> User IP: ::1
+DEBUG - 2025-05-16 04:33:18 --> User ID: 23, Date: 2025-05-15
+DEBUG - 2025-05-16 04:33:45 --> User IP: ::1
+DEBUG - 2025-05-16 04:33:46 --> User IP: ::1
+DEBUG - 2025-05-16 04:36:04 --> User IP: ::1
+DEBUG - 2025-05-16 04:57:17 --> User IP: ::1
+DEBUG - 2025-05-16 04:57:31 --> User IP: ::1
+DEBUG - 2025-05-16 05:10:45 --> User IP: ::1
+DEBUG - 2025-05-16 05:12:40 --> User IP: ::1
+DEBUG - 2025-05-16 05:13:17 --> User IP: ::1
+DEBUG - 2025-05-16 06:22:33 --> User IP: ::1
+DEBUG - 2025-05-16 06:23:11 --> User IP: ::1
+DEBUG - 2025-05-16 06:23:42 --> User IP: ::1
+DEBUG - 2025-05-16 06:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

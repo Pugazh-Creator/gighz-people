@@ -1,0 +1,1036 @@
+CRITICAL - 2025-03-11 04:43:54 --> ErrorException: Undefined variable $attendance
+[Method: GET, Route: index]
+in APPPATH\Views\Attendance\bioMetricReport.php on line 11.
+ 1 APPPATH\Views\Attendance\bioMetricReport.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendance', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(21): view('Attendance/bioMetricReport', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 05:30:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "attendance_view.php"
+[Method: GET, Route: index]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('attendance_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('attendance_view', [], true)
+ 3 APPPATH\Controllers\BiometricController.php(47): view('attendance_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 05:59:41 --> BadMethodCallException: Call to undefined method App\Models\AttendanceModel::getAttendancePivot
+[Method: GET, Route: index]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\BiometricController.php(54): CodeIgniter\Model->__call('getAttendancePivot', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:00:06 --> BadMethodCallException: Call to undefined method App\Models\AttendanceModel::getAttendancePivot
+[Method: GET, Route: index]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\BiometricController.php(54): CodeIgniter\Model->__call('getAttendancePivot', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:00:07 --> BadMethodCallException: Call to undefined method App\Models\AttendanceModel::getAttendancePivot
+[Method: GET, Route: index]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\BiometricController.php(54): CodeIgniter\Model->__call('getAttendancePivot', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+ERROR - 2025-03-11 06:08:46 --> mysqli_sql_exception: Column 'user_id' in field list is ambiguous in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `user_id...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_id...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_id...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#4 C:\xampp\htdocs\gighz\app\Models\AttendanceModel.php(108): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(54): App\Models\AttendanceModel->getMonthlyAttendance(NULL, NULL)
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-03-11 06:08:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'user_id' in field list is ambiguous
+[Method: GET, Route: index]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, `date`, `total_hours`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` >= :date:
+AND `date` <= :date.1:
+ORDER BY `date` ASC', [...], false)
+ 2 APPPATH\Models\AttendanceModel.php(108): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\BiometricController.php(54): App\Models\AttendanceModel->getMonthlyAttendance(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:08:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'user_id' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_id`, `date`, `total_hours`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` >= \'2025-2-25\'
+AND `date` <= \'2025-3-24\'
+ORDER BY `date` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_id`, `date`, `total_hours`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` >= \'2025-2-25\'
+AND `date` <= \'2025-3-24\'
+ORDER BY `date` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, `date`, `total_hours`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` >= :date:
+AND `date` <= :date.1:
+ORDER BY `date` ASC', [...], false)
+ 4 APPPATH\Models\AttendanceModel.php(108): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\BiometricController.php(54): App\Models\AttendanceModel->getMonthlyAttendance(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:08:46 --> [Caused by] mysqli_sql_exception: Column 'user_id' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `user_id`, `date`, `total_hours`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` >= \'2025-2-25\'
+AND `date` <= \'2025-3-24\'
+ORDER BY `date` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_id`, `date`, `total_hours`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` >= \'2025-2-25\'
+AND `date` <= \'2025-3-24\'
+ORDER BY `date` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_id`, `date`, `total_hours`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` >= \'2025-2-25\'
+AND `date` <= \'2025-3-24\'
+ORDER BY `date` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, `date`, `total_hours`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` >= :date:
+AND `date` <= :date.1:
+ORDER BY `date` ASC', [...], false)
+ 5 APPPATH\Models\AttendanceModel.php(108): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\BiometricController.php(54): App\Models\AttendanceModel->getMonthlyAttendance(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:10:09 --> ErrorException: Undefined variable $name
+[Method: GET, Route: index]
+in APPPATH\Views\Attendance\bioMetricReport.php on line 28.
+ 1 APPPATH\Views\Attendance\bioMetricReport.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(59): view('Attendance/bioMetricReport', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:12:25 --> ErrorException: Undefined variable $name
+[Method: GET, Route: index]
+in APPPATH\Views\Attendance\bioMetricReport.php on line 28.
+ 1 APPPATH\Views\Attendance\bioMetricReport.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(59): view('Attendance/bioMetricReport', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:12:42 --> ErrorException: Trying to access array offset on value of type int
+[Method: GET, Route: index]
+in APPPATH\Views\Attendance\bioMetricReport.php on line 28.
+ 1 APPPATH\Views\Attendance\bioMetricReport.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(59): view('Attendance/bioMetricReport', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:13:00 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: index]
+in APPPATH\Views\Attendance\bioMetricReport.php on line 28.
+ 1 APPPATH\Views\Attendance\bioMetricReport.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(59): view('Attendance/bioMetricReport', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:19:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "nav/dashboard.php"
+[Method: GET, Route: index]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('nav/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('nav/dashboard', [], true)
+ 3 APPPATH\Views\Attendance\bioMetricReport.php(10): view('nav/dashboard')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 7 APPPATH\Controllers\BiometricController.php(59): view('Attendance/bioMetricReport', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:20:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "navbar/dashboard.php"
+[Method: GET, Route: index]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('navbar/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('navbar/dashboard', [], true)
+ 3 APPPATH\Views\Attendance\bioMetricReport.php(10): view('navbar/dashboard')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 7 APPPATH\Controllers\BiometricController.php(59): view('Attendance/bioMetricReport', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-11 06:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 06:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-11 06:58:37 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT TIME_FOR...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIME_FOR...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIME_FOR...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT TIME_FOR...', Array, false)
+#4 C:\xampp\htdocs\gighz\app\Models\AttendanceLogModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(69): App\Models\AttendanceLogModel->getPunchLogs(NULL, NULL)
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-03-11 06:58:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_id' in 'where clause'
+[Method: GET, Route: index]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `user_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC', [], false)
+ 2 APPPATH\Models\AttendanceLogModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\BiometricController.php(69): App\Models\AttendanceLogModel->getPunchLogs(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:58:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `user_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `user_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `user_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC', [], false)
+ 4 APPPATH\Models\AttendanceLogModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\BiometricController.php(69): App\Models\AttendanceLogModel->getPunchLogs(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:58:37 --> [Caused by] mysqli_sql_exception: Unknown column 'user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `user_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `user_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `user_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `user_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC', [], false)
+ 5 APPPATH\Models\AttendanceLogModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\BiometricController.php(69): App\Models\AttendanceLogModel->getPunchLogs(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+ERROR - 2025-03-11 06:59:05 --> mysqli_sql_exception: Unknown column 'time' in 'where clause' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT TIME_FOR...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIME_FOR...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIME_FOR...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT TIME_FOR...', Array, false)
+#4 C:\xampp\htdocs\gighz\app\Models\AttendanceLogModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(69): App\Models\AttendanceLogModel->getPunchLogs(NULL, NULL)
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-03-11 06:59:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'time' in 'where clause'
+[Method: GET, Route: index]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `employee_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC', [], false)
+ 2 APPPATH\Models\AttendanceLogModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\BiometricController.php(69): App\Models\AttendanceLogModel->getPunchLogs(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:59:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'time' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `employee_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `employee_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `employee_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC', [], false)
+ 4 APPPATH\Models\AttendanceLogModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\BiometricController.php(69): App\Models\AttendanceLogModel->getPunchLogs(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 06:59:05 --> [Caused by] mysqli_sql_exception: Unknown column 'time' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `employee_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `employee_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `employee_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT TIME_FORMAT(timestamp, \'%H:%i\') AS time
+FROM `attendance_logs`
+WHERE `employee_id` IS NULL
+AND DATE(time) IS NULL
+ORDER BY `time` ASC', [], false)
+ 5 APPPATH\Models\AttendanceLogModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\BiometricController.php(69): App\Models\AttendanceLogModel->getPunchLogs(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:02:45 --> ErrorException: Array to string conversion
+[Method: GET, Route: index]
+in APPPATH\Controllers\BiometricController.php on line 70.
+ 1 APPPATH\Controllers\BiometricController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:03:07 --> ErrorException: Undefined array key "timestamp"
+[Method: GET, Route: index]
+in APPPATH\Controllers\BiometricController.php on line 70.
+ 1 APPPATH\Controllers\BiometricController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "timestamp"', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:27:50 --> ParseError: syntax error, unexpected token "}", expecting "," or ";"
+[Method: GET, Route: index]
+in APPPATH\Controllers\BiometricController.php on line 79.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BiometricController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BiometricController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\BiometricController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-11 07:29:19 --> User ID: 23, Date: 2025-02-27 ..
+DEBUG - 2025-03-11 07:31:34 --> User ID: 23, Date: 2025-02-27
+DEBUG - 2025-03-11 07:33:45 --> User ID: 23, Date: 2025-02-27
+DEBUG - 2025-03-11 07:33:47 --> User ID: 23, Date: 2025-02-27..
+DEBUG - 2025-03-11 07:35:28 --> User ID: 23, Date: 2025-02-27//
+DEBUG - 2025-03-11 07:36:54 --> User ID: 23, Date: 2025-02-27
+DEBUG - 2025-03-11 07:37:06 --> User ID: 45, Date: 2025-03-06
+ERROR - 2025-03-11 07:54:41 --> mysqli_sql_exception: Table 'gighz.attendance_log' doesn't exist in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT TIME(tim...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIME(tim...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIME(tim...')
+#3 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT TIME(tim...', Array)
+#4 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+#5 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2025-03-11 07:54:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gighz.attendance_log' doesn't exist
+[Method: GET, Route: index]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT TIME(timestamp) AS time FROM attendance_log WHERE employee_id = ? AND DATE(timestamp) = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:54:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gighz.attendance_log' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIME(timestamp) AS time FROM attendance_log WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIME(timestamp) AS time FROM attendance_log WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'')
+ 3 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT TIME(timestamp) AS time FROM attendance_log WHERE employee_id = ? AND DATE(timestamp) = ?', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:54:41 --> [Caused by] mysqli_sql_exception: Table 'gighz.attendance_log' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT TIME(timestamp) AS time FROM attendance_log WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIME(timestamp) AS time FROM attendance_log WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIME(timestamp) AS time FROM attendance_log WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'')
+ 4 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT TIME(timestamp) AS time FROM attendance_log WHERE employee_id = ? AND DATE(timestamp) = ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:54:58 --> Error: Cannot use object of type mysqli as array
+[Method: GET, Route: index]
+in APPPATH\Controllers\BiometricController.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:55:22 --> ErrorException: Undefined property: mysqli::$time
+[Method: GET, Route: index]
+in APPPATH\Controllers\BiometricController.php on line 86.
+ 1 APPPATH\Controllers\BiometricController.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$time', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:56:21 --> ErrorException: Undefined property: mysqli::$timestamp
+[Method: GET, Route: index]
+in APPPATH\Controllers\BiometricController.php on line 86.
+ 1 APPPATH\Controllers\BiometricController.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$timestamp', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+ERROR - 2025-03-11 07:56:43 --> mysqli_sql_exception: Incorrect parameter count in the call to native function 'Time_format' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT Time_for...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Time_for...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Time_for...')
+#3 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT Time_for...', Array)
+#4 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+#5 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2025-03-11 07:56:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Incorrect parameter count in the call to native function 'Time_format'
+[Method: GET, Route: index]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT Time_format(timestamp) FROM attendance_logs WHERE employee_id = ? AND DATE(timestamp) = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:56:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Incorrect parameter count in the call to native function 'Time_format'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Time_format(timestamp) FROM attendance_logs WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Time_format(timestamp) FROM attendance_logs WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'')
+ 3 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT Time_format(timestamp) FROM attendance_logs WHERE employee_id = ? AND DATE(timestamp) = ?', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:56:43 --> [Caused by] mysqli_sql_exception: Incorrect parameter count in the call to native function 'Time_format'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT Time_format(timestamp) FROM attendance_logs WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Time_format(timestamp) FROM attendance_logs WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Time_format(timestamp) FROM attendance_logs WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'')
+ 4 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT Time_format(timestamp) FROM attendance_logs WHERE employee_id = ? AND DATE(timestamp) = ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+ERROR - 2025-03-11 07:56:56 --> mysqli_sql_exception: Incorrect parameter count in the call to native function 'time_format' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT time_for...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT time_for...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT time_for...')
+#3 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT time_for...', Array)
+#4 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+#5 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2025-03-11 07:56:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Incorrect parameter count in the call to native function 'time_format'
+[Method: GET, Route: index]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT time_format(timestamp) FROM attendance_logs WHERE employee_id = ? AND DATE(timestamp) = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:56:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Incorrect parameter count in the call to native function 'time_format'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT time_format(timestamp) FROM attendance_logs WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT time_format(timestamp) FROM attendance_logs WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'')
+ 3 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT time_format(timestamp) FROM attendance_logs WHERE employee_id = ? AND DATE(timestamp) = ?', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:56:56 --> [Caused by] mysqli_sql_exception: Incorrect parameter count in the call to native function 'time_format'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT time_format(timestamp) FROM attendance_logs WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT time_format(timestamp) FROM attendance_logs WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT time_format(timestamp) FROM attendance_logs WHERE employee_id = \'23\' AND DATE(timestamp) = \'2025-03-06\'')
+ 4 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\Database\BaseConnection->query('SELECT time_format(timestamp) FROM attendance_logs WHERE employee_id = ? AND DATE(timestamp) = ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:57:56 --> ErrorException: Undefined property: mysqli::$timestamp
+[Method: GET, Route: index]
+in APPPATH\Controllers\BiometricController.php on line 86.
+ 1 APPPATH\Controllers\BiometricController.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$timestamp', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:58:14 --> Error: Cannot use object of type mysqli as array
+[Method: GET, Route: index]
+in APPPATH\Controllers\BiometricController.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 07:59:05 --> ErrorException: Undefined property: mysqli::$timestamp
+[Method: GET, Route: index]
+in APPPATH\Controllers\BiometricController.php on line 86.
+ 1 APPPATH\Controllers\BiometricController.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$timestamp', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-11 08:04:12 --> User ID: , Date: 
+DEBUG - 2025-03-11 08:05:13 --> User ID: 23, Date: 2025-02-27
+DEBUG - 2025-03-11 08:06:41 --> User ID: 23, Date: 2025-03-07
+CRITICAL - 2025-03-11 08:06:41 --> ErrorException: Undefined array key "timestamp"
+[Method: GET, Route: index]
+in APPPATH\Controllers\BiometricController.php on line 75.
+ 1 APPPATH\Controllers\BiometricController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "timestamp"', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->getPunchRecords()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-11 08:08:00 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-11 08:08:41 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-11 08:08:55 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-11 08:09:16 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-11 08:09:19 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-11 08:09:20 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-11 08:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 08:09:50 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-11 08:10:05 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-11 08:10:26 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-11 08:10:47 --> User ID: 16, Date: 2025-02-27
+DEBUG - 2025-03-11 08:10:52 --> User ID: 2, Date: 2025-02-28
+DEBUG - 2025-03-11 08:10:57 --> User ID: 23, Date: 2025-03-06
+DEBUG - 2025-03-11 08:11:00 --> User ID: 23, Date: 2025-02-27
+DEBUG - 2025-03-11 08:11:03 --> User ID: 23, Date: 2025-02-28
+DEBUG - 2025-03-11 08:11:06 --> User ID: 23, Date: 2025-03-01
+DEBUG - 2025-03-11 08:11:09 --> User ID: 23, Date: 2025-03-02
+DEBUG - 2025-03-11 08:11:12 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-11 08:11:15 --> User ID: 23, Date: 2025-03-04
+DEBUG - 2025-03-11 08:12:57 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-11 08:13:01 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-11 08:13:09 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-11 08:13:18 --> User ID: 23, Date: 2025-03-06
+DEBUG - 2025-03-11 08:13:30 --> User ID: 23, Date: 2025-03-06
+DEBUG - 2025-03-11 08:13:42 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-11 10:18:10 --> User ID: 1, Date: 2025-02-25
+DEBUG - 2025-03-11 10:18:31 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-11 10:21:51 --> User ID: 45, Date: 2025-02-25
+DEBUG - 2025-03-11 10:21:53 --> User ID: 45, Date: 2025-02-26
+DEBUG - 2025-03-11 10:21:58 --> User ID: 45, Date: 2025-02-27
+DEBUG - 2025-03-11 10:21:59 --> User ID: 45, Date: 2025-02-28
+DEBUG - 2025-03-11 10:22:02 --> User ID: 45, Date: 2025-03-03
+DEBUG - 2025-03-11 10:22:39 --> User ID: 27, Date: 2025-02-28
+DEBUG - 2025-03-11 10:25:23 --> User ID: 27, Date: 2025-02-28
+DEBUG - 2025-03-11 10:34:54 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-11 10:36:41 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-11 10:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 10:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 10:37:09 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-11 10:39:42 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-11 10:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 10:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 10:40:24 --> User ID: 27, Date: 2025-03-10
+DEBUG - 2025-03-11 10:54:55 --> User ID: 23, Date: 2025-02-27
+CRITICAL - 2025-03-11 10:57:01 --> ErrorException: Undefined variable $months
+[Method: GET, Route: index]
+in APPPATH\Views\Attendance\bioMetricReport.php on line 29.
+ 1 APPPATH\Views\Attendance\bioMetricReport.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $months', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php', 29)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(59): view('Attendance/bioMetricReport', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 10:59:53 --> ErrorException: Undefined variable $dates
+[Method: GET, Route: index]
+in APPPATH\Views\Attendance\bioMetricReport.php on line 62.
+ 1 APPPATH\Views\Attendance\bioMetricReport.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dates', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php', 62)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(39): view('Attendance/bioMetricReport', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 11:02:05 --> ErrorException: Undefined variable $dates
+[Method: GET, Route: index]
+in APPPATH\Views\Attendance\bioMetricReport.php on line 62.
+ 1 APPPATH\Views\Attendance\bioMetricReport.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dates', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php', 62)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(39): view('Attendance/bioMetricReport', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 11:02:06 --> ErrorException: Undefined variable $dates
+[Method: GET, Route: index]
+in APPPATH\Views\Attendance\bioMetricReport.php on line 62.
+ 1 APPPATH\Views\Attendance\bioMetricReport.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dates', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php', 62)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(39): view('Attendance/bioMetricReport', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 11:02:15 --> ErrorException: Undefined variable $months
+[Method: GET, Route: index]
+in APPPATH\Views\Attendance\bioMetricReport.php on line 29.
+ 1 APPPATH\Views\Attendance\bioMetricReport.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $months', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php', 29)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(21): view('Attendance/bioMetricReport', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 11:03:05 --> ErrorException: Undefined variable $selectedMonth
+[Method: GET, Route: index]
+in APPPATH\Views\Attendance\bioMetricReport.php on line 30.
+ 1 APPPATH\Views\Attendance\bioMetricReport.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(66): view('Attendance/bioMetricReport', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 11:03:07 --> ErrorException: Undefined variable $selectedMonth
+[Method: GET, Route: index]
+in APPPATH\Views\Attendance\bioMetricReport.php on line 30.
+ 1 APPPATH\Views\Attendance\bioMetricReport.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\Attendance\\bioMetricReport.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Attendance/bioMetricReport', [], true)
+ 5 APPPATH\Controllers\BiometricController.php(66): view('Attendance/bioMetricReport', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-11 11:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 11:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 11:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 11:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 11:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 11:05:15 --> User ID: , Date: 
+DEBUG - 2025-03-11 11:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 11:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 11:05:40 --> User ID: , Date: 
+DEBUG - 2025-03-11 11:05:51 --> User ID: , Date: 
+DEBUG - 2025-03-11 11:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 12:07:55 --> User ID: 27, Date: 2025-02-25
+DEBUG - 2025-03-11 12:08:11 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-11 12:09:19 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-11 12:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-11 12:09:24 --> User ID: , Date: 
+DEBUG - 2025-03-11 12:10:51 --> User ID: 27, Date: 2025-03-04
+CRITICAL - 2025-03-11 12:16:12 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: index]
+in SYSTEMPATH\BaseModel.php on line 825.
+ 1 SYSTEMPATH\BaseModel.php(825): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 12:16:41 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: index]
+in SYSTEMPATH\BaseModel.php on line 825.
+ 1 SYSTEMPATH\BaseModel.php(825): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 12:17:56 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: index]
+in SYSTEMPATH\BaseModel.php on line 825.
+ 1 SYSTEMPATH\BaseModel.php(825): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 12:18:55 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: index]
+in SYSTEMPATH\BaseModel.php on line 825.
+ 1 SYSTEMPATH\BaseModel.php(825): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 12:19:27 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: index]
+in SYSTEMPATH\BaseModel.php on line 825.
+ 1 SYSTEMPATH\BaseModel.php(825): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\BiometricController.php(80): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 12:21:26 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: index]
+in SYSTEMPATH\BaseModel.php on line 825.
+ 1 SYSTEMPATH\BaseModel.php(825): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\BiometricController.php(81): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 12:21:27 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: index]
+in SYSTEMPATH\BaseModel.php on line 825.
+ 1 SYSTEMPATH\BaseModel.php(825): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\BiometricController.php(81): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 12:25:33 --> ParseError: syntax error, unexpected token "}", expecting "," or ";"
+[Method: GET, Route: index]
+in APPPATH\Controllers\BiometricController.php on line 92.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BiometricController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BiometricController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\BiometricController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 12:26:16 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: index]
+in SYSTEMPATH\BaseModel.php on line 825.
+ 1 SYSTEMPATH\BaseModel.php(825): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\BiometricController.php(88): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-11 12:29:32 --> Error: Object of class DateTime could not be converted to string
+[Method: GET, Route: index]
+in SYSTEMPATH\Database\Query.php on line 337.
+ 1 SYSTEMPATH\Database\Query.php(337): strtr('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(312): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(163): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\BiometricController.php(86): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-11 12:32:14 --> User ID: 4, Date: 2025-02-25

@@ -1,0 +1,1000 @@
+DEBUG - 2025-06-17 05:17:19 --> User IP: ::1
+DEBUG - 2025-06-17 05:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 05:18:42 --> User IP: ::1
+DEBUG - 2025-06-17 05:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 05:18:43 --> User IP: ::1
+DEBUG - 2025-06-17 05:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 05:19:13 --> User IP: ::1
+DEBUG - 2025-06-17 05:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 05:19:13 --> User IP: ::1
+DEBUG - 2025-06-17 05:32:21 --> User IP: ::1
+DEBUG - 2025-06-17 05:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 05:37:04 --> User IP: ::1
+DEBUG - 2025-06-17 05:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 05:37:05 --> User IP: ::1
+DEBUG - 2025-06-17 06:08:47 --> User IP: ::1
+DEBUG - 2025-06-17 06:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 06:08:47 --> User IP: ::1
+DEBUG - 2025-06-17 06:09:20 --> User IP: ::1
+DEBUG - 2025-06-17 06:09:22 --> User IP: ::1
+DEBUG - 2025-06-17 06:09:26 --> User IP: ::1
+DEBUG - 2025-06-17 06:09:28 --> User IP: ::1
+DEBUG - 2025-06-17 06:15:26 --> User IP: ::1
+DEBUG - 2025-06-17 06:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 06:15:26 --> User IP: ::1
+DEBUG - 2025-06-17 06:15:58 --> User IP: ::1
+DEBUG - 2025-06-17 06:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 06:15:58 --> User IP: ::1
+DEBUG - 2025-06-17 07:39:24 --> User IP: ::1
+DEBUG - 2025-06-17 07:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 07:39:24 --> User IP: ::1
+DEBUG - 2025-06-17 07:42:18 --> User IP: ::1
+DEBUG - 2025-06-17 07:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 07:42:19 --> User IP: ::1
+DEBUG - 2025-06-17 07:44:47 --> User IP: ::1
+DEBUG - 2025-06-17 07:45:10 --> User IP: ::1
+DEBUG - 2025-06-17 07:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 07:45:10 --> User IP: ::1
+DEBUG - 2025-06-17 08:04:59 --> User IP: ::1
+DEBUG - 2025-06-17 08:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 08:04:59 --> User IP: ::1
+DEBUG - 2025-06-17 10:02:52 --> User IP: ::1
+DEBUG - 2025-06-17 10:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 10:02:52 --> User IP: ::1
+CRITICAL - 2025-06-17 10:02:52 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 146.
+ 1 APPPATH\Controllers\PayRole.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:03:49 --> User IP: ::1
+DEBUG - 2025-06-17 10:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 10:03:50 --> User IP: ::1
+CRITICAL - 2025-06-17 10:03:50 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 146.
+ 1 APPPATH\Controllers\PayRole.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:06:17 --> User IP: ::1
+DEBUG - 2025-06-17 10:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 10:06:18 --> User IP: ::1
+CRITICAL - 2025-06-17 10:06:18 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 146.
+ 1 APPPATH\Controllers\PayRole.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:06:40 --> User IP: ::1
+DEBUG - 2025-06-17 10:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 10:06:40 --> User IP: ::1
+ERROR - 2025-06-17 10:06:40 --> mysqli_sql_exception: Unknown column 'deduction_amount' in 'field list' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('\n              ...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('\n              ...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#3 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(322): CodeIgniter\Database\BaseConnection->query('\n              ...', Array)
+#4 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+#5 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2025-06-17 10:06:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deduction_amount' in 'field list'
+[Method: GET, Route: payrole/getattendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\PayRole.php(322): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-17 10:06:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deduction_amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 3 APPPATH\Controllers\PayRole.php(322): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-17 10:06:40 --> [Caused by] mysqli_sql_exception: Unknown column 'deduction_amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 4 APPPATH\Controllers\PayRole.php(322): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:07:05 --> User IP: ::1
+DEBUG - 2025-06-17 10:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 10:07:05 --> User IP: ::1
+CRITICAL - 2025-06-17 10:07:05 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 146.
+ 1 APPPATH\Controllers\PayRole.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:07:07 --> User IP: ::1
+DEBUG - 2025-06-17 10:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 10:07:07 --> User IP: ::1
+CRITICAL - 2025-06-17 10:07:07 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 146.
+ 1 APPPATH\Controllers\PayRole.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:08:02 --> User IP: ::1
+CRITICAL - 2025-06-17 10:08:02 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 146.
+ 1 APPPATH\Controllers\PayRole.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:09:00 --> User IP: ::1
+ERROR - 2025-06-17 10:09:00 --> mysqli_sql_exception: Unknown column 'deduction_amount' in 'field list' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('\n              ...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('\n              ...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#3 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('\n              ...', Array)
+#4 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+#5 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2025-06-17 10:09:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deduction_amount' in 'field list'
+[Method: GET, Route: payrole/getattendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-17 10:09:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deduction_amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 3 APPPATH\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-17 10:09:00 --> [Caused by] mysqli_sql_exception: Unknown column 'deduction_amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 4 APPPATH\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(deduction_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:10:12 --> User IP: ::1
+DEBUG - 2025-06-17 10:11:15 --> User IP: ::1
+ERROR - 2025-06-17 10:11:15 --> mysqli_sql_exception: Unknown column 'dedection_amount' in 'field list' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('\n              ...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('\n              ...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#3 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('\n              ...', Array)
+#4 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+#5 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2025-06-17 10:11:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dedection_amount' in 'field list'
+[Method: GET, Route: payrole/getattendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-17 10:11:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dedection_amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 3 APPPATH\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-17 10:11:15 --> [Caused by] mysqli_sql_exception: Unknown column 'dedection_amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 4 APPPATH\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_amount
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:11:30 --> User IP: ::1
+ERROR - 2025-06-17 10:11:31 --> mysqli_sql_exception: Unknown column 'dedection_amount' in 'field list' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('\n              ...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('\n              ...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#3 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('\n              ...', Array)
+#4 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+#5 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2025-06-17 10:11:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dedection_amount' in 'field list'
+[Method: GET, Route: payrole/getattendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-17 10:11:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dedection_amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 3 APPPATH\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-17 10:11:31 --> [Caused by] mysqli_sql_exception: Unknown column 'dedection_amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 4 APPPATH\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(dedection_amount) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(dedection_amount) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:11:38 --> User IP: ::1
+ERROR - 2025-06-17 10:11:39 --> mysqli_sql_exception: Unknown column 'deduction_data' in 'field list' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('\n              ...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('\n              ...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#3 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('\n              ...', Array)
+#4 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+#5 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2025-06-17 10:11:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deduction_data' in 'field list'
+[Method: GET, Route: payrole/getattendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(deduction_data) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_data) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-17 10:11:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deduction_data' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+                    SELECT pay_type, SUM(deduction_data) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_data) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+                    SELECT pay_type, SUM(deduction_data) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_data) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 3 APPPATH\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(deduction_data) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_data) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-17 10:11:39 --> [Caused by] mysqli_sql_exception: Unknown column 'deduction_data' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('
+                    SELECT pay_type, SUM(deduction_data) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_data) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+                    SELECT pay_type, SUM(deduction_data) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_data) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+                    SELECT pay_type, SUM(deduction_data) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_data) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN \'2025-05-25\' AND \'2025-06-24\'
+                        AND pay_empid = \'GZ21\'
+                        AND transaction_type = \'Debit\'
+                        AND payment_type = \'salary\'
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type')
+ 4 APPPATH\Controllers\PayRole.php(323): CodeIgniter\Database\BaseConnection->query('
+                    SELECT pay_type, SUM(deduction_data) AS deduction
+                    FROM (
+                        SELECT pay_type, MIN(deduction_data) AS deduction_data
+                        FROM payments
+                        WHERE deducted_date BETWEEN ? AND ?
+                        AND pay_empid = ?
+                        AND transaction_type = ?
+                        AND payment_type = ?
+                        GROUP BY pay_type
+                    ) AS unique_deductions
+                    GROUP BY pay_type', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:13:00 --> User IP: ::1
+CRITICAL - 2025-06-17 10:13:00 --> ErrorException: Undefined array key "deduction"
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 331.
+ 1 APPPATH\Controllers\PayRole.php(331): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deduction"', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 331)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:13:20 --> User IP: ::1
+DEBUG - 2025-06-17 10:14:45 --> User IP: ::1
+DEBUG - 2025-06-17 10:15:49 --> User IP: ::1
+DEBUG - 2025-06-17 10:17:59 --> User IP: ::1
+CRITICAL - 2025-06-17 10:17:59 --> ErrorException: Undefined array key "bank_account_no"
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 147.
+ 1 APPPATH\Controllers\PayRole.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bank_account_no"', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:18:35 --> User IP: ::1
+CRITICAL - 2025-06-17 10:18:35 --> ErrorException: Undefined array key "bank_account_no"
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 147.
+ 1 APPPATH\Controllers\PayRole.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bank_account_no"', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:18:36 --> User IP: ::1
+CRITICAL - 2025-06-17 10:18:36 --> ErrorException: Undefined array key "bank_account_no"
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 147.
+ 1 APPPATH\Controllers\PayRole.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bank_account_no"', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 10:18:51 --> User IP: ::1
+DEBUG - 2025-06-17 10:37:41 --> User IP: ::1
+DEBUG - 2025-06-17 10:38:26 --> User IP: ::1
+DEBUG - 2025-06-17 10:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 10:38:27 --> User IP: ::1
+DEBUG - 2025-06-17 10:40:42 --> User IP: ::1
+DEBUG - 2025-06-17 10:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 10:40:42 --> User IP: ::1
+DEBUG - 2025-06-17 10:43:12 --> User IP: ::1
+DEBUG - 2025-06-17 10:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 10:43:13 --> User IP: ::1
+DEBUG - 2025-06-17 10:44:15 --> User IP: ::1
+DEBUG - 2025-06-17 10:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 10:44:15 --> User IP: ::1
+DEBUG - 2025-06-17 10:46:14 --> User IP: ::1
+DEBUG - 2025-06-17 10:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 10:46:14 --> User IP: ::1
+DEBUG - 2025-06-17 10:46:39 --> User IP: ::1
+DEBUG - 2025-06-17 10:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 10:46:40 --> User IP: ::1
+DEBUG - 2025-06-17 11:01:54 --> User IP: ::1
+DEBUG - 2025-06-17 11:03:24 --> User IP: ::1
+DEBUG - 2025-06-17 11:04:08 --> User IP: ::1
+DEBUG - 2025-06-17 12:01:31 --> User IP: ::1
+DEBUG - 2025-06-17 12:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 12:01:31 --> User IP: ::1
+DEBUG - 2025-06-17 12:02:10 --> User IP: ::1
+CRITICAL - 2025-06-17 12:02:10 --> ErrorException: copy(C:\xampp\htdocs\gighz\writable\templates/IDBI Neft Letter MonthYear.doc): Failed to open stream: No such file or directory
+[Method: POST, Route: payrole/generateNeftDocument]
+in APPPATH\Controllers\PayRole.php on line 679.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(C:\\xampp\\htdocs\\gighz\\writable\\templates/IDBI Neft Letter MonthYear.doc): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 679)
+ 2 APPPATH\Controllers\PayRole.php(679): copy('C:\\xampp\\htdocs\\gighz\\writable\\templates/IDBI Neft Letter MonthYear.doc', 'C:\\xampp\\htdocs\\gighz\\writable\\exports/IDBI Neft Letter May-2025.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->generateNeftDocument()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 12:03:35 --> User IP: ::1
+DEBUG - 2025-06-17 12:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 12:03:35 --> User IP: ::1
+DEBUG - 2025-06-17 12:03:48 --> User IP: ::1
+CRITICAL - 2025-06-17 12:03:49 --> ErrorException: copy(C:\xampp\htdocs\gighz\writable\templates/IDBI Neft Letter MonthYear.doc): Failed to open stream: No such file or directory
+[Method: POST, Route: payrole/generateNeftDocument]
+in APPPATH\Controllers\PayRole.php on line 679.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(C:\\xampp\\htdocs\\gighz\\writable\\templates/IDBI Neft Letter MonthYear.doc): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 679)
+ 2 APPPATH\Controllers\PayRole.php(679): copy('C:\\xampp\\htdocs\\gighz\\writable\\templates/IDBI Neft Letter MonthYear.doc', 'C:\\xampp\\htdocs\\gighz\\writable\\exports/IDBI Neft Letter May-2025.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->generateNeftDocument()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 12:05:13 --> User IP: ::1
+DEBUG - 2025-06-17 12:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 12:05:13 --> User IP: ::1
+DEBUG - 2025-06-17 12:05:24 --> User IP: ::1
+CRITICAL - 2025-06-17 12:05:24 --> ErrorException: copy(C:\xampp\htdocs\gighz\writable\templates/IDBI Neft Letter MonthYear.doc): Failed to open stream: No such file or directory
+[Method: POST, Route: payrole/generateNeftDocument]
+in APPPATH\Controllers\PayRole.php on line 679.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(C:\\xampp\\htdocs\\gighz\\writable\\templates/IDBI Neft Letter MonthYear.doc): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 679)
+ 2 APPPATH\Controllers\PayRole.php(679): copy('C:\\xampp\\htdocs\\gighz\\writable\\templates/IDBI Neft Letter MonthYear.doc', 'C:\\xampp\\htdocs\\gighz\\writable\\exports/IDBI Neft Letter May-2025.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->generateNeftDocument()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 12:06:25 --> User IP: ::1
+DEBUG - 2025-06-17 12:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 12:06:25 --> User IP: ::1
+DEBUG - 2025-06-17 12:06:32 --> User IP: ::1
+DEBUG - 2025-06-17 12:07:07 --> User IP: ::1
+CRITICAL - 2025-06-17 12:07:07 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: payrole/generateNeftDocument]
+in APPPATH\Controllers\PayRole.php on line 669.
+ 1 APPPATH\Controllers\PayRole.php(669): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 669)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->generateNeftDocument()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 12:08:21 --> User IP: ::1
+CRITICAL - 2025-06-17 12:08:21 --> ErrorException: copy(C:\xampp\htdocs\gighz\writable\templates/IDBI Neft Letter MonthYear.doc): Failed to open stream: No such file or directory
+[Method: GET, Route: payrole/generateNeftDocument]
+in APPPATH\Controllers\PayRole.php on line 699.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(C:\\xampp\\htdocs\\gighz\\writable\\templates/IDBI Neft Letter MonthYear.doc): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 699)
+ 2 APPPATH\Controllers\PayRole.php(699): copy('C:\\xampp\\htdocs\\gighz\\writable\\templates/IDBI Neft Letter MonthYear.doc', 'C:\\xampp\\htdocs\\gighz\\writable\\exports/IDBI Neft Letter May-2025.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->generateNeftDocument()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 12:11:23 --> User IP: ::1
+DEBUG - 2025-06-17 12:12:17 --> User IP: ::1
+DEBUG - 2025-06-17 12:13:26 --> User IP: ::1
+DEBUG - 2025-06-17 12:37:29 --> User IP: ::1
+DEBUG - 2025-06-17 12:37:45 --> User IP: ::1
+DEBUG - 2025-06-17 12:37:52 --> User IP: ::1
+DEBUG - 2025-06-17 12:52:53 --> User IP: ::1
+CRITICAL - 2025-06-17 12:52:53 --> Error: Class "ZipArchive" not found
+[Method: GET, Route: payrole/generateNeftDocument]
+in VENDORPATH\phpoffice\phpword\src\PhpWord\Shared\ZipArchive.php on line 140.
+ 1 VENDORPATH\phpoffice\phpword\src\PhpWord\TemplateProcessor.php(122): PhpOffice\PhpWord\Shared\ZipArchive->open('C:\\Users\\magendiran\\AppData\\Local\\Temp\\PhpC450.tmp')
+ 2 APPPATH\Controllers\PayRole.php(674): PhpOffice\PhpWord\TemplateProcessor->__construct('C:\\xampp\\htdocs\\gighz\\writable\\templates/IDBI_Neft_Letter_MonthYear.docx')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->generateNeftDocument()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-17 13:01:25 --> User IP: ::1
+DEBUG - 2025-06-17 13:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 13:05:15 --> User IP: ::1
+DEBUG - 2025-06-17 13:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 13:05:30 --> User IP: ::1
+DEBUG - 2025-06-17 13:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 13:05:41 --> User IP: ::1
+DEBUG - 2025-06-17 13:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 13:06:09 --> User IP: ::1
+DEBUG - 2025-06-17 13:06:41 --> User IP: ::1

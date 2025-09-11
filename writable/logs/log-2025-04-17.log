@@ -1,0 +1,63 @@
+DEBUG - 2025-04-17 05:56:53 --> User IP: ::1
+DEBUG - 2025-04-17 05:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 05:57:00 --> User IP: ::1
+DEBUG - 2025-04-17 05:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 05:57:01 --> User IP: ::1
+DEBUG - 2025-04-17 05:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 05:57:11 --> User IP: ::1
+DEBUG - 2025-04-17 05:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 05:57:11 --> User IP: ::1
+DEBUG - 2025-04-17 05:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 06:03:40 --> User IP: ::1
+DEBUG - 2025-04-17 06:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 06:03:47 --> User IP: ::1
+DEBUG - 2025-04-17 06:03:59 --> User IP: ::1
+CRITICAL - 2025-04-17 06:03:59 --> Error: Object of class DateTime could not be converted to string
+[Method: GET, Route: BiometricController/refrechAttendance]
+in APPPATH\Controllers\BiometricController.php on line 140.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->refrechAttendance()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-17 06:04:21 --> User IP: ::1
+DEBUG - 2025-04-17 06:06:10 --> User IP: ::1
+DEBUG - 2025-04-17 06:06:23 --> User IP: ::1
+DEBUG - 2025-04-17 06:07:55 --> User IP: ::1
+DEBUG - 2025-04-17 06:09:48 --> User IP: ::1
+DEBUG - 2025-04-17 06:12:32 --> User IP: ::1
+CRITICAL - 2025-04-17 06:12:32 --> TypeError: date(): Argument #2 ($timestamp) must be of type ?int, string given
+[Method: GET, Route: BiometricController/refrechAttendance]
+in APPPATH\Controllers\BiometricController.php on line 145.
+ 1 APPPATH\Controllers\BiometricController.php(145): date('Y-m-d', '2025-04-12')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->refrechAttendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-17 06:12:51 --> User IP: ::1
+CRITICAL - 2025-04-17 06:12:51 --> TypeError: date(): Argument #2 ($timestamp) must be of type ?int, string given
+[Method: GET, Route: BiometricController/refrechAttendance]
+in APPPATH\Controllers\BiometricController.php on line 145.
+ 1 APPPATH\Controllers\BiometricController.php(145): date('Y-m-d', '2025-04-12')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->refrechAttendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-17 06:13:34 --> User IP: ::1
+DEBUG - 2025-04-17 06:13:41 --> User IP: ::1
+DEBUG - 2025-04-17 07:37:12 --> User IP: ::1
+DEBUG - 2025-04-17 07:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 09:17:13 --> User IP: ::1
+DEBUG - 2025-04-17 09:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 10:57:13 --> User IP: ::1
+DEBUG - 2025-04-17 10:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 12:37:13 --> User IP: ::1
+DEBUG - 2025-04-17 12:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,60 @@
+:root{
+    --brand-color--:#da2442;
+    --composit-color--:#2ddbbd;
+    --white-color--:#fff;
+    --toggle-color :#fff;
+    --font-color:#fff;
+    --bg-color-:#FBE9EC;
+    --h1--:43px;
+    --h2--:34px;
+    --h3--:28px;
+    --h4--:23px;
+    --para--:18px;
+    --border-radius--:20px;
+    --brand-shadow--:0 0 20px #da2442ab,
+    0 0 30px #da2442ab,
+    0 0 40px #da2442ab,
+    0 0 50px #da2442ab,
+    0 0 70px #da2442ab,
+    0 0 100px #da2442ab,
+    0 0 150px #da2442ab;
+    --brand-shadow--:0 0 20px #24dbbdab,
+    0 0 30px #24dbbdab,
+    0 0 40px #24dbbdab,
+    0 0 50px #24dbbdab,
+    0 0 70px #24dbbdab,
+    0 0 100px #24dbbdab,
+    0 0 150px #24dbbdab;
+
+    --tran-03:all 0.2s ease;
+    --tran-04:all 0.3s ease;
+    --tran-05:all 0.4s ease;
+    --tran-06:all 0.5s ease;
+}
+.myleaves .availabel-leave{
+    margin-top:30px ;
+}
+.myleaves .ourLeave{
+    margin-top: 40px;
+}
+
+.ourLeave table {
+    width: 100%;
+}
+.ourLeave table thead{
+    background: var(--white-color--);
+    max-width:150px ;
+    height: 40px;
+}
+.ourLeave table tbody{
+    height: 70px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.ourLeave table .reason{
+   max-width: 300px;
+   width: 300px;
+
+}
+
+

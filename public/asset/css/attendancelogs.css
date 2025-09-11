@@ -1,0 +1,423 @@
+.search-form {
+    margin: 0px 10px 0px 1px;
+
+}
+
+.bx-trash {
+    margin: auto;
+    color: black;
+}
+
+.mb-4 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.modelUserIdABioType {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bioType {
+    border: 1px solid #da2442;
+    background: transparent;
+    outline: none;
+    border-radius: 5px;
+}
+
+#bioTypeBtn {
+    color: #fff;
+    background: #da2442;
+    border-radius: 5px;
+    padding: 2px 7px;
+    border: none;
+}
+
+#punchModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 10px;
+}
+#watchman-punchModal {
+    display: none;
+    position: fixed;
+    top: 48%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+/* Overlay background */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.bio-refreach-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1001;
+    max-width: 400px;
+    width: 100%;
+}
+
+.biometric .search-form .row {
+    display: flex;
+    padding: 10px 7% 10px 0px;
+    gap: 20px;
+}
+
+.biometric .col-md-3 {
+    padding: 10px 0px;
+}
+
+.biometric .col-md-3 select {
+    width: 150px;
+    /* padding: 10px; */
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 30px;
+    transition: .2s;
+}
+
+.biometric .col-md-3 select:hover {
+    border: 2px solid #da2442;
+}
+
+.biometric .col-md-3 button {
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    border: none;
+    background: #da2442;
+    cursor: pointer;
+    color: white;
+    transition: all .5s;
+}
+
+.biometric .col-md-3 button:hover {
+    background: transparent;
+    color: #da2442;
+    border: 2px solid #da2442;
+}
+
+.log-table-container {
+    margin: 20px 0;
+    width: 100%;
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    border: 1px solid #ccc;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+
+table {
+    width: 800px;
+    /* Set a wider table width */
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+    padding: 5px 10px;
+    /* border: 1px solid black; */
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+/* Fix Name and ID columns */
+.log-table-container th:first-child,
+.log-table-container th:nth-child(2),
+.log-table-container td:first-child,
+.log-table-container td:nth-child(2) {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: #e23c58;
+    color: white;
+}
+
+.log-table-container th:first-child,
+.log-table-container th:nth-child(2) {
+    border-bottom: 2px solid white;
+}
+
+.log-table-container th:nth-child(2),
+.log-table-container td:nth-child(2) {
+    left: 75px;
+    /* Adjust based on Name column width  */
+}
+
+/* Add background to fixed headers */
+thead th {
+    background: #e23c58;
+    color: #fff;
+
+}
+
+.biometric table tbody td a {
+    color: navy;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #ed535346;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--brand-color--);
+}
+
+.biometric #punchModal , #watchman-punchModal{
+    padding: 20px;
+    /* background: linear-gradient(60deg, #da2442,deeppink); */
+    /* background: #da2442; */
+    /* color: #fff; */
+}
+
+.biometric .modal-box h3 {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.biometric .modal-box p,
+.biometric .modal-box h4 {
+    padding: 2px 0px;
+}
+
+.biometric .modal-box ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.biometric .modal-box ul li {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0px;
+}
+
+.biometric .modal-box ul li button {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.biometric .modal-box ul li button i:hover {
+    color: #da2442;
+}
+
+.biometric .btn-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: #da2442;
+    cursor: pointer;
+    color: #fff;
+}
+
+.biometric .modal-box #manualPunchForm {
+    display: grid;
+    gap: 10px;
+}
+
+ .popup-btn {
+    width: 40%;
+    color: #fff;
+    background: #da2442;
+    border: none;
+    margin: auto;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s;
+    margin: 10px 0px;
+}
+.cal-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.popup-btn:hover {
+    border: 2px solid #da2442;
+    color: #da2442;
+    background: transparent;
+}
+
+.manualTime {
+    height: 30px;
+    border: 1px solid #da2442;
+    outline: none;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+.log-table-container.employee-attendance {
+    /* overflow-x: auto; */
+    overflow-y: auto;
+    width: 35%;
+    height: 70vh;
+}
+
+.log-table-container.employee-attendance table {
+    width: 100%;
+}
+
+.attendance-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.attendace-data {
+    width: 60%;
+    height: 70vh;
+    margin: auto;
+    /* background: red; */
+}
+
+.attendance-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* background: red; */
+    gap: 30px;
+}
+
+.attendance-details div,
+.employee-total-hours {
+    margin: auto;
+    background: linear-gradient(#da2442a7, #da2442);
+    height: 60px;
+    width: 230px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px;
+    gap: 10px;
+    color: white;
+}
+
+.attendace-data div h3 {
+    text-align: center;
+    width: 60%;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.attendace-data div p {
+    width: 25%;
+    font-size: 25px;
+    font-weight: 700;
+    margin: auto;
+    text-align: center;
+}
+
+.employee-total-hours {
+    width: 300px;
+    margin: 40px auto;
+    letter-spacing: 1px;
+}
+
+.emp-attendance-search-form {
+    width: 37%;
+}
+
+.emp-attendance-search-form .mt-4 {
+    height: 100%;
+    margin-top: 22px;
+}
+
+
+/* Upload biometric */
+#upload_bio {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+}
+
+#upload_bio form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+#upload_bio form .input-box {
+    height: 60px;
+    /* padding: 10px 5px; */
+    /* background: red; */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    /* gap: 10px; */
+    font-size: 16px;
+}
+
+#upload_bio form .input-box input {
+    height: 40px;
+    border: 2px solid gray;
+    outline: none;
+    border-radius: 10px;
+    width: 90%;
+    padding: 2px 1%;
+}
+
+.text-danger {
+    color: red;
+}
+
+.box-icon-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #da2442;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}

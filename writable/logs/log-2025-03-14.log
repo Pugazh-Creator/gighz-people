@@ -1,0 +1,534 @@
+DEBUG - 2025-03-14 05:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 05:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 05:35:43 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 05:36:07 --> User ID: 45, Date: 2025-03-05
+DEBUG - 2025-03-14 05:36:10 --> User ID: 45, Date: 2025-03-06
+DEBUG - 2025-03-14 05:36:13 --> User ID: 45, Date: 2025-03-07
+DEBUG - 2025-03-14 05:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 05:36:53 --> User ID: 27, Date: 2025-02-25
+DEBUG - 2025-03-14 05:36:56 --> User ID: 45, Date: 2025-03-01
+DEBUG - 2025-03-14 05:37:02 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 05:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 05:38:56 --> User ID: 5, Date: 2025-02-27
+DEBUG - 2025-03-14 05:39:16 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 05:39:20 --> User ID: 1, Date: 2025-02-25
+DEBUG - 2025-03-14 05:39:32 --> User ID: 23, Date: 2025-03-11
+DEBUG - 2025-03-14 05:39:59 --> User ID: 6, Date: 2025-03-11
+DEBUG - 2025-03-14 05:40:03 --> User ID: 45, Date: 2025-03-11
+DEBUG - 2025-03-14 05:40:13 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 05:40:24 --> User ID: 23, Date: 2025-03-11
+DEBUG - 2025-03-14 05:40:30 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 05:40:37 --> User ID: 4, Date: 2025-03-11
+DEBUG - 2025-03-14 05:40:40 --> User ID: 13, Date: 2025-03-11
+DEBUG - 2025-03-14 05:40:49 --> User ID: 13, Date: 2025-03-11
+DEBUG - 2025-03-14 05:40:54 --> User ID: 16, Date: 2025-03-11
+DEBUG - 2025-03-14 05:40:59 --> User ID: 17, Date: 2025-03-11
+DEBUG - 2025-03-14 05:41:01 --> User ID: 16, Date: 2025-03-11
+DEBUG - 2025-03-14 05:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 05:44:44 --> User ID: 45, Date: 2025-03-11
+DEBUG - 2025-03-14 05:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 05:45:11 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 05:45:19 --> User ID: 16, Date: 2025-03-11
+DEBUG - 2025-03-14 05:45:26 --> User ID: 4, Date: 2025-03-11
+DEBUG - 2025-03-14 05:45:29 --> User ID: 13, Date: 2025-03-11
+DEBUG - 2025-03-14 05:45:35 --> User ID: 13, Date: 2025-03-11
+DEBUG - 2025-03-14 05:46:00 --> User ID: 13, Date: 2025-03-11
+DEBUG - 2025-03-14 05:49:55 --> User ID: 13, Date: 2025-03-11
+DEBUG - 2025-03-14 05:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 05:50:04 --> User ID: 13, Date: 2025-03-11
+DEBUG - 2025-03-14 05:50:10 --> User ID: 13, Date: 2025-03-11
+DEBUG - 2025-03-14 05:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 05:50:41 --> User ID: 23, Date: 2025-03-11
+DEBUG - 2025-03-14 05:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 06:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 06:36:43 --> User ID: 9, Date: 2025-03-07
+DEBUG - 2025-03-14 06:39:06 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 06:39:13 --> User ID: 4, Date: 2025-03-11
+DEBUG - 2025-03-14 06:39:42 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 06:39:46 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 06:39:49 --> User ID: 9, Date: 2025-02-28
+DEBUG - 2025-03-14 07:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:55:12 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-14 07:55:33 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-14 07:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:55:45 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 07:55:58 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 07:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 07:56:07 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 07:59:59 --> User ID: 23, Date: 2025-03-11
+DEBUG - 2025-03-14 08:00:08 --> User ID: 23, Date: 2025-03-11
+DEBUG - 2025-03-14 08:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 08:00:15 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-14 08:00:17 --> User ID: 23, Date: 2025-03-04
+DEBUG - 2025-03-14 08:00:22 --> User ID: 23, Date: 2025-03-11
+ERROR - 2025-03-14 08:00:29 --> mysqli_sql_exception: Duplicate entry '2025-03-11 09:31:00' for key 'attendance_logs.timestamp_UNIQUE' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gighz\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-14 08:00:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-11 09:31:00' for key 'attendance_logs.timestamp_UNIQUE'
+[Method: POST, Route: attendance/addManualPunch]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-14 08:00:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-11 09:31:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-11 09:31:00\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-11 09:31:00\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-14 08:00:29 --> [Caused by] mysqli_sql_exception: Duplicate entry '2025-03-11 09:31:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-11 09:31:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-11 09:31:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-11 09:31:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-14 08:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 08:01:12 --> User ID: 23, Date: 2025-03-11
+ERROR - 2025-03-14 08:01:22 --> mysqli_sql_exception: Duplicate entry '2025-03-11 09:31:00' for key 'attendance_logs.timestamp_UNIQUE' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gighz\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-14 08:01:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-11 09:31:00' for key 'attendance_logs.timestamp_UNIQUE'
+[Method: POST, Route: attendance/addManualPunch]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-14 08:01:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-11 09:31:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-11 09:31:00\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-11 09:31:00\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-14 08:01:22 --> [Caused by] mysqli_sql_exception: Duplicate entry '2025-03-11 09:31:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-11 09:31:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-11 09:31:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-11 09:31:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-14 08:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 08:07:08 --> User ID: 10, Date: 2025-03-03
+DEBUG - 2025-03-14 08:07:28 --> User ID: 10, Date: 2025-03-03
+DEBUG - 2025-03-14 08:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 08:07:43 --> User ID: 23, Date: 2025-03-11
+DEBUG - 2025-03-14 08:08:05 --> User ID: 23, Date: 2025-03-11
+DEBUG - 2025-03-14 08:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 08:15:30 --> User ID: 4, Date: 2025-03-11
+DEBUG - 2025-03-14 08:15:33 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 08:15:52 --> User ID: 10, Date: 2025-03-05
+DEBUG - 2025-03-14 08:15:59 --> User ID: 10, Date: 2025-03-05
+DEBUG - 2025-03-14 08:16:09 --> User ID: 10, Date: 2025-03-06
+DEBUG - 2025-03-14 08:16:34 --> User ID: 10, Date: 2025-03-06
+DEBUG - 2025-03-14 08:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 08:16:48 --> User ID: 10, Date: 2025-03-06
+DEBUG - 2025-03-14 08:16:55 --> User ID: 10, Date: 2025-03-05
+DEBUG - 2025-03-14 08:17:02 --> User ID: 10, Date: 2025-03-07
+DEBUG - 2025-03-14 08:17:57 --> User ID: 10, Date: 2025-03-13
+DEBUG - 2025-03-14 08:18:41 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 08:18:51 --> User ID: 27, Date: 2025-03-13
+DEBUG - 2025-03-14 08:18:56 --> User ID: 27, Date: 2025-03-12
+DEBUG - 2025-03-14 08:22:59 --> User ID: 10, Date: 2025-03-13
+DEBUG - 2025-03-14 08:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 08:24:55 --> User ID: 45, Date: 2025-03-03
+DEBUG - 2025-03-14 08:25:09 --> User ID: 27, Date: 2025-03-10
+DEBUG - 2025-03-14 08:25:41 --> User ID: 27, Date: 2025-03-10
+DEBUG - 2025-03-14 08:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 08:25:54 --> User ID: 27, Date: 2025-03-05
+DEBUG - 2025-03-14 08:25:58 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-14 08:26:01 --> User ID: 27, Date: 2025-03-05
+DEBUG - 2025-03-14 08:26:04 --> User ID: 27, Date: 2025-03-07
+DEBUG - 2025-03-14 08:26:06 --> User ID: 27, Date: 2025-03-08
+DEBUG - 2025-03-14 08:26:14 --> User ID: 27, Date: 2025-02-25
+DEBUG - 2025-03-14 08:26:18 --> User ID: 27, Date: 2025-02-27
+DEBUG - 2025-03-14 08:26:23 --> User ID: 27, Date: 2025-02-28
+DEBUG - 2025-03-14 08:26:26 --> User ID: 27, Date: 2025-02-28
+DEBUG - 2025-03-14 08:26:30 --> User ID: 27, Date: 2025-03-03
+DEBUG - 2025-03-14 08:26:37 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-14 08:26:39 --> User ID: 27, Date: 2025-03-05
+DEBUG - 2025-03-14 08:26:42 --> User ID: 27, Date: 2025-03-06
+DEBUG - 2025-03-14 08:26:44 --> User ID: 27, Date: 2025-03-07
+DEBUG - 2025-03-14 08:26:46 --> User ID: 27, Date: 2025-03-08
+DEBUG - 2025-03-14 08:26:52 --> User ID: 27, Date: 2025-03-08
+DEBUG - 2025-03-14 08:26:54 --> User ID: 27, Date: 2025-03-10
+DEBUG - 2025-03-14 08:26:58 --> User ID: 27, Date: 2025-03-10
+DEBUG - 2025-03-14 08:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 08:27:01 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-14 08:27:05 --> User ID: 27, Date: 2025-03-03
+DEBUG - 2025-03-14 08:27:09 --> User ID: 27, Date: 2025-03-05
+DEBUG - 2025-03-14 08:27:12 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-14 08:27:14 --> User ID: 27, Date: 2025-03-03
+DEBUG - 2025-03-14 08:27:19 --> User ID: 27, Date: 2025-03-10
+DEBUG - 2025-03-14 08:27:28 --> User ID: 27, Date: 2025-03-10
+DEBUG - 2025-03-14 08:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 08:27:34 --> User ID: 27, Date: 2025-03-10
+DEBUG - 2025-03-14 08:27:39 --> User ID: 27, Date: 2025-03-10
+DEBUG - 2025-03-14 08:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 08:27:46 --> User ID: 27, Date: 2025-03-10
+CRITICAL - 2025-03-14 08:40:15 --> ErrorException: A non-numeric value encountered
+[Method: GET, Route: attendance]
+in APPPATH\Controllers\BiometricController.php on line 167.
+ 1 APPPATH\Controllers\BiometricController.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->testFun()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-14 08:40:32 --> ErrorException: A non-numeric value encountered
+[Method: GET, Route: attendance]
+in APPPATH\Controllers\BiometricController.php on line 167.
+ 1 APPPATH\Controllers\BiometricController.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->testFun()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-14 08:50:38 --> TypeError: intdiv(): Argument #1 ($num1) must be of type int, string given
+[Method: GET, Route: attendance]
+in APPPATH\Controllers\BiometricController.php on line 178.
+ 1 APPPATH\Controllers\BiometricController.php(178): intdiv('32,399.00', 3600)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->testFun()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-14 08:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 08:57:52 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 08:58:00 --> User ID: 9, Date: 2025-02-25
+CRITICAL - 2025-03-14 08:58:00 --> ErrorException: Undefined variable $newTime
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 172.
+ 1 APPPATH\Controllers\BiometricController.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newTime', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 172)
+ 2 APPPATH\Controllers\BiometricController.php(117): App\Controllers\BiometricController->recalculatePunchTime('9', '2025-02-25')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-14 08:58:09 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 115.
+ 1 APPPATH\Controllers\BiometricController.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-14 08:58:34 --> User ID: 1, Date: 2025-02-28
+DEBUG - 2025-03-14 08:58:43 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 08:58:55 --> User ID: 27, Date: 2025-03-11
+CRITICAL - 2025-03-14 08:58:55 --> ErrorException: Undefined variable $newTime
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 172.
+ 1 APPPATH\Controllers\BiometricController.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newTime', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 172)
+ 2 APPPATH\Controllers\BiometricController.php(117): App\Controllers\BiometricController->recalculatePunchTime('27', '2025-03-11')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-14 09:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:00:06 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:00:14 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:00:22 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:00:28 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:00:45 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:00:51 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:00:56 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:01:03 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:01:09 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 09:01:14 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 09:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:40:51 --> User ID: 23, Date: 2025-02-27
+DEBUG - 2025-03-14 09:41:01 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 09:41:14 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:43:10 --> User ID: 13, Date: 2025-02-27
+DEBUG - 2025-03-14 09:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:43:13 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:43:17 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:43:21 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:43:28 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:45:21 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:45:24 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:45:29 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:45:50 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:45:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:45:55 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 09:46:03 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:52:19 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:52:26 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:52:31 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:52:41 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:52:52 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:55:08 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:55:14 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:55:21 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:55:28 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 09:55:31 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 09:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:55:36 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 09:55:51 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 09:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:57:24 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:57:26 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:57:30 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:57:36 --> User ID: 9, Date: 2025-02-25
+WARNING - 2025-03-14 09:57:36 --> [DEPRECATED] Implicit conversion from float 7.916666666666666 to int loses precision in APPPATH\Controllers\BiometricController.php on line 171.
+ 1 APPPATH\Controllers\BiometricController.php(101): App\Controllers\BiometricController->recalculatePunchTime('9', '2025-02-25')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-14 09:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:57:46 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 09:58:01 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 09:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:58:05 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 09:58:27 --> User ID: 9, Date: 2025-02-27
+WARNING - 2025-03-14 09:58:27 --> [DEPRECATED] Implicit conversion from float 7.966666666666667 to int loses precision in APPPATH\Controllers\BiometricController.php on line 171.
+ 1 APPPATH\Controllers\BiometricController.php(101): App\Controllers\BiometricController->recalculatePunchTime('9', '2025-02-27')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-14 09:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:58:35 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:59:35 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:59:37 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:59:41 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:59:46 --> User ID: 9, Date: 2025-02-25
+DEBUG - 2025-03-14 09:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 09:59:56 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 10:00:01 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 10:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:00:05 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 10:00:14 --> User ID: 9, Date: 2025-02-27
+DEBUG - 2025-03-14 10:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:00:20 --> User ID: 9, Date: 2025-02-28
+DEBUG - 2025-03-14 10:00:33 --> User ID: 9, Date: 2025-02-28
+DEBUG - 2025-03-14 10:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:00:53 --> User ID: 10, Date: 2025-03-13
+DEBUG - 2025-03-14 10:01:00 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 10:01:06 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 10:01:33 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 10:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:01:41 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 10:02:17 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 10:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:02:26 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 10:02:37 --> User ID: 4, Date: 2025-03-11
+DEBUG - 2025-03-14 10:02:47 --> User ID: 23, Date: 2025-03-13
+DEBUG - 2025-03-14 10:02:52 --> User ID: 23, Date: 2025-03-12
+DEBUG - 2025-03-14 10:02:58 --> User ID: 23, Date: 2025-03-11
+DEBUG - 2025-03-14 10:03:03 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-14 10:03:29 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-14 10:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:03:37 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-14 10:04:04 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-14 10:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:04:10 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-14 10:04:18 --> User ID: 23, Date: 2025-03-11
+DEBUG - 2025-03-14 10:04:26 --> User ID: 23, Date: 2025-03-11
+DEBUG - 2025-03-14 10:04:45 --> User ID: 23, Date: 2025-03-11
+DEBUG - 2025-03-14 10:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:04:51 --> User ID: 23, Date: 2025-03-11
+DEBUG - 2025-03-14 10:04:57 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-14 10:05:01 --> User ID: 23, Date: 2025-03-11
+DEBUG - 2025-03-14 10:05:05 --> User ID: 27, Date: 2025-03-11
+DEBUG - 2025-03-14 10:05:10 --> User ID: 13, Date: 2025-03-11
+DEBUG - 2025-03-14 10:05:14 --> User ID: 17, Date: 2025-03-11
+DEBUG - 2025-03-14 10:05:17 --> User ID: 1, Date: 2025-03-11
+DEBUG - 2025-03-14 10:05:22 --> User ID: 45, Date: 2025-03-11
+DEBUG - 2025-03-14 10:05:30 --> User ID: 45, Date: 2025-03-12
+DEBUG - 2025-03-14 10:05:38 --> User ID: 45, Date: 2025-03-13
+DEBUG - 2025-03-14 10:05:42 --> User ID: 45, Date: 2025-02-25
+DEBUG - 2025-03-14 10:05:44 --> User ID: 23, Date: 2025-02-25
+DEBUG - 2025-03-14 10:05:48 --> User ID: 23, Date: 2025-02-27
+DEBUG - 2025-03-14 10:05:50 --> User ID: 23, Date: 2025-02-28
+DEBUG - 2025-03-14 10:05:53 --> User ID: 45, Date: 2025-02-25
+DEBUG - 2025-03-14 10:05:57 --> User ID: 45, Date: 2025-02-28
+DEBUG - 2025-03-14 10:06:01 --> User ID: 45, Date: 2025-03-03
+DEBUG - 2025-03-14 10:06:12 --> User ID: 45, Date: 2025-03-07
+DEBUG - 2025-03-14 10:06:18 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-14 10:06:22 --> User ID: 16, Date: 2025-02-26
+DEBUG - 2025-03-14 10:06:25 --> User ID: 16, Date: 2025-02-27
+DEBUG - 2025-03-14 10:06:33 --> User ID: 10, Date: 2025-02-28
+DEBUG - 2025-03-14 10:06:36 --> User ID: 10, Date: 2025-02-27
+DEBUG - 2025-03-14 10:06:39 --> User ID: 10, Date: 2025-02-25
+DEBUG - 2025-03-14 10:06:44 --> User ID: 23, Date: 2025-02-25
+DEBUG - 2025-03-14 10:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:07:40 --> User ID: 45, Date: 2025-03-13
+DEBUG - 2025-03-14 10:07:49 --> User ID: 10, Date: 2025-03-13
+DEBUG - 2025-03-14 10:08:26 --> User ID: 9, Date: 2025-03-04
+DEBUG - 2025-03-14 10:08:41 --> User ID: 9, Date: 2025-03-04
+DEBUG - 2025-03-14 10:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:08:51 --> User ID: 9, Date: 2025-03-04
+DEBUG - 2025-03-14 10:09:53 --> User ID: 23, Date: 2025-02-27
+DEBUG - 2025-03-14 10:09:58 --> User ID: 23, Date: 2025-02-28
+DEBUG - 2025-03-14 10:10:01 --> User ID: 23, Date: 2025-03-01
+DEBUG - 2025-03-14 10:10:03 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-14 10:10:09 --> User ID: 23, Date: 2025-03-04
+DEBUG - 2025-03-14 10:10:18 --> User ID: 23, Date: 2025-03-04
+DEBUG - 2025-03-14 10:10:20 --> User ID: 23, Date: 2025-03-05
+DEBUG - 2025-03-14 10:10:22 --> User ID: 23, Date: 2025-03-06
+DEBUG - 2025-03-14 10:10:24 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-14 10:10:34 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-14 10:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:10:46 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-14 10:10:58 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-14 10:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-14 10:11:10 --> User ID: 23, Date: 2025-03-07

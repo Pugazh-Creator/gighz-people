@@ -1,0 +1,439 @@
+DEBUG - 2025-06-06 04:26:10 --> User IP: ::1
+DEBUG - 2025-06-06 04:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 04:26:19 --> User IP: ::1
+DEBUG - 2025-06-06 04:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 04:26:19 --> User IP: ::1
+DEBUG - 2025-06-06 04:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 04:26:21 --> User IP: ::1
+DEBUG - 2025-06-06 04:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 04:26:23 --> User IP: ::1
+DEBUG - 2025-06-06 04:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 04:26:57 --> User IP: ::1
+CRITICAL - 2025-06-06 04:26:57 --> TypeError: CodeIgniter\Database\BaseBuilder::getOperatorFromWhereKey(): Argument #1 ($whereKey) must be of type string, int given, called in C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php on line 776
+[Method: POST, Route: biometriccontroller/syncToHostinger]
+in SYSTEMPATH\Database\BaseBuilder.php on line 3481.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(776): CodeIgniter\Database\BaseBuilder->getOperatorFromWhereKey(0)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(717): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', [...], null, 'AND ', true)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->where([...])
+ 4 APPPATH\Controllers\BiometricController.php(369): CodeIgniter\Model->__call('where', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->syncToHostinger()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-06 04:27:17 --> User IP: ::1
+ERROR - 2025-06-06 04:27:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != ''' at line 4 in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `attenda...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attenda...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attenda...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attenda...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(365): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->syncToHostinger()
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-06-06 04:27:17 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != ''' at line 4
+[Method: GET, Route: biometriccontroller/syncToHostinger]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != :attendance_users.emp_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\BiometricController.php(365): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->syncToHostinger()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-06 04:27:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != ''' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != \'\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != \'\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != :attendance_users.emp_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\BiometricController.php(365): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->syncToHostinger()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-06 04:27:17 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != ''' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != \'\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != :attendance_users.emp_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\BiometricController.php(365): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->syncToHostinger()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-06 04:29:41 --> User IP: ::1
+ERROR - 2025-06-06 04:29:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != ''' at line 4 in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `attenda...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attenda...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attenda...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attenda...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(365): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->syncToHostinger()
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-06-06 04:29:41 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != ''' at line 4
+[Method: GET, Route: biometriccontroller/syncToHostinger]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != :attendance_users.emp_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\BiometricController.php(365): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->syncToHostinger()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-06 04:29:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != ''' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != \'\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != \'\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != :attendance_users.emp_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\BiometricController.php(365): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->syncToHostinger()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-06 04:29:41 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != ''' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != \'\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.*, `attendance_users`.`emp_id`, `attendance_users`.`name`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+WHERE `date` > IS NULL
+AND `date` < IS NULL
+AND `attendance_users`.`emp_id` != :attendance_users.emp_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\BiometricController.php(365): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->syncToHostinger()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-06 04:29:46 --> User IP: ::1
+DEBUG - 2025-06-06 04:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 04:30:04 --> User IP: ::1
+ERROR - 2025-06-06 04:30:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u853418576_Test'@'%' to database 'u853418576_timesheet' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('srv827.hstgr.io', 'u853418576_Test', Object(SensitiveParameterValue), 'u853418576_time...', 3306, '', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(385): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->syncToHostinger()
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'%' to database 'u853418576_timesheet' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(385): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->syncToHostinger()
+#5 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2025-06-06 04:30:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'%' to database 'u853418576_timesheet'
+[Method: POST, Route: biometriccontroller/syncToHostinger]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_attendance_workhour`
+WHERE `attendance_date` >= :attendance_date:
+AND `attendance_date` <= :attendance_date.1:', [...], false)
+ 3 APPPATH\Controllers\BiometricController.php(385): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->syncToHostinger()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-06 04:31:01 --> User IP: ::1
+DEBUG - 2025-06-06 04:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 04:31:09 --> User IP: ::1
+DEBUG - 2025-06-06 04:31:43 --> User IP: ::1
+DEBUG - 2025-06-06 04:32:19 --> User IP: ::1
+DEBUG - 2025-06-06 04:32:54 --> User IP: ::1
+DEBUG - 2025-06-06 04:33:29 --> User IP: ::1
+DEBUG - 2025-06-06 04:36:45 --> User IP: ::1
+DEBUG - 2025-06-06 04:36:45 --> User ID: 23, Date: 2025-06-03
+DEBUG - 2025-06-06 04:37:12 --> User IP: ::1
+DEBUG - 2025-06-06 05:48:41 --> User IP: ::1
+DEBUG - 2025-06-06 05:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 05:48:42 --> User IP: ::1
+DEBUG - 2025-06-06 05:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 05:48:49 --> User IP: ::1
+DEBUG - 2025-06-06 05:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 05:48:50 --> User IP: ::1
+DEBUG - 2025-06-06 05:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 05:48:51 --> User IP: ::1
+DEBUG - 2025-06-06 05:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 05:50:53 --> User IP: ::1
+DEBUG - 2025-06-06 05:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 05:51:26 --> User IP: ::1
+DEBUG - 2025-06-06 05:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 05:51:26 --> User IP: ::1
+DEBUG - 2025-06-06 05:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 05:51:33 --> User IP: ::1
+DEBUG - 2025-06-06 05:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 05:51:33 --> User IP: ::1
+DEBUG - 2025-06-06 05:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 05:51:36 --> User IP: ::1
+DEBUG - 2025-06-06 05:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 05:51:38 --> User IP: ::1
+DEBUG - 2025-06-06 05:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 05:51:54 --> User IP: ::1
+DEBUG - 2025-06-06 05:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:01:55 --> User IP: ::1
+DEBUG - 2025-06-06 06:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:06:31 --> User IP: ::1
+DEBUG - 2025-06-06 06:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:06:31 --> User IP: ::1
+DEBUG - 2025-06-06 06:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:06:53 --> User IP: ::1
+DEBUG - 2025-06-06 06:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:06:53 --> User IP: ::1
+DEBUG - 2025-06-06 06:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:07:04 --> User IP: ::1
+DEBUG - 2025-06-06 06:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:07:29 --> User IP: ::1
+DEBUG - 2025-06-06 06:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:08:04 --> User IP: ::1
+DEBUG - 2025-06-06 06:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:08:15 --> User IP: ::1
+DEBUG - 2025-06-06 06:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:08:23 --> User IP: ::1
+DEBUG - 2025-06-06 06:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:08:23 --> User IP: ::1
+DEBUG - 2025-06-06 06:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:08:25 --> User IP: ::1
+DEBUG - 2025-06-06 06:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:08:29 --> User IP: ::1
+DEBUG - 2025-06-06 06:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:08:35 --> User IP: ::1
+DEBUG - 2025-06-06 06:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:08:37 --> User IP: ::1
+DEBUG - 2025-06-06 06:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:08:41 --> User IP: ::1
+DEBUG - 2025-06-06 06:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:08:43 --> User IP: ::1
+DEBUG - 2025-06-06 06:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:25:25 --> User IP: ::1
+DEBUG - 2025-06-06 06:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:25:29 --> User IP: ::1
+DEBUG - 2025-06-06 06:25:32 --> User IP: ::1
+CRITICAL - 2025-06-06 06:25:32 --> TypeError: CodeIgniter\Database\BaseBuilder::getOperatorFromWhereKey(): Argument #1 ($whereKey) must be of type string, int given, called in C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php on line 776
+[Method: GET, Route: payrole/getemppermission]
+in SYSTEMPATH\Database\BaseBuilder.php on line 3481.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(776): CodeIgniter\Database\BaseBuilder->getOperatorFromWhereKey(0)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(717): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', [...], null, 'AND ', true)
+ 3 APPPATH\Controllers\PayRole.php(255): CodeIgniter\Database\BaseBuilder->where([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getemppermission()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-06 06:25:58 --> User IP: ::1
+DEBUG - 2025-06-06 06:31:19 --> User IP: ::1
+DEBUG - 2025-06-06 06:33:28 --> User IP: ::1
+DEBUG - 2025-06-06 06:34:43 --> User IP: ::1
+DEBUG - 2025-06-06 06:36:11 --> User IP: ::1
+DEBUG - 2025-06-06 06:37:02 --> User IP: ::1
+DEBUG - 2025-06-06 06:37:30 --> User IP: ::1
+DEBUG - 2025-06-06 06:38:05 --> User IP: ::1
+DEBUG - 2025-06-06 06:38:07 --> User IP: ::1
+DEBUG - 2025-06-06 06:38:40 --> User IP: ::1
+DEBUG - 2025-06-06 06:39:04 --> User IP: ::1
+DEBUG - 2025-06-06 06:39:05 --> User IP: ::1
+DEBUG - 2025-06-06 06:39:27 --> User IP: ::1
+DEBUG - 2025-06-06 06:39:29 --> User IP: ::1
+DEBUG - 2025-06-06 06:39:51 --> User IP: ::1
+DEBUG - 2025-06-06 06:40:39 --> User IP: ::1
+DEBUG - 2025-06-06 06:41:03 --> User IP: ::1
+DEBUG - 2025-06-06 06:41:04 --> User IP: ::1
+DEBUG - 2025-06-06 06:41:04 --> User IP: ::1
+DEBUG - 2025-06-06 06:41:34 --> User IP: ::1
+DEBUG - 2025-06-06 06:41:57 --> User IP: ::1
+DEBUG - 2025-06-06 06:41:58 --> User IP: ::1
+DEBUG - 2025-06-06 06:41:59 --> User IP: ::1
+DEBUG - 2025-06-06 06:43:35 --> User IP: ::1
+DEBUG - 2025-06-06 06:44:51 --> User IP: ::1
+DEBUG - 2025-06-06 06:46:39 --> User IP: ::1
+DEBUG - 2025-06-06 06:46:52 --> User IP: ::1
+DEBUG - 2025-06-06 06:47:01 --> User IP: ::1
+DEBUG - 2025-06-06 07:30:04 --> User IP: ::1
+DEBUG - 2025-06-06 07:30:18 --> User IP: ::1
+DEBUG - 2025-06-06 07:30:22 --> User IP: ::1
+DEBUG - 2025-06-06 07:30:24 --> User IP: ::1
+DEBUG - 2025-06-06 07:31:19 --> User IP: ::1
+DEBUG - 2025-06-06 07:32:14 --> User IP: ::1
+DEBUG - 2025-06-06 07:33:42 --> User IP: ::1
+DEBUG - 2025-06-06 07:33:53 --> User IP: ::1
+DEBUG - 2025-06-06 07:34:47 --> User IP: ::1
+DEBUG - 2025-06-06 07:43:19 --> User IP: ::1
+DEBUG - 2025-06-06 07:47:06 --> User IP: ::1
+DEBUG - 2025-06-06 07:50:29 --> User IP: ::1
+DEBUG - 2025-06-06 08:03:02 --> User IP: ::1
+DEBUG - 2025-06-06 08:12:33 --> User IP: ::1
+CRITICAL - 2025-06-06 08:12:33 --> DivisionByZeroError: Division by zero
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 118.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-06 08:15:18 --> User IP: ::1
+DEBUG - 2025-06-06 08:17:32 --> User IP: ::1
+DEBUG - 2025-06-06 08:18:10 --> User IP: ::1

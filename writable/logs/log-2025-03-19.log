@@ -1,0 +1,220 @@
+DEBUG - 2025-03-19 04:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-19 04:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-19 04:50:26 --> User ID: 5, Date: 2025-03-14
+DEBUG - 2025-03-19 04:50:29 --> User ID: 6, Date: 2025-03-14
+DEBUG - 2025-03-19 04:50:30 --> User ID: 1, Date: 2025-03-14
+DEBUG - 2025-03-19 04:50:32 --> User ID: 45, Date: 2025-03-14
+DEBUG - 2025-03-19 04:50:34 --> User ID: 10, Date: 2025-03-14
+DEBUG - 2025-03-19 04:50:37 --> User ID: 17, Date: 2025-03-14
+DEBUG - 2025-03-19 04:50:39 --> User ID: 2, Date: 2025-03-14
+DEBUG - 2025-03-19 04:50:41 --> User ID: 27, Date: 2025-03-14
+DEBUG - 2025-03-19 04:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-19 06:34:41 --> mysqli_sql_exception: Unknown column 'attendance.emp_id' in 'field list' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `attenda...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attenda...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attenda...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attenda...', Array, false)
+#4 C:\xampp\htdocs\gighz\app\Models\AttendanceModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(200): App\Models\AttendanceModel->getLeaves('gz44', '2024-12-25', '2025-01-24')
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->sample()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-03-19 06:34:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance.emp_id' in 'field list'
+[Method: GET, Route: attendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.`emp_id`, `attendance`.`total_hours`
+FROM `attendance`
+WHERE `attendance`.`total_hours` = :attendance.total_hours:
+AND `attendance`.`emp_id` = :attendance.emp_id:
+AND `attendance`.`date` >= :attendance.date:
+AND `attendance`.`date` <= :attendance.date.1:
+ORDER BY `attendance`.`date` ASC', [...], false)
+ 2 APPPATH\Models\AttendanceModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\BiometricController.php(200): App\Models\AttendanceModel->getLeaves('gz44', '2024-12-25', '2025-01-24')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->sample()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-19 06:34:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attendance.emp_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.`emp_id`, `attendance`.`total_hours`
+FROM `attendance`
+WHERE `attendance`.`total_hours` = \'Absent\'
+AND `attendance`.`emp_id` = \'gz44\'
+AND `attendance`.`date` >= \'2024-12-25\'
+AND `attendance`.`date` <= \'2025-01-24\'
+ORDER BY `attendance`.`date` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.`emp_id`, `attendance`.`total_hours`
+FROM `attendance`
+WHERE `attendance`.`total_hours` = \'Absent\'
+AND `attendance`.`emp_id` = \'gz44\'
+AND `attendance`.`date` >= \'2024-12-25\'
+AND `attendance`.`date` <= \'2025-01-24\'
+ORDER BY `attendance`.`date` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.`emp_id`, `attendance`.`total_hours`
+FROM `attendance`
+WHERE `attendance`.`total_hours` = :attendance.total_hours:
+AND `attendance`.`emp_id` = :attendance.emp_id:
+AND `attendance`.`date` >= :attendance.date:
+AND `attendance`.`date` <= :attendance.date.1:
+ORDER BY `attendance`.`date` ASC', [...], false)
+ 4 APPPATH\Models\AttendanceModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\BiometricController.php(200): App\Models\AttendanceModel->getLeaves('gz44', '2024-12-25', '2025-01-24')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->sample()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-19 06:34:41 --> [Caused by] mysqli_sql_exception: Unknown column 'attendance.emp_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `attendance`.`emp_id`, `attendance`.`total_hours`
+FROM `attendance`
+WHERE `attendance`.`total_hours` = \'Absent\'
+AND `attendance`.`emp_id` = \'gz44\'
+AND `attendance`.`date` >= \'2024-12-25\'
+AND `attendance`.`date` <= \'2025-01-24\'
+ORDER BY `attendance`.`date` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.`emp_id`, `attendance`.`total_hours`
+FROM `attendance`
+WHERE `attendance`.`total_hours` = \'Absent\'
+AND `attendance`.`emp_id` = \'gz44\'
+AND `attendance`.`date` >= \'2024-12-25\'
+AND `attendance`.`date` <= \'2025-01-24\'
+ORDER BY `attendance`.`date` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.`emp_id`, `attendance`.`total_hours`
+FROM `attendance`
+WHERE `attendance`.`total_hours` = \'Absent\'
+AND `attendance`.`emp_id` = \'gz44\'
+AND `attendance`.`date` >= \'2024-12-25\'
+AND `attendance`.`date` <= \'2025-01-24\'
+ORDER BY `attendance`.`date` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.`emp_id`, `attendance`.`total_hours`
+FROM `attendance`
+WHERE `attendance`.`total_hours` = :attendance.total_hours:
+AND `attendance`.`emp_id` = :attendance.emp_id:
+AND `attendance`.`date` >= :attendance.date:
+AND `attendance`.`date` <= :attendance.date.1:
+ORDER BY `attendance`.`date` ASC', [...], false)
+ 5 APPPATH\Models\AttendanceModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\BiometricController.php(200): App\Models\AttendanceModel->getLeaves('gz44', '2024-12-25', '2025-01-24')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->sample()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-19 06:44:48 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: attendance]
+in APPPATH\Controllers\BiometricController.php on line 202.
+ 1 APPPATH\Controllers\BiometricController.php(202): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->sample()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-19 06:45:10 --> ParseError: syntax error, unexpected token "}", expecting "," or ";"
+[Method: GET, Route: attendance]
+in APPPATH\Controllers\BiometricController.php on line 236.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BiometricController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BiometricController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\BiometricController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-19 06:48:12 --> Error: Object of class App\Models\AttendanceModel could not be converted to string
+[Method: GET, Route: attendance]
+in APPPATH\Controllers\BiometricController.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->sample()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-19 06:53:33 --> ErrorException: Undefined array key "total_hours"
+[Method: GET, Route: attendance]
+in APPPATH\Controllers\BiometricController.php on line 205.
+ 1 APPPATH\Controllers\BiometricController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_hours"', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->sample()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-19 06:54:35 --> ErrorException: Undefined array key "total_hours"
+[Method: GET, Route: attendance]
+in APPPATH\Controllers\BiometricController.php on line 205.
+ 1 APPPATH\Controllers\BiometricController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_hours"', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->sample()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-19 07:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-19 07:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-19 08:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-19 08:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-19 08:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 10:22:04 --> ParseError: syntax error, unexpected token "->"
+[Method: GET, Route: attendance]
+in APPPATH\Controllers\BiometricController.php on line 201.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BiometricController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BiometricController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\BiometricController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-19 10:57:43 --> ErrorException: Undefined array key "leave"
+[Method: GET, Route: attendance]
+in APPPATH\Controllers\BiometricController.php on line 260.
+ 1 APPPATH\Controllers\BiometricController.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "leave"', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 260)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->sample()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-19 11:06:10 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: GET, Route: attendance]
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-19 11:06:10 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: attendance]
+in APPPATH\Views\leave\staffLeaves.php on line 21.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('leave/staffleaves', [], true)
+ 4 APPPATH\Controllers\BiometricController.php(274): view('leave/staffleaves', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->sample()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')

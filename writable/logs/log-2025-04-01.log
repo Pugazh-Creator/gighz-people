@@ -1,0 +1,965 @@
+DEBUG - 2025-04-01 04:02:04 --> User IP: ::1
+DEBUG - 2025-04-01 04:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:02:12 --> User IP: ::1
+DEBUG - 2025-04-01 04:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:02:13 --> User IP: ::1
+DEBUG - 2025-04-01 04:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:02:27 --> User IP: ::1
+DEBUG - 2025-04-01 04:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:02:27 --> User IP: ::1
+DEBUG - 2025-04-01 04:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:02:30 --> User IP: ::1
+DEBUG - 2025-04-01 04:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:02:52 --> User IP: ::1
+DEBUG - 2025-04-01 04:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:02:57 --> User IP: ::1
+DEBUG - 2025-04-01 04:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:03:07 --> User IP: ::1
+DEBUG - 2025-04-01 04:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:08:42 --> User IP: ::1
+DEBUG - 2025-04-01 04:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:08:50 --> User IP: ::1
+DEBUG - 2025-04-01 04:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:18:43 --> User IP: ::1
+DEBUG - 2025-04-01 04:18:43 --> User ID: 23, Date: 2024-12-30
+DEBUG - 2025-04-01 04:38:00 --> User IP: ::1
+DEBUG - 2025-04-01 04:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:38:52 --> User IP: ::1
+DEBUG - 2025-04-01 04:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:53:48 --> User IP: ::1
+ERROR - 2025-04-01 04:53:48 --> mysqli_sql_exception: Unknown column 'leave_request.start_date' in 'field list' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `attenda...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attenda...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attenda...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attenda...', Array, false)
+#4 C:\xampp\htdocs\gighz\app\Models\AttendanceModel.php(269): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\app\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('gz44', NULL, NULL)
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-01 04:53:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'leave_request.start_date' in 'field list'
+[Method: GET, Route: employee-attendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = :employees.emp_id:
+AND `date` >= :date:
+AND `date` <= :date.1:
+ORDER BY `employees`.`dept` ASC, `date` ASC', [...], false)
+ 2 APPPATH\Models\AttendanceModel.php(269): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('gz44', null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-04-01 04:53:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'leave_request.start_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = \'gz44\'
+AND `date` >= \'2025-3-25\'
+AND `date` <= \'2025-4-24\'
+ORDER BY `employees`.`dept` ASC, `date` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = \'gz44\'
+AND `date` >= \'2025-3-25\'
+AND `date` <= \'2025-4-24\'
+ORDER BY `employees`.`dept` ASC, `date` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = :employees.emp_id:
+AND `date` >= :date:
+AND `date` <= :date.1:
+ORDER BY `employees`.`dept` ASC, `date` ASC', [...], false)
+ 4 APPPATH\Models\AttendanceModel.php(269): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('gz44', null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-04-01 04:53:48 --> [Caused by] mysqli_sql_exception: Unknown column 'leave_request.start_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = \'gz44\'
+AND `date` >= \'2025-3-25\'
+AND `date` <= \'2025-4-24\'
+ORDER BY `employees`.`dept` ASC, `date` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = \'gz44\'
+AND `date` >= \'2025-3-25\'
+AND `date` <= \'2025-4-24\'
+ORDER BY `employees`.`dept` ASC, `date` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = \'gz44\'
+AND `date` >= \'2025-3-25\'
+AND `date` <= \'2025-4-24\'
+ORDER BY `employees`.`dept` ASC, `date` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = :employees.emp_id:
+AND `date` >= :date:
+AND `date` <= :date.1:
+ORDER BY `employees`.`dept` ASC, `date` ASC', [...], false)
+ 5 APPPATH\Models\AttendanceModel.php(269): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('gz44', null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 04:54:24 --> User IP: ::1
+ERROR - 2025-04-01 04:54:24 --> mysqli_sql_exception: Not unique table/alias: 'attendance_users' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `attenda...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attenda...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attenda...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attenda...', Array, false)
+#4 C:\xampp\htdocs\gighz\app\Models\AttendanceModel.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\app\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('gz44', NULL, NULL)
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-01 04:54:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'attendance_users'
+[Method: GET, Route: employee-attendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+JOIN `attendance_users` ON `attendance_users`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = :employees.emp_id:
+AND `date` >= :date:
+AND `date` <= :date.1:
+ORDER BY `employees`.`dept` ASC, `date` ASC', [...], false)
+ 2 APPPATH\Models\AttendanceModel.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('gz44', null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-04-01 04:54:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'attendance_users'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+JOIN `attendance_users` ON `attendance_users`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = \'gz44\'
+AND `date` >= \'2025-3-25\'
+AND `date` <= \'2025-4-24\'
+ORDER BY `employees`.`dept` ASC, `date` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+JOIN `attendance_users` ON `attendance_users`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = \'gz44\'
+AND `date` >= \'2025-3-25\'
+AND `date` <= \'2025-4-24\'
+ORDER BY `employees`.`dept` ASC, `date` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+JOIN `attendance_users` ON `attendance_users`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = :employees.emp_id:
+AND `date` >= :date:
+AND `date` <= :date.1:
+ORDER BY `employees`.`dept` ASC, `date` ASC', [...], false)
+ 4 APPPATH\Models\AttendanceModel.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('gz44', null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-04-01 04:54:24 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'attendance_users'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+JOIN `attendance_users` ON `attendance_users`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = \'gz44\'
+AND `date` >= \'2025-3-25\'
+AND `date` <= \'2025-4-24\'
+ORDER BY `employees`.`dept` ASC, `date` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+JOIN `attendance_users` ON `attendance_users`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = \'gz44\'
+AND `date` >= \'2025-3-25\'
+AND `date` <= \'2025-4-24\'
+ORDER BY `employees`.`dept` ASC, `date` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+JOIN `attendance_users` ON `attendance_users`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = \'gz44\'
+AND `date` >= \'2025-3-25\'
+AND `date` <= \'2025-4-24\'
+ORDER BY `employees`.`dept` ASC, `date` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `attendance`.`user_id`, `date`, `total_hours`, `work_status`, `attendance_users`.`name`, `attendance_users`.`emp_id`, `employees`.`dept`, `employees`.`leave_grade`, `leave_request`.`start_date`, `leave_request`.`start_date`
+FROM `attendance`
+JOIN `attendance_users` ON `attendance_users`.`user_id` = `attendance`.`user_id`
+JOIN `employees` ON `employees`.`emp_id` = `attendance_users`.`emp_id`
+JOIN `attendance_users` ON `attendance_users`.`emp_id` = `attendance_users`.`emp_id`
+WHERE `employees`.`emp_id` = :employees.emp_id:
+AND `date` >= :date:
+AND `date` <= :date.1:
+ORDER BY `employees`.`dept` ASC, `date` ASC', [...], false)
+ 5 APPPATH\Models\AttendanceModel.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('gz44', null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 04:54:59 --> User IP: ::1
+DEBUG - 2025-04-01 04:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:55:13 --> User IP: ::1
+DEBUG - 2025-04-01 04:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 04:55:38 --> User IP: ::1
+DEBUG - 2025-04-01 04:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 05:42:27 --> User IP: ::1
+ERROR - 2025-04-01 05:42:28 --> mysqli_sql_exception: Unknown column 'strart_date' in 'where clause' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `start_d...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `start_d...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `start_d...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `start_d...', Array, false)
+#4 C:\xampp\htdocs\gighz\app\Models\LeaveRquestModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\app\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-01 05:42:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'strart_date' in 'where clause'
+[Method: GET, Route: employee-attendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= :strart_date:
+AND `end_date` <= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 2 APPPATH\Models\LeaveRquestModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-04-01 05:42:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'strart_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= :strart_date:
+AND `end_date` <= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 4 APPPATH\Models\LeaveRquestModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-04-01 05:42:28 --> [Caused by] mysqli_sql_exception: Unknown column 'strart_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= :strart_date:
+AND `end_date` <= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 5 APPPATH\Models\LeaveRquestModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 05:42:49 --> User IP: ::1
+DEBUG - 2025-04-01 05:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 05:42:51 --> User IP: ::1
+ERROR - 2025-04-01 05:42:51 --> mysqli_sql_exception: Unknown column 'strart_date' in 'where clause' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `start_d...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `start_d...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `start_d...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `start_d...', Array, false)
+#4 C:\xampp\htdocs\gighz\app\Models\LeaveRquestModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\app\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-01 05:42:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'strart_date' in 'where clause'
+[Method: GET, Route: demo]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= :strart_date:
+AND `end_date` <= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 2 APPPATH\Models\LeaveRquestModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-04-01 05:42:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'strart_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= :strart_date:
+AND `end_date` <= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 4 APPPATH\Models\LeaveRquestModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-04-01 05:42:51 --> [Caused by] mysqli_sql_exception: Unknown column 'strart_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= :strart_date:
+AND `end_date` <= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 5 APPPATH\Models\LeaveRquestModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 05:43:18 --> User IP: ::1
+ERROR - 2025-04-01 05:43:18 --> mysqli_sql_exception: Unknown column 'strart_date' in 'where clause' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `start_d...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `start_d...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `start_d...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `start_d...', Array, false)
+#4 C:\xampp\htdocs\gighz\app\Models\LeaveRquestModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\app\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-04-01 05:43:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'strart_date' in 'where clause'
+[Method: GET, Route: employee-attendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= :strart_date:
+AND `end_date` <= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 2 APPPATH\Models\LeaveRquestModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-04-01 05:43:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'strart_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= :strart_date:
+AND `end_date` <= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 4 APPPATH\Models\LeaveRquestModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-04-01 05:43:18 --> [Caused by] mysqli_sql_exception: Unknown column 'strart_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= \'2025-01-25\'
+AND `end_date` <= \'2025-02-24\'
+AND `emp_id` = \'gz44\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `start_date`, `end_date`, `reason`, `total_num_leaves`, `emp_id`, `status`
+FROM `leave_request`
+WHERE `strart_date` >= :strart_date:
+AND `end_date` <= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 5 APPPATH\Models\LeaveRquestModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 05:44:30 --> User IP: ::1
+DEBUG - 2025-04-01 05:44:45 --> User IP: ::1
+DEBUG - 2025-04-01 05:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 05:45:09 --> User IP: ::1
+DEBUG - 2025-04-01 05:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 05:45:09 --> User IP: ::1
+DEBUG - 2025-04-01 05:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 05:45:29 --> User IP: ::1
+DEBUG - 2025-04-01 05:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 05:45:32 --> User IP: ::1
+DEBUG - 2025-04-01 05:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 06:12:14 --> User IP: ::1
+DEBUG - 2025-04-01 06:13:24 --> User IP: ::1
+DEBUG - 2025-04-01 06:14:13 --> User IP: ::1
+DEBUG - 2025-04-01 06:14:53 --> User IP: ::1
+CRITICAL - 2025-04-01 06:14:54 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: employee-attendance]
+in APPPATH\Controllers\Dashboard.php on line 196.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 06:15:28 --> User IP: ::1
+CRITICAL - 2025-04-01 06:15:29 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: employee-attendance]
+in APPPATH\Controllers\Dashboard.php on line 196.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 06:16:14 --> User IP: ::1
+DEBUG - 2025-04-01 06:19:10 --> User IP: ::1
+DEBUG - 2025-04-01 06:27:16 --> User IP: ::1
+CRITICAL - 2025-04-01 06:27:17 --> ErrorException: Array to string conversion
+[Method: GET, Route: employee-attendance]
+in APPPATH\Controllers\Dashboard.php on line 196.
+ 1 APPPATH\Controllers\Dashboard.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\Dashboard.php', 196)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 06:27:38 --> User IP: ::1
+CRITICAL - 2025-04-01 06:27:39 --> ErrorException: Undefined array key "approved"
+[Method: GET, Route: employee-attendance]
+in APPPATH\Controllers\Dashboard.php on line 196.
+ 1 APPPATH\Controllers\Dashboard.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "approved"', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\Dashboard.php', 196)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 06:27:47 --> User IP: ::1
+CRITICAL - 2025-04-01 06:27:47 --> ErrorException: Cannot use [] for reading
+[Method: GET, Route: employee-attendance]
+in APPPATH\Controllers\Dashboard.php on line 196.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-04-01 06:27:48 --> User IP: ::1
+CRITICAL - 2025-04-01 06:27:48 --> ErrorException: Cannot use [] for reading
+[Method: GET, Route: employee-attendance]
+in APPPATH\Controllers\Dashboard.php on line 196.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-04-01 06:28:13 --> User IP: ::1
+DEBUG - 2025-04-01 06:33:48 --> User IP: ::1
+CRITICAL - 2025-04-01 06:34:00 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 4096 bytes)
+[Method: GET, Route: employee-attendance]
+in APPPATH\Models\LeaveRquestModel.php on line 276.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-04-01 06:34:20 --> User IP: ::1
+DEBUG - 2025-04-01 06:35:45 --> User IP: ::1
+CRITICAL - 2025-04-01 06:35:45 --> TypeError: date(): Argument #2 ($timestamp) must be of type ?int, string given
+[Method: GET, Route: employee-attendance]
+in APPPATH\Models\LeaveRquestModel.php on line 275.
+ 1 APPPATH\Models\LeaveRquestModel.php(275): date('Y-m-d', '1739750400 + 1 day')
+ 2 APPPATH\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 06:36:42 --> User IP: ::1
+CRITICAL - 2025-04-01 06:36:42 --> TypeError: date(): Argument #2 ($timestamp) must be of type ?int, string given
+[Method: GET, Route: employee-attendance]
+in APPPATH\Models\LeaveRquestModel.php on line 280.
+ 1 APPPATH\Models\LeaveRquestModel.php(280): date('Y-m-d', '1739750400 + 1 day')
+ 2 APPPATH\Controllers\Dashboard.php(193): App\Models\LeaveRquestModel->getThisOELeaves('gz44', '2025-01-25', '2025-02-24')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 06:37:11 --> User IP: ::1
+DEBUG - 2025-04-01 06:37:31 --> User IP: ::1
+DEBUG - 2025-04-01 06:38:27 --> User IP: ::1
+DEBUG - 2025-04-01 06:38:28 --> User IP: ::1
+DEBUG - 2025-04-01 06:38:29 --> User IP: ::1
+DEBUG - 2025-04-01 06:39:21 --> User IP: ::1
+DEBUG - 2025-04-01 06:40:41 --> User IP: ::1
+DEBUG - 2025-04-01 06:44:40 --> User IP: ::1
+DEBUG - 2025-04-01 06:47:32 --> User IP: ::1
+DEBUG - 2025-04-01 06:49:43 --> User IP: ::1
+DEBUG - 2025-04-01 06:50:20 --> User IP: ::1
+DEBUG - 2025-04-01 06:52:04 --> User IP: ::1
+DEBUG - 2025-04-01 07:29:43 --> User IP: ::1
+DEBUG - 2025-04-01 07:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 07:30:43 --> User IP: ::1
+DEBUG - 2025-04-01 07:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 07:31:00 --> User IP: ::1
+DEBUG - 2025-04-01 07:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 07:31:05 --> User IP: ::1
+DEBUG - 2025-04-01 07:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 07:31:09 --> User IP: ::1
+CRITICAL - 2025-04-01 07:31:09 --> ErrorException: Undefined array key "rejected"
+[Method: GET, Route: employee-attendance]
+in APPPATH\Models\AttendanceModel.php on line 350.
+ 1 APPPATH\Models\AttendanceModel.php(350): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rejected"', 'C:\\xampp\\htdocs\\gighz\\app\\Models\\AttendanceModel.php', 350)
+ 2 APPPATH\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('GZ44', '01', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo1()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 07:32:47 --> User IP: ::1
+CRITICAL - 2025-04-01 07:32:47 --> ErrorException: Undefined array key "rejected"
+[Method: GET, Route: employee-attendance]
+in APPPATH\Models\AttendanceModel.php on line 350.
+ 1 APPPATH\Models\AttendanceModel.php(350): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rejected"', 'C:\\xampp\\htdocs\\gighz\\app\\Models\\AttendanceModel.php', 350)
+ 2 APPPATH\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('GZ44', '01', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo1()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 08:06:24 --> User IP: ::1
+DEBUG - 2025-04-01 08:07:12 --> User IP: ::1
+CRITICAL - 2025-04-01 08:07:12 --> ErrorException: Undefined array key "rejected"
+[Method: GET, Route: employee-attendance]
+in APPPATH\Models\AttendanceModel.php on line 350.
+ 1 APPPATH\Models\AttendanceModel.php(350): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rejected"', 'C:\\xampp\\htdocs\\gighz\\app\\Models\\AttendanceModel.php', 350)
+ 2 APPPATH\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('GZ44', '01', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo1()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 08:08:28 --> User IP: ::1
+CRITICAL - 2025-04-01 08:08:28 --> ErrorException: Undefined array key "rejected"
+[Method: GET, Route: employee-attendance]
+in APPPATH\Models\AttendanceModel.php on line 351.
+ 1 APPPATH\Models\AttendanceModel.php(351): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rejected"', 'C:\\xampp\\htdocs\\gighz\\app\\Models\\AttendanceModel.php', 351)
+ 2 APPPATH\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('GZ44', '01', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo1()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 08:09:02 --> User IP: ::1
+CRITICAL - 2025-04-01 08:09:02 --> ErrorException: Undefined array key "rejected"
+[Method: GET, Route: employee-attendance]
+in APPPATH\Models\AttendanceModel.php on line 351.
+ 1 APPPATH\Models\AttendanceModel.php(351): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rejected"', 'C:\\xampp\\htdocs\\gighz\\app\\Models\\AttendanceModel.php', 351)
+ 2 APPPATH\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('GZ44', '01', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo1()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 08:09:10 --> User IP: ::1
+CRITICAL - 2025-04-01 08:09:10 --> ErrorException: Undefined array key "approved"
+[Method: GET, Route: employee-attendance]
+in APPPATH\Models\AttendanceModel.php on line 363.
+ 1 APPPATH\Models\AttendanceModel.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "approved"', 'C:\\xampp\\htdocs\\gighz\\app\\Models\\AttendanceModel.php', 363)
+ 2 APPPATH\Controllers\Dashboard.php(80): App\Models\AttendanceModel->getEmployeesLeaves('GZ44', '01', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->demo1()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 08:12:23 --> User IP: ::1
+DEBUG - 2025-04-01 08:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:13:30 --> User IP: ::1
+DEBUG - 2025-04-01 08:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:13:36 --> User IP: ::1
+DEBUG - 2025-04-01 08:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:13:40 --> User IP: ::1
+DEBUG - 2025-04-01 08:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:13:48 --> User IP: ::1
+DEBUG - 2025-04-01 08:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:13:54 --> User IP: ::1
+DEBUG - 2025-04-01 08:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:13:57 --> User IP: ::1
+DEBUG - 2025-04-01 08:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:30:41 --> User IP: ::1
+DEBUG - 2025-04-01 08:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:32:55 --> User IP: ::1
+DEBUG - 2025-04-01 08:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:33:27 --> User IP: ::1
+DEBUG - 2025-04-01 08:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:33:36 --> User IP: ::1
+DEBUG - 2025-04-01 08:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:34:09 --> User IP: ::1
+DEBUG - 2025-04-01 08:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:35:30 --> User IP: ::1
+DEBUG - 2025-04-01 08:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:35:45 --> User IP: ::1
+DEBUG - 2025-04-01 08:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:36:30 --> User IP: ::1
+DEBUG - 2025-04-01 08:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:37:33 --> User IP: ::1
+DEBUG - 2025-04-01 08:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:37:50 --> User IP: ::1
+DEBUG - 2025-04-01 08:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:38:26 --> User IP: ::1
+DEBUG - 2025-04-01 08:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:39:22 --> User IP: ::1
+DEBUG - 2025-04-01 08:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:39:23 --> User IP: ::1
+DEBUG - 2025-04-01 08:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:39:31 --> User IP: ::1
+DEBUG - 2025-04-01 08:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:39:32 --> User IP: ::1
+DEBUG - 2025-04-01 08:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:39:34 --> User IP: ::1
+DEBUG - 2025-04-01 08:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:39:36 --> User IP: ::1
+DEBUG - 2025-04-01 08:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:39:44 --> User IP: ::1
+DEBUG - 2025-04-01 08:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:40:15 --> User IP: ::1
+DEBUG - 2025-04-01 08:40:15 --> User ID: 23, Date: 2025-02-17
+DEBUG - 2025-04-01 08:40:19 --> User IP: ::1
+DEBUG - 2025-04-01 08:40:20 --> User ID: 23, Date: 2025-02-17
+DEBUG - 2025-04-01 08:40:21 --> User IP: ::1
+DEBUG - 2025-04-01 08:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:40:23 --> User IP: ::1
+DEBUG - 2025-04-01 08:40:23 --> User ID: 23, Date: 2025-02-17
+DEBUG - 2025-04-01 08:40:26 --> User IP: ::1
+DEBUG - 2025-04-01 08:40:26 --> User ID: 23, Date: 2025-02-17
+DEBUG - 2025-04-01 08:40:28 --> User IP: ::1
+DEBUG - 2025-04-01 08:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:40:31 --> User IP: ::1
+DEBUG - 2025-04-01 08:40:31 --> User ID: 23, Date: 2025-02-17
+DEBUG - 2025-04-01 08:43:37 --> User IP: ::1
+DEBUG - 2025-04-01 08:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:43:40 --> User IP: ::1
+DEBUG - 2025-04-01 08:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:43:41 --> User IP: ::1
+DEBUG - 2025-04-01 08:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:43:42 --> User IP: ::1
+DEBUG - 2025-04-01 08:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:43:52 --> User IP: ::1
+DEBUG - 2025-04-01 08:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:43:52 --> User IP: ::1
+DEBUG - 2025-04-01 08:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-01 08:43:52 --> ErrorException: Undefined array key "absentDays"
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\index.php on line 60.
+ 1 APPPATH\Views\dashboard\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "absentDays"', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\dashboard\\index.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\dashboard\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/index', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(37): view('dashboard/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 08:44:02 --> User IP: ::1
+DEBUG - 2025-04-01 08:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-01 08:44:02 --> ErrorException: Undefined array key "absentDays"
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard\index.php on line 60.
+ 1 APPPATH\Views\dashboard\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "absentDays"', 'C:\\xampp\\htdocs\\gighz\\app\\Views\\dashboard\\index.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz\\app\\Views\\dashboard\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/index', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(37): view('dashboard/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-04-01 08:45:21 --> User IP: ::1
+DEBUG - 2025-04-01 08:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:45:25 --> User IP: ::1
+DEBUG - 2025-04-01 08:45:42 --> User IP: ::1
+DEBUG - 2025-04-01 08:45:47 --> User IP: ::1
+DEBUG - 2025-04-01 08:45:49 --> User IP: ::1
+DEBUG - 2025-04-01 08:46:39 --> User IP: ::1
+DEBUG - 2025-04-01 08:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:46:45 --> User IP: ::1
+DEBUG - 2025-04-01 08:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:48:34 --> User IP: ::1
+DEBUG - 2025-04-01 08:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 08:48:35 --> User IP: ::1
+DEBUG - 2025-04-01 08:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 09:42:05 --> User IP: ::1
+DEBUG - 2025-04-01 09:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 09:43:01 --> User IP: ::1
+DEBUG - 2025-04-01 09:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 09:43:06 --> User IP: ::1
+DEBUG - 2025-04-01 09:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 09:43:31 --> User IP: ::1
+DEBUG - 2025-04-01 09:45:15 --> User IP: ::1
+DEBUG - 2025-04-01 09:45:52 --> User IP: ::1
+DEBUG - 2025-04-01 09:46:05 --> User IP: ::1
+DEBUG - 2025-04-01 09:46:53 --> User IP: ::1
+DEBUG - 2025-04-01 09:47:05 --> User IP: ::1
+DEBUG - 2025-04-01 09:47:21 --> User IP: ::1
+DEBUG - 2025-04-01 09:47:23 --> User IP: ::1
+DEBUG - 2025-04-01 09:47:39 --> User IP: ::1
+DEBUG - 2025-04-01 09:48:06 --> User IP: ::1
+DEBUG - 2025-04-01 09:48:15 --> User IP: ::1
+DEBUG - 2025-04-01 09:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 09:49:08 --> User IP: ::1
+DEBUG - 2025-04-01 09:50:47 --> User IP: ::1
+DEBUG - 2025-04-01 09:50:49 --> User IP: ::1
+DEBUG - 2025-04-01 09:51:22 --> User IP: ::1
+DEBUG - 2025-04-01 09:51:33 --> User IP: ::1
+DEBUG - 2025-04-01 09:51:35 --> User IP: ::1
+DEBUG - 2025-04-01 09:53:27 --> User IP: ::1
+DEBUG - 2025-04-01 09:59:25 --> User IP: ::1
+DEBUG - 2025-04-01 09:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:00:55 --> User IP: ::1
+DEBUG - 2025-04-01 10:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:02:40 --> User IP: ::1
+DEBUG - 2025-04-01 10:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:03:19 --> User IP: ::1
+DEBUG - 2025-04-01 10:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:04:10 --> User IP: ::1
+DEBUG - 2025-04-01 10:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:04:20 --> User IP: ::1
+DEBUG - 2025-04-01 10:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:04:38 --> User IP: ::1
+DEBUG - 2025-04-01 10:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:06:05 --> User IP: ::1
+DEBUG - 2025-04-01 10:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:06:26 --> User IP: ::1
+DEBUG - 2025-04-01 10:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:06:29 --> User IP: ::1
+DEBUG - 2025-04-01 10:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:08:48 --> User IP: ::1
+DEBUG - 2025-04-01 10:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:08:50 --> User IP: ::1
+DEBUG - 2025-04-01 10:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:09:14 --> User IP: ::1
+DEBUG - 2025-04-01 10:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:10:16 --> User IP: ::1
+DEBUG - 2025-04-01 10:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:10:17 --> User IP: ::1
+DEBUG - 2025-04-01 10:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:10:19 --> User IP: ::1
+DEBUG - 2025-04-01 10:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:10:38 --> User IP: ::1
+DEBUG - 2025-04-01 10:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:10:40 --> User IP: ::1
+DEBUG - 2025-04-01 10:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:11:00 --> User IP: ::1
+DEBUG - 2025-04-01 10:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:11:14 --> User IP: ::1
+DEBUG - 2025-04-01 10:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:11:16 --> User IP: ::1
+DEBUG - 2025-04-01 10:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:11:18 --> User IP: ::1
+DEBUG - 2025-04-01 10:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:12:38 --> User IP: ::1
+DEBUG - 2025-04-01 10:14:00 --> User IP: ::1
+DEBUG - 2025-04-01 10:14:23 --> User IP: ::1
+DEBUG - 2025-04-01 10:16:58 --> User IP: ::1
+DEBUG - 2025-04-01 10:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:17:15 --> User IP: ::1
+DEBUG - 2025-04-01 10:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:17:26 --> User IP: ::1
+DEBUG - 2025-04-01 10:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:18:07 --> User IP: ::1
+DEBUG - 2025-04-01 10:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 10:18:21 --> User IP: ::1
+DEBUG - 2025-04-01 10:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 13:06:45 --> User IP: ::1
+DEBUG - 2025-04-01 13:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 13:06:45 --> User IP: ::1
+DEBUG - 2025-04-01 13:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 13:06:52 --> User IP: ::1
+DEBUG - 2025-04-01 13:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 13:16:51 --> User IP: ::1
+DEBUG - 2025-04-01 13:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-01 13:16:52 --> User IP: ::1
+DEBUG - 2025-04-01 13:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

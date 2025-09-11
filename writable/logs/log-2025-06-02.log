@@ -1,0 +1,309 @@
+DEBUG - 2025-06-02 03:57:53 --> User IP: ::1
+DEBUG - 2025-06-02 03:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 03:58:00 --> User IP: ::1
+DEBUG - 2025-06-02 03:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 03:58:00 --> User IP: ::1
+DEBUG - 2025-06-02 03:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 03:59:42 --> User IP: ::1
+DEBUG - 2025-06-02 03:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 03:59:44 --> User IP: ::1
+DEBUG - 2025-06-02 03:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 03:59:50 --> User IP: ::1
+DEBUG - 2025-06-02 03:59:50 --> User ID: 45, Date: 2025-05-30
+DEBUG - 2025-06-02 03:59:53 --> User IP: ::1
+DEBUG - 2025-06-02 03:59:53 --> User ID: 45, Date: 2025-05-29
+DEBUG - 2025-06-02 03:59:57 --> User IP: ::1
+DEBUG - 2025-06-02 03:59:58 --> User ID: 45, Date: 2025-05-30
+DEBUG - 2025-06-02 04:00:00 --> User IP: ::1
+DEBUG - 2025-06-02 04:00:00 --> User IP: ::1
+DEBUG - 2025-06-02 04:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:00:16 --> User IP: ::1
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Srimugan N (27) - 2025-05-29 - Error (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Chakravarthy (3) - 2025-05-29 - 10:34 (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Vanitha (4) - 2025-05-29 - 08:54 (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Balu (8) - 2025-05-29 - 10:33 (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Karthikeyan (13) - 2025-05-29 - Error (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Muniyappan (16) - 2025-05-29 - Error (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Gokul (17) - 2025-05-29 - Error (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Manisha V (1) - 2025-05-29 - 08:30 (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Gnanamugilan (9) - 2025-05-29 - Error (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Arun (5) - 2025-05-29 - 08:41 (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Magendiran (23) - 2025-05-29 - 08:36 (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Kokila (45) - 2025-05-29 - 09:11 (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Pugazh (48) - 2025-05-29 - Error (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Akshay (49) - 2025-05-29 - Error (Present)
+INFO - 2025-06-02 04:00:45 --> ✅ Processed: Bhagath (50) - 2025-05-29 - 06:56 (Permission)
+DEBUG - 2025-06-02 04:00:45 --> User IP: ::1
+DEBUG - 2025-06-02 04:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:19:30 --> User IP: ::1
+DEBUG - 2025-06-02 04:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:23:11 --> User IP: ::1
+DEBUG - 2025-06-02 04:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:23:40 --> User IP: ::1
+DEBUG - 2025-06-02 04:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:24:53 --> User IP: ::1
+CRITICAL - 2025-06-02 04:24:53 --> Exception: Biometric device is not connected or returned invalid data
+[Method: POST, Route: biometriccontroller/refreachBimetric]
+in APPPATH\Controllers\BiometricController.php on line 450.
+ 1 APPPATH\Controllers\BiometricController.php(408): App\Controllers\BiometricController->fetchLogs('2025-05-29', '2025-06-01')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->refreachBimetric()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-02 04:33:34 --> User IP: ::1
+DEBUG - 2025-06-02 04:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:34:44 --> User IP: ::1
+DEBUG - 2025-06-02 04:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:34:56 --> User IP: ::1
+CRITICAL - 2025-06-02 04:34:56 --> Exception: Biometric device is not connected or returned invalid data
+[Method: POST, Route: biometriccontroller/refreachBimetric]
+in APPPATH\Controllers\BiometricController.php on line 450.
+ 1 APPPATH\Controllers\BiometricController.php(408): App\Controllers\BiometricController->fetchLogs('2025-05-30', '2025-05-30')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->refreachBimetric()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-02 04:35:35 --> User IP: ::1
+DEBUG - 2025-06-02 04:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:35:46 --> User IP: ::1
+CRITICAL - 2025-06-02 04:35:47 --> Exception: Biometric device is not connected or returned invalid data
+[Method: POST, Route: biometriccontroller/refreachBimetric]
+in APPPATH\Controllers\BiometricController.php on line 450.
+ 1 APPPATH\Controllers\BiometricController.php(408): App\Controllers\BiometricController->fetchLogs('2025-05-30', '2025-06-01')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->refreachBimetric()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-02 04:36:07 --> User IP: ::1
+DEBUG - 2025-06-02 04:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:36:17 --> User IP: ::1
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Srimugan N (27) - 2025-05-30 - Error (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Srimugan N (27) - 2025-05-31 - 08:38 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Srimugan N (27) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Chakravarthy (3) - 2025-05-30 - 10:19 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Chakravarthy (3) - 2025-05-31 - Error (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Chakravarthy (3) - 2025-06-01 - 00:14 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Vanitha (4) - 2025-05-30 - 02:34 (Offday)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Vanitha (4) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Vanitha (4) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Balu (8) - 2025-05-30 - 10:20 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Balu (8) - 2025-05-31 - Error (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Balu (8) - 2025-06-01 - Error (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Karthikeyan (13) - 2025-05-30 - 08:26 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Karthikeyan (13) - 2025-05-31 - 07:49 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Karthikeyan (13) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Muniyappan (16) - 2025-05-30 - 08:03 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Muniyappan (16) - 2025-05-31 - Error (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Muniyappan (16) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Gokul (17) - 2025-05-30 - Error (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Gokul (17) - 2025-05-31 - 08:25 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Gokul (17) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Manisha V (1) - 2025-05-30 - Error (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Manisha V (1) - 2025-05-31 - 07:46 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Manisha V (1) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Gnanamugilan (9) - 2025-05-30 - 07:59 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Gnanamugilan (9) - 2025-05-31 - 08:59 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Gnanamugilan (9) - 2025-06-01 - Error (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Arun (5) - 2025-05-30 - 07:58 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Arun (5) - 2025-05-31 - 07:50 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Arun (5) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Magendiran (23) - 2025-05-30 - 08:21 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Magendiran (23) - 2025-05-31 - 08:27 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Magendiran (23) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Kokila (45) - 2025-05-30 - 08:34 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Kokila (45) - 2025-05-31 - 09:25 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Kokila (45) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Pugazh (48) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Pugazh (48) - 2025-05-31 - 07:40 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Pugazh (48) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Akshay (49) - 2025-05-30 - 07:38 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Akshay (49) - 2025-05-31 - 08:06 (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Akshay (49) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Bhagath (50) - 2025-05-30 - Error (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Bhagath (50) - 2025-05-31 - Error (Present)
+INFO - 2025-06-02 04:36:47 --> ✅ Processed: Bhagath (50) - 2025-06-01 - 00:00 (Absent)
+DEBUG - 2025-06-02 04:36:47 --> User IP: ::1
+DEBUG - 2025-06-02 04:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:40:05 --> User IP: ::1
+DEBUG - 2025-06-02 04:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:42:58 --> User IP: ::1
+DEBUG - 2025-06-02 04:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:46:36 --> User IP: ::1
+CRITICAL - 2025-06-02 04:46:36 --> Exception: Biometric device is not connected or returned invalid data
+[Method: POST, Route: biometriccontroller/refreachBimetric]
+in APPPATH\Controllers\BiometricController.php on line 450.
+ 1 APPPATH\Controllers\BiometricController.php(408): App\Controllers\BiometricController->fetchLogs('2025-06-01', '2025-06-01')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->refreachBimetric()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-02 04:54:25 --> User IP: ::1
+DEBUG - 2025-06-02 04:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:54:35 --> User IP: ::1
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Srimugan N (27) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Srimugan N (27) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Srimugan N (27) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Chakravarthy (3) - 2025-05-30 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Chakravarthy (3) - 2025-05-31 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Chakravarthy (3) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Vanitha (4) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Vanitha (4) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Vanitha (4) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Balu (8) - 2025-05-30 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Balu (8) - 2025-05-31 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Balu (8) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Karthikeyan (13) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Karthikeyan (13) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Karthikeyan (13) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Muniyappan (16) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Muniyappan (16) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Muniyappan (16) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Gokul (17) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Gokul (17) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Gokul (17) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Manisha V (1) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Manisha V (1) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Manisha V (1) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Gnanamugilan (9) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Gnanamugilan (9) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Gnanamugilan (9) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Arun (5) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Arun (5) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Arun (5) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Magendiran (23) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Magendiran (23) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Magendiran (23) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Kokila (45) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Kokila (45) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Kokila (45) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Pugazh (48) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Pugazh (48) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Pugazh (48) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Akshay (49) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Akshay (49) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Akshay (49) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Bhagath (50) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Bhagath (50) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 04:54:35 --> ✅ Processed: Bhagath (50) - 2025-06-01 - 00:00 (Absent)
+DEBUG - 2025-06-02 04:54:36 --> User IP: ::1
+DEBUG - 2025-06-02 04:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:55:05 --> User IP: ::1
+DEBUG - 2025-06-02 04:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:55:09 --> User IP: ::1
+DEBUG - 2025-06-02 04:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 04:55:20 --> User IP: ::1
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Srimugan N (27) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Chakravarthy (3) - 2025-05-30 - 00:00 (Absent)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Vanitha (4) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Balu (8) - 2025-05-30 - 00:00 (Absent)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Karthikeyan (13) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Muniyappan (16) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Gokul (17) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Manisha V (1) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Gnanamugilan (9) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Arun (5) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Magendiran (23) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Kokila (45) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Pugazh (48) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Akshay (49) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 04:55:20 --> ✅ Processed: Bhagath (50) - 2025-05-30 - 00:00 (NA)
+DEBUG - 2025-06-02 07:18:19 --> User IP: ::1
+DEBUG - 2025-06-02 07:18:19 --> User ID: 3, Date: 2025-05-30
+DEBUG - 2025-06-02 07:18:21 --> User IP: ::1
+DEBUG - 2025-06-02 07:18:21 --> User ID: 8, Date: 2025-05-30
+DEBUG - 2025-06-02 07:18:44 --> User IP: ::1
+INFO - 2025-06-02 07:18:44 --> ✅ Processed: Srimugan N (27) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 07:18:44 --> ✅ Processed: Srimugan N (27) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Srimugan N (27) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Chakravarthy (3) - 2025-05-30 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Chakravarthy (3) - 2025-05-31 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Chakravarthy (3) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Vanitha (4) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Vanitha (4) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Vanitha (4) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Balu (8) - 2025-05-30 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Balu (8) - 2025-05-31 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Balu (8) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Karthikeyan (13) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Karthikeyan (13) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Karthikeyan (13) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Muniyappan (16) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Muniyappan (16) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Muniyappan (16) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Gokul (17) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Gokul (17) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Gokul (17) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Manisha V (1) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Manisha V (1) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Manisha V (1) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Gnanamugilan (9) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Gnanamugilan (9) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Gnanamugilan (9) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Arun (5) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Arun (5) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Arun (5) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Magendiran (23) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Magendiran (23) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Magendiran (23) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Kokila (45) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Kokila (45) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Kokila (45) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Pugazh (48) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Pugazh (48) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Pugazh (48) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Akshay (49) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Akshay (49) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Akshay (49) - 2025-06-01 - 00:00 (Absent)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Bhagath (50) - 2025-05-30 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Bhagath (50) - 2025-05-31 - 00:00 (NA)
+INFO - 2025-06-02 07:18:45 --> ✅ Processed: Bhagath (50) - 2025-06-01 - 00:00 (Absent)
+DEBUG - 2025-06-02 07:19:49 --> User IP: ::1
+DEBUG - 2025-06-02 07:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 07:19:50 --> User IP: ::1
+DEBUG - 2025-06-02 07:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 07:20:00 --> User IP: ::1
+DEBUG - 2025-06-02 07:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 07:20:00 --> User IP: ::1
+DEBUG - 2025-06-02 07:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 07:20:03 --> User IP: ::1
+DEBUG - 2025-06-02 07:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 07:20:12 --> User IP: ::1
+DEBUG - 2025-06-02 07:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 07:23:38 --> User IP: ::1
+DEBUG - 2025-06-02 07:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 07:28:31 --> User IP: ::1
+DEBUG - 2025-06-02 07:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 07:28:36 --> User IP: ::1
+DEBUG - 2025-06-02 07:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 07:28:44 --> User IP: ::1
+DEBUG - 2025-06-02 07:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 07:28:58 --> User IP: ::1
+DEBUG - 2025-06-02 07:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 07:30:03 --> User IP: ::1
+DEBUG - 2025-06-02 07:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 08:12:35 --> User IP: ::1
+DEBUG - 2025-06-02 08:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 08:13:51 --> User IP: ::1
+DEBUG - 2025-06-02 08:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 08:16:06 --> User IP: ::1
+DEBUG - 2025-06-02 08:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 08:16:26 --> User IP: ::1
+DEBUG - 2025-06-02 08:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 08:18:53 --> User IP: ::1
+DEBUG - 2025-06-02 08:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 09:04:20 --> User IP: ::1
+DEBUG - 2025-06-02 09:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-02 11:10:15 --> User IP: ::1
+DEBUG - 2025-06-02 11:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

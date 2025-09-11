@@ -1,0 +1,570 @@
+DEBUG - 2025-05-28 03:59:03 --> User IP: ::1
+DEBUG - 2025-05-28 03:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 03:59:10 --> User IP: ::1
+DEBUG - 2025-05-28 03:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 03:59:10 --> User IP: ::1
+DEBUG - 2025-05-28 03:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 04:47:27 --> User IP: ::1
+DEBUG - 2025-05-28 04:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 04:47:29 --> User IP: ::1
+DEBUG - 2025-05-28 04:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 04:47:31 --> User IP: ::1
+DEBUG - 2025-05-28 04:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 04:48:11 --> User IP: ::1
+DEBUG - 2025-05-28 04:48:11 --> User ID: 17, Date: 2025-05-26
+DEBUG - 2025-05-28 04:48:37 --> User IP: ::1
+DEBUG - 2025-05-28 04:48:37 --> User ID: 27, Date: 2025-05-26
+DEBUG - 2025-05-28 04:48:47 --> User IP: ::1
+DEBUG - 2025-05-28 04:48:47 --> User ID: 9, Date: 2025-05-27
+DEBUG - 2025-05-28 04:48:51 --> User IP: ::1
+DEBUG - 2025-05-28 04:48:51 --> User ID: 16, Date: 2025-05-27
+DEBUG - 2025-05-28 04:49:09 --> User IP: ::1
+DEBUG - 2025-05-28 04:49:09 --> User ID: 17, Date: 2025-05-26
+DEBUG - 2025-05-28 04:49:14 --> User IP: ::1
+DEBUG - 2025-05-28 04:49:14 --> User ID: 17, Date: 2025-05-26
+DEBUG - 2025-05-28 04:49:16 --> User IP: ::1
+DEBUG - 2025-05-28 04:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 04:49:18 --> User IP: ::1
+DEBUG - 2025-05-28 04:49:18 --> User ID: 9, Date: 2025-05-26
+DEBUG - 2025-05-28 04:49:20 --> User IP: ::1
+DEBUG - 2025-05-28 04:49:20 --> User ID: 45, Date: 2025-05-26
+DEBUG - 2025-05-28 04:49:22 --> User IP: ::1
+DEBUG - 2025-05-28 04:49:22 --> User ID: 16, Date: 2025-05-26
+DEBUG - 2025-05-28 04:49:25 --> User IP: ::1
+DEBUG - 2025-05-28 04:49:25 --> User ID: 16, Date: 2025-05-26
+DEBUG - 2025-05-28 04:49:27 --> User IP: ::1
+DEBUG - 2025-05-28 04:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 04:50:22 --> User IP: ::1
+DEBUG - 2025-05-28 04:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 04:51:45 --> User IP: ::1
+DEBUG - 2025-05-28 04:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 04:53:17 --> User IP: ::1
+DEBUG - 2025-05-28 04:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 04:53:34 --> User IP: ::1
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Vanitha (4) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Vanitha (4) - 2025-05-26 - 08:30 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Vanitha (4) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Karthikeyan (13) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Karthikeyan (13) - 2025-05-26 - 07:41 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Karthikeyan (13) - 2025-05-27 - 07:40 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Muniyappan (16) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Muniyappan (16) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Muniyappan (16) - 2025-05-27 - 08:05 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Gokul (17) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Gokul (17) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Gokul (17) - 2025-05-27 - 08:23 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Manisha V (1) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Manisha V (1) - 2025-05-26 - 08:22 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Manisha V (1) - 2025-05-27 - 08:00 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Gnanamugilan (9) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Gnanamugilan (9) - 2025-05-26 - 08:09 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Gnanamugilan (9) - 2025-05-27 - 07:52 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Arun (5) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Arun (5) - 2025-05-26 - 07:56 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Arun (5) - 2025-05-27 - 07:58 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Magendiran (23) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Magendiran (23) - 2025-05-26 - 08:21 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Magendiran (23) - 2025-05-27 - 08:14 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Kokila (45) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Kokila (45) - 2025-05-26 - 08:38 (Present)
+INFO - 2025-05-28 04:54:03 --> ✅ Processed: Kokila (45) - 2025-05-27 - 08:41 (Present)
+DEBUG - 2025-05-28 04:54:04 --> User IP: ::1
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Vanitha (4) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Vanitha (4) - 2025-05-26 - 08:30 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Vanitha (4) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Karthikeyan (13) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Karthikeyan (13) - 2025-05-26 - 07:41 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Karthikeyan (13) - 2025-05-27 - 07:40 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Muniyappan (16) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Muniyappan (16) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Muniyappan (16) - 2025-05-27 - 08:05 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Gokul (17) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Gokul (17) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Gokul (17) - 2025-05-27 - 08:23 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Manisha V (1) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Manisha V (1) - 2025-05-26 - 08:22 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Manisha V (1) - 2025-05-27 - 08:00 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Gnanamugilan (9) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Gnanamugilan (9) - 2025-05-26 - 08:09 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Gnanamugilan (9) - 2025-05-27 - 07:52 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Arun (5) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Arun (5) - 2025-05-26 - 07:56 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Arun (5) - 2025-05-27 - 07:58 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Magendiran (23) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Magendiran (23) - 2025-05-26 - 08:21 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Magendiran (23) - 2025-05-27 - 08:14 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Kokila (45) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Kokila (45) - 2025-05-26 - 08:38 (Present)
+INFO - 2025-05-28 04:54:32 --> ✅ Processed: Kokila (45) - 2025-05-27 - 08:41 (Present)
+DEBUG - 2025-05-28 04:54:32 --> User IP: ::1
+DEBUG - 2025-05-28 04:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 04:54:49 --> User IP: ::1
+DEBUG - 2025-05-28 04:54:49 --> User ID: 27, Date: 2025-05-26
+DEBUG - 2025-05-28 05:24:00 --> User IP: ::1
+DEBUG - 2025-05-28 05:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 05:24:29 --> User IP: ::1
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Vanitha (4) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Vanitha (4) - 2025-05-26 - 08:30 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Vanitha (4) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Karthikeyan (13) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Karthikeyan (13) - 2025-05-26 - 07:41 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Karthikeyan (13) - 2025-05-27 - 07:40 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Muniyappan (16) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Muniyappan (16) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Muniyappan (16) - 2025-05-27 - 08:05 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Gokul (17) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Gokul (17) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Gokul (17) - 2025-05-27 - 08:23 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Manisha V (1) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Manisha V (1) - 2025-05-26 - 08:22 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Manisha V (1) - 2025-05-27 - 08:00 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Gnanamugilan (9) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Gnanamugilan (9) - 2025-05-26 - 08:09 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Gnanamugilan (9) - 2025-05-27 - 07:52 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Arun (5) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Arun (5) - 2025-05-26 - 07:56 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Arun (5) - 2025-05-27 - 07:58 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Magendiran (23) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Magendiran (23) - 2025-05-26 - 08:21 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Magendiran (23) - 2025-05-27 - 08:14 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Kokila (45) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Kokila (45) - 2025-05-26 - 08:38 (Present)
+INFO - 2025-05-28 05:24:58 --> ✅ Processed: Kokila (45) - 2025-05-27 - 08:41 (Present)
+DEBUG - 2025-05-28 05:25:02 --> User IP: ::1
+DEBUG - 2025-05-28 05:25:02 --> User ID: 27, Date: 2025-05-26
+DEBUG - 2025-05-28 05:25:26 --> User IP: ::1
+DEBUG - 2025-05-28 05:25:26 --> User ID: 17, Date: 2025-05-26
+DEBUG - 2025-05-28 05:43:30 --> User IP: ::1
+DEBUG - 2025-05-28 05:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 05:43:40 --> User IP: ::1
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Vanitha (4) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Vanitha (4) - 2025-05-26 - 08:30 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Vanitha (4) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Karthikeyan (13) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Karthikeyan (13) - 2025-05-26 - 07:41 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Karthikeyan (13) - 2025-05-27 - 07:40 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Muniyappan (16) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Muniyappan (16) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Muniyappan (16) - 2025-05-27 - 08:05 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Gokul (17) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Gokul (17) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Gokul (17) - 2025-05-27 - 08:23 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Manisha V (1) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Manisha V (1) - 2025-05-26 - 08:22 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Manisha V (1) - 2025-05-27 - 08:00 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Gnanamugilan (9) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Gnanamugilan (9) - 2025-05-26 - 08:09 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Gnanamugilan (9) - 2025-05-27 - 07:52 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Arun (5) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Arun (5) - 2025-05-26 - 07:56 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Arun (5) - 2025-05-27 - 07:58 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Magendiran (23) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Magendiran (23) - 2025-05-26 - 08:21 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Magendiran (23) - 2025-05-27 - 08:14 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Kokila (45) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Kokila (45) - 2025-05-26 - 08:38 (Present)
+INFO - 2025-05-28 05:44:09 --> ✅ Processed: Kokila (45) - 2025-05-27 - 08:41 (Present)
+DEBUG - 2025-05-28 05:57:48 --> User IP: ::1
+DEBUG - 2025-05-28 05:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 05:58:01 --> User IP: ::1
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Vanitha (4) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Vanitha (4) - 2025-05-26 - 08:30 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Vanitha (4) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Karthikeyan (13) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Karthikeyan (13) - 2025-05-26 - 07:41 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Karthikeyan (13) - 2025-05-27 - 07:40 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Muniyappan (16) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Muniyappan (16) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Muniyappan (16) - 2025-05-27 - 08:05 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Gokul (17) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Gokul (17) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Gokul (17) - 2025-05-27 - 08:23 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Manisha V (1) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Manisha V (1) - 2025-05-26 - 08:22 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Manisha V (1) - 2025-05-27 - 08:00 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Gnanamugilan (9) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Gnanamugilan (9) - 2025-05-26 - 08:09 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Gnanamugilan (9) - 2025-05-27 - 07:52 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Arun (5) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Arun (5) - 2025-05-26 - 07:56 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Arun (5) - 2025-05-27 - 07:58 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Magendiran (23) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Magendiran (23) - 2025-05-26 - 08:21 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Magendiran (23) - 2025-05-27 - 08:14 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Kokila (45) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Kokila (45) - 2025-05-26 - 08:38 (Present)
+INFO - 2025-05-28 05:58:30 --> ✅ Processed: Kokila (45) - 2025-05-27 - 08:41 (Present)
+DEBUG - 2025-05-28 05:58:46 --> User IP: ::1
+DEBUG - 2025-05-28 05:58:46 --> User ID: 27, Date: 2025-05-26
+DEBUG - 2025-05-28 05:58:49 --> User IP: ::1
+DEBUG - 2025-05-28 05:58:49 --> User ID: 17, Date: 2025-05-26
+DEBUG - 2025-05-28 06:09:41 --> User IP: ::1
+DEBUG - 2025-05-28 06:09:41 --> User ID: 17, Date: 2025-05-26
+DEBUG - 2025-05-28 06:09:59 --> User IP: ::1
+DEBUG - 2025-05-28 06:09:59 --> User ID: 17, Date: 2025-05-26
+DEBUG - 2025-05-28 06:10:00 --> User IP: ::1
+DEBUG - 2025-05-28 06:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 06:10:03 --> User IP: ::1
+DEBUG - 2025-05-28 06:10:03 --> User ID: 16, Date: 2025-05-26
+DEBUG - 2025-05-28 06:10:24 --> User IP: ::1
+DEBUG - 2025-05-28 06:10:24 --> User ID: 16, Date: 2025-05-26
+DEBUG - 2025-05-28 06:10:25 --> User IP: ::1
+DEBUG - 2025-05-28 06:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 06:10:39 --> User IP: ::1
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Vanitha (4) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Vanitha (4) - 2025-05-26 - 08:30 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Vanitha (4) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Karthikeyan (13) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Karthikeyan (13) - 2025-05-26 - 07:41 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Karthikeyan (13) - 2025-05-27 - 07:40 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Muniyappan (16) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Muniyappan (16) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Muniyappan (16) - 2025-05-27 - 08:05 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Gokul (17) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Gokul (17) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Gokul (17) - 2025-05-27 - 08:23 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Manisha V (1) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Manisha V (1) - 2025-05-26 - 08:22 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Manisha V (1) - 2025-05-27 - 08:00 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Gnanamugilan (9) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Gnanamugilan (9) - 2025-05-26 - 08:09 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Gnanamugilan (9) - 2025-05-27 - 07:52 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Arun (5) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Arun (5) - 2025-05-26 - 07:56 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Arun (5) - 2025-05-27 - 07:58 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Magendiran (23) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Magendiran (23) - 2025-05-26 - 08:21 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Magendiran (23) - 2025-05-27 - 08:14 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Kokila (45) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Kokila (45) - 2025-05-26 - 08:38 (Present)
+INFO - 2025-05-28 06:11:09 --> ✅ Processed: Kokila (45) - 2025-05-27 - 08:41 (Present)
+DEBUG - 2025-05-28 06:11:17 --> User IP: ::1
+DEBUG - 2025-05-28 06:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 06:11:23 --> User IP: ::1
+DEBUG - 2025-05-28 06:11:23 --> User ID: 17, Date: 2025-05-26
+DEBUG - 2025-05-28 06:11:25 --> User IP: ::1
+DEBUG - 2025-05-28 06:11:25 --> User ID: 16, Date: 2025-05-26
+DEBUG - 2025-05-28 06:11:29 --> User IP: ::1
+DEBUG - 2025-05-28 06:11:29 --> User ID: 16, Date: 2025-05-26
+DEBUG - 2025-05-28 06:11:30 --> User IP: ::1
+DEBUG - 2025-05-28 06:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 06:11:38 --> User IP: ::1
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Vanitha (4) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Vanitha (4) - 2025-05-26 - 08:30 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Vanitha (4) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Karthikeyan (13) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Karthikeyan (13) - 2025-05-26 - 07:41 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Karthikeyan (13) - 2025-05-27 - 07:40 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Muniyappan (16) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Muniyappan (16) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Muniyappan (16) - 2025-05-27 - 08:05 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Gokul (17) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Gokul (17) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Gokul (17) - 2025-05-27 - 08:23 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Manisha V (1) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Manisha V (1) - 2025-05-26 - 08:22 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Manisha V (1) - 2025-05-27 - 08:00 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Gnanamugilan (9) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Gnanamugilan (9) - 2025-05-26 - 08:09 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Gnanamugilan (9) - 2025-05-27 - 07:52 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Arun (5) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Arun (5) - 2025-05-26 - 07:56 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Arun (5) - 2025-05-27 - 07:58 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Magendiran (23) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Magendiran (23) - 2025-05-26 - 08:21 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Magendiran (23) - 2025-05-27 - 08:14 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Kokila (45) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Kokila (45) - 2025-05-26 - 08:38 (Present)
+INFO - 2025-05-28 06:12:07 --> ✅ Processed: Kokila (45) - 2025-05-27 - 08:41 (Present)
+DEBUG - 2025-05-28 06:19:09 --> User IP: ::1
+DEBUG - 2025-05-28 06:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 06:19:16 --> User IP: ::1
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Srimugan N (27) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Srimugan N (27) - 2025-05-26 - 08:12 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Srimugan N (27) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Vanitha (4) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Vanitha (4) - 2025-05-26 - 08:30 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Vanitha (4) - 2025-05-27 - Error (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Karthikeyan (13) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Karthikeyan (13) - 2025-05-26 - 07:41 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Karthikeyan (13) - 2025-05-27 - 07:40 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Muniyappan (16) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Muniyappan (16) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Muniyappan (16) - 2025-05-27 - 08:05 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Gokul (17) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Gokul (17) - 2025-05-26 - Error (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Gokul (17) - 2025-05-27 - 08:23 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Manisha V (1) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Manisha V (1) - 2025-05-26 - 08:22 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Manisha V (1) - 2025-05-27 - 08:00 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Gnanamugilan (9) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Gnanamugilan (9) - 2025-05-26 - 08:09 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Gnanamugilan (9) - 2025-05-27 - 07:52 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Arun (5) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Arun (5) - 2025-05-26 - 07:56 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Arun (5) - 2025-05-27 - 07:58 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Magendiran (23) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Magendiran (23) - 2025-05-26 - 08:21 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Magendiran (23) - 2025-05-27 - 08:14 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Kokila (45) - 2025-05-25 - 00:00 (Absent)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Kokila (45) - 2025-05-26 - 08:38 (Present)
+INFO - 2025-05-28 06:19:45 --> ✅ Processed: Kokila (45) - 2025-05-27 - 08:41 (Present)
+DEBUG - 2025-05-28 06:19:45 --> User IP: ::1
+DEBUG - 2025-05-28 06:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 08:39:18 --> User IP: ::1
+DEBUG - 2025-05-28 08:39:18 --> User ID: 17, Date: 2025-05-27
+DEBUG - 2025-05-28 10:38:50 --> User IP: ::1
+DEBUG - 2025-05-28 10:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 10:39:03 --> User IP: ::1
+DEBUG - 2025-05-28 10:39:03 --> User ID: 9, Date: 2025-05-27
+DEBUG - 2025-05-28 10:43:48 --> User IP: ::1
+DEBUG - 2025-05-28 10:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 10:44:00 --> User IP: ::1
+DEBUG - 2025-05-28 10:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 10:44:07 --> User IP: ::1
+DEBUG - 2025-05-28 10:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 10:44:14 --> User IP: ::1
+DEBUG - 2025-05-28 10:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 10:44:22 --> User IP: ::1
+DEBUG - 2025-05-28 10:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 10:44:41 --> User IP: ::1
+DEBUG - 2025-05-28 10:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 10:45:28 --> User IP: ::1
+DEBUG - 2025-05-28 10:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 10:45:30 --> User IP: ::1
+DEBUG - 2025-05-28 10:45:30 --> User ID: 13, Date: 2025-05-27
+DEBUG - 2025-05-28 11:14:32 --> User IP: ::1
+DEBUG - 2025-05-28 11:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:14:35 --> User IP: ::1
+DEBUG - 2025-05-28 11:14:35 --> User ID: 13, Date: 2025-05-26
+DEBUG - 2025-05-28 11:14:39 --> User IP: ::1
+DEBUG - 2025-05-28 11:14:39 --> User ID: 13, Date: 2025-05-26
+DEBUG - 2025-05-28 11:14:42 --> User IP: ::1
+DEBUG - 2025-05-28 11:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:14:44 --> User IP: ::1
+DEBUG - 2025-05-28 11:14:44 --> User ID: 27, Date: 2025-05-26
+DEBUG - 2025-05-28 11:14:48 --> User IP: ::1
+DEBUG - 2025-05-28 11:14:48 --> User ID: 27, Date: 2025-05-28
+DEBUG - 2025-05-28 11:15:22 --> User IP: ::1
+DEBUG - 2025-05-28 11:15:22 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-28 11:15:30 --> User IP: ::1
+DEBUG - 2025-05-28 11:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:15:35 --> User IP: ::1
+DEBUG - 2025-05-28 11:15:35 --> User ID: 23, Date: 2025-05-27
+DEBUG - 2025-05-28 11:15:39 --> User IP: ::1
+DEBUG - 2025-05-28 11:15:39 --> User ID: 1, Date: 2025-05-26
+DEBUG - 2025-05-28 11:15:42 --> User IP: ::1
+DEBUG - 2025-05-28 11:15:42 --> User ID: 27, Date: 2025-05-28
+DEBUG - 2025-05-28 11:15:51 --> User IP: ::1
+DEBUG - 2025-05-28 11:15:51 --> User ID: 23, Date: 2025-05-27
+DEBUG - 2025-05-28 11:16:06 --> User IP: ::1
+DEBUG - 2025-05-28 11:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:16:54 --> User IP: ::1
+DEBUG - 2025-05-28 11:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:16:58 --> User IP: ::1
+DEBUG - 2025-05-28 11:16:58 --> User ID: 23, Date: 2025-05-26
+DEBUG - 2025-05-28 11:17:07 --> User IP: ::1
+DEBUG - 2025-05-28 11:17:07 --> User ID: 27, Date: 2025-05-28
+DEBUG - 2025-05-28 11:18:09 --> User IP: ::1
+DEBUG - 2025-05-28 11:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:18:11 --> User IP: ::1
+DEBUG - 2025-05-28 11:18:11 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-28 11:18:15 --> User IP: ::1
+DEBUG - 2025-05-28 11:18:15 --> User ID: 27, Date: 2025-05-26
+DEBUG - 2025-05-28 11:18:19 --> User IP: ::1
+DEBUG - 2025-05-28 11:18:19 --> User ID: 13, Date: 2025-05-27
+DEBUG - 2025-05-28 11:19:10 --> User IP: ::1
+DEBUG - 2025-05-28 11:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:19:13 --> User IP: ::1
+DEBUG - 2025-05-28 11:19:13 --> User ID: 4, Date: 2025-05-26
+DEBUG - 2025-05-28 11:19:18 --> User IP: ::1
+DEBUG - 2025-05-28 11:19:18 --> User ID: 27, Date: 2025-05-28
+DEBUG - 2025-05-28 11:21:05 --> User IP: ::1
+DEBUG - 2025-05-28 11:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:21:09 --> User IP: ::1
+DEBUG - 2025-05-28 11:21:09 --> User ID: 13, Date: 2025-05-26
+DEBUG - 2025-05-28 11:21:15 --> User IP: ::1
+DEBUG - 2025-05-28 11:21:15 --> User ID: 27, Date: 2025-05-28
+DEBUG - 2025-05-28 11:23:50 --> User IP: ::1
+DEBUG - 2025-05-28 11:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:23:53 --> User IP: ::1
+DEBUG - 2025-05-28 11:23:53 --> User ID: 27, Date: 2025-05-26
+DEBUG - 2025-05-28 11:23:56 --> User IP: ::1
+DEBUG - 2025-05-28 11:23:56 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-28 11:24:31 --> User IP: ::1
+DEBUG - 2025-05-28 11:24:31 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-28 11:24:32 --> User IP: ::1
+DEBUG - 2025-05-28 11:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:24:34 --> User IP: ::1
+DEBUG - 2025-05-28 11:24:34 --> User ID: 27, Date: 2025-05-26
+DEBUG - 2025-05-28 11:24:37 --> User IP: ::1
+DEBUG - 2025-05-28 11:24:38 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-28 11:44:07 --> User IP: ::1
+DEBUG - 2025-05-28 11:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:44:26 --> User IP: ::1
+DEBUG - 2025-05-28 11:44:26 --> User ID: 4, Date: 2025-05-26
+DEBUG - 2025-05-28 11:44:29 --> User IP: ::1
+DEBUG - 2025-05-28 11:44:29 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-28 11:45:23 --> User IP: ::1
+DEBUG - 2025-05-28 11:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:45:26 --> User IP: ::1
+DEBUG - 2025-05-28 11:45:26 --> User ID: 23, Date: 2025-05-26
+DEBUG - 2025-05-28 11:45:30 --> User IP: ::1
+DEBUG - 2025-05-28 11:45:30 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-28 11:46:27 --> User IP: ::1
+DEBUG - 2025-05-28 11:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:51:29 --> User IP: ::1
+DEBUG - 2025-05-28 11:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:51:32 --> User IP: ::1
+DEBUG - 2025-05-28 11:51:32 --> User ID: 4, Date: 2025-05-26
+DEBUG - 2025-05-28 11:51:36 --> User IP: ::1
+DEBUG - 2025-05-28 11:51:36 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-28 11:52:12 --> User IP: ::1
+DEBUG - 2025-05-28 11:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:52:20 --> User IP: ::1
+DEBUG - 2025-05-28 11:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:52:26 --> User IP: ::1
+DEBUG - 2025-05-28 11:52:26 --> User ID: 13, Date: 2025-05-26
+DEBUG - 2025-05-28 11:52:29 --> User IP: ::1
+DEBUG - 2025-05-28 11:52:29 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-28 11:52:49 --> User IP: ::1
+DEBUG - 2025-05-28 11:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:52:51 --> User IP: ::1
+DEBUG - 2025-05-28 11:52:51 --> User ID: 13, Date: 2025-05-26
+DEBUG - 2025-05-28 11:52:55 --> User IP: ::1
+DEBUG - 2025-05-28 11:52:55 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-28 11:53:37 --> User IP: ::1
+DEBUG - 2025-05-28 11:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:53:43 --> User IP: ::1
+DEBUG - 2025-05-28 11:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:53:44 --> User IP: ::1
+DEBUG - 2025-05-28 11:53:44 --> User ID: 13, Date: 2025-05-26
+DEBUG - 2025-05-28 11:53:46 --> User IP: ::1
+DEBUG - 2025-05-28 11:53:46 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-28 11:56:20 --> User IP: ::1
+DEBUG - 2025-05-28 11:56:20 --> User ID: 4, Date: 2025-05-26
+DEBUG - 2025-05-28 11:58:36 --> User IP: ::1
+DEBUG - 2025-05-28 11:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 11:58:37 --> User IP: ::1
+DEBUG - 2025-05-28 11:58:37 --> User ID: 13, Date: 2025-05-26
+DEBUG - 2025-05-28 11:58:42 --> User IP: ::1
+DEBUG - 2025-05-28 11:58:42 --> User ID: 1, Date: 2025-05-26
+DEBUG - 2025-05-28 11:58:45 --> User IP: ::1
+DEBUG - 2025-05-28 11:58:45 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-28 12:02:17 --> User IP: ::1
+DEBUG - 2025-05-28 12:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 12:02:19 --> User IP: ::1
+DEBUG - 2025-05-28 12:02:19 --> User ID: 27, Date: 2025-05-26
+DEBUG - 2025-05-28 12:02:25 --> User IP: ::1
+DEBUG - 2025-05-28 12:02:25 --> User ID: 27, Date: 2025-05-27
+DEBUG - 2025-05-28 12:02:37 --> User IP: ::1
+DEBUG - 2025-05-28 12:02:37 --> User ID: 45, Date: 2025-05-26
+DEBUG - 2025-05-28 12:02:42 --> User IP: ::1
+DEBUG - 2025-05-28 12:02:42 --> User ID: 45, Date: 2025-05-27
+DEBUG - 2025-05-28 12:02:54 --> User IP: ::1
+DEBUG - 2025-05-28 12:02:54 --> User ID: 1, Date: 2025-05-26
+DEBUG - 2025-05-28 12:02:59 --> User IP: ::1
+DEBUG - 2025-05-28 12:02:59 --> User ID: 1, Date: 2025-05-27
+DEBUG - 2025-05-28 12:04:30 --> User IP: ::1
+DEBUG - 2025-05-28 12:04:30 --> User ID: 5, Date: 2025-05-26
+DEBUG - 2025-05-28 12:04:33 --> User IP: ::1
+DEBUG - 2025-05-28 12:04:33 --> User ID: 5, Date: 2025-05-27
+DEBUG - 2025-05-28 12:05:08 --> User IP: ::1
+DEBUG - 2025-05-28 12:05:08 --> User ID: 1, Date: 2025-05-26
+DEBUG - 2025-05-28 12:05:10 --> User IP: ::1
+DEBUG - 2025-05-28 12:05:10 --> User ID: 23, Date: 2025-05-26
+DEBUG - 2025-05-28 12:05:13 --> User IP: ::1
+DEBUG - 2025-05-28 12:05:13 --> User ID: 23, Date: 2025-05-27
+DEBUG - 2025-05-28 12:05:19 --> User IP: ::1
+DEBUG - 2025-05-28 12:05:19 --> User ID: 23, Date: 2025-05-27
+DEBUG - 2025-05-28 12:14:03 --> User IP: ::1
+DEBUG - 2025-05-28 12:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 12:14:09 --> User IP: ::1
+DEBUG - 2025-05-28 12:14:09 --> User ID: 4, Date: 2025-05-26
+DEBUG - 2025-05-28 12:14:25 --> User IP: ::1
+DEBUG - 2025-05-28 12:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 12:14:27 --> User IP: ::1
+DEBUG - 2025-05-28 12:14:27 --> User ID: 45, Date: 2025-05-26
+DEBUG - 2025-05-28 12:34:15 --> User IP: ::1
+DEBUG - 2025-05-28 12:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 12:34:21 --> User IP: ::1
+DEBUG - 2025-05-28 12:34:21 --> User ID: 45, Date: 2025-05-26
+DEBUG - 2025-05-28 12:34:26 --> User IP: ::1
+DEBUG - 2025-05-28 12:34:26 --> User ID: 45, Date: 2025-05-26
+DEBUG - 2025-05-28 12:34:48 --> User IP: ::1
+DEBUG - 2025-05-28 12:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 12:34:50 --> User IP: ::1
+DEBUG - 2025-05-28 12:34:50 --> User ID: 45, Date: 2025-05-26
+DEBUG - 2025-05-28 12:34:55 --> User IP: ::1
+DEBUG - 2025-05-28 12:34:56 --> User ID: 45, Date: 2025-05-27
+DEBUG - 2025-05-28 12:38:04 --> User IP: ::1
+DEBUG - 2025-05-28 12:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 12:38:06 --> User IP: ::1
+DEBUG - 2025-05-28 12:38:06 --> User ID: 4, Date: 2025-05-26
+DEBUG - 2025-05-28 12:38:09 --> User IP: ::1
+DEBUG - 2025-05-28 12:38:09 --> User ID: 4, Date: 2025-05-27
+DEBUG - 2025-05-28 12:40:14 --> User IP: ::1
+DEBUG - 2025-05-28 12:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 12:40:16 --> User IP: ::1
+DEBUG - 2025-05-28 12:40:16 --> User ID: 9, Date: 2025-05-26
+DEBUG - 2025-05-28 12:40:21 --> User IP: ::1
+DEBUG - 2025-05-28 12:40:21 --> User ID: 9, Date: 2025-05-27
+DEBUG - 2025-05-28 12:40:56 --> User IP: ::1
+DEBUG - 2025-05-28 12:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 12:40:59 --> User IP: ::1
+DEBUG - 2025-05-28 12:40:59 --> User ID: 1, Date: 2025-05-26
+DEBUG - 2025-05-28 12:41:03 --> User IP: ::1
+DEBUG - 2025-05-28 12:41:03 --> User ID: 1, Date: 2025-05-27
+DEBUG - 2025-05-28 12:42:05 --> User IP: ::1
+DEBUG - 2025-05-28 12:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 12:42:07 --> User IP: ::1
+DEBUG - 2025-05-28 12:42:07 --> User ID: 4, Date: 2025-05-26
+DEBUG - 2025-05-28 12:42:23 --> User IP: ::1
+DEBUG - 2025-05-28 12:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 12:42:25 --> User IP: ::1
+DEBUG - 2025-05-28 12:42:25 --> User ID: 9, Date: 2025-05-26
+DEBUG - 2025-05-28 12:43:32 --> User IP: ::1
+DEBUG - 2025-05-28 12:43:32 --> User ID: 45, Date: 2025-05-26
+DEBUG - 2025-05-28 12:43:46 --> User IP: ::1
+DEBUG - 2025-05-28 12:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 12:43:47 --> User IP: ::1
+DEBUG - 2025-05-28 12:43:47 --> User ID: 9, Date: 2025-05-26
+DEBUG - 2025-05-28 12:44:18 --> User IP: ::1
+DEBUG - 2025-05-28 12:44:18 --> User ID: 9, Date: 2025-05-27
+DEBUG - 2025-05-28 12:51:25 --> User IP: ::1
+DEBUG - 2025-05-28 12:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 12:51:26 --> User IP: ::1
+DEBUG - 2025-05-28 12:51:26 --> User ID: 45, Date: 2025-05-26
+DEBUG - 2025-05-28 12:51:30 --> User IP: ::1
+DEBUG - 2025-05-28 12:51:30 --> User ID: 45, Date: 2025-05-27
+DEBUG - 2025-05-28 13:04:51 --> User IP: ::1
+DEBUG - 2025-05-28 13:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 13:04:52 --> User IP: ::1
+DEBUG - 2025-05-28 13:04:52 --> User ID: 45, Date: 2025-05-26
+DEBUG - 2025-05-28 13:04:55 --> User IP: ::1
+DEBUG - 2025-05-28 13:04:55 --> User ID: 45, Date: 2025-05-27
+DEBUG - 2025-05-28 13:08:43 --> User IP: ::1
+DEBUG - 2025-05-28 13:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-28 13:08:45 --> User IP: ::1
+DEBUG - 2025-05-28 13:08:45 --> User ID: 13, Date: 2025-05-26

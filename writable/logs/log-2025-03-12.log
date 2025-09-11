@@ -1,0 +1,1502 @@
+DEBUG - 2025-03-12 04:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 04:22:36 --> User ID: 23, Date: 2025-02-25
+DEBUG - 2025-03-12 04:23:34 --> User ID: 13, Date: 2025-02-25
+DEBUG - 2025-03-12 04:23:37 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 04:24:58 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 04:25:01 --> User ID: 9, Date: 2025-03-03
+DEBUG - 2025-03-12 04:25:04 --> User ID: 1, Date: 2025-03-04
+DEBUG - 2025-03-12 04:25:43 --> User ID: 27, Date: 2025-02-25
+DEBUG - 2025-03-12 04:25:46 --> User ID: 2, Date: 2025-02-25
+DEBUG - 2025-03-12 04:25:49 --> User ID: 5, Date: 2025-03-03
+DEBUG - 2025-03-12 04:32:09 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-12 04:45:21 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 04:45:38 --> User ID: 5, Date: 2025-03-07
+DEBUG - 2025-03-12 04:45:42 --> User ID: 6, Date: 2025-03-07
+DEBUG - 2025-03-12 04:45:47 --> User ID: 6, Date: 2025-03-07
+DEBUG - 2025-03-12 04:46:20 --> User ID: 23, Date: 2025-02-25
+DEBUG - 2025-03-12 04:50:52 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 04:56:25 --> User ID: 2, Date: 2025-02-25
+DEBUG - 2025-03-12 04:56:57 --> User ID: 2, Date: 2025-02-27
+DEBUG - 2025-03-12 04:57:42 --> User ID: 16, Date: 2025-02-26
+DEBUG - 2025-03-12 04:57:57 --> User ID: 6, Date: 2025-03-05
+DEBUG - 2025-03-12 04:58:05 --> User ID: 10, Date: 2025-02-28
+DEBUG - 2025-03-12 04:58:14 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-12 04:58:34 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-12 05:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 05:08:15 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-12 05:08:26 --> User ID: 27, Date: 2025-03-10
+DEBUG - 2025-03-12 05:08:34 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 05:08:48 --> User ID: 1, Date: 2025-02-26
+DEBUG - 2025-03-12 05:08:55 --> User ID: 45, Date: 2025-03-08
+DEBUG - 2025-03-12 05:09:16 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 05:09:27 --> User ID: 10, Date: 2025-03-04
+DEBUG - 2025-03-12 05:10:18 --> User ID: 1, Date: 2025-02-26
+DEBUG - 2025-03-12 05:10:27 --> User ID: 2, Date: 2025-03-06
+DEBUG - 2025-03-12 05:11:06 --> User ID: 23, Date: 2025-03-06
+DEBUG - 2025-03-12 05:11:12 --> User ID: 23, Date: 2025-03-05
+DEBUG - 2025-03-12 05:11:16 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 05:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 05:13:26 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 05:14:37 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 05:15:04 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:03:36 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:03:46 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:05:11 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:08:31 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:08:45 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:09:08 --> User ID: 45, Date: 2025-03-08
+DEBUG - 2025-03-12 06:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 06:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 06:10:30 --> User ID: 45, Date: 2025-03-08
+DEBUG - 2025-03-12 06:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 06:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 06:11:19 --> User ID: 45, Date: 2025-03-08
+DEBUG - 2025-03-12 06:12:01 --> User ID: 45, Date: 2025-03-08
+ERROR - 2025-03-12 06:12:10 --> mysqli_sql_exception: Column 'timestamp' cannot be null in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gighz\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-12 06:12:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'timestamp' cannot be null
+[Method: POST, Route: attendance/addManualPunch]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 06:12:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'timestamp' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'45\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'45\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 06:12:10 --> [Caused by] mysqli_sql_exception: Column 'timestamp' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'45\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'45\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'45\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 06:20:40 --> User ID: 45, Date: 2025-03-08
+DEBUG - 2025-03-12 06:21:59 --> User ID: 45, Date: 2025-03-08
+ERROR - 2025-03-12 06:22:07 --> mysqli_sql_exception: Column 'timestamp' cannot be null in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gighz\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-12 06:22:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'timestamp' cannot be null
+[Method: POST, Route: attendance/addManualPunch]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 06:22:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'timestamp' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'45\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'45\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 06:22:07 --> [Caused by] mysqli_sql_exception: Column 'timestamp' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'45\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'45\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'45\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 06:24:15 --> User ID: 45, Date: 2025-03-08
+DEBUG - 2025-03-12 06:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 06:30:03 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:32:04 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:32:10 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:32:20 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:34:56 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:35:10 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:35:27 --> User ID: 23, Date: 2025-03-08
+DEBUG - 2025-03-12 06:35:59 --> User ID: 23, Date: 2025-03-08
+DEBUG - 2025-03-12 06:38:32 --> User ID: 23, Date: 2025-03-08
+CRITICAL - 2025-03-12 06:39:32 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 127.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-03-12 06:39:32 --> User ID: 23, Date: 2025-03-08
+DEBUG - 2025-03-12 06:39:37 --> User ID: 23, Date: 2025-03-08
+CRITICAL - 2025-03-12 06:40:37 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 127.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-03-12 06:40:37 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:41:12 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 06:41:37 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 266354688 bytes)
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 125.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-03-12 06:42:15 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:43:17 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 06:44:17 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 131.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-03-12 06:44:17 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 06:44:31 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 264257536 bytes)
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 123.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-03-12 06:44:32 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:44:32 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:44:41 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 06:44:54 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 264257536 bytes)
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 123.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-03-12 06:45:49 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:46:13 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:46:51 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:47:31 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:48:09 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 06:48:09 --> ErrorException: A non-numeric value encountered
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 130.
+ 1 APPPATH\Controllers\BiometricController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 130)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 06:49:08 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 06:49:08 --> ArgumentCountError: time() expects exactly 0 arguments, 1 given
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 128.
+ 1 APPPATH\Controllers\BiometricController.php(128): time('09:29')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 06:53:57 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:57:13 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:58:31 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 06:58:44 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:00:13 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:01:39 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:01:51 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:01:52 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:02:08 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:03:00 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:03:43 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:03:55 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:05:27 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:08:52 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:09:08 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:09:55 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:10:15 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:11:04 --> User ID: 23, Date: 2025-03-06
+DEBUG - 2025-03-12 07:11:16 --> User ID: 23, Date: 2025-03-06
+CRITICAL - 2025-03-12 07:11:16 --> ErrorException: Undefined array key 8
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 131.
+ 1 APPPATH\Controllers\BiometricController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 8', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:11:47 --> User ID: 23, Date: 2025-03-06
+DEBUG - 2025-03-12 07:16:55 --> User ID: 23, Date: 2025-03-06
+CRITICAL - 2025-03-12 07:16:55 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: GET, Route: calculate]
+in SYSTEMPATH\BaseModel.php on line 1830.
+ 1 SYSTEMPATH\BaseModel.php(1830): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(996): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\BiometricController.php(148): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:18:44 --> User ID: 23, Date: 2025-03-06
+DEBUG - 2025-03-12 07:19:29 --> User ID: 23, Date: 2025-03-06
+DEBUG - 2025-03-12 07:19:40 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:19:58 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:22:45 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 07:22:45 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: GET, Route: calculate]
+in SYSTEMPATH\BaseModel.php on line 1830.
+ 1 SYSTEMPATH\BaseModel.php(1830): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(996): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\BiometricController.php(148): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:23:06 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 07:23:06 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: GET, Route: calculate]
+in SYSTEMPATH\BaseModel.php on line 1830.
+ 1 SYSTEMPATH\BaseModel.php(1830): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(996): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\BiometricController.php(148): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:23:41 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 07:23:41 --> ErrorException: Array to string conversion
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 148.
+ 1 APPPATH\Controllers\BiometricController.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 148)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:24:46 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 07:24:46 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 151.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:25:16 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 07:25:16 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 151.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:25:35 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 07:25:35 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 151.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:25:41 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 07:25:41 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 151.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:26:02 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 07:26:02 --> ErrorException: Array to string conversion
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 148.
+ 1 APPPATH\Controllers\BiometricController.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 148)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:26:36 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:26:57 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:27:10 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:28:36 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:30:12 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 07:30:12 --> Error: Cannot use object of type App\Models\AttendanceModel as array
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 150.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:30:27 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:30:50 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:32:27 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 07:32:27 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: GET, Route: calculate]
+in SYSTEMPATH\BaseModel.php on line 1830.
+ 1 SYSTEMPATH\BaseModel.php(1830): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(996): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\BiometricController.php(148): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:33:16 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:33:42 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:34:24 --> User ID: 23, Date: 2025-03-10
+CRITICAL - 2025-03-12 07:34:24 --> BadMethodCallException: Call to undefined method App\Models\AttendanceModel::se
+[Method: GET, Route: calculate]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\BiometricController.php(148): CodeIgniter\Model->__call('se', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:35:16 --> User ID: 23, Date: 2025-03-10
+DEBUG - 2025-03-12 07:43:52 --> User ID: 10, Date: 2025-02-27
+DEBUG - 2025-03-12 07:44:04 --> User ID: 1, Date: 2025-02-28
+DEBUG - 2025-03-12 07:47:02 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-12 07:47:09 --> User ID: 4, Date: 2025-02-25
+CRITICAL - 2025-03-12 07:47:09 --> ErrorException: Undefined array key 5
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 137.
+ 1 APPPATH\Controllers\BiometricController.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 137)
+ 2 APPPATH\Controllers\BiometricController.php(111): App\Controllers\BiometricController->recalculatePunchTime('4', '2025-02-25')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:49:05 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 07:49:25 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-12 07:49:42 --> User ID: 45, Date: 2025-03-08
+DEBUG - 2025-03-12 07:49:47 --> User ID: , Date: 
+CRITICAL - 2025-03-12 07:49:47 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 152.
+ 1 APPPATH\Controllers\BiometricController.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 152)
+ 2 APPPATH\Controllers\BiometricController.php(111): App\Controllers\BiometricController->recalculatePunchTime(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:50:09 --> User ID: 45, Date: 2025-03-08
+CRITICAL - 2025-03-12 07:50:27 --> ArgumentCountError: Too few arguments to function App\Controllers\BiometricController::recalculatePunchTime(), 0 passed in C:\xampp\htdocs\gighz\system\CodeIgniter.php on line 933 and exactly 2 expected
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 07:58:50 --> User ID: 6, Date: 2025-02-25
+DEBUG - 2025-03-12 08:00:18 --> User ID: 16, Date: 2025-02-28
+DEBUG - 2025-03-12 08:00:24 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-12 08:00:43 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-12 08:01:10 --> User ID: 6, Date: 2025-03-07
+DEBUG - 2025-03-12 08:01:17 --> User ID: 23, Date: 2025-02-27
+DEBUG - 2025-03-12 08:01:56 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-12 08:02:19 --> User ID: , Date: 
+CRITICAL - 2025-03-12 08:02:19 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 152.
+ 1 APPPATH\Controllers\BiometricController.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 152)
+ 2 APPPATH\Controllers\BiometricController.php(111): App\Controllers\BiometricController->recalculatePunchTime(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:02:52 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-12 08:03:08 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-12 08:04:23 --> User ID: 10, Date: 2025-03-05
+DEBUG - 2025-03-12 08:04:32 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-12 08:04:44 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-12 08:04:54 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-12 08:05:17 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-12 08:06:30 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-12 08:06:36 --> User ID: 23, Date: 2025-03-07
+CRITICAL - 2025-03-12 08:06:36 --> ErrorException: Undefined array key 9
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 137.
+ 1 APPPATH\Controllers\BiometricController.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 9', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 137)
+ 2 APPPATH\Controllers\BiometricController.php(111): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-03-07')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:06:59 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-12 08:07:15 --> User ID: 23, Date: 2025-03-07
+DEBUG - 2025-03-12 08:15:54 --> User ID: 10, Date: 2025-03-07
+DEBUG - 2025-03-12 08:16:36 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-12 08:16:45 --> User ID: 4, Date: 2025-02-25
+CRITICAL - 2025-03-12 08:16:45 --> ErrorException: Undefined array key 5
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 141.
+ 1 APPPATH\Controllers\BiometricController.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 141)
+ 2 APPPATH\Controllers\BiometricController.php(115): App\Controllers\BiometricController->recalculatePunchTime('4', '2025-02-25')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:16:52 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-12 08:16:58 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-12 08:17:31 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-12 08:17:34 --> User ID: 4, Date: 2025-02-25
+DEBUG - 2025-03-12 08:17:42 --> User ID: 4, Date: 2025-02-25
+CRITICAL - 2025-03-12 08:17:42 --> ErrorException: Undefined array key 5
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 141.
+ 1 APPPATH\Controllers\BiometricController.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 141)
+ 2 APPPATH\Controllers\BiometricController.php(115): App\Controllers\BiometricController->recalculatePunchTime('4', '2025-02-25')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:21:44 --> User ID: 23, Date: 2025-01-02
+CRITICAL - 2025-03-12 08:21:44 --> ErrorException: Undefined array key 7
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 143.
+ 1 APPPATH\Controllers\BiometricController.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 143)
+ 2 APPPATH\Controllers\BiometricController.php(115): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-01-02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:25:54 --> User ID: 4, Date: 2025-03-05
+DEBUG - 2025-03-12 08:28:15 --> User ID: 4, Date: 2025-03-05
+DEBUG - 2025-03-12 08:28:30 --> User ID: 23, Date: 2025-01-02
+CRITICAL - 2025-03-12 08:28:30 --> ErrorException: Undefined array key 7
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 143.
+ 1 APPPATH\Controllers\BiometricController.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 143)
+ 2 APPPATH\Controllers\BiometricController.php(115): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-01-02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:29:53 --> User ID: 23, Date: 2025-01-02
+CRITICAL - 2025-03-12 08:29:53 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 161.
+ 1 APPPATH\Controllers\BiometricController.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 161)
+ 2 APPPATH\Controllers\BiometricController.php(115): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-01-02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:29:55 --> User ID: 23, Date: 2025-01-02
+CRITICAL - 2025-03-12 08:29:55 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 161.
+ 1 APPPATH\Controllers\BiometricController.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 161)
+ 2 APPPATH\Controllers\BiometricController.php(115): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-01-02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:30:09 --> User ID: 23, Date: 2025-01-02
+CRITICAL - 2025-03-12 08:30:09 --> ErrorException: Undefined variable $dataa
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 162.
+ 1 APPPATH\Controllers\BiometricController.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataa', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 162)
+ 2 APPPATH\Controllers\BiometricController.php(115): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-01-02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:30:14 --> User ID: 23, Date: 2025-01-02
+DEBUG - 2025-03-12 08:30:35 --> User ID: 23, Date: 2025-01-02
+DEBUG - 2025-03-12 08:37:11 --> User ID: 23, Date: 2025-01-02
+DEBUG - 2025-03-12 08:40:43 --> User ID: 4, Date: 2025-03-05
+CRITICAL - 2025-03-12 08:41:53 --> ArgumentCountError: Too few arguments to function App\Controllers\BiometricController::recalculatePunchTime(), 0 passed in C:\xampp\htdocs\gighz\system\CodeIgniter.php on line 933 and exactly 2 expected
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 122.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:42:04 --> User ID: 23, Date: 2025-01-02
+DEBUG - 2025-03-12 08:42:10 --> User ID: 23, Date: 2025-01-02
+DEBUG - 2025-03-12 08:43:28 --> User ID: 23, Date: 2025-01-02
+CRITICAL - 2025-03-12 08:43:28 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 164.
+ 1 APPPATH\Controllers\BiometricController.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 164)
+ 2 APPPATH\Controllers\BiometricController.php(115): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-01-02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:44:09 --> User ID: 23, Date: 2025-01-02
+DEBUG - 2025-03-12 08:45:38 --> User ID: 23, Date: 2025-01-02
+DEBUG - 2025-03-12 08:47:47 --> User ID: 23, Date: 2025-01-02
+CRITICAL - 2025-03-12 08:47:47 --> ErrorException: Undefined array key 7
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 148.
+ 1 APPPATH\Controllers\BiometricController.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 148)
+ 2 APPPATH\Controllers\BiometricController.php(116): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-01-02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:49:25 --> User ID: 23, Date: 2025-01-02
+CRITICAL - 2025-03-12 08:49:25 --> ErrorException: Undefined array key 7
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 142.
+ 1 APPPATH\Controllers\BiometricController.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 142)
+ 2 APPPATH\Controllers\BiometricController.php(116): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-01-02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:49:34 --> User ID: 23, Date: 2025-01-02
+CRITICAL - 2025-03-12 08:49:34 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 165.
+ 1 APPPATH\Controllers\BiometricController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 165)
+ 2 APPPATH\Controllers\BiometricController.php(116): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-01-02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:49:40 --> User ID: 23, Date: 2025-01-02
+DEBUG - 2025-03-12 08:50:10 --> User ID: 23, Date: 2025-01-02
+CRITICAL - 2025-03-12 08:51:53 --> ParseError: syntax error, unexpected token "}", expecting "," or ";"
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 151.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BiometricController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BiometricController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\BiometricController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 08:52:11 --> User ID: 23, Date: 2025-01-02
+DEBUG - 2025-03-12 08:53:59 --> User ID: 23, Date: 2025-01-02
+DEBUG - 2025-03-12 09:55:00 --> User ID: 23, Date: 2025-01-02
+CRITICAL - 2025-03-12 09:55:00 --> ErrorException: Undefined array key 7
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 147.
+ 1 APPPATH\Controllers\BiometricController.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 147)
+ 2 APPPATH\Controllers\BiometricController.php(116): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-01-02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 09:56:23 --> User ID: 23, Date: 2025-01-02
+CRITICAL - 2025-03-12 09:56:23 --> ErrorException: Undefined array key 7
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 147.
+ 1 APPPATH\Controllers\BiometricController.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 147)
+ 2 APPPATH\Controllers\BiometricController.php(116): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-01-02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 09:56:38 --> User ID: 23, Date: 2025-01-02
+DEBUG - 2025-03-12 09:57:07 --> User ID: 23, Date: 2025-01-02
+DEBUG - 2025-03-12 09:59:51 --> User ID: 23, Date: 2025-01-02
+DEBUG - 2025-03-12 10:38:45 --> User ID: 13, Date: 2025-01-02
+DEBUG - 2025-03-12 10:39:00 --> User ID: 13, Date: 2025-01-02
+DEBUG - 2025-03-12 10:39:14 --> User ID: 13, Date: 2025-01-02
+CRITICAL - 2025-03-12 10:39:14 --> ErrorException: Undefined array key 8
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 147.
+ 1 APPPATH\Controllers\BiometricController.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 8', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 147)
+ 2 APPPATH\Controllers\BiometricController.php(116): App\Controllers\BiometricController->recalculatePunchTime('13', '2025-01-02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 10:39:27 --> User ID: 13, Date: 2025-01-02
+DEBUG - 2025-03-12 10:39:53 --> User ID: 13, Date: 2025-01-02
+DEBUG - 2025-03-12 10:42:01 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:42:51 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:43:01 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:43:17 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:44:42 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:46:40 --> User ID: 23, Date: 2025-03-03
+CRITICAL - 2025-03-12 10:47:19 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 112.
+ 1 APPPATH\Controllers\BiometricController.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 10:49:23 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:49:51 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:50:17 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:50:36 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:50:46 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:52:58 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:53:33 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:53:48 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:53:55 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:55:27 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:55:41 --> User ID: 23, Date: 2025-03-03
+ERROR - 2025-03-12 10:55:46 --> mysqli_sql_exception: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gighz\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-12 10:55:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+[Method: POST, Route: attendance/addManualPunch]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 10:55:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 10:55:46 --> [Caused by] mysqli_sql_exception: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 10:57:09 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:57:18 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:57:24 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 10:57:35 --> User ID: 23, Date: 2025-03-03
+ERROR - 2025-03-12 10:57:40 --> mysqli_sql_exception: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gighz\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-12 10:57:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+[Method: POST, Route: attendance/addManualPunch]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 10:57:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 10:57:40 --> [Caused by] mysqli_sql_exception: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+ERROR - 2025-03-12 10:57:41 --> mysqli_sql_exception: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gighz\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-12 10:57:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+[Method: POST, Route: attendance/addManualPunch]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 10:57:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 10:57:41 --> [Caused by] mysqli_sql_exception: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 11:00:50 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:00:53 --> User ID: 23, Date: 2025-03-03
+CRITICAL - 2025-03-12 11:00:53 --> ErrorException: Undefined array key 7
+[Method: POST, Route: attendance/deletePunch]
+in APPPATH\Controllers\BiometricController.php on line 149.
+ 1 APPPATH\Controllers\BiometricController.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 149)
+ 2 APPPATH\Controllers\BiometricController.php(118): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-03-03')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->delete_punch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 11:01:01 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:01:10 --> User ID: 23, Date: 2025-03-03
+CRITICAL - 2025-03-12 11:01:10 --> ErrorException: Undefined array key 8
+[Method: POST, Route: attendance/addManualPunch]
+in APPPATH\Controllers\BiometricController.php on line 149.
+ 1 APPPATH\Controllers\BiometricController.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 8', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 149)
+ 2 APPPATH\Controllers\BiometricController.php(98): App\Controllers\BiometricController->recalculatePunchTime('23', '2025-03-03')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 11:01:41 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:01:49 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:02:30 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:02:34 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:02:38 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:03:00 --> User ID: 23, Date: 2025-03-03
+ERROR - 2025-03-12 11:03:09 --> mysqli_sql_exception: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gighz\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-12 11:03:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+[Method: POST, Route: attendance/addManualPunch]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 11:03:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 11:03:09 --> [Caused by] mysqli_sql_exception: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 11:03:18 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:05:50 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:05:52 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:05:57 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:06:03 --> User ID: 23, Date: 2025-03-03
+ERROR - 2025-03-12 11:06:09 --> mysqli_sql_exception: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gighz\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-12 11:06:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+[Method: POST, Route: attendance/addManualPunch]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 11:06:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 11:06:09 --> [Caused by] mysqli_sql_exception: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 11:07:49 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:14:30 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:15:27 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:20:05 --> User ID: 23, Date: 2025-03-03
+CRITICAL - 2025-03-12 11:20:05 --> ErrorException: Undefined array key 8
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 144.
+ 1 APPPATH\Controllers\BiometricController.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 8', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 11:20:14 --> User ID: 23, Date: 2025-03-03
+CRITICAL - 2025-03-12 11:20:14 --> ErrorException: Undefined array key 8
+[Method: GET, Route: calculate]
+in APPPATH\Controllers\BiometricController.php on line 144.
+ 1 APPPATH\Controllers\BiometricController.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 8', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\BiometricController.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->recalculatePunchTime()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 11:20:54 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:21:49 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:21:54 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:21:59 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:22:14 --> User ID: 23, Date: 2025-03-03
+ERROR - 2025-03-12 11:22:18 --> mysqli_sql_exception: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gighz\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-12 11:22:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+[Method: POST, Route: attendance/addManualPunch]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 11:22:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 11:22:18 --> [Caused by] mysqli_sql_exception: Duplicate entry '2025-03-03 09:28:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'23\', \'2025-03-03 09:28:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 11:34:28 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:34:45 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:34:57 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:36:42 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 11:37:04 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 12:08:12 --> User ID: 6, Date: 2025-03-07
+DEBUG - 2025-03-12 12:08:34 --> User ID: 23, Date: 2025-03-03
+ERROR - 2025-03-12 12:08:37 --> mysqli_sql_exception: Duplicate entry '2025-03-07 17:40:00' for key 'attendance_logs.timestamp_UNIQUE' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gighz\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-12 12:08:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-07 17:40:00' for key 'attendance_logs.timestamp_UNIQUE'
+[Method: POST, Route: attendance/addManualPunch]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 12:08:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-07 17:40:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'6\', \'2025-03-07 17:40:00\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'6\', \'2025-03-07 17:40:00\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 12:08:37 --> [Caused by] mysqli_sql_exception: Duplicate entry '2025-03-07 17:40:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'6\', \'2025-03-07 17:40:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'6\', \'2025-03-07 17:40:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'6\', \'2025-03-07 17:40:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-03-12 12:11:46 --> User ID: 6, Date: 2025-03-07
+DEBUG - 2025-03-12 12:11:53 --> User ID: 6, Date: 2025-03-10
+DEBUG - 2025-03-12 12:12:27 --> User ID: 23, Date: 2025-03-03
+ERROR - 2025-03-12 12:12:29 --> mysqli_sql_exception: Duplicate entry '2025-03-10 17:29:00' for key 'attendance_logs.timestamp_UNIQUE' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gighz\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gighz\app\Controllers\BiometricController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+#10 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-12 12:12:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-10 17:29:00' for key 'attendance_logs.timestamp_UNIQUE'
+[Method: POST, Route: attendance/addManualPunch]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 12:12:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2025-03-10 17:29:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'6\', \'2025-03-10 17:29:00\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'6\', \'2025-03-10 17:29:00\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-03-12 12:12:29 --> [Caused by] mysqli_sql_exception: Duplicate entry '2025-03-10 17:29:00' for key 'attendance_logs.timestamp_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'6\', \'2025-03-10 17:29:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'6\', \'2025-03-10 17:29:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (\'6\', \'2025-03-10 17:29:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance_logs` (`employee_id`, `timestamp`) VALUES (:employee_id:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BiometricController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BiometricController->addManualPunch()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BiometricController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')/////////////////////////////////////////////
+DEBUG - 2025-03-12 12:13:56 --> User ID: 6, Date: 2025-03-10
+DEBUG - 2025-03-12 12:14:23 --> User ID: 13, Date: 2025-02-28
+DEBUG - 2025-03-12 12:14:30 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-12 12:15:47 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-12 12:17:26 --> User ID: 23, Date: 2025-03-03
+DEBUG - 2025-03-12 12:19:31 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-12 12:20:04 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-12 12:20:44 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-12 12:21:29 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-12 12:21:39 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-12 12:21:44 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-12 12:21:50 --> User ID: 27, Date: 2025-03-04
+DEBUG - 2025-03-12 12:21:59 --> User ID: 27, Date: 2025-03-05
+DEBUG - 2025-03-12 12:22:08 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 12:22:28 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 12:22:45 --> User ID: 1, Date: 2025-02-25
+DEBUG - 2025-03-12 12:22:54 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 12:22:59 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 12:23:05 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 12:25:50 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 12:26:01 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 12:29:08 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 12:29:11 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 12:29:15 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 12:29:23 --> User ID: 16, Date: 2025-02-25
+DEBUG - 2025-03-12 12:29:38 --> User ID: 17, Date: 2025-02-25
+DEBUG - 2025-03-12 12:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:38:44 --> User ID: 27, Date: 2025-02-25
+DEBUG - 2025-03-12 12:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:39:18 --> User ID: 27, Date: 2025-02-25
+DEBUG - 2025-03-12 12:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 12:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 13:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 13:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 13:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-12 13:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

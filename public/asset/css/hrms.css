@@ -1,0 +1,344 @@
+.overflow {
+    display: none;
+    background: #68686860;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.popup.requirement-add-new-popup {
+    display: none;
+    max-width: 800px;
+    margin: 50px auto;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    z-index: 1000;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: auto;
+    width: auto;
+}
+
+.popup h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+#requirementForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#newFields {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.input-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #34495e;
+}
+
+.input-box input,
+.input-box select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box select:focus {
+    outline: none;
+    border-color: #da2442;
+}
+
+.input-box input[type="file"] {
+    padding: 5px;
+}
+
+.error-box {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+button[type="submit"] {
+    margin: 20px auto 0;
+    width: 30%;
+
+    padding: 12px;
+    font-size: 16px;
+    background-color: #da2442;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #d25166;
+}
+
+/* Responsive: Stack on mobile */
+@media (max-width: 768px) {
+    .input-box {
+        width: 100%;
+    }
+}
+
+#response {
+
+    position: absolute;
+    top: 0;
+    left: 90%;
+    color: red;
+    z-index: 10001;
+    background: rgb(255, 176, 176);
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.employee-details-update-container {
+    position: fixed;
+    width: 300px;
+    padding: 40px;
+    z-index: 1000;
+    top: 40px;
+    left: 40%;
+    background: #fff;
+    border-radius: 10px;
+    display: none;
+}
+
+#submit-button {
+    display: block;
+    width: 40%;
+    margin: 10px auto 0;
+
+}
+
+
+/* student detaails */
+
+/* Container */
+.container.std-container {
+    max-width: 1200px;
+    margin: 30px 0 0;
+    padding: 30px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Header Section */
+.std-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.std-header h2 {
+    margin: 0;
+    font-size: 26px;
+    color: #da2442;
+}
+
+.std-header button {
+    background-color: #da2442;
+    border: none;
+    padding: 10px 18px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.std-header button:hover {
+    background-color: #b51d37;
+}
+
+/* Body Details */
+.std-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.std-chaild {
+    width: 48%;
+}
+
+.std-chaild h2 {
+    font-size: 20px;
+    color: #222;
+}
+
+.std-chaild p {
+    margin: 8px 0;
+}
+
+/* Status Section */
+.std-status {
+    margin-top: 40px;
+}
+
+.std-status h2 {
+    color: #da2442;
+}
+
+/* Status Cards */
+.status-container-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.status-container {
+    background: #fff3f5;
+    border: 1px solid #ffd9df;
+    padding: 15px;
+    border-radius: 10px;
+    /* width: calc(98% / 4); */
+    box-shadow: 0 4px 10px rgba(218, 36, 66, 0.1);
+}
+
+.status-container p {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.status-container span {
+    font-weight: bold;
+    color: #da2442;
+}
+
+/* Popup Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    display: none;
+}
+
+/* Popup Box */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.popup-inner {
+    position: relative;
+}
+
+.popup-inner h3 {
+    color: #da2442;
+    margin-top: 0;
+}
+
+.popup-inner .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    color: #555;
+}
+
+/* Form Inside Popup */
+.popup-inner form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-inner form label {
+    margin-top: 15px;
+    font-weight: 500;
+    color: #444;
+}
+
+.popup-inner form select,
+.popup-inner form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.popup-inner form button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background: #da2442;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup-inner form button[type="submit"]:hover {
+    background: #b51d37;
+}
+
+.schedule-container{
+    text-align: end;
+}
+
+/* edit form */
+.edituserpopup-container
+{
+    width: 700px;
+    /* background: red; */
+}
+.edituserpopup-container .edit-body form .input-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.edituserpopup-container .edit-body form button{
+    display: block;
+    margin: 20px auto 0;
+    width: 50%;
+}

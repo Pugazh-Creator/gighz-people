@@ -1,0 +1,590 @@
+CRITICAL - 2025-06-10 04:29:54 --> ErrorException: Undefined array key "remaining_leave"
+[Method: CLI, Route: serve]
+in APPPATH\Commands\updateEmpLeave.php on line 20.
+ 1 APPPATH\Commands\updateEmpLeave.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "remaining_leave"', 'C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php', 20)
+ 2 APPPATH\Commands\updateEmpLeave.php(80): App\Models\updateDatabase()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Commands\\updateEmpLeave')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Commands\\updateEmpLeave')
+ 7 SYSTEMPATH\Autoloader\FileLocator.php(310): class_exists('App\\Commands\\updateEmpLeave')
+ 8 SYSTEMPATH\CLI\Commands.php(112): CodeIgniter\Autoloader\FileLocator->findQualifiedNameFromPath('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+ 9 SYSTEMPATH\CLI\Commands.php(49): CodeIgniter\CLI\Commands->discoverCommands()
+10 SYSTEMPATH\Config\Services.php(178): CodeIgniter\CLI\Commands->__construct()
+11 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::commands(false)
+12 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('commands', [...])
+13 SYSTEMPATH\Config\Services.php(175): CodeIgniter\Config\BaseService::getSharedInstance('commands')
+14 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::commands()
+15 SYSTEMPATH\CLI\Console.php(43): CodeIgniter\Config\BaseService::__callStatic('commands', [])
+16 SYSTEMPATH\Boot.php(360): CodeIgniter\CLI\Console->run()
+17 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+18 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-06-10 04:30:39 --> ErrorException: Undefined array key "remaining_leave"
+[Method: CLI, Route: serve]
+in APPPATH\Commands\updateEmpLeave.php on line 20.
+ 1 APPPATH\Commands\updateEmpLeave.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "remaining_leave"', 'C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php', 20)
+ 2 APPPATH\Commands\updateEmpLeave.php(80): App\Models\updateDatabase()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Commands\\updateEmpLeave')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Commands\\updateEmpLeave')
+ 7 SYSTEMPATH\Autoloader\FileLocator.php(310): class_exists('App\\Commands\\updateEmpLeave')
+ 8 SYSTEMPATH\CLI\Commands.php(112): CodeIgniter\Autoloader\FileLocator->findQualifiedNameFromPath('C:\\xampp\\htdocs\\gighz\\app\\Commands\\updateEmpLeave.php')
+ 9 SYSTEMPATH\CLI\Commands.php(49): CodeIgniter\CLI\Commands->discoverCommands()
+10 SYSTEMPATH\Config\Services.php(178): CodeIgniter\CLI\Commands->__construct()
+11 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::commands(false)
+12 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('commands', [...])
+13 SYSTEMPATH\Config\Services.php(175): CodeIgniter\Config\BaseService::getSharedInstance('commands')
+14 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::commands()
+15 SYSTEMPATH\CLI\Console.php(43): CodeIgniter\Config\BaseService::__callStatic('commands', [])
+16 SYSTEMPATH\Boot.php(360): CodeIgniter\CLI\Console->run()
+17 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+18 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2025-06-10 04:54:15 --> User IP: ::1
+DEBUG - 2025-06-10 04:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 04:54:24 --> User IP: ::1
+ERROR - 2025-06-10 04:54:24 --> mysqli_sql_exception: Unknown column 'start_date' in 'where clause' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(130): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-06-10 04:54:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'start_date' in 'where clause'
+[Method: GET, Route: payrole/getattendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= :start_date:
+AND `end_date` >= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PayRole.php(130): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-10 04:54:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'start_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= \'2025-04-27\'
+AND `end_date` >= \'2025-04-27\'
+AND `emp_id` = \'GZ21\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= \'2025-04-27\'
+AND `end_date` >= \'2025-04-27\'
+AND `emp_id` = \'GZ21\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= :start_date:
+AND `end_date` >= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PayRole.php(130): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-10 04:54:24 --> [Caused by] mysqli_sql_exception: Unknown column 'start_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= \'2025-04-27\'
+AND `end_date` >= \'2025-04-27\'
+AND `emp_id` = \'GZ21\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= \'2025-04-27\'
+AND `end_date` >= \'2025-04-27\'
+AND `emp_id` = \'GZ21\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= \'2025-04-27\'
+AND `end_date` >= \'2025-04-27\'
+AND `emp_id` = \'GZ21\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= :start_date:
+AND `end_date` >= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PayRole.php(130): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-10 04:54:25 --> User IP: ::1
+ERROR - 2025-06-10 04:54:25 --> mysqli_sql_exception: Unknown column 'start_date' in 'where clause' in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gighz\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gighz\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gighz\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(130): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+#8 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#9 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-06-10 04:54:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'start_date' in 'where clause'
+[Method: GET, Route: payrole/getattendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= :start_date:
+AND `end_date` >= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PayRole.php(130): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-10 04:54:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'start_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= \'2025-04-27\'
+AND `end_date` >= \'2025-04-27\'
+AND `emp_id` = \'GZ21\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= \'2025-04-27\'
+AND `end_date` >= \'2025-04-27\'
+AND `emp_id` = \'GZ21\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= :start_date:
+AND `end_date` >= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PayRole.php(130): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-10 04:54:25 --> [Caused by] mysqli_sql_exception: Unknown column 'start_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= \'2025-04-27\'
+AND `end_date` >= \'2025-04-27\'
+AND `emp_id` = \'GZ21\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= \'2025-04-27\'
+AND `end_date` >= \'2025-04-27\'
+AND `emp_id` = \'GZ21\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= \'2025-04-27\'
+AND `end_date` >= \'2025-04-27\'
+AND `emp_id` = \'GZ21\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `company_holiday`
+WHERE `start_date` <= :start_date:
+AND `end_date` >= :end_date:
+AND `emp_id` = :emp_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PayRole.php(130): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-10 04:56:07 --> User IP: ::1
+DEBUG - 2025-06-10 05:07:23 --> User IP: ::1
+DEBUG - 2025-06-10 05:22:57 --> User IP: ::1
+DEBUG - 2025-06-10 05:44:16 --> User IP: ::1
+CRITICAL - 2025-06-10 05:44:16 --> Error: Object of class DateTime could not be converted to string
+[Method: GET, Route: payrole/getattendance]
+in SYSTEMPATH\Database\Query.php on line 364.
+ 1 SYSTEMPATH\Database\Query.php(306): CodeIgniter\Database\Query->matchSimpleBinds('SELECT SUM(lop_total) as total_lop FROM tbl_lop WHERE lop_date BETWEEN  ? AND ? AND lop_user \'GZ21\'', [...], 3, 1)
+ 2 SYSTEMPATH\Database\Query.php(163): CodeIgniter\Database\Query->compileBinds()
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\Query->getQuery()
+ 4 APPPATH\Controllers\PayRole.php(155): CodeIgniter\Database\BaseConnection->query('SELECT SUM(lop_total) as total_lop FROM tbl_lop WHERE lop_date BETWEEN  ? AND ? AND lop_user ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-10 05:47:50 --> User IP: ::1
+ERROR - 2025-06-10 05:47:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''GZ21'' at line 1 in C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT SUM(lop_...', 0)
+#1 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(lop_...')
+#2 C:\xampp\htdocs\gighz\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(lop_...')
+#3 C:\xampp\htdocs\gighz\app\Controllers\PayRole.php(155): CodeIgniter\Database\BaseConnection->query('SELECT SUM(lop_...', Array)
+#4 C:\xampp\htdocs\gighz\system\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+#5 C:\xampp\htdocs\gighz\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+#6 C:\xampp\htdocs\gighz\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gighz\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gighz\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\gighz\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\gighz\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2025-06-10 05:47:50 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''GZ21'' at line 1
+[Method: GET, Route: payrole/getattendance]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\PayRole.php(155): CodeIgniter\Database\BaseConnection->query('SELECT SUM(lop_total) as total_lop FROM tbl_lop WHERE lop_date BETWEEN  ? AND ? AND lop_user ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-10 05:47:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''GZ21'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(lop_total) as total_lop FROM tbl_lop WHERE lop_date BETWEEN  \'2025-4-25\' AND \'2025-5-24\' AND lop_user \'GZ21\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(lop_total) as total_lop FROM tbl_lop WHERE lop_date BETWEEN  \'2025-4-25\' AND \'2025-5-24\' AND lop_user \'GZ21\'')
+ 3 APPPATH\Controllers\PayRole.php(155): CodeIgniter\Database\BaseConnection->query('SELECT SUM(lop_total) as total_lop FROM tbl_lop WHERE lop_date BETWEEN  ? AND ? AND lop_user ?', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+CRITICAL - 2025-06-10 05:47:50 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''GZ21'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT SUM(lop_total) as total_lop FROM tbl_lop WHERE lop_date BETWEEN  \'2025-4-25\' AND \'2025-5-24\' AND lop_user \'GZ21\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(lop_total) as total_lop FROM tbl_lop WHERE lop_date BETWEEN  \'2025-4-25\' AND \'2025-5-24\' AND lop_user \'GZ21\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(lop_total) as total_lop FROM tbl_lop WHERE lop_date BETWEEN  \'2025-4-25\' AND \'2025-5-24\' AND lop_user \'GZ21\'')
+ 4 APPPATH\Controllers\PayRole.php(155): CodeIgniter\Database\BaseConnection->query('SELECT SUM(lop_total) as total_lop FROM tbl_lop WHERE lop_date BETWEEN  ? AND ? AND lop_user ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-10 05:48:55 --> User IP: ::1
+DEBUG - 2025-06-10 05:49:32 --> User IP: ::1
+DEBUG - 2025-06-10 05:49:33 --> User IP: ::1
+DEBUG - 2025-06-10 05:49:34 --> User IP: ::1
+DEBUG - 2025-06-10 05:49:52 --> User IP: ::1
+DEBUG - 2025-06-10 05:51:25 --> User IP: ::1
+DEBUG - 2025-06-10 05:51:27 --> User IP: ::1
+DEBUG - 2025-06-10 05:51:27 --> User IP: ::1
+DEBUG - 2025-06-10 05:51:28 --> User IP: ::1
+DEBUG - 2025-06-10 05:52:05 --> User IP: ::1
+DEBUG - 2025-06-10 05:53:28 --> User IP: ::1
+DEBUG - 2025-06-10 05:55:01 --> User IP: ::1
+CRITICAL - 2025-06-10 05:55:02 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/getattendance]
+in APPPATH\Controllers\PayRole.php on line 163.
+ 1 APPPATH\Controllers\PayRole.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 163)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-10 05:55:16 --> User IP: ::1
+DEBUG - 2025-06-10 05:56:37 --> User IP: ::1
+DEBUG - 2025-06-10 06:34:11 --> User IP: ::1
+DEBUG - 2025-06-10 07:26:24 --> User IP: ::1
+DEBUG - 2025-06-10 07:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 07:26:49 --> User IP: ::1
+DEBUG - 2025-06-10 07:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 07:26:50 --> User IP: ::1
+DEBUG - 2025-06-10 07:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 07:27:30 --> User IP: ::1
+DEBUG - 2025-06-10 07:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 07:27:36 --> User IP: ::1
+DEBUG - 2025-06-10 07:27:36 --> User ID: 23, Date: 2025-06-09
+DEBUG - 2025-06-10 07:33:58 --> User IP: ::1
+DEBUG - 2025-06-10 07:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 07:33:58 --> User IP: ::1
+DEBUG - 2025-06-10 07:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 07:34:05 --> User IP: ::1
+DEBUG - 2025-06-10 07:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 07:34:05 --> User IP: ::1
+DEBUG - 2025-06-10 07:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 07:34:12 --> User IP: ::1
+DEBUG - 2025-06-10 07:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 07:34:14 --> User IP: ::1
+DEBUG - 2025-06-10 07:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 07:34:17 --> User IP: ::1
+DEBUG - 2025-06-10 07:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 07:34:19 --> User IP: ::1
+DEBUG - 2025-06-10 07:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 07:35:06 --> User IP: ::1
+DEBUG - 2025-06-10 07:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 08:15:30 --> User IP: ::1
+CRITICAL - 2025-06-10 08:15:30 --> Error: Object of class DateTime could not be converted to string
+[Method: GET, Route: hrcontroller/getleavedated]
+in SYSTEMPATH\Database\Query.php on line 337.
+ 1 SYSTEMPATH\Database\Query.php(337): strtr('SELECT *
+FROM `company_holiday`
+WHERE `holiday_date` = :holiday_date:
+AND `holiday_type` IN :holiday_type:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(312): CodeIgniter\Database\Query->matchNamedBinds('SELECT *
+FROM `company_holiday`
+WHERE `holiday_date` = :holiday_date:
+AND `holiday_type` IN :holiday_type:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(163): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `company_holiday`
+WHERE `holiday_date` = :holiday_date:
+AND `holiday_type` IN :holiday_type:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\HRController.php(645): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HRController->getleavedated()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HRController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gighz\\public\\index.php')
+DEBUG - 2025-06-10 08:16:50 --> User IP: ::1
+DEBUG - 2025-06-10 08:18:45 --> User IP: ::1
+DEBUG - 2025-06-10 08:26:53 --> User IP: ::1
+DEBUG - 2025-06-10 08:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 08:27:09 --> User IP: ::1
+DEBUG - 2025-06-10 08:27:16 --> User IP: ::1
+DEBUG - 2025-06-10 08:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 08:27:32 --> User IP: ::1
+DEBUG - 2025-06-10 08:27:45 --> User IP: ::1
+DEBUG - 2025-06-10 08:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 08:27:51 --> User IP: ::1
+DEBUG - 2025-06-10 08:30:30 --> User IP: ::1
+DEBUG - 2025-06-10 08:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 08:30:33 --> User IP: ::1
+DEBUG - 2025-06-10 10:31:37 --> User IP: ::1
+DEBUG - 2025-06-10 10:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:31:37 --> User IP: ::1
+DEBUG - 2025-06-10 10:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:31:44 --> User IP: ::1
+DEBUG - 2025-06-10 10:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:31:44 --> User IP: ::1
+DEBUG - 2025-06-10 10:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:31:46 --> User IP: ::1
+DEBUG - 2025-06-10 10:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:31:49 --> User IP: ::1
+DEBUG - 2025-06-10 10:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:31:50 --> User IP: ::1
+DEBUG - 2025-06-10 10:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:31:56 --> User IP: ::1
+DEBUG - 2025-06-10 10:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:32:00 --> User IP: ::1
+DEBUG - 2025-06-10 10:32:18 --> User IP: ::1
+DEBUG - 2025-06-10 10:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:32:25 --> User IP: ::1
+DEBUG - 2025-06-10 10:33:04 --> User IP: ::1
+DEBUG - 2025-06-10 10:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:33:07 --> User IP: ::1
+DEBUG - 2025-06-10 10:49:15 --> User IP: ::1
+DEBUG - 2025-06-10 10:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:49:17 --> User IP: ::1
+DEBUG - 2025-06-10 10:50:24 --> User IP: ::1
+DEBUG - 2025-06-10 10:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:50:26 --> User IP: ::1
+DEBUG - 2025-06-10 10:51:52 --> User IP: ::1
+DEBUG - 2025-06-10 10:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:51:54 --> User IP: ::1
+DEBUG - 2025-06-10 10:53:46 --> User IP: ::1
+DEBUG - 2025-06-10 10:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 10:53:49 --> User IP: ::1
+DEBUG - 2025-06-10 11:05:51 --> User IP: ::1
+DEBUG - 2025-06-10 11:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 11:05:54 --> User IP: ::1
+DEBUG - 2025-06-10 11:26:28 --> User IP: ::1
+DEBUG - 2025-06-10 11:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 11:38:05 --> User IP: ::1
+DEBUG - 2025-06-10 11:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 11:39:11 --> User IP: ::1
+DEBUG - 2025-06-10 11:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 11:39:22 --> User IP: ::1
+DEBUG - 2025-06-10 11:39:53 --> User IP: ::1
+DEBUG - 2025-06-10 11:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 11:39:55 --> User IP: ::1
+DEBUG - 2025-06-10 11:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 11:45:30 --> User IP: ::1
+DEBUG - 2025-06-10 11:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 11:45:37 --> User IP: ::1
+DEBUG - 2025-06-10 11:46:00 --> User IP: ::1
+DEBUG - 2025-06-10 11:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 11:47:34 --> User IP: ::1
+DEBUG - 2025-06-10 11:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 11:47:43 --> User IP: ::1
+DEBUG - 2025-06-10 11:47:50 --> User IP: ::1
+DEBUG - 2025-06-10 11:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 11:49:24 --> User IP: ::1
+DEBUG - 2025-06-10 12:10:12 --> User IP: ::1
+DEBUG - 2025-06-10 12:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:10:14 --> User IP: ::1
+DEBUG - 2025-06-10 12:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:10:19 --> User IP: ::1
+DEBUG - 2025-06-10 12:10:36 --> User IP: ::1
+DEBUG - 2025-06-10 12:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:11:30 --> User IP: ::1
+DEBUG - 2025-06-10 12:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:11:37 --> User IP: ::1
+DEBUG - 2025-06-10 12:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:11:41 --> User IP: ::1
+DEBUG - 2025-06-10 12:18:52 --> User IP: ::1
+DEBUG - 2025-06-10 12:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:18:59 --> User IP: ::1
+DEBUG - 2025-06-10 12:19:03 --> User IP: ::1
+DEBUG - 2025-06-10 12:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:22:53 --> User IP: ::1
+DEBUG - 2025-06-10 12:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:23:20 --> User IP: ::1
+DEBUG - 2025-06-10 12:23:25 --> User IP: ::1
+DEBUG - 2025-06-10 12:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:24:13 --> User IP: ::1
+DEBUG - 2025-06-10 12:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:24:19 --> User IP: ::1
+DEBUG - 2025-06-10 12:24:28 --> User IP: ::1
+DEBUG - 2025-06-10 12:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+
+completed
+
+
+DEBUG - 2025-06-10 12:32:34 --> User IP: ::1
+DEBUG - 2025-06-10 12:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:32:42 --> User IP: ::1
+DEBUG - 2025-06-10 12:33:11 --> User IP: ::1
+DEBUG - 2025-06-10 12:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:33:14 --> User IP: ::1
+DEBUG - 2025-06-10 12:33:19 --> User IP: ::1
+DEBUG - 2025-06-10 12:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:33:23 --> User IP: ::1
+DEBUG - 2025-06-10 12:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:34:57 --> User IP: ::1
+DEBUG - 2025-06-10 12:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:34:59 --> User IP: ::1
+DEBUG - 2025-06-10 12:35:03 --> User IP: ::1
+DEBUG - 2025-06-10 12:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:35:07 --> User IP: ::1
+DEBUG - 2025-06-10 12:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:36:04 --> User IP: ::1
+DEBUG - 2025-06-10 12:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:36:06 --> User IP: ::1
+DEBUG - 2025-06-10 12:38:36 --> User IP: ::1
+DEBUG - 2025-06-10 12:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:38:38 --> User IP: ::1
+DEBUG - 2025-06-10 12:38:43 --> User IP: ::1
+DEBUG - 2025-06-10 12:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:38:47 --> User IP: ::1
+DEBUG - 2025-06-10 12:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:42:44 --> User IP: ::1
+DEBUG - 2025-06-10 12:45:26 --> User IP: ::1
+DEBUG - 2025-06-10 12:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:45:27 --> User IP: ::1
+DEBUG - 2025-06-10 12:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:45:29 --> User IP: ::1
+DEBUG - 2025-06-10 12:45:35 --> User IP: ::1
+DEBUG - 2025-06-10 12:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:45:40 --> User IP: ::1
+DEBUG - 2025-06-10 12:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:45:57 --> User IP: ::1
+DEBUG - 2025-06-10 12:46:12 --> User IP: ::1
+DEBUG - 2025-06-10 12:46:27 --> User IP: ::1
+DEBUG - 2025-06-10 12:46:37 --> User IP: ::1
+DEBUG - 2025-06-10 12:48:42 --> User IP: ::1
+DEBUG - 2025-06-10 12:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:49:21 --> User IP: ::1
+DEBUG - 2025-06-10 12:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:49:28 --> User IP: ::1
+DEBUG - 2025-06-10 12:49:36 --> User IP: ::1
+DEBUG - 2025-06-10 12:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:49:41 --> User IP: ::1
+DEBUG - 2025-06-10 12:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:49:47 --> User IP: ::1
+DEBUG - 2025-06-10 12:50:20 --> User IP: ::1
+DEBUG - 2025-06-10 12:50:20 --> User IP: ::1
+DEBUG - 2025-06-10 12:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:50:51 --> User IP: ::1
+DEBUG - 2025-06-10 12:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:50:53 --> User IP: ::1
+DEBUG - 2025-06-10 12:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:50:58 --> User IP: ::1
+DEBUG - 2025-06-10 12:51:01 --> User IP: ::1
+DEBUG - 2025-06-10 12:51:30 --> User IP: ::1
+DEBUG - 2025-06-10 12:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:52:42 --> User IP: ::1
+DEBUG - 2025-06-10 12:53:54 --> User IP: ::1
+DEBUG - 2025-06-10 12:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:53:57 --> User IP: ::1
+DEBUG - 2025-06-10 12:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:56:19 --> User IP: ::1
+DEBUG - 2025-06-10 12:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:56:21 --> User IP: ::1
+DEBUG - 2025-06-10 12:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:56:22 --> User IP: ::1
+DEBUG - 2025-06-10 12:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 12:56:26 --> User IP: ::1
+DEBUG - 2025-06-10 12:56:29 --> User IP: ::1
+DEBUG - 2025-06-10 13:01:49 --> User IP: ::1
+DEBUG - 2025-06-10 13:01:58 --> User IP: ::1
+DEBUG - 2025-06-10 13:02:13 --> User IP: ::1
+DEBUG - 2025-06-10 13:03:51 --> User IP: ::1
+DEBUG - 2025-06-10 13:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 13:03:54 --> User IP: ::1
+DEBUG - 2025-06-10 13:04:00 --> User IP: ::1
+DEBUG - 2025-06-10 13:14:39 --> User IP: ::1
+DEBUG - 2025-06-10 13:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 13:15:05 --> User IP: ::1
+DEBUG - 2025-06-10 13:15:13 --> User IP: ::1
+DEBUG - 2025-06-10 13:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 13:15:21 --> User IP: ::1
+DEBUG - 2025-06-10 13:15:31 --> User IP: ::1
+DEBUG - 2025-06-10 13:15:36 --> User IP: ::1
+DEBUG - 2025-06-10 13:15:39 --> User IP: ::1
+DEBUG - 2025-06-10 13:15:54 --> User IP: ::1
+DEBUG - 2025-06-10 13:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 13:15:57 --> User IP: ::1
+DEBUG - 2025-06-10 13:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-10 13:16:06 --> User IP: ::1
+DEBUG - 2025-06-10 13:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

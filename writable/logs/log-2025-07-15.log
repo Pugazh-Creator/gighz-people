@@ -1,0 +1,889 @@
+DEBUG - 2025-07-15 03:44:18 --> User IP: ::1
+DEBUG - 2025-07-15 03:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 03:44:18 --> User IP: ::1
+DEBUG - 2025-07-15 03:44:18 --> User IP: ::1
+DEBUG - 2025-07-15 03:44:18 --> User IP: ::1
+DEBUG - 2025-07-15 03:44:37 --> User IP: ::1
+DEBUG - 2025-07-15 03:44:37 --> User IP: ::1
+DEBUG - 2025-07-15 03:46:46 --> User IP: ::1
+DEBUG - 2025-07-15 03:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 03:46:46 --> User IP: ::1
+DEBUG - 2025-07-15 03:46:47 --> User IP: ::1
+DEBUG - 2025-07-15 03:46:47 --> User IP: ::1
+DEBUG - 2025-07-15 03:46:57 --> User IP: ::1
+DEBUG - 2025-07-15 03:46:57 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:19 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:07:19 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:20 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:20 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:27 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:27 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:35 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:35 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:39 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:39 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:42 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:42 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:45 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:45 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:48 --> User IP: ::1
+DEBUG - 2025-07-15 04:07:48 --> User IP: ::1
+CRITICAL - 2025-07-15 04:07:48 --> ErrorException: Undefined variable $userId
+[Method: GET, Route: payrole/getattendance/10/2023]
+in APPPATH\Controllers\PayRole.php on line 399.
+ 1 APPPATH\Controllers\PayRole.php(399): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 399)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance('10', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 04:07:55 --> User IP: ::1
+CRITICAL - 2025-07-15 04:07:55 --> ErrorException: Undefined variable $userId
+[Method: GET, Route: payrole/getattendance/10/2023]
+in APPPATH\Controllers\PayRole.php on line 399.
+ 1 APPPATH\Controllers\PayRole.php(399): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 399)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance('10', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 04:09:50 --> User IP: ::1
+CRITICAL - 2025-07-15 04:09:50 --> ErrorException: Undefined variable $userId
+[Method: GET, Route: payrole/getattendance/10/2023]
+in APPPATH\Controllers\PayRole.php on line 356.
+ 1 APPPATH\Controllers\PayRole.php(356): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 356)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance('10', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 04:09:52 --> User IP: ::1
+DEBUG - 2025-07-15 04:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:09:53 --> User IP: ::1
+DEBUG - 2025-07-15 04:09:53 --> User IP: ::1
+DEBUG - 2025-07-15 04:09:53 --> User IP: ::1
+DEBUG - 2025-07-15 04:09:57 --> User IP: ::1
+DEBUG - 2025-07-15 04:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:09:57 --> User IP: ::1
+DEBUG - 2025-07-15 04:09:57 --> User IP: ::1
+DEBUG - 2025-07-15 04:09:57 --> User IP: ::1
+DEBUG - 2025-07-15 04:10:02 --> User IP: ::1
+DEBUG - 2025-07-15 04:10:02 --> User IP: ::1
+DEBUG - 2025-07-15 04:10:14 --> User IP: ::1
+DEBUG - 2025-07-15 04:10:14 --> User IP: ::1
+CRITICAL - 2025-07-15 04:10:14 --> ErrorException: Undefined variable $userId
+[Method: GET, Route: payrole/getattendance/8/2023]
+in APPPATH\Controllers\PayRole.php on line 356.
+ 1 APPPATH\Controllers\PayRole.php(356): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 356)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->getattendance('8', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 04:14:14 --> User IP: ::1
+DEBUG - 2025-07-15 04:14:14 --> User IP: ::1
+DEBUG - 2025-07-15 04:14:54 --> User IP: ::1
+DEBUG - 2025-07-15 04:14:54 --> User IP: ::1
+DEBUG - 2025-07-15 04:15:22 --> User IP: ::1
+DEBUG - 2025-07-15 04:15:22 --> User IP: ::1
+DEBUG - 2025-07-15 04:19:15 --> User IP: ::1
+DEBUG - 2025-07-15 04:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:19:15 --> User IP: ::1
+DEBUG - 2025-07-15 04:19:15 --> User IP: ::1
+DEBUG - 2025-07-15 04:19:15 --> User IP: ::1
+DEBUG - 2025-07-15 04:19:19 --> User IP: ::1
+DEBUG - 2025-07-15 04:19:24 --> User IP: ::1
+DEBUG - 2025-07-15 04:19:59 --> User IP: ::1
+DEBUG - 2025-07-15 04:19:59 --> User IP: ::1
+DEBUG - 2025-07-15 04:20:04 --> User IP: ::1
+DEBUG - 2025-07-15 04:20:06 --> User IP: ::1
+DEBUG - 2025-07-15 04:20:12 --> User IP: ::1
+DEBUG - 2025-07-15 04:20:12 --> User IP: ::1
+DEBUG - 2025-07-15 04:20:12 --> User IP: ::1
+DEBUG - 2025-07-15 04:20:21 --> User IP: ::1
+DEBUG - 2025-07-15 04:20:30 --> User IP: ::1
+DEBUG - 2025-07-15 04:20:38 --> User IP: ::1
+DEBUG - 2025-07-15 04:20:38 --> User IP: ::1
+DEBUG - 2025-07-15 04:20:38 --> User IP: ::1
+DEBUG - 2025-07-15 04:20:43 --> User IP: ::1
+DEBUG - 2025-07-15 04:20:54 --> User IP: ::1
+DEBUG - 2025-07-15 04:21:30 --> User IP: ::1
+DEBUG - 2025-07-15 04:21:32 --> User IP: ::1
+DEBUG - 2025-07-15 04:21:37 --> User IP: ::1
+DEBUG - 2025-07-15 04:21:37 --> User IP: ::1
+DEBUG - 2025-07-15 04:21:37 --> User IP: ::1
+DEBUG - 2025-07-15 04:21:47 --> User IP: ::1
+DEBUG - 2025-07-15 04:21:53 --> User IP: ::1
+DEBUG - 2025-07-15 04:22:00 --> User IP: ::1
+DEBUG - 2025-07-15 04:22:00 --> User IP: ::1
+DEBUG - 2025-07-15 04:22:00 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:26 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:23:26 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:26 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:26 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:31 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:34 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:39 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:39 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:39 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:43 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:45 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:50 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:51 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:51 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:54 --> User IP: ::1
+DEBUG - 2025-07-15 04:23:56 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:02 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:02 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:02 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:08 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:11 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:15 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:16 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:16 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:21 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:25 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:28 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:34 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:34 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:34 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:49 --> User IP: ::1
+DEBUG - 2025-07-15 04:24:57 --> User IP: ::1
+DEBUG - 2025-07-15 04:25:07 --> User IP: ::1
+DEBUG - 2025-07-15 04:25:07 --> User IP: ::1
+DEBUG - 2025-07-15 04:25:07 --> User IP: ::1
+DEBUG - 2025-07-15 04:25:30 --> User IP: ::1
+DEBUG - 2025-07-15 04:25:34 --> User IP: ::1
+DEBUG - 2025-07-15 04:25:39 --> User IP: ::1
+DEBUG - 2025-07-15 04:25:39 --> User IP: ::1
+DEBUG - 2025-07-15 04:25:39 --> User IP: ::1
+DEBUG - 2025-07-15 04:25:53 --> User IP: ::1
+DEBUG - 2025-07-15 04:25:56 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:03 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:03 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:03 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:07 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:12 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:14 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:17 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:19 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:38 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:44 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:52 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:52 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:52 --> User IP: ::1
+DEBUG - 2025-07-15 04:26:58 --> User IP: ::1
+DEBUG - 2025-07-15 04:27:01 --> User IP: ::1
+DEBUG - 2025-07-15 04:27:08 --> User IP: ::1
+DEBUG - 2025-07-15 04:27:08 --> User IP: ::1
+DEBUG - 2025-07-15 04:27:08 --> User IP: ::1
+DEBUG - 2025-07-15 04:27:13 --> User IP: ::1
+DEBUG - 2025-07-15 04:27:15 --> User IP: ::1
+DEBUG - 2025-07-15 04:30:07 --> User IP: ::1
+DEBUG - 2025-07-15 04:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:30:08 --> User IP: ::1
+DEBUG - 2025-07-15 04:30:08 --> User IP: ::1
+DEBUG - 2025-07-15 04:30:08 --> User IP: ::1
+DEBUG - 2025-07-15 04:30:13 --> User IP: ::1
+DEBUG - 2025-07-15 04:30:15 --> User IP: ::1
+DEBUG - 2025-07-15 04:30:26 --> User IP: ::1
+DEBUG - 2025-07-15 04:30:28 --> User IP: ::1
+DEBUG - 2025-07-15 04:30:33 --> User IP: ::1
+DEBUG - 2025-07-15 04:30:35 --> User IP: ::1
+DEBUG - 2025-07-15 04:30:55 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:00 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:05 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:11 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:13 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:23 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:23 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:23 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:27 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:29 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:31 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:35 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:35 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:35 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:46 --> User IP: ::1
+DEBUG - 2025-07-15 04:31:50 --> User IP: ::1
+DEBUG - 2025-07-15 04:32:15 --> User IP: ::1
+DEBUG - 2025-07-15 04:32:15 --> User IP: ::1
+DEBUG - 2025-07-15 04:32:15 --> User IP: ::1
+DEBUG - 2025-07-15 04:32:20 --> User IP: ::1
+DEBUG - 2025-07-15 04:32:22 --> User IP: ::1
+DEBUG - 2025-07-15 04:32:25 --> User IP: ::1
+DEBUG - 2025-07-15 04:32:30 --> User IP: ::1
+DEBUG - 2025-07-15 04:32:31 --> User IP: ::1
+DEBUG - 2025-07-15 04:32:31 --> User IP: ::1
+DEBUG - 2025-07-15 04:48:09 --> User IP: ::1
+DEBUG - 2025-07-15 04:48:09 --> User IP: ::1
+DEBUG - 2025-07-15 04:48:14 --> User IP: ::1
+DEBUG - 2025-07-15 04:48:14 --> User IP: ::1
+DEBUG - 2025-07-15 04:49:13 --> User IP: ::1
+DEBUG - 2025-07-15 04:50:43 --> User IP: ::1
+DEBUG - 2025-07-15 04:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:50:43 --> User IP: ::1
+DEBUG - 2025-07-15 04:50:43 --> User IP: ::1
+DEBUG - 2025-07-15 04:50:43 --> User IP: ::1
+DEBUG - 2025-07-15 04:50:51 --> User IP: ::1
+DEBUG - 2025-07-15 04:50:51 --> User IP: ::1
+DEBUG - 2025-07-15 04:52:31 --> User IP: ::1
+DEBUG - 2025-07-15 04:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:52:32 --> User IP: ::1
+DEBUG - 2025-07-15 04:52:32 --> User IP: ::1
+DEBUG - 2025-07-15 04:52:32 --> User IP: ::1
+DEBUG - 2025-07-15 04:52:37 --> User IP: ::1
+DEBUG - 2025-07-15 04:52:37 --> User IP: ::1
+DEBUG - 2025-07-15 04:54:28 --> User IP: ::1
+DEBUG - 2025-07-15 04:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:54:29 --> User IP: ::1
+DEBUG - 2025-07-15 04:54:29 --> User IP: ::1
+DEBUG - 2025-07-15 04:54:29 --> User IP: ::1
+DEBUG - 2025-07-15 04:54:38 --> User IP: ::1
+DEBUG - 2025-07-15 04:54:38 --> User IP: ::1
+DEBUG - 2025-07-15 04:55:34 --> User IP: ::1
+DEBUG - 2025-07-15 04:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:55:34 --> User IP: ::1
+DEBUG - 2025-07-15 04:55:34 --> User IP: ::1
+DEBUG - 2025-07-15 04:55:34 --> User IP: ::1
+DEBUG - 2025-07-15 04:56:21 --> User IP: ::1
+DEBUG - 2025-07-15 04:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:56:21 --> User IP: ::1
+DEBUG - 2025-07-15 04:56:21 --> User IP: ::1
+DEBUG - 2025-07-15 04:56:21 --> User IP: ::1
+DEBUG - 2025-07-15 04:56:28 --> User IP: ::1
+DEBUG - 2025-07-15 04:56:28 --> User IP: ::1
+DEBUG - 2025-07-15 04:56:55 --> User IP: ::1
+DEBUG - 2025-07-15 04:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:56:55 --> User IP: ::1
+DEBUG - 2025-07-15 04:56:55 --> User IP: ::1
+DEBUG - 2025-07-15 04:56:55 --> User IP: ::1
+DEBUG - 2025-07-15 04:57:24 --> User IP: ::1
+DEBUG - 2025-07-15 04:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:57:24 --> User IP: ::1
+DEBUG - 2025-07-15 04:57:24 --> User IP: ::1
+DEBUG - 2025-07-15 04:57:24 --> User IP: ::1
+DEBUG - 2025-07-15 04:57:36 --> User IP: ::1
+DEBUG - 2025-07-15 04:57:36 --> User IP: ::1
+DEBUG - 2025-07-15 04:57:56 --> User IP: ::1
+DEBUG - 2025-07-15 04:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:57:57 --> User IP: ::1
+DEBUG - 2025-07-15 04:57:57 --> User IP: ::1
+DEBUG - 2025-07-15 04:57:57 --> User IP: ::1
+DEBUG - 2025-07-15 04:58:01 --> User IP: ::1
+DEBUG - 2025-07-15 04:58:01 --> User IP: ::1
+DEBUG - 2025-07-15 04:58:29 --> User IP: ::1
+DEBUG - 2025-07-15 04:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:58:30 --> User IP: ::1
+DEBUG - 2025-07-15 04:58:30 --> User IP: ::1
+DEBUG - 2025-07-15 04:58:30 --> User IP: ::1
+DEBUG - 2025-07-15 04:58:35 --> User IP: ::1
+DEBUG - 2025-07-15 04:58:35 --> User IP: ::1
+DEBUG - 2025-07-15 04:59:17 --> User IP: ::1
+DEBUG - 2025-07-15 04:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 04:59:17 --> User IP: ::1
+DEBUG - 2025-07-15 04:59:17 --> User IP: ::1
+DEBUG - 2025-07-15 04:59:17 --> User IP: ::1
+DEBUG - 2025-07-15 04:59:20 --> User IP: ::1
+DEBUG - 2025-07-15 04:59:20 --> User IP: ::1
+DEBUG - 2025-07-15 05:03:02 --> User IP: ::1
+DEBUG - 2025-07-15 05:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 05:03:02 --> User IP: ::1
+DEBUG - 2025-07-15 05:03:02 --> User IP: ::1
+DEBUG - 2025-07-15 05:03:03 --> User IP: ::1
+DEBUG - 2025-07-15 05:03:11 --> User IP: ::1
+DEBUG - 2025-07-15 05:03:26 --> User IP: ::1
+DEBUG - 2025-07-15 05:03:26 --> User IP: ::1
+DEBUG - 2025-07-15 05:03:29 --> User IP: ::1
+DEBUG - 2025-07-15 05:04:16 --> User IP: ::1
+DEBUG - 2025-07-15 05:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 05:04:16 --> User IP: ::1
+DEBUG - 2025-07-15 05:04:16 --> User IP: ::1
+DEBUG - 2025-07-15 05:04:16 --> User IP: ::1
+DEBUG - 2025-07-15 05:04:26 --> User IP: ::1
+DEBUG - 2025-07-15 05:04:26 --> User IP: ::1
+DEBUG - 2025-07-15 05:05:00 --> User IP: ::1
+DEBUG - 2025-07-15 05:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 05:05:00 --> User IP: ::1
+DEBUG - 2025-07-15 05:05:00 --> User IP: ::1
+DEBUG - 2025-07-15 05:05:00 --> User IP: ::1
+DEBUG - 2025-07-15 05:05:04 --> User IP: ::1
+DEBUG - 2025-07-15 05:05:04 --> User IP: ::1
+DEBUG - 2025-07-15 05:05:53 --> User IP: ::1
+DEBUG - 2025-07-15 05:05:53 --> User IP: ::1
+DEBUG - 2025-07-15 05:05:58 --> User IP: ::1
+DEBUG - 2025-07-15 05:06:44 --> User IP: ::1
+DEBUG - 2025-07-15 05:06:45 --> User IP: ::1
+DEBUG - 2025-07-15 05:07:08 --> User IP: ::1
+DEBUG - 2025-07-15 05:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 05:07:09 --> User IP: ::1
+DEBUG - 2025-07-15 05:07:09 --> User IP: ::1
+DEBUG - 2025-07-15 05:07:09 --> User IP: ::1
+DEBUG - 2025-07-15 05:07:25 --> User IP: ::1
+DEBUG - 2025-07-15 05:07:25 --> User IP: ::1
+DEBUG - 2025-07-15 05:07:25 --> User IP: ::1
+DEBUG - 2025-07-15 05:08:50 --> User IP: ::1
+DEBUG - 2025-07-15 05:40:55 --> User IP: ::1
+DEBUG - 2025-07-15 05:40:57 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:03 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:09 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:09 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:09 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:12 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:14 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:20 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:20 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:20 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:23 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:26 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:30 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:30 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:30 --> User IP: ::1
+DEBUG - 2025-07-15 05:41:35 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:24 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:30 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:30 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:30 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:33 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:36 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:40 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:40 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:40 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:43 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:47 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:56 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:56 --> User IP: ::1
+DEBUG - 2025-07-15 05:42:56 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:01 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:09 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:11 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:15 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:15 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:15 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:17 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:19 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:24 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:25 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:25 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:27 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:29 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:34 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:34 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:34 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:39 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:42 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:58 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:59 --> User IP: ::1
+DEBUG - 2025-07-15 05:43:59 --> User IP: ::1
+DEBUG - 2025-07-15 05:44:01 --> User IP: ::1
+DEBUG - 2025-07-15 05:44:03 --> User IP: ::1
+DEBUG - 2025-07-15 05:44:20 --> User IP: ::1
+DEBUG - 2025-07-15 05:44:20 --> User IP: ::1
+DEBUG - 2025-07-15 05:44:20 --> User IP: ::1
+DEBUG - 2025-07-15 05:44:22 --> User IP: ::1
+DEBUG - 2025-07-15 05:44:25 --> User IP: ::1
+DEBUG - 2025-07-15 05:44:30 --> User IP: ::1
+DEBUG - 2025-07-15 05:44:30 --> User IP: ::1
+DEBUG - 2025-07-15 05:44:30 --> User IP: ::1
+DEBUG - 2025-07-15 05:47:31 --> User IP: ::1
+DEBUG - 2025-07-15 05:47:34 --> User IP: ::1
+DEBUG - 2025-07-15 05:48:04 --> User IP: ::1
+DEBUG - 2025-07-15 05:48:04 --> User IP: ::1
+DEBUG - 2025-07-15 05:48:04 --> User IP: ::1
+DEBUG - 2025-07-15 05:49:48 --> User IP: ::1
+DEBUG - 2025-07-15 05:56:43 --> User IP: ::1
+DEBUG - 2025-07-15 05:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 05:56:44 --> User IP: ::1
+DEBUG - 2025-07-15 05:56:44 --> User IP: ::1
+DEBUG - 2025-07-15 05:56:44 --> User IP: ::1
+DEBUG - 2025-07-15 05:56:54 --> User IP: ::1
+DEBUG - 2025-07-15 05:57:33 --> User IP: ::1
+DEBUG - 2025-07-15 05:57:33 --> User IP: ::1
+DEBUG - 2025-07-15 05:57:33 --> User IP: ::1
+DEBUG - 2025-07-15 05:59:07 --> User IP: ::1
+DEBUG - 2025-07-15 05:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 05:59:08 --> User IP: ::1
+DEBUG - 2025-07-15 05:59:08 --> User IP: ::1
+DEBUG - 2025-07-15 05:59:08 --> User IP: ::1
+DEBUG - 2025-07-15 05:59:12 --> User IP: ::1
+DEBUG - 2025-07-15 05:59:12 --> User IP: ::1
+DEBUG - 2025-07-15 05:59:12 --> User IP: ::1
+DEBUG - 2025-07-15 06:00:18 --> User IP: ::1
+DEBUG - 2025-07-15 06:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 06:00:19 --> User IP: ::1
+DEBUG - 2025-07-15 06:00:19 --> User IP: ::1
+DEBUG - 2025-07-15 06:00:19 --> User IP: ::1
+DEBUG - 2025-07-15 06:00:23 --> User IP: ::1
+DEBUG - 2025-07-15 06:00:23 --> User IP: ::1
+DEBUG - 2025-07-15 06:00:23 --> User IP: ::1
+DEBUG - 2025-07-15 06:02:20 --> User IP: ::1
+DEBUG - 2025-07-15 06:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 06:02:20 --> User IP: ::1
+DEBUG - 2025-07-15 06:02:20 --> User IP: ::1
+DEBUG - 2025-07-15 06:02:20 --> User IP: ::1
+DEBUG - 2025-07-15 06:02:24 --> User IP: ::1
+DEBUG - 2025-07-15 06:02:24 --> User IP: ::1
+DEBUG - 2025-07-15 06:02:24 --> User IP: ::1
+DEBUG - 2025-07-15 10:38:36 --> User IP: ::1
+DEBUG - 2025-07-15 10:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 10:38:37 --> User IP: ::1
+DEBUG - 2025-07-15 10:38:37 --> User IP: ::1
+DEBUG - 2025-07-15 10:38:37 --> User IP: ::1
+DEBUG - 2025-07-15 10:38:52 --> User IP: ::1
+DEBUG - 2025-07-15 10:38:52 --> User IP: ::1
+DEBUG - 2025-07-15 10:38:52 --> User IP: ::1
+DEBUG - 2025-07-15 10:39:09 --> User IP: ::1
+DEBUG - 2025-07-15 10:56:17 --> User IP: ::1
+DEBUG - 2025-07-15 10:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 10:56:18 --> User IP: ::1
+DEBUG - 2025-07-15 10:56:18 --> User IP: ::1
+DEBUG - 2025-07-15 10:56:18 --> User IP: ::1
+DEBUG - 2025-07-15 10:56:36 --> User IP: ::1
+DEBUG - 2025-07-15 11:01:56 --> User IP: ::1
+DEBUG - 2025-07-15 11:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 11:01:57 --> User IP: ::1
+DEBUG - 2025-07-15 11:01:57 --> User IP: ::1
+DEBUG - 2025-07-15 11:01:57 --> User IP: ::1
+DEBUG - 2025-07-15 11:02:05 --> User IP: ::1
+DEBUG - 2025-07-15 11:18:40 --> User IP: ::1
+DEBUG - 2025-07-15 11:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 11:18:41 --> User IP: ::1
+DEBUG - 2025-07-15 11:18:41 --> User IP: ::1
+DEBUG - 2025-07-15 11:18:41 --> User IP: ::1
+DEBUG - 2025-07-15 11:18:50 --> User IP: ::1
+DEBUG - 2025-07-15 11:20:09 --> User IP: ::1
+DEBUG - 2025-07-15 11:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 11:20:10 --> User IP: ::1
+DEBUG - 2025-07-15 11:20:11 --> User IP: ::1
+DEBUG - 2025-07-15 11:20:11 --> User IP: ::1
+DEBUG - 2025-07-15 11:20:18 --> User IP: ::1
+DEBUG - 2025-07-15 11:21:23 --> User IP: ::1
+DEBUG - 2025-07-15 11:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 11:21:24 --> User IP: ::1
+DEBUG - 2025-07-15 11:21:24 --> User IP: ::1
+DEBUG - 2025-07-15 11:21:24 --> User IP: ::1
+DEBUG - 2025-07-15 11:21:36 --> User IP: ::1
+DEBUG - 2025-07-15 11:28:33 --> User IP: ::1
+DEBUG - 2025-07-15 11:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 11:28:34 --> User IP: ::1
+DEBUG - 2025-07-15 11:28:34 --> User IP: ::1
+DEBUG - 2025-07-15 11:28:34 --> User IP: ::1
+DEBUG - 2025-07-15 11:28:45 --> User IP: ::1
+DEBUG - 2025-07-15 11:46:06 --> User IP: ::1
+DEBUG - 2025-07-15 11:46:09 --> User IP: ::1
+DEBUG - 2025-07-15 11:49:37 --> User IP: ::1
+DEBUG - 2025-07-15 11:49:42 --> User IP: ::1
+DEBUG - 2025-07-15 11:49:44 --> User IP: ::1
+DEBUG - 2025-07-15 11:49:52 --> User IP: ::1
+DEBUG - 2025-07-15 11:49:53 --> User IP: ::1
+DEBUG - 2025-07-15 11:49:53 --> User IP: ::1
+DEBUG - 2025-07-15 11:50:03 --> User IP: ::1
+DEBUG - 2025-07-15 11:50:06 --> User IP: ::1
+DEBUG - 2025-07-15 11:50:13 --> User IP: ::1
+DEBUG - 2025-07-15 11:50:16 --> User IP: ::1
+DEBUG - 2025-07-15 11:50:50 --> User IP: ::1
+DEBUG - 2025-07-15 11:50:54 --> User IP: ::1
+DEBUG - 2025-07-15 11:51:08 --> User IP: ::1
+DEBUG - 2025-07-15 11:51:09 --> User IP: ::1
+DEBUG - 2025-07-15 11:51:09 --> User IP: ::1
+DEBUG - 2025-07-15 11:51:18 --> User IP: ::1
+DEBUG - 2025-07-15 11:51:20 --> User IP: ::1
+DEBUG - 2025-07-15 11:51:27 --> User IP: ::1
+DEBUG - 2025-07-15 11:51:28 --> User IP: ::1
+DEBUG - 2025-07-15 11:51:28 --> User IP: ::1
+DEBUG - 2025-07-15 11:52:18 --> User IP: ::1
+DEBUG - 2025-07-15 11:52:21 --> User IP: ::1
+DEBUG - 2025-07-15 11:52:28 --> User IP: ::1
+DEBUG - 2025-07-15 11:52:28 --> User IP: ::1
+DEBUG - 2025-07-15 11:52:28 --> User IP: ::1
+DEBUG - 2025-07-15 11:52:33 --> User IP: ::1
+DEBUG - 2025-07-15 11:52:35 --> User IP: ::1
+DEBUG - 2025-07-15 11:52:46 --> User IP: ::1
+DEBUG - 2025-07-15 11:52:46 --> User IP: ::1
+DEBUG - 2025-07-15 11:52:46 --> User IP: ::1
+DEBUG - 2025-07-15 11:56:18 --> User IP: ::1
+DEBUG - 2025-07-15 11:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 11:56:19 --> User IP: ::1
+DEBUG - 2025-07-15 11:56:19 --> User IP: ::1
+DEBUG - 2025-07-15 11:56:19 --> User IP: ::1
+DEBUG - 2025-07-15 11:58:03 --> User IP: ::1
+DEBUG - 2025-07-15 11:58:11 --> User IP: ::1
+DEBUG - 2025-07-15 11:58:22 --> User IP: ::1
+DEBUG - 2025-07-15 11:58:23 --> User IP: ::1
+DEBUG - 2025-07-15 11:58:23 --> User IP: ::1
+DEBUG - 2025-07-15 11:58:30 --> User IP: ::1
+DEBUG - 2025-07-15 11:58:41 --> User IP: ::1
+DEBUG - 2025-07-15 11:58:49 --> User IP: ::1
+DEBUG - 2025-07-15 11:58:50 --> User IP: ::1
+DEBUG - 2025-07-15 11:58:50 --> User IP: ::1
+DEBUG - 2025-07-15 11:58:54 --> User IP: ::1
+DEBUG - 2025-07-15 11:58:57 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:12 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:12 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:12 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:12 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:12 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:14 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:19 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:27 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:37 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:37 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:37 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:42 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:50 --> User IP: ::1
+CRITICAL - 2025-07-15 11:59:50 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/deleteadditionaldata/57]
+in APPPATH\Controllers\PayRole.php on line 1372.
+ 1 APPPATH\Controllers\PayRole.php(1372): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 1372)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->deleteadditionaldata('57')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 11:59:51 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:51 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:51 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:55 --> User IP: ::1
+DEBUG - 2025-07-15 11:59:59 --> User IP: ::1
+DEBUG - 2025-07-15 12:00:17 --> User IP: ::1
+DEBUG - 2025-07-15 12:00:18 --> User IP: ::1
+DEBUG - 2025-07-15 12:00:18 --> User IP: ::1
+DEBUG - 2025-07-15 12:00:28 --> User IP: ::1
+DEBUG - 2025-07-15 12:00:29 --> User IP: ::1
+DEBUG - 2025-07-15 12:00:29 --> User IP: ::1
+DEBUG - 2025-07-15 12:00:31 --> User IP: ::1
+CRITICAL - 2025-07-15 12:00:31 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/deleteadditionaldata/57]
+in APPPATH\Controllers\PayRole.php on line 1372.
+ 1 APPPATH\Controllers\PayRole.php(1372): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 1372)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->deleteadditionaldata('57')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 12:00:38 --> User IP: ::1
+DEBUG - 2025-07-15 12:00:40 --> User IP: ::1
+CRITICAL - 2025-07-15 12:00:41 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/deleteadditionaldata/57]
+in APPPATH\Controllers\PayRole.php on line 1372.
+ 1 APPPATH\Controllers\PayRole.php(1372): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 1372)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->deleteadditionaldata('57')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 12:00:46 --> User IP: ::1
+CRITICAL - 2025-07-15 12:00:46 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/deleteadditionaldata/57]
+in APPPATH\Controllers\PayRole.php on line 1372.
+ 1 APPPATH\Controllers\PayRole.php(1372): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 1372)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->deleteadditionaldata('57')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 12:01:00 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:00 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:00 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:22 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:34 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:34 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:34 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:38 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 12:01:39 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:39 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:39 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:44 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:58 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:59 --> User IP: ::1
+DEBUG - 2025-07-15 12:01:59 --> User IP: ::1
+DEBUG - 2025-07-15 12:02:09 --> User IP: ::1
+DEBUG - 2025-07-15 12:02:20 --> User IP: ::1
+DEBUG - 2025-07-15 12:02:20 --> User IP: ::1
+DEBUG - 2025-07-15 12:02:20 --> User IP: ::1
+DEBUG - 2025-07-15 12:02:24 --> User IP: ::1
+DEBUG - 2025-07-15 12:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 12:02:25 --> User IP: ::1
+DEBUG - 2025-07-15 12:02:26 --> User IP: ::1
+DEBUG - 2025-07-15 12:02:26 --> User IP: ::1
+DEBUG - 2025-07-15 12:02:30 --> User IP: ::1
+DEBUG - 2025-07-15 12:02:36 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:04 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:07 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:08 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:08 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:15 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:22 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:29 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:30 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:30 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:39 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:49 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:50 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:50 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:54 --> User IP: ::1
+DEBUG - 2025-07-15 12:03:56 --> User IP: ::1
+CRITICAL - 2025-07-15 12:03:56 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/deleteadditionaldata/57]
+in APPPATH\Controllers\PayRole.php on line 1372.
+ 1 APPPATH\Controllers\PayRole.php(1372): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 1372)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->deleteadditionaldata('57')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 12:06:44 --> User IP: ::1
+DEBUG - 2025-07-15 12:06:44 --> User IP: ::1
+DEBUG - 2025-07-15 12:06:44 --> User IP: ::1
+DEBUG - 2025-07-15 12:06:52 --> User IP: ::1
+DEBUG - 2025-07-15 12:07:06 --> User IP: ::1
+DEBUG - 2025-07-15 12:07:07 --> User IP: ::1
+DEBUG - 2025-07-15 12:07:07 --> User IP: ::1
+DEBUG - 2025-07-15 12:08:19 --> User IP: ::1
+DEBUG - 2025-07-15 12:08:30 --> User IP: ::1
+DEBUG - 2025-07-15 12:08:30 --> User IP: ::1
+DEBUG - 2025-07-15 12:08:30 --> User IP: ::1
+DEBUG - 2025-07-15 12:08:37 --> User IP: ::1
+DEBUG - 2025-07-15 12:08:42 --> User IP: ::1
+DEBUG - 2025-07-15 12:08:45 --> User IP: ::1
+DEBUG - 2025-07-15 12:08:45 --> User IP: ::1
+DEBUG - 2025-07-15 12:08:45 --> User IP: ::1
+DEBUG - 2025-07-15 12:08:51 --> User IP: ::1
+DEBUG - 2025-07-15 12:08:57 --> User IP: ::1
+DEBUG - 2025-07-15 12:09:05 --> User IP: ::1
+DEBUG - 2025-07-15 12:09:05 --> User IP: ::1
+DEBUG - 2025-07-15 12:09:05 --> User IP: ::1
+DEBUG - 2025-07-15 12:09:11 --> User IP: ::1
+DEBUG - 2025-07-15 12:09:18 --> User IP: ::1
+DEBUG - 2025-07-15 12:09:19 --> User IP: ::1
+DEBUG - 2025-07-15 12:09:19 --> User IP: ::1
+DEBUG - 2025-07-15 12:09:26 --> User IP: ::1
+DEBUG - 2025-07-15 12:09:31 --> User IP: ::1
+DEBUG - 2025-07-15 12:09:38 --> User IP: ::1
+CRITICAL - 2025-07-15 12:09:38 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/deleteadditionaldata/57]
+in APPPATH\Controllers\PayRole.php on line 1372.
+ 1 APPPATH\Controllers\PayRole.php(1372): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 1372)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->deleteadditionaldata('57')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 12:10:10 --> User IP: ::1
+DEBUG - 2025-07-15 12:10:10 --> User IP: ::1
+DEBUG - 2025-07-15 12:10:10 --> User IP: ::1
+DEBUG - 2025-07-15 12:10:15 --> User IP: ::1
+DEBUG - 2025-07-15 12:10:34 --> User IP: ::1
+DEBUG - 2025-07-15 12:10:42 --> User IP: ::1
+DEBUG - 2025-07-15 12:10:42 --> User IP: ::1
+DEBUG - 2025-07-15 12:10:42 --> User IP: ::1
+DEBUG - 2025-07-15 12:10:48 --> User IP: ::1
+DEBUG - 2025-07-15 12:10:53 --> User IP: ::1
+DEBUG - 2025-07-15 12:10:56 --> User IP: ::1
+DEBUG - 2025-07-15 12:11:04 --> User IP: ::1
+DEBUG - 2025-07-15 12:11:04 --> User IP: ::1
+DEBUG - 2025-07-15 12:11:04 --> User IP: ::1
+DEBUG - 2025-07-15 12:17:09 --> User IP: ::1
+DEBUG - 2025-07-15 12:17:20 --> User IP: ::1
+DEBUG - 2025-07-15 12:17:21 --> User IP: ::1
+DEBUG - 2025-07-15 12:17:21 --> User IP: ::1
+DEBUG - 2025-07-15 12:17:27 --> User IP: ::1
+DEBUG - 2025-07-15 12:18:19 --> User IP: ::1
+DEBUG - 2025-07-15 12:18:24 --> User IP: ::1
+DEBUG - 2025-07-15 12:18:31 --> User IP: ::1
+DEBUG - 2025-07-15 12:18:32 --> User IP: ::1
+DEBUG - 2025-07-15 12:18:32 --> User IP: ::1
+DEBUG - 2025-07-15 12:18:38 --> User IP: ::1
+DEBUG - 2025-07-15 12:32:49 --> User IP: ::1
+DEBUG - 2025-07-15 12:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 12:32:50 --> User IP: ::1
+DEBUG - 2025-07-15 12:32:50 --> User IP: ::1
+DEBUG - 2025-07-15 12:32:50 --> User IP: ::1
+DEBUG - 2025-07-15 12:33:06 --> User IP: ::1
+DEBUG - 2025-07-15 12:33:08 --> User IP: ::1
+CRITICAL - 2025-07-15 12:33:08 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/deleteadditionaldata/57]
+in APPPATH\Controllers\PayRole.php on line 1383.
+ 1 APPPATH\Controllers\PayRole.php(1383): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 1383)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->deleteadditionaldata('57')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 12:33:11 --> User IP: ::1
+CRITICAL - 2025-07-15 12:33:11 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/deleteadditionaldata/57]
+in APPPATH\Controllers\PayRole.php on line 1383.
+ 1 APPPATH\Controllers\PayRole.php(1383): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 1383)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->deleteadditionaldata('57')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 12:33:14 --> User IP: ::1
+CRITICAL - 2025-07-15 12:33:14 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/deleteadditionaldata/57]
+in APPPATH\Controllers\PayRole.php on line 1383.
+ 1 APPPATH\Controllers\PayRole.php(1383): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 1383)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->deleteadditionaldata('57')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 12:33:18 --> User IP: ::1
+DEBUG - 2025-07-15 12:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 12:33:19 --> User IP: ::1
+DEBUG - 2025-07-15 12:33:19 --> User IP: ::1
+DEBUG - 2025-07-15 12:33:19 --> User IP: ::1
+DEBUG - 2025-07-15 12:33:24 --> User IP: ::1
+DEBUG - 2025-07-15 12:33:26 --> User IP: ::1
+CRITICAL - 2025-07-15 12:33:26 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/deleteadditionaldata/57]
+in APPPATH\Controllers\PayRole.php on line 1383.
+ 1 APPPATH\Controllers\PayRole.php(1383): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 1383)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->deleteadditionaldata('57')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 12:33:32 --> User IP: ::1
+DEBUG - 2025-07-15 12:33:34 --> User IP: ::1
+CRITICAL - 2025-07-15 12:33:34 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/deleteadditionaldata/63]
+in APPPATH\Controllers\PayRole.php on line 1383.
+ 1 APPPATH\Controllers\PayRole.php(1383): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 1383)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->deleteadditionaldata('63')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 12:33:55 --> User IP: ::1
+DEBUG - 2025-07-15 12:34:54 --> User IP: ::1
+DEBUG - 2025-07-15 12:35:51 --> User IP: ::1
+DEBUG - 2025-07-15 12:35:55 --> User IP: ::1
+DEBUG - 2025-07-15 12:35:57 --> User IP: ::1
+DEBUG - 2025-07-15 12:35:57 --> User IP: ::1
+DEBUG - 2025-07-15 12:35:57 --> User IP: ::1
+DEBUG - 2025-07-15 12:36:03 --> User IP: ::1
+DEBUG - 2025-07-15 12:36:05 --> User IP: ::1
+DEBUG - 2025-07-15 12:51:04 --> User IP: ::1
+DEBUG - 2025-07-15 12:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 12:51:05 --> User IP: ::1
+DEBUG - 2025-07-15 12:51:05 --> User IP: ::1
+DEBUG - 2025-07-15 12:51:05 --> User IP: ::1
+DEBUG - 2025-07-15 12:51:11 --> User IP: ::1
+DEBUG - 2025-07-15 12:51:23 --> User IP: ::1
+DEBUG - 2025-07-15 12:51:28 --> User IP: ::1
+DEBUG - 2025-07-15 12:51:28 --> User IP: ::1
+DEBUG - 2025-07-15 12:51:28 --> User IP: ::1
+DEBUG - 2025-07-15 12:56:05 --> User IP: ::1
+DEBUG - 2025-07-15 13:02:52 --> User IP: ::1
+DEBUG - 2025-07-15 13:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 13:02:52 --> User IP: ::1
+DEBUG - 2025-07-15 13:02:53 --> User IP: ::1
+DEBUG - 2025-07-15 13:02:53 --> User IP: ::1
+DEBUG - 2025-07-15 13:03:00 --> User IP: ::1
+DEBUG - 2025-07-15 13:03:03 --> User IP: ::1
+DEBUG - 2025-07-15 13:04:39 --> User IP: ::1
+DEBUG - 2025-07-15 13:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 13:04:40 --> User IP: ::1
+DEBUG - 2025-07-15 13:04:40 --> User IP: ::1
+DEBUG - 2025-07-15 13:04:40 --> User IP: ::1
+DEBUG - 2025-07-15 13:04:44 --> User IP: ::1
+DEBUG - 2025-07-15 13:04:47 --> User IP: ::1
+DEBUG - 2025-07-15 13:05:18 --> User IP: ::1
+DEBUG - 2025-07-15 13:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 13:05:18 --> User IP: ::1
+DEBUG - 2025-07-15 13:05:18 --> User IP: ::1
+DEBUG - 2025-07-15 13:05:18 --> User IP: ::1
+DEBUG - 2025-07-15 13:05:22 --> User IP: ::1
+DEBUG - 2025-07-15 13:05:27 --> User IP: ::1
+DEBUG - 2025-07-15 13:07:01 --> User IP: ::1
+DEBUG - 2025-07-15 13:07:18 --> User IP: ::1
+DEBUG - 2025-07-15 13:07:19 --> User IP: ::1
+DEBUG - 2025-07-15 13:07:31 --> User IP: ::1
+DEBUG - 2025-07-15 13:09:20 --> User IP: ::1
+DEBUG - 2025-07-15 13:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 13:09:20 --> User IP: ::1
+DEBUG - 2025-07-15 13:09:21 --> User IP: ::1
+DEBUG - 2025-07-15 13:09:21 --> User IP: ::1
+DEBUG - 2025-07-15 13:09:28 --> User IP: ::1
+DEBUG - 2025-07-15 13:09:31 --> User IP: ::1
+DEBUG - 2025-07-15 13:09:42 --> User IP: ::1
+DEBUG - 2025-07-15 13:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 13:09:42 --> User IP: ::1
+DEBUG - 2025-07-15 13:09:43 --> User IP: ::1
+DEBUG - 2025-07-15 13:09:43 --> User IP: ::1
+DEBUG - 2025-07-15 13:09:48 --> User IP: ::1
+DEBUG - 2025-07-15 13:09:50 --> User IP: ::1
+CRITICAL - 2025-07-15 13:09:50 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/deleteadditionaldata/63]
+in APPPATH\Controllers\PayRole.php on line 1385.
+ 1 APPPATH\Controllers\PayRole.php(1385): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 1385)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->deleteadditionaldata('63')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-15 13:12:18 --> User IP: ::1
+DEBUG - 2025-07-15 13:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 13:12:18 --> User IP: ::1
+DEBUG - 2025-07-15 13:12:18 --> User IP: ::1
+DEBUG - 2025-07-15 13:12:18 --> User IP: ::1
+DEBUG - 2025-07-15 13:12:24 --> User IP: ::1
+DEBUG - 2025-07-15 13:12:28 --> User IP: ::1
+DEBUG - 2025-07-15 13:15:45 --> User IP: ::1
+DEBUG - 2025-07-15 13:15:54 --> User IP: ::1
+DEBUG - 2025-07-15 13:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 13:15:55 --> User IP: ::1
+DEBUG - 2025-07-15 13:15:55 --> User IP: ::1
+DEBUG - 2025-07-15 13:15:55 --> User IP: ::1
+DEBUG - 2025-07-15 13:16:01 --> User IP: ::1
+DEBUG - 2025-07-15 13:16:03 --> User IP: ::1
+DEBUG - 2025-07-15 13:16:41 --> User IP: ::1
+DEBUG - 2025-07-15 13:16:43 --> User IP: ::1
+DEBUG - 2025-07-15 13:16:46 --> User IP: ::1
+DEBUG - 2025-07-15 13:17:13 --> User IP: ::1
+DEBUG - 2025-07-15 13:17:52 --> User IP: ::1
+DEBUG - 2025-07-15 13:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 13:17:53 --> User IP: ::1
+DEBUG - 2025-07-15 13:17:53 --> User IP: ::1
+DEBUG - 2025-07-15 13:17:53 --> User IP: ::1
+DEBUG - 2025-07-15 13:18:00 --> User IP: ::1
+DEBUG - 2025-07-15 13:18:03 --> User IP: ::1
+DEBUG - 2025-07-15 13:18:17 --> User IP: ::1
+DEBUG - 2025-07-15 13:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-15 13:18:18 --> User IP: ::1
+DEBUG - 2025-07-15 13:18:18 --> User IP: ::1
+DEBUG - 2025-07-15 13:18:18 --> User IP: ::1
+DEBUG - 2025-07-15 13:18:24 --> User IP: ::1
+DEBUG - 2025-07-15 13:18:29 --> User IP: ::1
+CRITICAL - 2025-07-15 13:18:29 --> ErrorException: Undefined array key 0
+[Method: GET, Route: payrole/deleteadditionaldata/63]
+in APPPATH\Controllers\PayRole.php on line 1394.
+ 1 APPPATH\Controllers\PayRole.php(1394): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\PayRole.php', 1394)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PayRole->deleteadditionaldata('63')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PayRole))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

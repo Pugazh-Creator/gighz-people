@@ -1,0 +1,85 @@
+CRITICAL - 2025-07-17 07:31:44 --> ErrorException: Undefined array key 0
+[Method: GET, Route: requirement/test]
+in APPPATH\Controllers\Requirement.php on line 101.
+ 1 APPPATH\Controllers\Requirement.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\Requirement.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Requirement->test()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirement))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-17 07:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 07:31:57 --> User IP: ::1
+CRITICAL - 2025-07-17 07:31:57 --> ErrorException: Undefined array key 0
+[Method: GET, Route: requirement/test]
+in APPPATH\Controllers\Requirement.php on line 101.
+ 1 APPPATH\Controllers\Requirement.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\gighz\\app\\Controllers\\Requirement.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Requirement->test()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Requirement))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-17 07:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 07:32:25 --> User IP: ::1
+DEBUG - 2025-07-17 07:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 07:33:53 --> User IP: ::1
+DEBUG - 2025-07-17 08:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 08:11:28 --> User IP: ::1
+DEBUG - 2025-07-17 08:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 08:11:35 --> User IP: ::1
+DEBUG - 2025-07-17 08:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 08:11:44 --> User IP: ::1
+DEBUG - 2025-07-17 10:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:07:54 --> User IP: ::1
+DEBUG - 2025-07-17 10:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:07:57 --> User IP: ::1
+DEBUG - 2025-07-17 10:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:12:21 --> User IP: ::1
+DEBUG - 2025-07-17 10:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:12:21 --> User IP: ::1
+DEBUG - 2025-07-17 10:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:12:28 --> User IP: ::1
+DEBUG - 2025-07-17 10:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:12:42 --> User IP: ::1
+DEBUG - 2025-07-17 10:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:12:52 --> User IP: ::1
+DEBUG - 2025-07-17 10:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:13:02 --> User IP: ::1
+DEBUG - 2025-07-17 10:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:13:07 --> User IP: ::1
+DEBUG - 2025-07-17 10:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:13:11 --> User IP: ::1
+DEBUG - 2025-07-17 10:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:32:11 --> User IP: ::1
+DEBUG - 2025-07-17 10:32:12 --> User ID: 23, Date: 2025-01-23
+DEBUG - 2025-07-17 10:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:32:15 --> User IP: ::1
+DEBUG - 2025-07-17 10:32:15 --> User ID: 23, Date: 2025-01-16
+DEBUG - 2025-07-17 10:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:32:18 --> User IP: ::1
+DEBUG - 2025-07-17 10:32:18 --> User ID: 23, Date: 2025-01-11
+DEBUG - 2025-07-17 10:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:32:24 --> User IP: ::1
+DEBUG - 2025-07-17 10:32:24 --> User ID: 23, Date: 2025-01-11
+DEBUG - 2025-07-17 10:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:34:10 --> User IP: ::1
+DEBUG - 2025-07-17 10:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:34:13 --> User IP: ::1
+DEBUG - 2025-07-17 10:34:14 --> User ID: 23, Date: 2025-01-23
+DEBUG - 2025-07-17 10:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:34:19 --> User IP: ::1
+DEBUG - 2025-07-17 10:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:34:21 --> User IP: ::1
+DEBUG - 2025-07-17 10:34:21 --> User ID: 23, Date: 2025-06-24
+DEBUG - 2025-07-17 10:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:34:26 --> User IP: ::1
+DEBUG - 2025-07-17 10:34:26 --> User ID: 23, Date: 2025-06-11
+DEBUG - 2025-07-17 10:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:34:38 --> User IP: ::1
+DEBUG - 2025-07-17 10:34:38 --> User ID: 23, Date: 2025-06-24
+DEBUG - 2025-07-17 10:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:34:52 --> User IP: ::1
+DEBUG - 2025-07-17 10:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-17 10:34:56 --> User IP: ::1
+DEBUG - 2025-07-17 10:34:56 --> User ID: 23, Date: 2025-07-14

@@ -19,7 +19,7 @@
             position: fixed;
             top: 30px;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translateX(-60%);
             color: white;
             padding: 15px 25px;
             border-radius: 6px;

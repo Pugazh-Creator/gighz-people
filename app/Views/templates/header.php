@@ -31,7 +31,9 @@
         /* background: yellow; */
         margin-left: 255px;
         margin-top: 60px;
+        transition: all .3s ease;
     }
+
 
     button {
         cursor: pointer;
@@ -50,6 +52,7 @@
         top: 0;
         right: 0;
         padding: 5px 0;
+        transition: all .3s ease;
         /* border-bottom: 1px solid gray; */
         /* box-shadow: 2px 2px 10px gray; */
 
@@ -74,6 +77,42 @@
         border-radius: 50%;
         width: 40px;
     }
+
+    /* toggle */
+    /* Toggle container */
+    .header .toggle-switch {
+        width: 10px;
+        height: 25px;
+        border-radius: 20px;
+        background: #ebebeb;
+        position: relative;
+        cursor: pointer;
+    }
+
+    /* The knob */
+    .header .toggle-switch .switch-circle {
+        padding: 0px 12px;
+        background: linear-gradient(#eb5975, #eb59be);
+        border-radius: 50%;
+        position: absolute;
+        top: auto;
+        left: 0;
+        transition: all 5s ease;
+    }
+
+    /* Active (Dark mode ON) */
+    .header .toggle-switch.active {
+        /* background: #333; */
+        justify-content: end;
+    }
+
+    .header .toggle-switch.active .switch-circle {
+        right: 0;
+        left: auto;
+        background: linear-gradient(#dc1b40, #363636);
+        /* color: #f1c40f; */
+        /* moon color */
+    }
 </style>
 
 <body>
@@ -82,7 +121,14 @@
             Dashboard
         </div>
         <div>
+            <!-- Toggle Switch -->
+            <div class="toggle-switch" id="toggleSwitch">
+                <div class="switch-circle">
+                    <!-- <i class='bx bx-sun'></i> -->
+                </div>
+            </div>
             <p>Admin</p>
             <img class="user_image" src="https://i.pinimg.com/736x/38/44/fe/3844fe3d529e6f8d1659dfc2fb48dd0c.jpg" alt="">
         </div>
     </div>
+    <div class="container">

@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
     <link rel="stylesheet" href="<?= base_url('asset/css/index.css') ?>">
     <link rel="icon" href="<?= base_url('asset/images/favicon.png') ?>">
     <style>
@@ -75,10 +69,8 @@
             letter-spacing: 1px;
         }
     </style>
-</head>
 
-<body>
-    <?= view('navbar/sidebar') ?>
+    <!-- <?php // view('navbar/sidebar') ?> -->
         <?php 
             $present_days ='';
             $absent_days = '';
@@ -90,7 +82,7 @@
               
             }
         ?>
-    <section class="container">
+    <!-- <section class="container"> -->
         <h1>Dashboard</h1>
         <div class="work-status">
                 <div class="work-status-feilds f1">
@@ -135,10 +127,4 @@
             </div>
         </div>
 
-    </section>
-    <style>
-        
-    </style>
-</body>
-
-</html>
+    <!-- </section> -->

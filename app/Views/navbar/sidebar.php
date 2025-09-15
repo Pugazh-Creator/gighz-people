@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="<?= base_url('asset/css/sidebar.css') ?>">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="<?= base_url('asset/images/favicon.png') ?>">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -19,7 +19,7 @@
             position: fixed;
             top: 30px;
             left: 50%;
-            transform: translateX(-60%);
+            transform: translateX(-50%);
             color: white;
             padding: 15px 25px;
             border-radius: 6px;

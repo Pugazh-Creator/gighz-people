@@ -152,7 +152,7 @@ class Auth extends BaseController
 
             // $checkPassword = $password == $userInfo['password'] ? true : false;
 
-             $checkPassword = password_verify($password, $userInfo['password']);
+            $checkPassword = password_verify($password, $userInfo['password']);
 
             // $checkPassword = Hash::check('12345',' $2y$10$sUGJ845kT8NO0j/mGTgAae1w2yUQ5Z2ZiJCHl8');
 
@@ -232,8 +232,8 @@ class Auth extends BaseController
             }
 
             // Send OTP Email
-            $to = 'rahox85672@knilok.com';
-            // $to = $email;
+            // $to = 'rahox85672@knilok.com';
+            $to = $email;
             $subject = "OTP for Password Reset";
             $message = "<p>Your OTP is</p><br/>
                    <div style='width:100px; height:50px; background:#f7ccd3; display: flex;align-items: center;
@@ -242,14 +242,14 @@ class Auth extends BaseController
                 return $this->response->setJSON(['status' => 'success', 'massage' => 'Mail Sended']);
             }
         }
-        return $this->response->setJSON(['status' => 'error','massage' => 'Invalid Mail']);
+        return $this->response->setJSON(['status' => 'error', 'massage' => 'Invalid Mail']);
     }
 
     public function verifyOtp()
     {
         $email = $this->request->getPost('mail');
         $userotp = $this->request->getPost('otp');
-        
+
         $otpModel = new OtpModel;
 
         if ($otpModel->where('email', $email)->first()) {
@@ -279,6 +279,7 @@ class Auth extends BaseController
         $usermodel = new UserModel();
         $email = $this->request->getPost('mail');
         $password = $this->request->getPost('password');
+        $password = password_hash($password, PASSWORD_DEFAULT);
 
         if ($employeeModel->where('official_mail', $email)->first()) {
             $employees = $employeeModel->where('official_mail', $email)->first();
@@ -295,6 +296,4 @@ class Auth extends BaseController
     /**
      * -------------------------------- New Updated --------------------------------------------
      */
-
-        
 }

@@ -28,6 +28,7 @@ $routes->get('auth/auto_login', 'Auth::auto_login');
  */
     $routes->get('add-gighz-version-details','Dashboard::version');
     $routes->post('/add-version-details', 'Dashboard::addVersionDetails');
+    $routes->post('dashboard/getAppVersion', 'Dashboard::getAppVersion');
 
 /**
  * Attendance

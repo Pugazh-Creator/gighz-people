@@ -7,6 +7,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="<?= base_url('asset/images/favicon.png') ?>">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="<?= base_url('asset/css/index.css') ?>">
+
+
+
     <title>GigHz People</title>
 </head>
 <style>
@@ -73,7 +77,7 @@
         align-items: center;
     }
 
-    .user_image {
+    .header .user_image {
         border-radius: 50%;
         width: 40px;
     }
@@ -116,9 +120,10 @@
 </style>
 
 <body>
+
     <div class="header">
         <div>
-            Dashboard
+            <h3><?php echo $thisPage ?></h3>
         </div>
         <div>
             <!-- Toggle Switch -->

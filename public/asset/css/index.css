@@ -1,0 +1,68 @@
+.dashboard .top {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background: red; */
+    /* border: 2px solid gray; */
+}
+
+.dashboard .top>div {
+    height: 100%;
+    width: 45%;
+    background: green;
+}
+
+.dashboard .top .attendance {
+    display: flex;
+    width: 50%;
+}
+.dashboard .top .attendance img{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    background: yellow;
+}
+
+.dashboard .top .attendance .ac1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* two equal columns */
+    grid-template-rows: auto auto;
+    /* two rows */
+    width: 70%;
+    gap: 20px;
+    padding: 10px;
+}
+
+.dashboard .top .attendance .ac1>div {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dashboard .top .attendance .ac1>div:nth-last-child(1){
+    grid-column: span 2;
+    background: yellow;
+}
+.eff1{
+    transition: all .2s ease;
+}
+.eff1:hover{
+    transform: translateY(-5px);
+}
+.dashboard .top .attendance .ac2{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    width: 20%;
+    grid-template-rows: 70% 20%;
+}
+.dashboard .top .attendance .ac2>div{
+    background: #fff;
+    border-radius: 10px;
+}

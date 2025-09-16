@@ -16,6 +16,7 @@ use CodeIgniter\HTTP\ResponseInterface;
 use DateTime;
 use CodeIgniter\Controller;
 use mysqli;
+use PhpOffice\PhpSpreadsheet\Writer\Ods\Thumbnails;
 
 class Dashboard extends BaseController
 {
@@ -32,11 +33,13 @@ class Dashboard extends BaseController
         $name = session()->get('name');
         $attendanceResult = $attendancemodel->getEmployeesLeaves($empId);
         $datas['versions'] = $versionModel->getAllVersion();
+        $datas['thisPage'] = "Dashboard";
 
         $datas['attendance'] = $attendanceResult['data'];
         $datas['dates'] = $attendanceResult['dates'];
         $datas['empid'] = $empId;
         $datas['name'] = $name;
+        $datas["basedata"] = $this->baseDatas();
 
 
 
@@ -229,5 +232,31 @@ class Dashboard extends BaseController
         }
         $finalversion = 'v' . $parts[0] . '.' . $parts[1] . '.' . $parts[2];
         return $this->response->setJSON(['version' => $finalversion]); // Or sanitize as needed
+    }
+
+    public function baseDatas()
+    {
+        $session = session();
+        $data['name'] = $session->get('name');
+        $data['role'] = $session->get('role');
+        $data['emp_id'] = $session->get('emp_id');
+
+        $db = db_connect();
+        $query_role = $db->query("SELECT user_name FROM `role` WHERE id='" . $data['role'] . "'");
+        $data['emp_role'] = $query_role->getResultArray();
+
+        $query = $db->query("SELECT * FROM tbl_user_permission WHERE user_category='" . $data['emp_role'][0]['user_name'] . "'");
+        $data['emp_info'] = $query->getResultArray();
+
+        // return $this->response->setJSON($data);
+        return $data;
+    }
+
+    public function testing()
+    {
+        $data["basedata"] = $this->baseDatas();
+        $data['test'] = 'magendiran';
+
+        return $this->response->setJSON($data);
     }
 }

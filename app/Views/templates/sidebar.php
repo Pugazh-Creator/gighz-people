@@ -38,7 +38,7 @@
     }
 
     /* Logo */
-     .sidebar .image-container {
+    .sidebar .image-container {
         text-align: center;
     }
 
@@ -93,7 +93,13 @@
 
     .sidebar-top-child.child2 ul li a:hover,
     .sidebar-top-child.child2 ul li button:hover {
-        background: linear-gradient(deeppink, red);
+        background: linear-gradient(#eb5975, #eb59be);
+    }
+
+    body.dark-mode .sidebar-top-child.child2 ul li a:hover,
+    body.dark-mode .sidebar-top-child.child2 ul li button:hover {
+        background: #fff;
+        color: #363636;
     }
 
     /* Submenu */
@@ -127,12 +133,13 @@
         color: #e74c3c;
         text-decoration: none;
         text-align: center;
-        margin:0 auto 10px;
+        margin: 0 auto 10px;
     }
 
     body.dark-mode .sidebar-bottom a {
         color: #fff;
     }
+
     body.dark-mode .sidebar-bottom {
         border-top-color: #fff;
     }
@@ -200,10 +207,22 @@
         margin-left: 85px;
     }
 
-    body.dark-mode .sidebar{
+    body.dark-mode .sidebar {
         background: linear-gradient(#363636, #dc1b40);
     }
 </style>
+<?php
+$array_main_menu = [];
+$array_main_menu_data = [];
+foreach ($basedata["emp_info"] as $emp_data) {
+
+    $catogory_name = $emp_data['user_category'];
+    // print_r($catogory_name);
+    $array_main_menu = json_decode($emp_data['permission']);
+    //    print_r($array_main_menu);
+    $array_main_menu_data = ($array_main_menu[0]->permission[0]->main_menu[0]);
+}
+?>
 
 <div class="sidebar" id="sidebar">
     <button class="toggle-btn" id="toggleBtn"><i class='bx bx-chevron-left'></i></button>
@@ -224,14 +243,42 @@
                     <a href="#" role="button"><span><i class='bx bxs-group'></i><span class="nav-text"> HR</span><span> <i class='bx bx-chevron-down'></i></a>
 
                     <ul>
-                        <li><a href="#"><i class='bx bxs-user'></i> <span class="nav-text">Employees</span></a></li>
-                        <li><a href="#"><i class='bx bx-briefcase'></i> <span class="nav-text">Recruitment</span></a></li>
-                        <li><a href="#"><i class='bx bx-money'></i> <span class="nav-text">Payroll</span></a></li>
-                        <li><a href="#"><i class='bx bx-calculator'></i> <span class="nav-text">Accounting</span></a></li>
-                        <li><a href="#"><i class='bx bx-line-chart'></i> <span class="nav-text">Appraisal</span></a></li>
-                        <li><a href="#"><i class='bx bx-rocket'></i> <span class="nav-text">Career</span></a></li>
-                        <li><a href="#"><i class='bx bx-book'></i> <span class="nav-text">Policy</span></a></li>
-                        <li><a href="#"><i class='bx bx-error'></i> <span class="nav-text">Disciplinary</span></a></li>
+                        <?php if ($array_main_menu_data->hrmanagement[0]->sub_menu[0]->hrdashboard[0]->view == '1') : ?>
+                            <li><a href="#"><i class='bx bxs-user'></i> <span class="nav-text">Dashboard</span></a></li>
+                        <?php endif; ?>
+
+                        <?php if ($array_main_menu_data->hrmanagement[0]->sub_menu[0]->employeemasterdata[0]->view == '1') : ?>
+                            <li><a href="#"><i class='bx bxs-user'></i> <span class="nav-text">Employees</span></a></li>
+                        <?php endif; ?>
+
+                        <?php if ($array_main_menu_data->hrmanagement[0]->sub_menu[0]->recruitment[0]->view == '1') : ?>
+                            <li><a href="#"><i class='bx bx-briefcase'></i> <span class="nav-text">Recruitment</span></a></li>
+                        <?php endif; ?>
+
+                        <?php if ($array_main_menu_data->hrmanagement[0]->sub_menu[0]->payroll[0]->view == '1') : ?>
+                            <li><a href="#"><i class='bx bx-money'></i> <span class="nav-text">Payroll</span></a></li>
+                        <?php endif; ?>
+
+                        <?php if ($array_main_menu_data->hrmanagement[0]->sub_menu[0]->accounting[0]->view == '1') : ?>
+                            <li><a href="#"><i class='bx bx-calculator'></i> <span class="nav-text">Accounting</span></a></li>
+                        <?php endif; ?>
+
+                        <?php if ($array_main_menu_data->hrmanagement[0]->sub_menu[0]->appraisal[0]->view == '1') : ?>
+                            <li><a href="#"><i class='bx bx-line-chart'></i> <span class="nav-text">Appraisal</span></a></li>
+                        <?php endif; ?>
+
+                        <?php if ($array_main_menu_data->hrmanagement[0]->sub_menu[0]->career[0]->view == '1') : ?>
+                            <li><a href="#"><i class='bx bx-rocket'></i> <span class="nav-text">Career</span></a></li>
+                        <?php endif; ?>
+
+                        <?php if ($array_main_menu_data->hrmanagement[0]->sub_menu[0]->policy[0]->view == '1') : ?>
+                            <li><a href="#"><i class='bx bx-book'></i> <span class="nav-text">Policy</span></a></li>
+                        <?php endif; ?>
+
+                        <?php if ($array_main_menu_data->hrmanagement[0]->sub_menu[0]->disciplinary[0]->view == '1') : ?>
+                            <li><a href="#"><i class='bx bx-error'></i> <span class="nav-text">Disciplinary</span></a></li>
+                        <?php endif; ?>
+
                     </ul>
 
                 </li>

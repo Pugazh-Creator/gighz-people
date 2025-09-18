@@ -1,130 +1,241 @@
+<?php
+$present_days = '';
+$absent_days = '';
+$sortfall = '';
+foreach ($attendance as $userId => $row) {
+    $present_days = $row['presentDays'];
+    $absent_days = $row['absentDays'];
+    $sortfall = $row['sortfall'];
+}
+?>
+<div class="dashboard">
+    <div class="top">
+        <div class="attendance">
+            <div class="attendance-child ac1">
+                <div class="eff1">
+                    <span>
+                        <h5>Present</h5>
+                        <span id="attendance-present" class="attendance-values values">00</span>
+                    </span>
+                    <span>
+                        <img src="<?= base_url("asset/icons/workplace-icon.png") ?>" alt="" width="40%">
+                    </span>
+                </div>
+                <div class="eff1">
+                    <span>
+                        <h5>Absent</h5> <span id="attendance-absent" class="attendance-values values">00</span>
+                    </span>
+                    <span>
+                        <img src="<?= base_url("asset/icons/leave-notice.png") ?>" alt="">
+                    </span>
+                </div>
+                <div class="eff1">
+                    <span>
+                        <h5>Last Working Hrs</h5><span id="attendance-last-worked-hrs" class="attendance-values values">00:00</span>
+                    </span>
+                </div>
+            </div>
+            <div class="attendance-child ac2">
+                <div class="eff1">
+                    <h5>Short Fall</h5>
+                    <span id="attendance-shoet-fall" class="attendance-values values">00:00</span>
+                    <span>
+                        <img src="<?= base_url("asset/icons/soil-clack.png") ?>" alt="">
+                    </span>
+                </div>
+                <div class="eff1"><a href="<?= base_url()?>dashboard/getEmployeesAttendance">View More</a></div>
+            </div>
+        </div>
+        <div class="dashboard-reports">
+            <div class="apply-status">
+                <div class="eff1 leave-box">
+                    <img src="<?= base_url("asset/icons/absent.png") ?>" alt="">
+                    <h5>Leave</h5>
+                </div>
+                <div class="eff1 compensation-box">
+                    <img src="<?= base_url("asset/icons/compensation.png") ?>" alt="">
+                    <h5>Compensation</h5>
+                </div>
+                <div class="eff1 Permission-box">
+                    <img src="<?= base_url("asset/icons/permission.png") ?>" alt="">
+                    <h5>Permission</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard-section2">
+        <div class="dashboard-notification">
+            <div class="notification-header">
+                <h4>Notifications</h4>
+            </div>
+            <div class="notification-body">
+                <img src="<?= base_url("asset/icons/comming-soon.png") ?>" alt="" width="250">
+                <p>Comming Soon</p>
+            </div>
+        </div>
+        <div class="dashboard-version">
+            <h4>What's we Updated</h4>
+            <div class="versions" id="version-cont">
 
-    <link rel="stylesheet" href="<?= base_url('asset/css/index.css') ?>">
-    <link rel="icon" href="<?= base_url('asset/images/favicon.png') ?>">
-    <style>
-        .work-status {
-            width: 50%;
-            height: 70px;
-            display: flex;
-            justify-content: start;
-            gap: 20px;
-            /* background: red; */
-            transition: all .2s;
-            margin-top: 30px;
-            
-        }
+            </div>
+        </div>
 
-        .work-status-feilds {
-            text-align: center;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: calc(100% / 4);
-            padding: 10px 10px 10px 40px;
-            border-radius: 10px;
-            background: linear-gradient(#da2442a7, #da2442);
-            color: rgb(255, 255, 255);
-            position: relative;
-        }
+        <div class="dashbord-work-report">
+            <div class="eff1">
+                <img src="<?= base_url("asset/icons/working.png") ?>" alt="" width="250">
+                <div>
+                    <span>Worked Hrs</span>
+                    <div id="total-worked-hrs" class="report-value values ">00:00</div>
+                </div>
+            </div>
+            <div class="eff1">
+                <img src="<?= base_url("asset/icons/rr.png") ?>" alt="" width="250">
+                <div>
+                    <span>R&R</span>
+                    <div id="total-rr-hrs" class="report-value values ">00:00</div>
+                </div>
+            </div>
+            <div class="eff1">
+                <img src="<?= base_url("asset/icons/general.png") ?>" alt="" width="250">
+                <div>
+                    <span>General</span>
+                    <div id="total-general-hrs" class="report-value values ">00:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $.ajax({
+        url: baseurl + "dashboard/dashboardDatas",
+        method: 'POST',
+        success: function(res) {
+            console.log(res)
 
-        .work-status a {
-            background: linear-gradient(#da2442a7, #da2442);
-            padding: 10px;
-            border-radius: 10px;
-            color: #fff;
-            font-weight: 500;
-            height: 30px;
-            margin: auto 0; 
-        }
-        .work-status a:hover{
-            background:  linear-gradient(rgba(203, 76, 97, 0.66),rgb(203, 83, 103));
-        }
+            const attendance = res.Attendance;
+            const Permission = res.Permission;
+            const compensation = res.compensation;
+            console.log(compensation);
+            const leave = res.leave;
+            const versions = res.versions;
 
-        .versions {
-            width: 50%;
-        }
 
-        .version-box {
-            width: 500px;
-            background: linear-gradient(#da2442a7, #da2442);
-            border-radius: 10px;
-            margin: 10px;
-            padding: 10px;
-            display: flex;
-            justify-content: left;
-            gap: 20px;
+            // $('.values').text('');
 
-        }
+            $('#attendance-present').text(attendance.presentDays);
+            $('#attendance-absent').text(attendance.absentDays);
+            $('#attendance-shoet-fall').text(attendance.sortfall);
+            $('#attendance-last-worked-hrs').text(res.records);
 
-        .dashboard-body {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 0;
+            $('#total-worked-hrs').text(attendance.totalOEHours);
+            $('#total-rr-hrs').text(res.rr);
+            $('#total-general-hrs').text(res.general);
 
-        }
+            $("#version-cont").empty();
 
-        .version-box h4 {
-            color: rgb(249, 249, 249);
-            letter-spacing: 1px;
-        }
-    </style>
+            let version = '';
+            versions.forEach(v => {
+                version += `
+                     <div class="eff1">
+                    <span>${v.version}</span>
+                    <p>${v.version_details}</p>
+                </div>
+                `;
 
-    <!-- <?php // view('navbar/sidebar') ?> -->
-        <?php 
-            $present_days ='';
-            $absent_days = '';
-            $sortfall = '';
-            foreach ($attendance as $userId => $row){
-              $present_days = $row['presentDays'];
-              $absent_days = $row['absentDays'];
-              $sortfall = $row['sortfall'];
-              
+            });
+            $("#version-cont").append(version);
+
+            if (leave != null) {
+                if (leave.status == "approved") {
+                    $('.leave-box').css({
+                        'background': '#7ad798ff',
+                        // 'color': '#fff',
+                        // 'font-weight': 'bold'
+                    });
+                } else if (leave.status == "rejected") {
+                    $('.leave-box').css({
+                        'background': '#dc7086ff',
+                        // 'color': '#fff',
+                        // 'font-weight': 'bold'
+                    });
+                } else if (leave.status == "pending") {
+                    $('.leave-box').css({
+                        'background': '#d7ce82ff',
+                        // 'color': '#fff',
+                        // 'font-weight': 'bold'
+                    });
+
+                } else {
+                    $('.leave-box').css({
+                        'background': '#ebebeb',
+
+                        // 'font-weight': 'bold'
+                    });
+
+                }
             }
-        ?>
-    <!-- <section class="container"> -->
-        <h1>Dashboard</h1>
-        <div class="work-status">
-                <div class="work-status-feilds f1">
-                    <p>Present </br><span><?= $present_days ?></span> </p>
-                    <!-- <i class='bx bx-briefcase-alt-2'></i> -->
-                    <img src="https://cdn3d.iconscout.com/3d/premium/thumb/employees-working-in-business-workspace-3d-illustration-download-png-blend-fbx-gltf-file-formats--analytics-logo-office-desk-data-analysis-pack-illustrations-9627684.png?f=webp" alt="Present" height="70px">
+            if (compensation != null) {
+                if (compensation.status == "approved") {
+                    $('.compensation-box').css({
+                        'background': '#7ad798ff',
+                        // 'color': '#fff',
+                        // 'font-weight': 'bold'
+                    });
+                } else if (compensation.status == "rejected") {
+                    $('.compensation-box').css({
+                        'background': '#dc7086ff',
+                        // 'color': '#fff',
+                        // 'font-weight': 'bold'
+                    });
+                } else if (compensation.status == "pending") {
+                    $('.compensation-box').css({
+                        'background': '#d7ce82ff',
+                        // 'color': '#fff',
+                        // 'font-weight': 'bold'
+                    });
 
-                </div>
-                <div class="work-status-feilds f2">
-                    <p>Absent </br> <span><?= $absent_days?></span></p>
-                    <!-- <i class='bx bx-block'></i> -->
-                    <img src="https://cdn3d.iconscout.com/3d/premium/thumb/not-approved-3d-icon-download-in-png-blend-fbx-gltf-file-formats--cross-remove-cancel-business-pack-icons-8858756.png?f=webp" alt="Absent" height="60px">
-                </div>
-                <div class="work-status-feilds f2">
-                    <p>Short fall </br> <span><?= $sortfall?></span></p>
-                    <!-- <i class='bx bx-block'></i> -->
-                    <!-- <img src="https://cdn3d.iconscout.com/3d/premium/thumb/not-approved-3d-icon-download-in-png-blend-fbx-gltf-file-formats--cross-remove-cancel-business-pack-icons-8858756.png?f=webp" alt="Absent" height="60px"> -->
-                </div>
-                <a href="employeesAttendanceDetails">View More</a>
-        </div>
-        <div class="dashboard-body">
-            <div class="versions">
-                <h3>New Updates</h3>
-                <?php foreach ($versions as $version) : ?>
-                    <?php
-                    $role = session()->get('role');
-                    $scope = $version['visible_level'] != 0;
-                    $display = '';
+                } else {
+                    $('.compensation-box').css({
+                        'background': '#ebebeb',
 
-                    if ($role == 3 && $scope) {
-                        $display = 'display:none';
-                    }
-                    ?>
-                    <div class="version-box" style="<?= $display ?>">
-                        <h4><?= $version['version'] ?></h4>
-                        <p><?= $version['version_details'] ?></p>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-            <div class="upcomming">
+                        // 'font-weight': 'bold'
+                    });
 
-            </div>
-        </div>
+                }
+            }
+            if (Permission != null) {
+                if (Permission.permission_status == "approved") {
+                    $('.Permission-box').css({
+                        'background': '#7ad798ff',
+                        // 'color': '#fff',
+                        // 'font-weight': 'bold'
+                    });
+                } else if (Permission.permission_status == "rejected") {
+                    $('.Permission-box').css({
+                        'background': '#dc7086ff',
+                        // 'color': '#fff',
+                        // 'font-weight': 'bold'
+                    });
+                } else if (Permission.permission_status == "pending") {
+                    $('.Permission-box').css({
+                        'background': '#d7ce82ff',
+                        // 'color': '#fff',
+                        // 'font-weight': 'bold'
+                    });
 
-    <!-- </section> -->
+                } else {
+                    $('.Permission-box').css({
+                        'background': '#ebebeb',
+
+                        // 'font-weight': 'bold'
+                    });
+
+                }
+            }
+
+        },
+        error: function(err) {
+            console.log(err);
+        }
+    })
+</script>

@@ -292,35 +292,36 @@ table tbody tr:last-of-type {
     width: 100%;
 }
 
-.attendance-container {
-    display: flex;
-    justify-content: space-evenly;
+.emp_attendance .attendance-container {
+    display: grid;
+    height: 75vh;
+    background: yellow;
 }
 
 .attendace-data {
-    width: 60%;
-    height: 70vh;
+    
+    width: 100%;
+    /* height: 70vh; */
     margin: auto;
     /* background: red; */
 }
 
 .attendance-details {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* background: red; */
-    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    background: red;
+    gap: 20px;
+    height: 30vh;
 }
 
-.attendance-details div,
-.employee-total-hours {
+.attendance-details>div{
     margin: auto;
     background: linear-gradient(#da2442a7, #da2442);
     height: 60px;
     width: 230px;
     border-radius: 10px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
     padding: 0px 5px;
     gap: 10px;
     color: white;

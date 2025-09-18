@@ -15,7 +15,9 @@ use App\Models\VersionUpdateModel;
 use CodeIgniter\HTTP\ResponseInterface;
 use DateTime;
 use CodeIgniter\Controller;
+// use CodeIgniter\Database\Database;
 use mysqli;
+use Config\Database;
 use PhpOffice\PhpSpreadsheet\Writer\Ods\Thumbnails;
 
 class Dashboard extends BaseController
@@ -43,11 +45,130 @@ class Dashboard extends BaseController
 
 
 
+
         echo view('templates/header', $datas);
         echo view('templates/sidebar', $datas);
         echo view('dashboard/index', $datas);
         echo view('templates/footer', $datas);
         // // return session()->get('staff_id');
+    }
+
+    // ---------------- GET OE START DATE AND END DATE ------------------
+
+    public function getStartAndEndDate($selectedMonth = null, $selectedYear = null)
+    {
+        // Check if the user manually selected a month
+        $isManualSelection = !is_null($selectedMonth) && !is_null($selectedYear);
+
+        $dates = (int) date('m');
+        // $dates = $date - 1 === 0 ? 12 : $date - 1;
+
+        $selectedMonth = $selectedMonth ?? $dates;
+        $selectedYear = $selectedYear ?? date('Y');
+
+        if (!$isManualSelection) {
+            // Only apply OE logic when user has NOT manually selected a month
+            if ($selectedMonth == 1 && date('d') <= 24) {
+                // If it's January (1st to 24th), the range is from Dec 25th to Jan 24th
+                $currentYear = $selectedYear - 1;
+                $currentMonth = 12;
+            } elseif (date('d') <= 24) {
+                // If current date is within 1st-24th, use the previous month
+                $currentYear = $selectedYear;
+                $currentMonth = $selectedMonth - 1;
+            } else {
+                // If it's 25th or later, use the current month
+                $currentYear = date('Y');
+                $currentMonth =  date('m');
+            }
+        } else {
+            // If user selected a specific month, use it as-is
+            if ($selectedMonth == 1) {
+                // If it's January (1st to 24th), the range is from Dec 25th to Jan 24th
+                $currentYear = $selectedYear - 1;
+                $currentMonth = 12;
+            } else {
+                $currentYear = $selectedYear;
+                $currentMonth = $selectedMonth - 1;
+            }
+        }
+
+        $nextMonth = ($currentMonth == 12) ? 1 : $currentMonth + 1;
+        $nextYear = ($currentMonth == 12) ? $currentYear + 1 : $currentYear;
+
+        $data = [
+            'startDate' => "$currentYear-$currentMonth-25",
+            'endDate' => "$nextYear-$nextMonth-24"
+        ];
+
+        return $data;
+        // return $this->response->setJSON($data);
+    }
+
+
+    public function dashboardDatas()
+    {
+        $db = db_connect();
+        $session = session();
+        $empid = "GZ44";
+        // $empid = $session->get('emp_id');
+        $attendancemodel = new AttendanceModel;
+        $versionModel = new VersionUpdateModel;
+        $getAttendanceID = $db->query('SELECT user_id from attendance_users where emp_id = ?', [$empid])->getRowArray();
+        $data['Attendance'] = [];
+
+        if (!empty($getAttendanceID)) {
+
+            $userID = $getAttendanceID['user_id'];
+
+            $data['Attendance'] = $attendancemodel->getEmployeesLeaves($empid)['data'][$userID];
+
+
+
+            $data['records'] =  end($attendancemodel->getEmployeesLeaves($empid)['data'][$userID]['records'])['total'];
+        }
+
+
+        $getDate = $this->getStartAndEndDate();
+        $oeStartDate = $getDate['startDate'];
+        $oeEndDate = $getDate['endDate'];
+
+        $data['rr'] = $this->getworkedRRAndGeneralWorks($empid, $oeStartDate, $oeEndDate)['R&R'];
+        $data['general'] = $this->getworkedRRAndGeneralWorks($empid, $oeStartDate, $oeEndDate)['General'];
+
+        $data['versions'] = $versionModel->getAllVersion();
+
+        $data['start'] = $oeStartDate;
+        $data['end'] = $oeEndDate;
+
+        $data['leave'] = $db->query(
+            " SELECT * 
+                        FROM leave_request 
+                        WHERE emp_id = ? and DATE(created_at) BETWEEN DATE_SUB(CURDATE(), INTERVAL 7 DAY) AND CURDATE()
+                        ORDER BY created_at DESC 
+                        LIMIT 1",
+            [$empid]
+        )->getRowArray();
+
+        $data['compensation'] = $db->query(
+            " SELECT * 
+                        FROM compensation_request 
+                        WHERE emp_id = ? and DATE(created_at) BETWEEN DATE_SUB(CURDATE(), INTERVAL 7 DAY) AND CURDATE()
+                        ORDER BY created_at DESC 
+                        LIMIT 1",
+            [$empid]
+        )->getRowArray();
+
+        $data['Permission'] = $db->query(
+            " SELECT * 
+                        FROM permission_hrs 
+                        WHERE permission_user_id = ? and DATE(permission_created) BETWEEN DATE_SUB(CURDATE(), INTERVAL 7 DAY) AND CURDATE()
+                        ORDER BY permission_created DESC 
+                        LIMIT 1",
+            [$empid]
+        )->getRowArray();
+
+        return $this->response->setJSON($data);
     }
 
     public function sendattendancedatatotimesheet($empID)
@@ -68,6 +189,9 @@ class Dashboard extends BaseController
     public function getEmployeesAttendance()
     {
         $attendancemodel = new AttendanceModel;
+
+        $datas["basedata"] = $this->baseDatas();
+        $datas['thisPage'] = 'Attendance';
 
         $empId = session()->get('emp_id');
         $selectedMonth = $this->request->getGet('month');
@@ -111,7 +235,11 @@ class Dashboard extends BaseController
         $datas['attendance'] = $attendanceResult['data'];
         $datas['dates'] = $attendanceResult['dates'];
 
-        return view('requirments/EmployeeAttendance', $datas);
+
+        echo view('templates/header', $datas);
+        echo view('templates/sidebar', $datas);
+        echo view('requirments/EmployeeAttendance', $datas);
+        echo view('templates/footer', $datas);
     }
 
     public function version()
@@ -199,7 +327,7 @@ class Dashboard extends BaseController
     public function getAppVersions()
     {
         $version = $this->getAppVersion();
-        return $this->response->setJSON(['status' => 'success', 'version' => $version]);
+        return $version;
     }
 
     function dynamicVersion()
@@ -248,15 +376,69 @@ class Dashboard extends BaseController
         $query = $db->query("SELECT * FROM tbl_user_permission WHERE user_category='" . $data['emp_role'][0]['user_name'] . "'");
         $data['emp_info'] = $query->getResultArray();
 
+        $data['employee'] = $db->query("SELECT * FROM employees where emp_id = ? limit 1", ['GZ44'])->getRowArray();
+        $data['image'] = $data['employee']['image'] ?? null;
+
+        $data["version"] = $this->getAppVersions();
+
+
         // return $this->response->setJSON($data);
         return $data;
     }
 
     public function testing()
     {
-        $data["basedata"] = $this->baseDatas();
+        // $data["basedata"] = $this->baseDatas();
         $data['test'] = 'magendiran';
 
+        // $attendanceResult = $attendancemodel->getEmployeesLeaves($empId);
+        $attendancemodel = new AttendanceModel;
+        $data['date'] = $attendancemodel->getEmployeesLeaves('gz44');
+
         return $this->response->setJSON($data);
+    }
+
+    // GETTING r&r AND gENERAL hOURS
+    public function getworkedRRAndGeneralWorks($empID, $oeStartDate, $oeEndDate)
+    {
+        $remoteDB = Database::Connect('hostinger');
+
+
+        $query = $remoteDB->query(
+            "SELECT * FROM tbl_timesheet 
+         WHERE timesheet_user_id = ? 
+         AND timesheet_date BETWEEN ? AND ?",
+            [$empID, $oeStartDate, $oeEndDate]
+        )->getResultArray();
+
+        // --------------------------------------
+        $totalGeneral = 0;
+        $totalRR = 0;
+
+        foreach ($query as $row) {
+            list($h, $m) = explode(":", $row["timesheet_working_time"]);
+            $seconds = ($h * 3600) + ($m * 60);
+
+            if (strtoupper($row["timesheet_project_category"]) === "2") {
+                $totalGeneral += $seconds;
+            } elseif (strtoupper($row["timesheet_project_category"]) === "1") {
+                $totalRR += $seconds;
+            }
+        }
+
+        // Format time helper
+        $formatTime = function ($seconds) {
+            $h = floor($seconds / 3600);
+            $m = floor(($seconds % 3600) / 60);
+            return sprintf("%02d:%02d", $h, $m);
+        };
+
+        $result = [
+            "General" => $formatTime($totalGeneral),
+            "R&R"     => $formatTime($totalRR)
+        ];
+        // -------------------------------------
+
+        return $result; // return the result as array
     }
 }

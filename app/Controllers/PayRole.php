@@ -731,8 +731,8 @@ class PayRole extends BaseController
             'endDate' => "$nextYear-$nextMonth-24"
         ];
 
-        return $data;
-        // return $this->response->setJSON($data);
+        // return $data;
+        return $this->response->setJSON($data);
     }
 
     public function storeOtherSaturdays()

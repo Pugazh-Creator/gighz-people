@@ -46,7 +46,6 @@ $routes->post('attendance/changeWorkType', 'BiometricController::chanegTypeOfWor
 /**
  * Leaves 
  */
-$routes->get('employeesAttendanceDetails', 'Dashboard::getEmployeesAttendance');
 
 // it cheking user credential for entering into daashboard
 $routes->post('/reset-password', 'Auth::resetPassword');

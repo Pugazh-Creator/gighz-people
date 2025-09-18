@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="icon" href="<?= base_url('asset/images/favicon.png') ?>">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="<?= base_url('asset/css/index.css') ?>">
@@ -132,8 +133,12 @@
                     <!-- <i class='bx bx-sun'></i> -->
                 </div>
             </div>
-            <p>Admin</p>
-            <img class="user_image" src="https://i.pinimg.com/736x/38/44/fe/3844fe3d529e6f8d1659dfc2fb48dd0c.jpg" alt="">
+            <p><?= $basedata['name']?></p>
+
+            <img class="user_image" src="<?=base_url()?>asset/users/<?php echo $basedata['image'] != null ? $basedata['image']: 'no_user.jpg'?>" alt="">
         </div>
     </div>
     <div class="container">
+        <script>
+            const baseurl = "<?= base_url() ?>";
+        </script>

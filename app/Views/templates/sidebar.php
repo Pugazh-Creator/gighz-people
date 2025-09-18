@@ -237,7 +237,7 @@ foreach ($basedata["emp_info"] as $emp_data) {
         <!-- Navigation -->
         <div class="sidebar-top-child child2">
             <ul>
-                <li><a href="#"><span><i class='bx bxs-dashboard'></i> <span class="nav-text">Dashboard</span><span></a></li>
+                <li><a href="<?=base_url()?>dashboard"><span><i class='bx bxs-dashboard'></i> <span class="nav-text">Dashboard</span><span></a></li>
 
                 <li>
                     <a href="#" role="button"><span><i class='bx bxs-group'></i><span class="nav-text"> HR</span><span> <i class='bx bx-chevron-down'></i></a>
@@ -300,7 +300,7 @@ foreach ($basedata["emp_info"] as $emp_data) {
     <!-- Bottom Section -->
     <div class="sidebar-bottom">
         <a href="#"><i class='bx bx-log-out'></i> <span>Logout</span></a>
-        <p>Version 3.0.1</p>
+        <p>Version <?= $basedata['version']?></p>
 
     </div>
 </div>

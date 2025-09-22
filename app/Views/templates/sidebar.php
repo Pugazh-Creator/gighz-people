@@ -210,6 +210,7 @@
     body.dark-mode .sidebar {
         background: linear-gradient(#363636, #dc1b40);
     }
+    
 </style>
 <?php
 $array_main_menu = [];
@@ -238,6 +239,7 @@ foreach ($basedata["emp_info"] as $emp_data) {
         <div class="sidebar-top-child child2">
             <ul>
                 <li><a href="<?=base_url()?>dashboard"><span><i class='bx bxs-dashboard'></i> <span class="nav-text">Dashboard</span><span></a></li>
+                <li><a href="<?=base_url()?>"><span><i class='bx bxs-send'></i> <span class="nav-text">Apply</span><span></a></li>
 
                 <li>
                     <a href="#" role="button"><span><i class='bx bxs-group'></i><span class="nav-text"> HR</span><span> <i class='bx bx-chevron-down'></i></a>
@@ -283,13 +285,13 @@ foreach ($basedata["emp_info"] as $emp_data) {
 
                 </li>
 
-                <li>
+                <!-- <li>
                     <a href="#" role="button"><span><i class='bx bxs-cog'></i><span class="nav-text"> IT</span> <span><i class='bx bx-chevron-down'></i></a>
                     <ul>
                         <li><a href="#"><i class='bx bx-error'></i> <span class="nav-text">Assets</span></a></li>
                         <li><a href="#"><i class='bx bx-error'></i> <span class="nav-text">ISMS</span></a></li>
                     </ul>
-                </li>
+                </li> -->
 
                 <li><a href="#"><span><i class='bx bx-time'></i><span class="nav-text"> Timesheet</span><span></a></li>
                 <li><span><a href="#"><span><i class='bx bxs-calendar'></i><span class="nav-text"> Holidays</span><span></a></li>

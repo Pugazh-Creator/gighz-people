@@ -273,7 +273,7 @@ class AttendanceModel extends Model
                     'permission_hours' => 0,
                     'actual_present' => 0,
                     'sortfall' => 0,
-
+                    'actual_work_hrs' => 0,
                 ];
             }
 
@@ -370,6 +370,15 @@ class AttendanceModel extends Model
                 $attendanceData[$userId]['wfh']++;
                 $workStatus = 'WFH';
             }
+
+            // calculate Actual Working hors
+
+            $present_minits = ($attendanceData[$userId]['presentDays']*8)*60;
+            $total_actual_hrs = floor($present_minits / 60);
+            $total_actual_minu = $present_minits % 60;
+            $attendanceData[$userId]['actual_work_hrs'] = sprintf('%02d:%02d', $total_actual_hrs, $total_actual_minu);
+
+
 
             $attendanceData[$userId]['records'][$date] = ['total' => $totalHours, 'status' =>  $workStatus];
 

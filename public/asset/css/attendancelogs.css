@@ -46,6 +46,7 @@
     z-index: 1000;
     border-radius: 10px;
 }
+
 #watchman-punchModal {
     display: none;
     position: fixed;
@@ -127,7 +128,7 @@
 }
 
 .log-table-container {
-    margin: 20px 0;
+    margin: 20px 0 0;
     width: 100%;
     overflow-x: auto;
     /* Enables horizontal scrolling */
@@ -146,12 +147,13 @@ table {
 
 th,
 td {
-    padding: 5px 10px;
+    padding: 10px 10px;
     /* border: 1px solid black; */
     text-align: center;
     white-space: nowrap;
 
 }
+
 
 /* Fix Name and ID columns */
 .log-table-container th:first-child,
@@ -176,26 +178,73 @@ td {
     /* Adjust based on Name column width  */
 }
 
-/* Add background to fixed headers */
-thead th {
-    background: #e23c58;
-    color: #fff;
 
+/* Attendance Employee Table */
+
+.employee-attendance-section {
+    display: flex;
+    /* background: lightcyan; */
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px; */
+}
+
+.employee-attendance-section .employee-attendance {
+    width: 50%;
+}
+
+.employee-attendance-section .employee-attendance table {
+    width: 100%;
+}
+
+.employee-attendance-section .employee-attendance table thead {
+    position: sticky;
+    top: 0;
+}
+
+.emp_attendance .log-table .log-table-head {
+    background: #363636;
+    color: #fff;
+}
+
+body.dark-mode .emp_attendance .log-table .log-table-head {
+    background: var(--theme-red--);
+    color: #fff;
+}
+
+.emp_attendance .log-table .log-table-head th {
+    width: 100px;
+    /* border: 2px solid #fff; */
+    /* background: yellow; */
+
+}
+
+.emp_attendance .log-table td {
+    color: #363636;
+}
+
+/* Add background to fixed headers */
+body.dark-mode thead {
+    background: var(--theme-red--);
+    color: #fff;
 }
 
 .biometric table tbody td a {
     color: navy;
 }
 
-table tbody tr:nth-of-type(even) {
+/* table tbody tr:nth-of-type(even) {
     background-color: #ed535346;
-}
+} */
 
 table tbody tr:last-of-type {
     border-bottom: 2px solid var(--brand-color--);
 }
 
-.biometric #punchModal , #watchman-punchModal{
+
+
+.biometric #punchModal,
+#watchman-punchModal {
     padding: 20px;
     /* background: linear-gradient(60deg, #da2442,deeppink); */
     /* background: #da2442; */
@@ -250,7 +299,7 @@ table tbody tr:last-of-type {
     gap: 10px;
 }
 
- .popup-btn {
+.popup-btn {
     width: 40%;
     color: #fff;
     background: #da2442;
@@ -262,11 +311,13 @@ table tbody tr:last-of-type {
     transition: all .5s;
     margin: 10px 0px;
 }
-.cal-btn{
+
+.cal-btn {
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
+
 .popup-btn:hover {
     border: 2px solid #da2442;
     color: #da2442;
@@ -281,65 +332,223 @@ table tbody tr:last-of-type {
     padding: 0px 5px;
 }
 
-.log-table-container.employee-attendance {
+/* ------------------- employee attendance (Normal employees view) */
+
+.employee-attendance {
     /* overflow-x: auto; */
     overflow-y: auto;
-    width: 35%;
-    height: 70vh;
+    width: 45%;
+    height: 45vh;
 }
 
 .log-table-container.employee-attendance table {
     width: 100%;
 }
 
-.attendance-container {
-    display: flex;
-    justify-content: space-evenly;
+.emp_attendance .attendance-container {
+    display: grid;
+    height: 80vh;
+    /* background: red; */
 }
 
+
+
+
 .attendace-data {
-    width: 60%;
-    height: 70vh;
+    width: 100%;
     margin: auto;
     /* background: red; */
 }
 
 .attendance-details {
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* background: red; */
-    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50%;
+    gap: 10px;
+    height: 25vh;
 }
 
-.attendance-details div,
-.employee-total-hours {
+.attendance-details>div>img {
+    height: 70px;
+}
+
+.attendance-details>div {
+    background: #363636;
     margin: auto;
-    background: linear-gradient(#da2442a7, #da2442);
-    height: 60px;
-    width: 230px;
+    height: 90%;
+    width: 90%;
     border-radius: 10px;
+    display: flex;
+    padding: 0px 5px;
+    gap: 5px;
+    color: #fff;
+}
+
+body.dark-mode .attendance-details>div {
+    background: var(--theme-red--);
+}
+
+.attendance-details>div>div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.attendance-details .alc-1 {
+    flex-direction: row;
+    background: #363636;
+    border-radius: 10px;
+}
+
+.attendance-details .alc-1 p:nth-last-child(1) {
+    margin-left: 0;
+}
+
+.attendance-details>div>div p:nth-child(2) {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.attendance-details .attendance-last-cont {
+    display: grid;
+    background: transparent;
+}
+
+body.dark-mode .attendance-details .attendance-last-cont {
+    background: transparent;
+}
+
+body.dark-mode .alc-1 {
+    background: var(--theme-red--);
+}
+
+.emp_att-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 5px;
+    width: 100%;
+    height: 10vh;
+    /* background: red; */
+}
+
+.gb-btn {
+    background: var(--theme-black--);
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+body.dark-mode .gb-btn {
+    background: var(--theme-red--);
+    color: #fff;
+}
+
+.emp_att-header form>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vw;
+    /* background: yellow; */
+    gap: 20px;
+}
+
+.emp_att-header form .col-md-3 {
+    display: grid;
+    width: calc(100% / 3);
+}
+
+.emp_att-header form select {
+    border: none;
+    outline: none;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: #ebebeb;
+}
+
+.emp_att-header>div:nth-last-child(1) {
+    /* background: red; */
+    height: 80%;
+    display: flex;
     gap: 10px;
-    color: white;
+    align-items: center;
+    padding-right: 30px;
 }
 
-.attendace-data div h3 {
+.emp_att-header>div:nth-last-child(1)>div {
+    display: grid;
+    background: #ebebeb;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 120px;
     text-align: center;
-    width: 60%;
-    font-size: 16px;
-    letter-spacing: 1px;
 }
 
-.attendace-data div p {
-    width: 25%;
-    font-size: 25px;
-    font-weight: 700;
+.employee-attendance-section div:nth-last-child(1) {
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+
+}
+
+.employee-attendance-section div:nth-last-child(1) div {
+    /* width: 100%; */
+    background: #fff;
+    border-radius: 10px;
+    display: block;
     margin: auto;
-    text-align: center;
+    height: 80%;
+    padding: 20px;
+    transition: all .5s ease;
+    /* box-shadow: 0 0 20px gray; */
 }
+
+#punch-logs-box:hover {
+    box-shadow: 0 0 5px #363636;
+    /* transform: rotate(2deg)  */
+}
+
+body.dark-mode #punch-logs-box:hover {
+    box-shadow: 0 0 5px #dc1b40;
+    /* transform: rotate(2deg); */
+}
+
+
+
+
+.employee-attendance-section #punchRecords {
+    display: grid;
+    /* background: yellow; */
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 40px;
+
+}
+
+.employee-attendance-section #punch-logs-box h3 {
+    text-align: center;
+    padding: 5px 0;
+
+    /* margin: auto; */
+}
+
+.employee-attendance-section #punch-logs-box>div {
+    padding: 10px;
+    /* background: yellow; */
+    width: 90%;
+}
+
+
+
+
 
 .employee-total-hours {
     width: 300px;

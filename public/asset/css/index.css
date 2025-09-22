@@ -215,7 +215,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('https://i.pinimg.com/736x/38/d7/60/38d7602a7573c8e1fd49e48314f612c1.jpg');
+    background: linear-gradient(90deg, #fff, #d0d0d0);
     background-size: cover;
     /* gap: 20px; */
     width: 20%;

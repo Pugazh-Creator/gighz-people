@@ -31,6 +31,20 @@
         text-decoration: none;
     }
 
+    :root {
+        --theme-red--: linear-gradient( 90deg, #363636, #db1c40);
+        --theme-black--: linear-gradient(#eb5975, #eb59be);
+
+    }
+
+    tbody tr:hover {
+        background: linear-gradient(#eb59766e, #eb59bf6a);
+    }
+
+    body.dark-mode tbody tr:hover {
+        background:linear-gradient(90deg, #3636366a, #db1c3f6e);
+    }
+
     .container {
         width: calc(100% - 255px);
         /* background: yellow; */
@@ -133,9 +147,9 @@
                     <!-- <i class='bx bx-sun'></i> -->
                 </div>
             </div>
-            <p><?= $basedata['name']?></p>
+            <p><?= $basedata['name'] ?></p>
 
-            <img class="user_image" src="<?=base_url()?>asset/users/<?php echo $basedata['image'] != null ? $basedata['image']: 'no_user.jpg'?>" alt="">
+            <img class="user_image" src="<?= base_url() ?>asset/users/<?php echo $basedata['image'] != null ? $basedata['image'] : 'no_user.jpg' ?>" alt="">
         </div>
     </div>
     <div class="container">

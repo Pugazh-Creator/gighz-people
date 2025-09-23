@@ -71,7 +71,6 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     // $routes->get('/hr/change-status/(:num)/(:alpha)/(:alpha)/(:num)', 'HRController::change_status/$1/$2/$3/$4');
     // $routes->get('/hr/change-status/(:num)/(:alpha)/(:num)/(:num)', 'HRController::change_status/$1/$2/$3/$4');
     $routes->get('dashboard/applyLeave', 'EmployeeController::applyLeave');
-    $routes->post('/leaveapplysubmit', 'EmployeeController::leaveApplySubmit');
     $routes->get('/hr/check_new_leave_requests', 'HRController::check_new_leave_requests');
     $routes->get('leaveRequests2', 'HRController::ShowingLeaveRequests');
     $routes->get('leave-request', 'HRController::ShowingLeaveRequests');

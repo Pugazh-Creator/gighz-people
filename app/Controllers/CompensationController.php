@@ -21,81 +21,9 @@ class CompensationController extends BaseController
     {
         return view('requiment/myCompensation');
     }
-    public function applyCompensation()
-    {
-
-        $compensationModel = new CompensationModel;
-        $employeeModel = new EmployeeModel;
-
-        $validated = $this->validate([
-            'start_date' => [
-                'rules' => 'required',
-                'errors' => ['required' => 'Start date is required.'],
-            ],
-            'end_date' => [
-                'rules' => 'required',
-                'errors' => ['required' => 'End date is required.'],
-            ],
-            'reason' => [
-                'rules' => 'required',
-                'errors' => ['required' => 'Give a reason for it.'],
-            ],
-        ]);
-
-        if (!$validated) {
-            return view('requirments/applyLeave', ['validation' => $this->validator]);
-        }
-        $emp_id = session()->get('emp_id');
-        $name = session()->get('name');
-        $startdate = $this->request->getPost('start_date');
-        $enddate = $this->request->getPost('end_date');
-        $reason = $this->request->getPost('reason');
-
-        $start = new DateTime($startdate);
-        $end = new DateTime($enddate);
-        // getting no of days
-        $intervel = $start->diff($end);
-        $days = $intervel->days + 1;
-        $bal_compen = $employeeModel->where('emp_id', $emp_id)->findAll();
-        $compen = '';
-        foreach($bal_compen as $row)
-        {
-            $compen = $row['compensation'];
-        }
-        // $employeeModel = new EmployeeModel;
-        // $emp = $employeeModel->find($emp_id);
-        // // $from = $emp['official_mail'];
-
-        $data = [
-            'emp_id' => $emp_id,
-            'start_date' => $startdate,
-            'end_date' => $enddate,
-            'num_of_days' => $days,
-            'reason' => $reason
-        ];
-
-        $employeeModel->set('compensation', $compen += $days)
-            ->where('emp_id', $emp_id)
-            ->update();
-        if ($compensationModel->save($data)) {
-
-            // Send Email to HR
-            $hrEmail = "lajeni3349@amcret.com"; // Change to HR's email
-            $subject = "New Compensation Request Submitted from {$name}";
-            $message = "<p>A new Compensation request has been submitted.</p>
-                      <p><strong>Employee :</strong>{$name} - {$emp_id}</p>
-                      <p><strong>Dates:</strong> {$startdate} to {$enddate} Total days {$days}</p>
-                      <p><strong>Reason:</strong> {$reason} </p>
-                      <p>Please review and take action.</p>";
-
-            send_email($hrEmail, $subject, $message);
-
-            return redirect()->back()->with('success', 'Compensation Request Sumbited Successfully.');
-        } else {
-            return redirect()->back()->with('fail', 'Compensation Request Sumbited fail.');
-        }
-    }
-
+    
+    
+    // --------------------------------------------------------------------------------------------------------------------------   OLD
     public function showAllCompensation()
     {
         // Get the current search and sort options from query parameters

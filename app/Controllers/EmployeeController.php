@@ -3,11 +3,13 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\CompensationModel;
 use App\Models\EmployeeModel;
 use App\Models\LeaveHistoryModel;
 use App\Models\LeaveRquestModel;
 use App\Models\UserModel;
 use CodeIgniter\HTTP\ResponseInterface;
+use DateTime;
 use Exception;
 
 class EmployeeController extends BaseController
@@ -22,7 +24,14 @@ class EmployeeController extends BaseController
     public function index() {}
     public function applyLeave()
     {
-        return view('requirments/applyLeave');
+        $dashboard_controller = new Dashboard;
+        $data['basedata'] = $dashboard_controller->baseDatas();
+        $data['thisPage'] = "Application";
+
+        echo view('templates/header', $data);
+        echo view('templates/sidebar', $data);
+        echo view('requirments/applyLeave', $data);
+        echo view('templates/footer', $data);
     }
 
     private function isSameOEPeriod($startDate, $endDate)
@@ -53,49 +62,17 @@ class EmployeeController extends BaseController
 
     public function leaveApplySubmit()
     {
-
-
         $session = \Config\Services::session();
-        // echo 'hello';
-        // echo "laeve Apply Submit Function";
-
-        $validated = $this->validate([
-            'start_date' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Enter Start Date',
-                ]
-            ],
-            'end_date' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Enter End Date',
-                ]
-            ],
-            'reason' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Enter a Reason',
-                ]
-            ],
-
-        ]);
-
-        if (!$validated) {
-            return view('requirments/applyLeave', ['validation' => $this->validator]);
-        }
-
         $emp_id = $session->get('emp_id');
         $name = $session->get('name');
         $leaveType = $this->request->getPost('leaveType');
-        $startDate = $this->request->getPost('start_date');
-        $endDate = $this->request->getPost('end_date');
-        $reason = $this->request->getPost('reason');
+        $startDate = $this->request->getPost('leave_start_date');
+        $endDate = $this->request->getPost('leave_end_date');
+        $reason = $this->request->getPost('leave_reason');
 
         $EmployeeModel = new EmployeeModel;
         $emp_data = $EmployeeModel->find($emp_id);
         $grade = $emp_data['grade'];
-        // checking employees leave balence
         $hrController = new HRController;
         $start = new \DateTime($startDate);
         $end = new \DateTime($endDate);
@@ -113,34 +90,38 @@ class EmployeeController extends BaseController
         ];
 
         if (!$this->isSameOEPeriod($startDate, $endDate)) {
-            return redirect()->back()->with('fail', 'Leave dates must be within the same OE period.');
+            return $this->response->setJSON(['status' => 'error', 'message' => 'Leave dates must be within the same OE period.']);
         }
 
         if ($startDate <= $endDate) {
             $saveLeaveRequest = new LeaveRquestModel();
             $query = $saveLeaveRequest->insert($data);
         } else {
-            return redirect()->back()->with('fail', 'Start Date and End Date are not currect');
+            return $this->response->setJSON(['status' => 'error', 'message' => 'Start date should be lesthen the End Date.']);
         }
 
         if (!$query) {
-            return redirect()->back()->with('fail', 'Leave Requst fail to send');
+            return $this->response->setJSON(['status' => 'error', 'message' => 'Failed to send Leave Request']);
         } else {
             // Send Email to HR
-            $hrEmail = "lajeni3349@amcret.com"; // Change to HR's email
+            $hrEmail = "jajapo2209@cerisun.com"; // Change to HR's email
             $subject = "New Leave Request Submitted from {$name}";
             $message = "<p>A new leave request has been submitted.</p>
                       <p><strong>Employee :</strong>{$name} - {$emp_id}</p>
                       <p><strong>Leave Type:</strong> {$leaveType}</p>
                       <p><strong>Dates:</strong> {$startDate} to {$endDate} Total days {$leaveDays}</p>
                       <p><strong>Reason:</strong> {$reason} </p>
-                      <p>Please review and take action.</p>";
+                      <p>Please review and take action.</p>
+                      <br>
+                      <br>
+                      <p>Best regards,</p>
+                      <p>{$name}</p>
+                      ";
 
 
             send_email($hrEmail, $subject, $message);
 
-
-            return redirect()->back()->with('success', 'Leave Request Sent successfully');
+            return $this->response->setJSON(['status' => 'success', 'message' => 'Leave Request Sent Successfully.']);
         }
     }
 
@@ -273,7 +254,7 @@ class EmployeeController extends BaseController
 
         send_email($hrEmail, $subject, $message);
 
-        return $this->response->setJSON(['status' => 'success']);
+        return $this->response->setJSON(['status' => 'success', 'message' => 'Permission Applied successfully']);
     }
 
 
@@ -283,81 +264,9 @@ class EmployeeController extends BaseController
     {
 
         $db = db_connect();
-        //    try{
-
-        // Get the current search and sort options from query parameters
-        $search = $this->request->getGet('search');
-        $sortBy = $this->request->getGet('sort_by') ?: 'permission_id';
-        $sortOrder = $this->request->getGet('sort_order') ?: 'desc';
-
         $emp_id = session()->get('emp_id');
-
-        // Load the pagination library
-        $pager = \Config\Services::pager();
-
-        // Define the number of records per page
-        $perPage = 8;
-
-        // Get the current page number from the query string (default is 1)
-        $page = $this->request->getGet('page') ?: 1;
-
-        // Calculate the offset for the query
-        $offset = ($page - 1) * $perPage;
-
-
-        $builder = $db->table('permission_hrs');
-        $builder->select('permission_hrs.*, employees.name,employees.remaining_leaves');
-        $builder->join('employees', 'permission_hrs.permission_user_id = employees.emp_id');
-        $builder->where('YEAR(permission_hrs.permission_date)', date('Y'));
-        // $builder->where('leave_request.start_date >= DATE_SUB(CURDATE(), INTERVAL 15 DAY)');
-        // $builder->where('leave_request.start_date <= DATE_ADD(CURDATE(), INTERVAL 30 DAY)');
-        $builder->where('employees.emp_id', $emp_id);
-
-
-
-
-        // Apply search filter if any
-        if ($search) {
-            // $builder->like('employees.name', $search); // You can adjust this to search by leave type, status, etc.
-            $builder->groupStart()
-                ->like('employees.name', $search)
-                ->orLike('permission_hrs.permission_status', $search)
-                ->orLike('permission_hrs.permission_user_id', $search)
-                ->orLike('permission_hrs.permission_date', $search)
-                ->orLike('permission_hrs.permission_time', $search)
-                ->orLike('permission_hrs.permission_reason', $search)
-                ->groupEnd();
-        }
-
-        $builder->orderBy($sortBy, $sortOrder);
-        // Set the limit and offset for pagination
-        $builder->limit($perPage, $offset);
-
-        $permission = $builder->get()->getResultArray();
-        $count = $builder->countAll();
-
-
-
-
-
-        // Get the total number of pages
-        $totalPages = ceil($count / $perPage);
-
-        $employee = new EmployeeModel;
-
-        return view(
-            'requirments/staffpermission',
-            [
-                'data' => $permission,
-                'search' => $search,
-                'sortBy' => $sortBy,
-                'sortOrder' => $sortOrder,
-                'pager' => $pager,
-                'totalRequests' => $count,
-                'totalPages' => $totalPages,
-                'currentPage' => $page,
-            ]
-        );
+        $query = $db->query("SELECT * FROM permission_hrs WHERE permission_user_id = ? ORDER BY permission_created DESC", [$emp_id])->getResultArray();
+        return $this->response->setJSON($query);
     }
 
 
@@ -374,9 +283,80 @@ class EmployeeController extends BaseController
         FROM leave_request l 
         JOIN employees e ON e.emp_id = l.emp_id 
         WHERE l.emp_id = ? 
-        ORDER BY l.created_at DESC
+        ORDER BY l.created_at ASC
     ", [$emp_id])->getResultArray();
 
         return $this->response->setJSON($data);
+    }
+
+
+
+    // ----------COMPENSATION---------------
+
+    public function applyCompensation()
+    {
+
+        $compensationModel = new CompensationModel;
+        $employeeModel = new EmployeeModel;
+
+        $emp_id = session()->get('emp_id');
+        $name = session()->get('name');
+        $startdate = $this->request->getPost('compen_start_date');
+        $enddate = $this->request->getPost('compen_end_date');
+        $reason = $this->request->getPost('compen_reason');
+
+        $start = new DateTime($startdate);
+        $end = new DateTime($enddate);
+        // getting no of days
+        $intervel = $start->diff($end);
+        $days = $intervel->days + 1;
+        $bal_compen = $employeeModel->where('emp_id', $emp_id)->findAll();
+        $compen = '';
+        foreach ($bal_compen as $row) {
+            $compen = $row['compensation'];
+        }
+
+        $data = [
+            'emp_id' => $emp_id,
+            'start_date' => $startdate,
+            'end_date' => $enddate,
+            'num_of_days' => $days,
+            'reason' => $reason
+        ];
+
+        $employeeModel->set('compensation', $compen += $days)
+            ->where('emp_id', $emp_id)
+            ->update();
+        if ($compensationModel->save($data)) {
+
+            // Send Email to HR
+            $hrEmail = "jajapo2209@cerisun.com"; // Change to HR's email
+            $subject = "New Compensation Request Submitted from {$name}";
+            $message = "<p>A new Compensation request has been submitted.</p>
+                      <p><strong>Employee :</strong>{$name} - {$emp_id}</p>
+                      <p><strong>Dates:</strong> {$startdate} to {$enddate} Total days {$days}</p>
+                      <p><strong>Reason:</strong> {$reason} </p>
+                      <p>Please review and take action.</p>
+                      <br>
+                      <br>
+                      <p>Best regards,</p>
+                      <p>{$name}</p>";
+
+            send_email($hrEmail, $subject, $message);
+
+            return $this->response->setJSON(['status' => 'success', 'message', 'Compensation Request Sumbited Successfully.']);
+        } else {
+            return $this->response->setJSON(['status' => 'error', 'message', 'Failed to send Compensation.']);
+        }
+    }
+
+    public function showMyCompensation()
+    {
+
+        $db = db_connect();
+        $emp_id = session()->get('emp_id');
+        $query = $db->query("SELECT * FROM compensation_request where emp_id = ? order by created_at desc", [$emp_id])->getResultArray();
+
+        return $this->response->setJSON($query);
     }
 }

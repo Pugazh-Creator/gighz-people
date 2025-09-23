@@ -239,7 +239,7 @@ foreach ($basedata["emp_info"] as $emp_data) {
         <div class="sidebar-top-child child2">
             <ul>
                 <li><a href="<?=base_url()?>dashboard"><span><i class='bx bxs-dashboard'></i> <span class="nav-text">Dashboard</span><span></a></li>
-                <li><a href="<?=base_url()?>"><span><i class='bx bxs-send'></i> <span class="nav-text">Apply</span><span></a></li>
+                <li><a href="<?=base_url()?>dashboard/applyLeave"><span><i class='bx bxs-send'></i> <span class="nav-text">Apply</span><span></a></li>
 
                 <li>
                     <a href="#" role="button"><span><i class='bx bxs-group'></i><span class="nav-text"> HR</span><span> <i class='bx bx-chevron-down'></i></a>

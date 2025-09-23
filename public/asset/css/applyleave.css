@@ -1,118 +1,114 @@
-:root {
-    --brand-color--: #da2442;
-    --composit-color--: #2ddbbd;
-    --white-color--: #fff;
-    --toggle-color: #fff;
-    --font-color: #fff;
-    --bg-color-: #FBE9EC;
-    --h1--: 43px;
-    --h2--: 34px;
-    --h3--: 28px;
-    --h4--: 23px;
-    --para--: 18px;
-    --border-radius--: 20px;
-    --brand-shadow--: 0 0 20px #da2442ab,
-        0 0 30px #da2442ab,
-        0 0 40px #da2442ab,
-        0 0 50px #da2442ab,
-        0 0 70px #da2442ab,
-        0 0 100px #da2442ab,
-        0 0 150px #da2442ab;
-    --brand-shadow--: 0 0 20px #24dbbdab,
-        0 0 30px #24dbbdab,
-        0 0 40px #24dbbdab,
-        0 0 50px #24dbbdab,
-        0 0 70px #24dbbdab,
-        0 0 100px #24dbbdab,
-        0 0 150px #24dbbdab;
-
-    --tran-03: all 0.2s ease;
-    --tran-04: all 0.3s ease;
-    --tran-05: all 0.4s ease;
-    --tran-06: all 0.5s ease;
-}
-
-.applyleave{
-    margin-top: 30px;
-}
-
-.applyleave .form-box{
-    margin-top: 50px;
-    height: 70vh;
+.model {
+    display: none;
+    position: fixed;
+    z-index: 15;
+    top: 10%;
+    left: 40%;
+    background: #fff;
     border-radius: 10px;
-    width: 40%;
-    box-shadow: 0 0 10px gray;
-    background: transparent;
-    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px gray;
 }
-.applyleave form{
-    width: 100%;
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
 
+.model form {
+    position: relative;
+    height: auto;
+    width: 450px;
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    /* background: #fff; */
+    /* text-align: center; */
 }
-.applyleave .input-box{
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 80%;
+
+.model form .input-box {
+    display: grid;
+    gap: 5px;
 }
-.applyleave .input-box input,.applyleave .input-box select,.applyleave .input-box textarea{
-    width: 70%;
+
+.model form h2 {
+    text-align: center;
+}
+
+.model form button {
+    width: 40%;
     height: 40px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+}
+
+.model form .input-box input,
+.model form .input-box select,
+.model form .input-box textarea,
+.model form .input-box #leaveType {
+    width: 250px;
+    height: 30px;
+    padding: 5px 15px;
+    background: #ebebeb;
+    border-radius: 10px;
     border: none;
     outline: none;
-    background: white;
-    border-radius: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
 }
-.applyleave .textarea{
-    height: 200px;
+
+.model .cls-btn {
+    /* background: yellow; */
+    position: absolute;
+
+    /* left: 99%; */
+    top: 1%;
+
+    left: 95%;
+    transition: all .2s ease;
+    cursor: pointer;
 }
-.applyleave .input-box textarea{
-    height: 100%;
+
+.model .cls-btn:hover {
+    transform: rotate(20deg);
+}
+
+#leaveTable tbody tr td:nth-child(5),
+#leaveTable tbody tr th:nth-child(5) {
+    /* background: yellow; */
+    max-width: 400px;
     width: 400px;
-    padding-top: 4px;
+    overflow-x: auto;
 }
-.applyleave .form-box button{
-    height: 40px;
-    width: 130px;
-    background: var(--brand-color--);
-    border-radius: 10px;
-    border: none;
-    margin-top: 30px;
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
-    cursor: pointer;
+
+#compenTable tbody tr td:nth-child(4),
+#compenTable tbody tr th:nth-child(4) {
+    /* background: yellow; */
+    max-width: 400px;
+    width: 400px;
+    overflow-x: auto;
 }
-.error-text{
-    color: red;
+#permissionTable tbody tr td:nth-child(3),
+#permissionTable tbody tr th:nth-child(3) {
+    /* background: yellow; */
+    max-width: 400px;
+    width: 400px;
+    overflow-x: auto;
 }
-.toggleBtn{
-    display:flex;
+
+.applyheader{
+    display: flex;
     align-items: center;
-    width: 50%;
-    height: 40px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.applyheader>div{
+    display: flex;
     gap: 20px;
+    padding: 10px 15px;
 }
-.toggleBtn button{
-    height: 100%;
-    width: 140px;
-    background: var(--brand-color--);
-    border: none;
+.applyheader>div button{
+    width: 130px;
+    height: 40px;
     border-radius: 10px;
-    cursor: pointer;
-    color: var(--white-color--);
-    font-size: 16px;
-    transition: all .5s ease;
 }
-/* .toggleBtn button:hover{
-    background: transparent;
-    border: 2px solid var(--brand-color--);
-    color: var(--brand-color--);
-} */
+
+.application-table-cont{
+    width: 98%;
+}

@@ -39,7 +39,7 @@ class HRController extends BaseController
         $pending = $total['pending'];
         // $pending = $leaveRequest->where('status', 'pending')->countAllResults();
 
-        $permissiondb = $db->query("SELECT COUNT(permission_status) as count FROM permission_hrs WHERE permission_status = ?",['pending'])->getResultArray();
+        $permissiondb = $db->query("SELECT COUNT(permission_status) as count FROM permission_hrs WHERE permission_status = ?", ['pending'])->getResultArray();
         $permission_pending = $permissiondb[0]['count'];
 
         $permissiondb = $db->query("SELECT COUNT(permission_status) AS count FROM permission_hrs")->getResultArray();
@@ -367,83 +367,6 @@ class HRController extends BaseController
         }
     }
 
-
-    public function companyHoliday()
-    {
-        $companyHolidays = new CompanyHolidayModel();
-        $data['session'] = session()->get('role');
-        // $holidays = $companyHolidays->getCompanyHalidays();
-        $data['holidays'] = $companyHolidays->getHolidaysByType('festival');
-        $data['saturday'] = $companyHolidays->getHolidaysByType('first_saturday');
-
-
-        return view('leave\companyHoliday', $data);
-    }
-
-    public function addAndFetchHoliday()
-    {
-        $companyHolidays = new CompanyHolidayModel();
-
-        $holidayName = $this->request->getPost('holiday_name');
-        $holidayDate = $this->request->getPost('holiday_date');
-        $holidayType = $this->request->getPost('holiday_type');
-
-        $dateObject = new DateTime($holidayDate);
-        $day = $dateObject->format('l');
-        $month = $dateObject->format('F');
-
-        // echo $day." ".$month;
-
-        $data = [
-            'holiday_date' => $holidayDate,
-            'holiday_name' => $holidayName,
-            'month' =>  $month,
-            'day' => $day,
-            'holiday_type' => $holidayType
-        ];
-
-        if ($companyHolidays->insert($data)) {
-            return redirect()->back()->with('success', 'Leave added Successfully.');
-        }
-        return redirect()->back()->with('fail', 'Leave added failed.');
-    }
-
-    public function updateHoliday()
-    {
-        $companyHoliday = new CompanyHolidayModel;
-
-        $id = $this->request->getPost('id');
-        $holidayName = $this->request->getPost('holiday_name');
-        $holidayDate = $this->request->getPost('holiday_date');
-
-        $dateObject = new DateTime($holidayDate);
-        $day = $dateObject->format('l');
-        $month = $dateObject->format('F');
-
-        $data = [
-            'holiday_date' => $holidayDate,
-            'holiday_name' => $holidayName,
-            'month' =>  $month,
-            'day' => $day
-        ];
-
-        if ($holidayName == '' || $holidayDate == '') {
-            return redirect()->back()->with('fail', 'Holiday updated failed');
-        }
-        $companyHoliday->update($id, $data);
-        return redirect()->back()->with('success', 'Updated successfully');
-    }
-
-    public function deleteHoliday($id)
-    {
-        $companyHoliday = new CompanyHolidayModel;
-        if ($companyHoliday->delete($id)) {
-            return redirect()->back()->with('success', 'Deleted successfully');
-        }
-        return redirect()->back()->with('fail', 'Deleted failed');
-    }
-
-
     function getFirstSaturdays()
     {
         $firstSaturdays = [];
@@ -614,7 +537,122 @@ class HRController extends BaseController
     }
 
 
-    /** 
-     * REject reason POP-UP 
+    /**
+     *  ----------------------------------- COMPANY HOLIDAYS ----------------------------------
      */
+
+    public function companyHoliday()
+    {
+        $dashboard = new Dashboard;
+        $data['basedata'] = $dashboard->baseDatas();
+        $data['thisPage'] = 'Company Holiday';
+
+        $currentYear = date('Y');
+        $data['currentYear'] = $currentYear;
+        $data['year_selection'] = [];
+
+        for ($year = 2020; $year <= $currentYear; $year++) {
+            $data['year_selection'][] = $year;
+        }
+
+        echo view('templates/header', $data);
+        echo view('templates/sidebar', $data);
+        echo view('leave\companyHoliday', $data);
+        echo view('templates/footer', $data);
+    }
+
+    public function getHolidays($year)
+    {
+        $db  = db_connect();
+
+        $data = $db->query("SELECT * FROM company_holiday WHERE YEAR(holiday_date) = ? ", [$year])->getResultArray();
+
+        return $this->response->setJSON($data);
+    }
+
+    public function getHolidayById($id)
+    {
+        $db  = db_connect();
+
+        $data = $db->query("SELECT * FROM company_holiday WHERE id = ? ", [$id])->getRowArray();
+
+        return $this->response->setJSON($data);
+    }
+
+    public function deleteHoliday($id)
+    {
+        $companyHoliday = new CompanyHolidayModel();
+
+        try {
+            if ($companyHoliday->delete($id)) {
+                return $this->response->setJSON([
+                    'status' => 'success',
+                    'message' => 'Holiday Deleted Successfully.'
+                ]);
+            } else {
+                return $this->response->setJSON([
+                    'status' => 'error',
+                    'message' => 'Holiday Deletion Failed.'
+                ]);
+            }
+        } catch (\Exception $e) {
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => 'Error: ' . $e->getMessage()
+            ]);
+        }
+    }
+
+    public function updateHoliday($id)
+    {
+        $companyHoliday = new CompanyHolidayModel;
+
+        $holidayName = $this->request->getPost('holiday_name');
+        $holidayDate = $this->request->getPost('holiday_date');
+
+        $dateObject = new DateTime($holidayDate);
+        $day = $dateObject->format('l');
+        $month = $dateObject->format('F');
+
+        $data = [
+            'holiday_date' => $holidayDate,
+            'holiday_name' => $holidayName,
+            'month' =>  $month,
+            'day' => $day
+        ];
+
+        if ($holidayName == '' || $holidayDate == '') {
+            return $this->response->setJSON(['status' => 'error', 'message' => 'Holiday Update Failed']);
+        }
+        $companyHoliday->update($id, $data);
+        return $this->response->setJSON(['status' => 'success', 'message' => 'Holiday Updated successfully']);
+    }
+
+    public function addAndFetchHoliday()
+    {
+        $companyHolidays = new CompanyHolidayModel();
+
+        $holidayName = $this->request->getPost('holiday_name');
+        $holidayDate = $this->request->getPost('holiday_date');
+        $holidayType = $this->request->getPost('holiday_type');
+
+        $dateObject = new DateTime($holidayDate);
+        $day = $dateObject->format('l');
+        $month = $dateObject->format('F');
+
+        // echo $day." ".$month;
+
+        $data = [
+            'holiday_date' => $holidayDate,
+            'holiday_name' => $holidayName,
+            'month' =>  $month,
+            'day' => $day,
+            'holiday_type' => $holidayType
+        ];
+
+        if ($companyHolidays->insert($data)) {
+            return $this->response->setJSON(['status' => 'success', 'message' => 'Leave added Successfully.']);
+        }
+        return $this->response->setJSON(['status' => 'success', 'message' => 'Leave added failed.']);
+    }
 }

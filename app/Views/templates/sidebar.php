@@ -210,7 +210,6 @@
     body.dark-mode .sidebar {
         background: linear-gradient(#363636, #dc1b40);
     }
-    
 </style>
 <?php
 $array_main_menu = [];
@@ -238,8 +237,8 @@ foreach ($basedata["emp_info"] as $emp_data) {
         <!-- Navigation -->
         <div class="sidebar-top-child child2">
             <ul>
-                <li><a href="<?=base_url()?>dashboard"><span><i class='bx bxs-dashboard'></i> <span class="nav-text">Dashboard</span><span></a></li>
-                <li><a href="<?=base_url()?>dashboard/applyLeave"><span><i class='bx bxs-send'></i> <span class="nav-text">Apply</span><span></a></li>
+                <li><a href="<?= base_url() ?>dashboard"><span><i class='bx bxs-dashboard'></i> <span class="nav-text">Dashboard</span><span></a></li>
+                <li><a href="<?= base_url() ?>dashboard/applyLeave"><span><i class='bx bxs-send'></i> <span class="nav-text">Apply</span><span></a></li>
 
                 <li>
                     <a href="#" role="button"><span><i class='bx bxs-group'></i><span class="nav-text"> HR</span><span> <i class='bx bx-chevron-down'></i></a>
@@ -293,8 +292,8 @@ foreach ($basedata["emp_info"] as $emp_data) {
                     </ul>
                 </li> -->
 
-                <li><a href="#"><span><i class='bx bx-time'></i><span class="nav-text"> Timesheet</span><span></a></li>
-                <li><span><a href="#"><span><i class='bx bxs-calendar'></i><span class="nav-text"> Holidays</span><span></a></li>
+                <li><a href="#" id="timesheet_nav"><span><i class='bx bx-time'></i><span class="nav-text"> Timesheet</span><span></a></li>
+                <li><span><a href="<?= base_url() ?>hrcontroller/companyHoliday"><span><i class='bx bxs-calendar'></i><span class="nav-text"> Holidays</span><span></a></li>
             </ul>
         </div>
     </div>
@@ -302,7 +301,7 @@ foreach ($basedata["emp_info"] as $emp_data) {
     <!-- Bottom Section -->
     <div class="sidebar-bottom">
         <a href="#"><i class='bx bx-log-out'></i> <span>Logout</span></a>
-        <p>Version <?= $basedata['version']?></p>
+        <p>Version <?= $basedata['version'] ?></p>
 
     </div>
 </div>
@@ -347,5 +346,40 @@ foreach ($basedata["emp_info"] as $emp_data) {
                 icon.removeClass("bx-chevron-right").addClass("bx-chevron-left");
             }
         });
+
+        $('#timesheet_nav').on('click', function(e) {
+            e.preventDefault();
+            let emp_id = '';
+            let password = '';
+            $.ajax({
+                url: baseurl + 'auth/getcredential',
+                method: 'GET',
+                success: function(res) {
+                    // console.log(res)
+                    emp_id = res.emp_id;
+                    password = res.password;
+                    $.ajax({
+                        url: 'http://localhost:8081/demos/login/index',
+                        method: 'POST',
+                        data: {
+                            username: emp_id,
+                            password: password
+                        },
+                        success: function(res) {
+                            console.log(res);
+                            if (res.result == "Success") {
+                                console.log('success');
+                                window.location.href = "http://localhost:8081/demos/dashboard";
+                            } else {
+                                console.log('error');
+                            }
+                        },
+                        error: function(err) {
+                            console.log(err);
+                        }
+                    })
+                }
+            })
+        })
     });
 </script>

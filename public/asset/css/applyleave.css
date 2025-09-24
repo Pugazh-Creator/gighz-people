@@ -84,6 +84,7 @@
     width: 400px;
     overflow-x: auto;
 }
+
 #permissionTable tbody tr td:nth-child(3),
 #permissionTable tbody tr th:nth-child(3) {
     /* background: yellow; */
@@ -92,23 +93,206 @@
     overflow-x: auto;
 }
 
-.applyheader{
+.applyheader {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.applyheader>div{
+
+.applyheader>div {
     display: flex;
     gap: 20px;
     padding: 10px 15px;
 }
-.applyheader>div button{
+
+.applyheader>div button {
     width: 130px;
     height: 40px;
     border-radius: 10px;
 }
 
-.application-table-cont{
+.application-table-cont {
     width: 98%;
+}
+
+
+/* --------------------- HOLIDAY PAEG ------------------ */
+.holidays_page {
+    width: 95%;
+    display: block;
+    margin: auto;
+}
+
+.holidays_page .calendar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.holidays_page .month {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.holidays_page .month h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.holidays_page .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-size: 12px;
+}
+
+.holidays_page .day,
+.holidays_page .weekday {
+    text-align: center;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.holidays_page .weekday {
+    font-weight: bold;
+    background: #f0f0f0;
+}
+
+.holidays_page .day {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    /* centers the text vertically */
+    border-radius: 50%;
+    background: #fafafa;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.holidays_page .day:hover {
+    background: #ebebeb;
+}
+
+/* Category colors */
+.holidays_page .festival {
+    background: #ffcccc;
+    border: none;
+}
+
+.holidays_page .festival:hover {
+    background: #dc1b40;
+    box-shadow: 0 0 20px #dc1b40;
+}
+
+.holidays_page .first-saturday {
+    background: #ccffcc;
+    border: 1px solid #33cc33;
+    border: none;
+}
+
+.holidays_page .first-saturday:hover {
+    box-shadow: 0 0 10px #33cc33;
+    background-color: #33cc33;
+    /* border: 1px solid #33cc33; */
+}
+
+/* Today highlight */
+.holidays_page .today {
+    background: #00b3ff90 !important;
+    border: none;
+    font-weight: bold;
+}
+
+.holidays_page .today:hover {
+    background: #00b3ff !important;
+    box-shadow: 0 0 10px #00b3ff;
+}
+
+/* Tooltip */
+.holidays_page .day[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.holidays_page .holidayheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: red; */
+    height: 70px;
+}
+
+.holidays_page .holidayheader div:nth-child(1) {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.holidays_page .holidayheader div:nth-child(1) select {
+    height: 35px;
+    width: 150px;
+    border: none;
+    margin: auto;
+    outline: none;
+    background: #ebebeb;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.holidays_page .holidayheader button {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.holidays_page .day {
+    position: relative;
+    /* make sure child absolute positions work */
+}
+
+.holidays_page .day .holiday-icons {
+    display: none;
+    position: absolute;
+    background: black;
+    padding: 0 10px;
+    color: #fff;
+    top: 90%;
+    left: 0%;
+    z-index: 100;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Show when hovering day OR hovering holiday-icons itself */
+.holidays_page .day:hover .holiday-icons,
+.holidays_page .day .holiday-icons:hover {
+    display: flex;
+    gap: 20px;
+}
+
+.holidays_page .day .holiday-icons i {
+    font-size: 16px;
+    z-index: 1001;
+    cursor: pointer;
+}
+.holidays_page .day .holiday-icons i:hover{
+    background: red;
 }

@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\AttendanceModel;
-use App\Models\CompanyHolidayModel;
 use App\Models\CompensationModel;
 use App\Models\EmployeeModel;
 use App\Models\LeaveHistoryModel;

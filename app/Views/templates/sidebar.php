@@ -245,7 +245,7 @@ foreach ($basedata["emp_info"] as $emp_data) {
 
                     <ul>
                         <?php if ($array_main_menu_data->hrmanagement[0]->sub_menu[0]->hrdashboard[0]->view == '1') : ?>
-                            <li><a href="#"><i class='bx bxs-user'></i> <span class="nav-text">Dashboard</span></a></li>
+                            <li><a href="<?= base_url() ?>hrcontroller/index"><i class='bx bxs-user'></i> <span class="nav-text">Dashboard</span></a></li>
                         <?php endif; ?>
 
                         <?php if ($array_main_menu_data->hrmanagement[0]->sub_menu[0]->employeemasterdata[0]->view == '1') : ?>

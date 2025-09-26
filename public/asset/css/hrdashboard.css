@@ -1,0 +1,184 @@
+.hrdasbord_container {
+    height: 90vh;
+    /* background: lightcoral; */
+    width: 98%;
+
+}
+
+.hrdasbord_container .hrdasboard_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+.hrdasbord_container .hrdasboard_header .navigations {
+    height: 100px;
+    width: calc(100% /4);
+    background: #ebebeb;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.hrdasbord_container .hrdasboard_header .navigations a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    color: #363636;
+}
+
+.hrdasbord_container .hrdasboard_header .navigations .value {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    width: 50%;
+
+}
+
+.hrdasbord_container .hrdasboard_header .navigations img {
+    width: 70px;
+    margin: auto;
+}
+
+.hrdasbord_container .hrdasboard_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hrdasbord_container .hrdasboard_body>div {
+    width: calc(100% / 2);
+    height: 100%;
+    /* background: lightgray; */
+}
+
+.hrdasboard_body #recordsTable_wrapper {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hrdasboard_body>div:nth-child(1) {
+    max-height: 74vh;
+    width: 74vh;
+    overflow-y: auto;
+    /* background: red; */
+}
+
+.hrdasboard_body table {
+    font-size: 14px;
+}
+
+#recordsTable td,
+#recordsTable th {
+    text-wrap: nowrap;
+    /* prevent wrapping */
+    overflow: hidden;
+    text-align: center;
+    /* hide overflowing text */
+    text-overflow: ellipsis;
+    /* show "..." if text is too long */
+}
+
+
+#recordsTable td:nth-child(2),
+#recordsTable .sorting:nth-child(2) {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.hrdasboard_body .user_detail_container .userDetails>div:nth-child(1) {
+    /* background: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.hrdasboard_body .user_detail_container .userDetails .plan-sec {
+    padding: 10px;
+    width: 100%;
+}
+
+.hrdasboard_body .user_detail_container .userDetails .plan-sec>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: #fff;
+}
+
+.hrdasboard_body .user_detail_container .userDetails .plan-sec>div>div {
+    width: calc(100% / 3);
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    background: var(--theme-black--);
+}
+
+body.dark-mode .hrdasboard_body .user_detail_container .userDetails .plan-sec>div>div {
+    background: var(--theme-red--);
+}
+
+.hrdasboard_body .plan-sec>div>div p {
+    height: 160px;
+    width: 100%;
+    font-size: 13px;
+    overflow-y: auto;
+    margin: auto;
+}
+
+.hrdasboard_body .plan-sec>div>div h4 span {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.hrdasboard_body .plan-sec>div>div h4 {
+    padding: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hrdasboard_body .user_detail_container .userDetails>div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hrdasboard_body .user_detail_container .userDetails>div:nth-child(3) .after8pm-cont {
+    display: grid;
+    gap: 5px;
+    height: 170px;
+    overflow-y: auto;
+}
+
+.hrdasboard_body .user_detail_container .userDetails>div:nth-child(3) .after8pm-cont>div {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    /* padding: 5px; */
+    width: 150px;
+    background: #ebebeb;
+    border-radius: 10px;
+}
+
+.hrdasboard_body .user_detail_container .userDetails>div:nth-child(3) .after8pm-cont>div>div {
+    margin: auto 0;
+}
+
+.hrdasboard_body .user_detail_container .userDetails>div:nth-child(3) .after8pm-cont>div>div:nth-child(1) {
+    background: #363636;
+    color: #fff;
+    text-wrap: wrap;
+    border-radius: 10px;
+    padding: 10px 0;
+}

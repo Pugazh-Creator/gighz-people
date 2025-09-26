@@ -10,10 +10,7 @@ use App\Models\EmployeeModel;
 use App\Models\LeaveHistoryModel;
 use App\Models\LeaveRquestModel;
 use App\Models\UserModel;
-use CodeIgniter\Entity\Cast\StringCast;
-use CodeIgniter\HTTP\ResponseInterface;
-use DateInterval;
-use DatePeriod;
+use Config\Database;
 use DateTime;
 use Stringable;
 
@@ -28,6 +25,20 @@ class HRController extends BaseController
     public function index()
     {
         $db = db_connect();
+        $dashboard = new Dashboard;
+
+        $data['basedata'] = $dashboard->baseDatas();
+        $data['thisPage'] = 'HR Dashboard';
+
+        echo view('templates/header', $data);
+        echo view('templates/sidebar', $data);
+        echo view('dashboard/hrdashboard', $data);
+        echo view('templates/footer', $data);
+    }
+
+    public function getStaffDetails()
+    {
+        $db = db_connect();
         $compensationModel = new CompensationModel;
         $compensation = $compensationModel->getAllCompensationrequest2();
         $totalCompen = $compensation['count'];
@@ -39,14 +50,25 @@ class HRController extends BaseController
         $pending = $total['pending'];
         // $pending = $leaveRequest->where('status', 'pending')->countAllResults();
 
-        $permissiondb = $db->query("SELECT COUNT(permission_status) as count FROM permission_hrs WHERE permission_status = ?", ['pending'])->getResultArray();
-        $permission_pending = $permissiondb[0]['count'];
+        // Pending count (last 60 days)
+        $permissiondb = $db->query("
+    SELECT COUNT(permission_status) AS count 
+    FROM permission_hrs 
+    WHERE permission_status = ? 
+      AND permission_date >= DATE_SUB(CURDATE(), INTERVAL 60 DAY)
+", ['pending'])->getResultArray();
 
-        $permissiondb = $db->query("SELECT COUNT(permission_status) AS count FROM permission_hrs")->getResultArray();
-        $permission_TOTAL = $permissiondb[0]['count'];
+        $permission_pending = $permissiondb[0]['count'] ?? 0;
 
-        $companyHolidayModel = new CompanyHolidayModel();
-        $attendanceModel = new AttendanceModel();
+        // Total count (last 60 days)
+        $permissiondb = $db->query("
+    SELECT COUNT(permission_status) AS count 
+    FROM permission_hrs 
+    WHERE permission_date >= DATE_SUB(CURDATE(), INTERVAL 60 DAY)
+")->getResultArray();
+
+        $permission_TOTAL = $permissiondb[0]['count'] ?? 0;
+
         $EmployeeModel = new EmployeeModel();
 
         $today = date('Y-m-d');
@@ -75,6 +97,7 @@ class HRController extends BaseController
                     if (!isset($data[$empId])) {
                         $data[$empId] = [
                             'name' => $staff['name'],
+                            'dept' => $staff['dept'],
                             'records' => [],
                         ];
                     }
@@ -86,40 +109,21 @@ class HRController extends BaseController
                         ];
                     }
 
-                    // Get data for attendance and compensation
-                    $attendance = $attendanceModel->getLeaves($empId, $startDate, $endDate);
+                    $attendance = $db->query("SELECT COUNT(a.work_status) AS leave_total from attendance a 
+                                                    JOIN employees e on e.attendance_id = a.user_id
+                                                    WHERE (a.work_status = ? OR a.work_status = ? OR a.work_status = ?) AND 
+                                                        e.emp_id = ? and a.date between ? and ?", ['APL', 'NA', 'RA', $empId, $startDate, $endDate])->getRowArray();
+
+                    $data[$empId]['records'][$oeKey]['leaves'] = $attendance['leave_total'];
+
                     $data[$empId]['records'][$oeKey]['compensation'] = $compensationModel->getEmployeeCompensation($empId, $startDate, $endDate);
-
-                    // Sum up compensations
-                    // foreach ($compensations as $compensation) {
-                    //     $data[$empId]['records'][$oeKey]['compensation'] += $compensation['num_of_days'];
-                    // }
-
-                    // Count leaves excluding holidays and Sundays
-                    foreach ($attendance as $attendand) {
-                        $leaves = $attendand['date'];
-
-                        if ($staff['leave_grade'] == 3) {
-                            $holidayExists = $companyHolidayModel->where('holiday_date', $leaves)->first();
-                        } else {
-                            $holidayExists = $companyHolidayModel->where('holiday_date', $leaves)
-                                ->whereIn('holiday_type', ['festival', 'first_saturday'])
-                                ->first();
-                        }
-
-                        $isSunday = (date('w', strtotime($leaves)) == 0);
-                        if (!$holidayExists && !$isSunday) {
-                            $data[$empId]['records'][$oeKey]['leaves']++;
-                        }
-                    }
 
                     // Move to the next OE period
                     $start = strtotime("$endDate +1 day");
                 }
             }
         }
-
-        return view('dashboard/hr', [
+        $datas = [
             'total' => $totals,
             'pending' => $pending,
             'totalCompen' => $totalCompen,
@@ -128,7 +132,9 @@ class HRController extends BaseController
             'oe' => $oe,
             'per_pending' => $permission_pending,
             'per_total' => $permission_TOTAL
-        ]);
+        ];
+
+        return $this->response->setJSON($datas);
     }
 
     // -------------------   change Leave status   ---------------------------- \\
@@ -654,5 +660,35 @@ class HRController extends BaseController
             return $this->response->setJSON(['status' => 'success', 'message' => 'Leave added Successfully.']);
         }
         return $this->response->setJSON(['status' => 'success', 'message' => 'Leave added failed.']);
+    }
+
+
+
+
+    /**
+     * ------------------ PERMISSION ---------------------
+     */
+
+    public function updatePermission()
+    {
+        $hostdb = Database::Connect('hostinger');
+
+        $db = db_connect();
+
+        // Step 1: Clear destination table
+        $db->table('tbl_user_permission')->truncate();
+
+        // Step 2: Fetch data from source table
+        $sourceData = $hostdb->table('tbl_user_permission')->get()->getResultArray();
+
+        // Step 3: Insert into destination table
+        if (!empty($sourceData)) {
+            $db->table('tbl_user_permission')->insertBatch($sourceData);
+        }
+
+        return $this->response->setJSON([
+            'status'  => 'success',
+            'message' => 'Data copied successfully from table1 to table2'
+        ]);
     }
 }

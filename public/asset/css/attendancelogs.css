@@ -200,17 +200,23 @@ td {
 .employee-attendance-section .employee-attendance table thead {
     position: sticky;
     top: 0;
+    background: transparent;
+    backdrop-filter: blur(7px);
+}
+.employee-attendance-section .employee-attendance table tbody tr:hover td, 
+.employee-attendance-section .employee-attendance table tbody tr:hover td a{
+    color: #fff;
 }
 
 .emp_attendance .log-table .log-table-head {
-    background: #363636;
-    color: #fff;
+    background: transparent;
+    color: #363636;
 }
 
-body.dark-mode .emp_attendance .log-table .log-table-head {
-    background: var(--theme-red--);
-    color: #fff;
-}
+/* body.dark-mode .emp_attendance .log-table .log-table-head {
+    background: transparent;
+    color: #363636;
+} */
 
 .emp_attendance .log-table .log-table-head th {
     width: 100px;

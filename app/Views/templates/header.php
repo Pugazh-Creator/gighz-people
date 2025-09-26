@@ -7,8 +7,13 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="<?= base_url('asset/images/favicon.png') ?>">
+
+
     <link rel="stylesheet" href="<?= base_url('asset/css/index.css') ?>">
     <link rel="stylesheet" href="<?= base_url('asset/css/applyleave.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('asset/css/hrdashboard.css') ?>">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -43,7 +48,13 @@
     tbody tr:hover {
         /* background: linear-gradient(#eb59766e, #eb59bf6a); */
         background: var(--theme-black--);
+    }
+
+    tbody tr:hover td, tbody tr:hover td a {
         color: #fff;
+        /* text white */
+        /* background: #007bff; */
+        /* optional: blue background */
     }
 
     tbody tr:hover td:nth-child(1) {
@@ -56,6 +67,7 @@
 
     body.dark-mode tbody tr:hover {
         background: var(--theme-red--);
+        color: #fff;
     }
 
     .container {
@@ -248,11 +260,10 @@
     }
 
 
-    .error-txt{
+    .error-txt {
         color: red;
         font-size: 12px;
     }
-   
 </style>
 
 <body>

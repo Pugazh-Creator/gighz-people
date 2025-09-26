@@ -80,20 +80,23 @@ class LeaveRquestModel extends Model
     public function getAllLeave()
     {
         $builder = $this->db->table($this->table);
-        $builder->select('leave_request.*');
-        // Filter: Dates between 10 days before and 24 days after today
-        // ->where('leave_request.start_date >= DATE_SUB(CURDATE(), INTERVAL 15 DAY)')
-        // ->where('leave_request.start_date <= DATE_ADD(CURDATE(), INTERVAL 30 DAY)');
-        $pending = $this->where('status', 'pending')->countAllResults();
-        // $pending = $this->where('leave_request.start_date >= DATE_SUB(CURDATE(), INTERVAL 15 DAY)')
-        //     ->where('leave_request.start_date <= DATE_ADD(CURDATE(), INTERVAL 30 DAY)')
-        //     ->where('status','pending')->countAllResults();
-        $data = [
-            'count' => $builder->countAllResults(),
+
+        // Total leave requests in the last 60 days
+        $builder->select('COUNT(*) as total')
+            ->where('start_date >=', date('Y-m-d', strtotime('-60 days')));
+
+        $totalResult = $builder->get()->getRowArray();
+        $total = $totalResult['total'] ?? 0;
+
+        // Pending leave requests in the last 60 days
+        $pending = $this->where('start_date >=', date('Y-m-d', strtotime('-60 days')))
+            ->where('status', 'pending')
+            ->countAllResults();
+
+        return [
+            'count'   => $total,
             'pending' => $pending
         ];
-
-        return $data;
     }
 
 

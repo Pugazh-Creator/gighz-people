@@ -43,13 +43,12 @@ class Dashboard extends BaseController
         $datas["basedata"] = $this->baseDatas();
 
 
-
+        // return $this->response->setJSON($attendanceResult);
 
         echo view('templates/header', $datas);
         echo view('templates/sidebar', $datas);
         echo view('dashboard/index', $datas);
         echo view('templates/footer', $datas);
-        // // return session()->get('staff_id');
     }
 
     // ---------------- GET OE START DATE AND END DATE ------------------
@@ -115,16 +114,18 @@ class Dashboard extends BaseController
         $versionModel = new VersionUpdateModel;
         $getAttendanceID = $db->query('SELECT user_id from attendance_users where emp_id = ?', [$empid])->getRowArray();
         $data['Attendance'] = [];
+        $data['Attendance'] = [];
+        $data['records'] = [];
 
         if (!empty($getAttendanceID)) {
 
             $userID = $getAttendanceID['user_id'];
 
-            $data['Attendance'] = $attendancemodel->getEmployeesLeaves($empid)['data'][$userID];
 
-
-
-            $data['records'] =  end($attendancemodel->getEmployeesLeaves($empid)['data'][$userID]['records'])['total'];
+            if (!empty($attendancemodel->getEmployeesLeaves($empid)['data'])) {
+                $data['Attendance'] = $attendancemodel->getEmployeesLeaves($empid)['data'][$userID];
+                $data['records'] =  end($attendancemodel->getEmployeesLeaves($empid)['data'][$userID]['records'])['total'];
+            }
         }
 
 

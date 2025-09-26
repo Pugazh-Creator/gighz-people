@@ -1,0 +1,644 @@
+DEBUG - 2025-09-25 06:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:18:58 --> User IP: ::1
+DEBUG - 2025-09-25 06:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:19:10 --> User IP: ::1
+DEBUG - 2025-09-25 06:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:19:16 --> User IP: ::1
+DEBUG - 2025-09-25 06:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:19:17 --> User IP: ::1
+DEBUG - 2025-09-25 06:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:19:18 --> User IP: ::1
+CRITICAL - 2025-09-25 06:19:18 --> ErrorException: Undefined array key 23
+[Method: POST, Route: dashboard/dashboardDatas]
+in APPPATH\Controllers\Dashboard.php on line 123.
+ 1 APPPATH\Controllers\Dashboard.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 23', 'C:\\xampp\\htdocs\\gighz-people\\app\\Controllers\\Dashboard.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->dashboardDatas()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 06:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:19:20 --> User IP: ::1
+DEBUG - 2025-09-25 06:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:19:56 --> User IP: ::1
+DEBUG - 2025-09-25 06:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:19:57 --> User IP: ::1
+DEBUG - 2025-09-25 06:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:19:57 --> User IP: ::1
+CRITICAL - 2025-09-25 06:19:58 --> ErrorException: Undefined array key 23
+[Method: POST, Route: dashboard/dashboardDatas]
+in APPPATH\Controllers\Dashboard.php on line 123.
+ 1 APPPATH\Controllers\Dashboard.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 23', 'C:\\xampp\\htdocs\\gighz-people\\app\\Controllers\\Dashboard.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->dashboardDatas()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 06:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:20:20 --> User IP: ::1
+CRITICAL - 2025-09-25 06:20:20 --> ErrorException: Undefined array key 23
+[Method: GET, Route: dashboard/dashboardDatas]
+in APPPATH\Controllers\Dashboard.php on line 123.
+ 1 APPPATH\Controllers\Dashboard.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 23', 'C:\\xampp\\htdocs\\gighz-people\\app\\Controllers\\Dashboard.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->dashboardDatas()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 06:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:28:43 --> User IP: ::1
+DEBUG - 2025-09-25 06:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:29:04 --> User IP: ::1
+DEBUG - 2025-09-25 06:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:29:09 --> User IP: ::1
+CRITICAL - 2025-09-25 06:29:09 --> ErrorException: Undefined array key 23
+[Method: POST, Route: dashboard/dashboardDatas]
+in APPPATH\Controllers\Dashboard.php on line 122.
+ 1 APPPATH\Controllers\Dashboard.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 23', 'C:\\xampp\\htdocs\\gighz-people\\app\\Controllers\\Dashboard.php', 122)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->dashboardDatas()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 06:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:31:02 --> User IP: ::1
+DEBUG - 2025-09-25 06:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:31:07 --> User IP: ::1
+CRITICAL - 2025-09-25 06:31:07 --> TypeError: end(): Argument #1 ($array) must be of type array, null given
+[Method: POST, Route: dashboard/dashboardDatas]
+in APPPATH\Controllers\Dashboard.php on line 126.
+ 1 APPPATH\Controllers\Dashboard.php(126): end(null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->dashboardDatas()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 06:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:33:57 --> User IP: ::1
+DEBUG - 2025-09-25 06:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:34:01 --> User IP: ::1
+CRITICAL - 2025-09-25 06:34:01 --> TypeError: end(): Argument #1 ($array) must be of type array, null given
+[Method: POST, Route: dashboard/dashboardDatas]
+in APPPATH\Controllers\Dashboard.php on line 130.
+ 1 APPPATH\Controllers\Dashboard.php(130): end(null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->dashboardDatas()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 06:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:35:11 --> User IP: ::1
+DEBUG - 2025-09-25 06:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:35:16 --> User IP: ::1
+DEBUG - 2025-09-25 06:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:44:17 --> User IP: ::1
+CRITICAL - 2025-09-25 06:44:17 --> ErrorException: Undefined array key "presentDays"
+[Method: GET, Route: dashboard]
+in APPPATH\Models\AttendanceModel.php on line 285.
+ 1 APPPATH\Models\AttendanceModel.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "presentDays"', 'C:\\xampp\\htdocs\\gighz-people\\app\\Models\\AttendanceModel.php', 285)
+ 2 APPPATH\Controllers\Dashboard.php(35): App\Models\AttendanceModel->getEmployeesLeaves('GZ44')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 06:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:45:33 --> User IP: ::1
+DEBUG - 2025-09-25 06:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:45:33 --> User IP: ::1
+ERROR - 2025-09-25 06:45:43 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp\htdocs\gighz-people\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\gighz-people\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('srv827.hstgr.io', 'u853418576_Test', Object(SensitiveParameterValue), 'u853418576_Test', 3306, '', 0)
+#1 C:\xampp\htdocs\gighz-people\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\gighz-people\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\gighz-people\app\Controllers\Dashboard.php(407): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#4 C:\xampp\htdocs\gighz-people\app\Controllers\Dashboard.php(136): App\Controllers\Dashboard->getworkedRRAndGeneralWorks('GZ44', '2025-09-25', '2025-10-24')
+#5 C:\xampp\htdocs\gighz-people\system\CodeIgniter.php(933): App\Controllers\Dashboard->dashboardDatas()
+#6 C:\xampp\htdocs\gighz-people\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\gighz-people\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gighz-people\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\gighz-people\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\gighz-people\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp\htdocs\gighz-people\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\gighz-people\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\gighz-people\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\gighz-people\app\Controllers\Dashboard.php(407): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', Array)
+#3 C:\xampp\htdocs\gighz-people\app\Controllers\Dashboard.php(136): App\Controllers\Dashboard->getworkedRRAndGeneralWorks('GZ44', '2025-09-25', '2025-10-24')
+#4 C:\xampp\htdocs\gighz-people\system\CodeIgniter.php(933): App\Controllers\Dashboard->dashboardDatas()
+#5 C:\xampp\htdocs\gighz-people\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\xampp\htdocs\gighz-people\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gighz-people\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gighz-people\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\gighz-people\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-09-25 06:45:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[Method: POST, Route: dashboard/dashboardDatas]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Dashboard.php(407): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_timesheet 
+         WHERE timesheet_user_id = ? 
+         AND timesheet_date BETWEEN ? AND ?', [...])
+ 3 APPPATH\Controllers\Dashboard.php(136): App\Controllers\Dashboard->getworkedRRAndGeneralWorks('GZ44', '2025-09-25', '2025-10-24')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->dashboardDatas()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 06:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:46:48 --> User IP: ::1
+DEBUG - 2025-09-25 06:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:46:49 --> User IP: ::1
+DEBUG - 2025-09-25 06:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:46:52 --> User IP: ::1
+DEBUG - 2025-09-25 06:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:46:52 --> User IP: ::1
+DEBUG - 2025-09-25 06:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:48:57 --> User IP: ::1
+DEBUG - 2025-09-25 06:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:49:03 --> User IP: ::1
+DEBUG - 2025-09-25 06:49:03 --> User ID: 23, Date: 2025-09-25
+DEBUG - 2025-09-25 06:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:55:29 --> User IP: ::1
+DEBUG - 2025-09-25 06:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:57:52 --> User IP: ::1
+DEBUG - 2025-09-25 06:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:57:58 --> User IP: ::1
+DEBUG - 2025-09-25 06:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 06:58:55 --> User IP: ::1
+DEBUG - 2025-09-25 07:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:01:17 --> User IP: ::1
+DEBUG - 2025-09-25 07:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:02:24 --> User IP: ::1
+DEBUG - 2025-09-25 07:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:02:29 --> User IP: ::1
+DEBUG - 2025-09-25 07:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:03:11 --> User IP: ::1
+DEBUG - 2025-09-25 07:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:04:38 --> User IP: ::1
+DEBUG - 2025-09-25 07:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:06:26 --> User IP: ::1
+DEBUG - 2025-09-25 07:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:06:58 --> User IP: ::1
+DEBUG - 2025-09-25 07:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:07:03 --> User IP: ::1
+DEBUG - 2025-09-25 07:07:03 --> User ID: 23, Date: 2025-09-14
+DEBUG - 2025-09-25 07:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:07:04 --> User IP: ::1
+DEBUG - 2025-09-25 07:07:04 --> User ID: 23, Date: 2025-09-15
+DEBUG - 2025-09-25 07:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:07:06 --> User IP: ::1
+DEBUG - 2025-09-25 07:07:06 --> User ID: 23, Date: 2025-09-16
+DEBUG - 2025-09-25 07:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:07:34 --> User IP: ::1
+DEBUG - 2025-09-25 07:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:07:37 --> User IP: ::1
+DEBUG - 2025-09-25 07:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:07:37 --> User IP: ::1
+DEBUG - 2025-09-25 07:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:07:42 --> User IP: ::1
+DEBUG - 2025-09-25 07:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:07:43 --> User IP: ::1
+DEBUG - 2025-09-25 07:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:07:45 --> User IP: ::1
+DEBUG - 2025-09-25 07:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:07:46 --> User IP: ::1
+DEBUG - 2025-09-25 07:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:09:42 --> User IP: ::1
+DEBUG - 2025-09-25 07:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:09:45 --> User IP: ::1
+DEBUG - 2025-09-25 07:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:24:35 --> User IP: ::1
+DEBUG - 2025-09-25 07:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:24:36 --> User IP: ::1
+DEBUG - 2025-09-25 07:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:24:47 --> User IP: ::1
+DEBUG - 2025-09-25 07:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:25:17 --> User IP: ::1
+DEBUG - 2025-09-25 07:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 07:25:47 --> User IP: ::1
+CRITICAL - 2025-09-25 07:25:47 --> ErrorException: Undefined property: stdClass::$hrdashboard
+[Method: GET, Route: dashboard/applyLeave]
+in APPPATH\Views\templates\sidebar.php on line 247.
+ 1 APPPATH\Views\templates\sidebar.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$hrdashboard', 'C:\\xampp\\htdocs\\gighz-people\\app\\Views\\templates\\sidebar.php', 247)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz-people\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/sidebar', [], true)
+ 5 APPPATH\Controllers\EmployeeController.php(32): view('templates/sidebar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmployeeController->applyLeave()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 08:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:36:05 --> User IP: ::1
+DEBUG - 2025-09-25 08:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:36:22 --> User IP: ::1
+DEBUG - 2025-09-25 08:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:36:28 --> User IP: ::1
+DEBUG - 2025-09-25 08:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:36:34 --> User IP: ::1
+DEBUG - 2025-09-25 08:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:36:42 --> User IP: ::1
+DEBUG - 2025-09-25 08:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:36:57 --> User IP: ::1
+DEBUG - 2025-09-25 08:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:36:58 --> User IP: ::1
+CRITICAL - 2025-09-25 08:36:58 --> ErrorException: Undefined property: stdClass::$hrdashboard
+[Method: GET, Route: dashboard]
+in APPPATH\Views\templates\sidebar.php on line 247.
+ 1 APPPATH\Views\templates\sidebar.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$hrdashboard', 'C:\\xampp\\htdocs\\gighz-people\\app\\Views\\templates\\sidebar.php', 247)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gighz-people\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/sidebar', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(49): view('templates/sidebar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 08:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:37:03 --> User IP: ::1
+DEBUG - 2025-09-25 08:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:37:04 --> User IP: ::1
+DEBUG - 2025-09-25 08:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:37:05 --> User IP: ::1
+DEBUG - 2025-09-25 08:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:37:13 --> User IP: ::1
+DEBUG - 2025-09-25 08:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:37:13 --> User IP: ::1
+DEBUG - 2025-09-25 08:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:37:20 --> User IP: ::1
+DEBUG - 2025-09-25 08:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:37:25 --> User IP: ::1
+DEBUG - 2025-09-25 08:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:37:25 --> User IP: ::1
+DEBUG - 2025-09-25 08:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:44:49 --> User IP: ::1
+DEBUG - 2025-09-25 08:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:44:50 --> User IP: ::1
+DEBUG - 2025-09-25 08:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:48:38 --> User IP: ::1
+CRITICAL - 2025-09-25 08:48:38 --> ParseError: syntax error, unexpected token "}", expecting "," or ";"
+[Method: GET, Route: hrcontroller/companyHoliday]
+in APPPATH\Views\leave\companyHoliday.php on line 30.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('leave\\companyHoliday', [], true)
+ 3 APPPATH\Controllers\HRController.php(557): view('leave\\companyHoliday', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HRController->companyHoliday()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HRController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 08:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:48:46 --> User IP: ::1
+DEBUG - 2025-09-25 08:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:48:46 --> User IP: ::1
+DEBUG - 2025-09-25 08:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:48:50 --> User IP: ::1
+DEBUG - 2025-09-25 08:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:48:52 --> User IP: ::1
+DEBUG - 2025-09-25 08:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:48:55 --> User IP: ::1
+DEBUG - 2025-09-25 08:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:48:58 --> User IP: ::1
+DEBUG - 2025-09-25 08:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:49:00 --> User IP: ::1
+DEBUG - 2025-09-25 08:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 08:49:03 --> User IP: ::1
+DEBUG - 2025-09-25 09:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:02:24 --> User IP: ::1
+DEBUG - 2025-09-25 09:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:02:26 --> User IP: ::1
+DEBUG - 2025-09-25 09:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:02:33 --> User IP: ::1
+DEBUG - 2025-09-25 09:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:02:40 --> User IP: ::1
+DEBUG - 2025-09-25 09:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:02:49 --> User IP: ::1
+DEBUG - 2025-09-25 09:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:02:50 --> User IP: ::1
+DEBUG - 2025-09-25 09:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:02:51 --> User IP: ::1
+DEBUG - 2025-09-25 09:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:02:59 --> User IP: ::1
+DEBUG - 2025-09-25 09:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:03:00 --> User IP: ::1
+DEBUG - 2025-09-25 09:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:03:08 --> User IP: ::1
+DEBUG - 2025-09-25 09:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:03:09 --> User IP: ::1
+DEBUG - 2025-09-25 09:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:03:38 --> User IP: ::1
+DEBUG - 2025-09-25 09:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:03:45 --> User IP: ::1
+DEBUG - 2025-09-25 09:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:03:45 --> User IP: ::1
+DEBUG - 2025-09-25 09:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:05:02 --> User IP: ::1
+DEBUG - 2025-09-25 09:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:05:02 --> User IP: ::1
+DEBUG - 2025-09-25 09:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:31:52 --> User IP: ::1
+DEBUG - 2025-09-25 09:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:31:52 --> User IP: ::1
+DEBUG - 2025-09-25 09:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:32:09 --> User IP: ::1
+DEBUG - 2025-09-25 09:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:32:10 --> User IP: ::1
+DEBUG - 2025-09-25 09:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:32:21 --> User IP: ::1
+DEBUG - 2025-09-25 09:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:32:21 --> User IP: ::1
+DEBUG - 2025-09-25 09:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:32:22 --> User IP: ::1
+DEBUG - 2025-09-25 09:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:32:26 --> User IP: ::1
+DEBUG - 2025-09-25 09:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:32:26 --> User IP: ::1
+DEBUG - 2025-09-25 09:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:32:52 --> User IP: ::1
+DEBUG - 2025-09-25 09:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:32:52 --> User IP: ::1
+DEBUG - 2025-09-25 09:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:32:59 --> User IP: ::1
+CRITICAL - 2025-09-25 09:32:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboard/hrdashboard.php"
+[Method: GET, Route: hrcontroller/index]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/hrdashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/hrdashboard', [], true)
+ 3 APPPATH\Controllers\HRController.php(35): view('dashboard/hrdashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HRController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HRController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 09:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:33:37 --> User IP: ::1
+DEBUG - 2025-09-25 09:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:34:23 --> User IP: ::1
+DEBUG - 2025-09-25 09:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:34:39 --> User IP: ::1
+DEBUG - 2025-09-25 09:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:35:06 --> User IP: ::1
+DEBUG - 2025-09-25 09:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:35:10 --> User IP: ::1
+DEBUG - 2025-09-25 09:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:36:56 --> User IP: ::1
+DEBUG - 2025-09-25 09:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:38:21 --> User IP: ::1
+DEBUG - 2025-09-25 09:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:38:28 --> User IP: ::1
+DEBUG - 2025-09-25 09:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:38:30 --> User IP: ::1
+DEBUG - 2025-09-25 09:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:38:34 --> User IP: ::1
+DEBUG - 2025-09-25 09:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:38:45 --> User IP: ::1
+DEBUG - 2025-09-25 09:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:38:54 --> User IP: ::1
+DEBUG - 2025-09-25 09:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:39:04 --> User IP: ::1
+DEBUG - 2025-09-25 09:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:39:17 --> User IP: ::1
+DEBUG - 2025-09-25 09:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:39:45 --> User IP: ::1
+DEBUG - 2025-09-25 09:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:40:12 --> User IP: ::1
+DEBUG - 2025-09-25 09:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:40:27 --> User IP: ::1
+DEBUG - 2025-09-25 09:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:42:21 --> User IP: ::1
+DEBUG - 2025-09-25 09:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:43:06 --> User IP: ::1
+DEBUG - 2025-09-25 09:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:43:25 --> User IP: ::1
+DEBUG - 2025-09-25 09:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:43:46 --> User IP: ::1
+DEBUG - 2025-09-25 09:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:44:07 --> User IP: ::1
+DEBUG - 2025-09-25 09:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:44:23 --> User IP: ::1
+DEBUG - 2025-09-25 09:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:45:50 --> User IP: ::1
+DEBUG - 2025-09-25 09:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:46:06 --> User IP: ::1
+DEBUG - 2025-09-25 09:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:46:12 --> User IP: ::1
+DEBUG - 2025-09-25 09:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:46:16 --> User IP: ::1
+DEBUG - 2025-09-25 09:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:46:24 --> User IP: ::1
+DEBUG - 2025-09-25 09:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:46:33 --> User IP: ::1
+DEBUG - 2025-09-25 09:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:46:43 --> User IP: ::1
+DEBUG - 2025-09-25 09:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:47:24 --> User IP: ::1
+DEBUG - 2025-09-25 09:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:47:56 --> User IP: ::1
+DEBUG - 2025-09-25 09:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:59:33 --> User IP: ::1
+DEBUG - 2025-09-25 10:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:00:02 --> User IP: ::1
+DEBUG - 2025-09-25 10:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:00:05 --> User IP: ::1
+DEBUG - 2025-09-25 10:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:00:10 --> User IP: ::1
+DEBUG - 2025-09-25 10:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:00:38 --> User IP: ::1
+DEBUG - 2025-09-25 10:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:00:41 --> User IP: ::1
+DEBUG - 2025-09-25 10:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:01:07 --> User IP: ::1
+DEBUG - 2025-09-25 10:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:01:14 --> User IP: ::1
+DEBUG - 2025-09-25 10:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:01:45 --> User IP: ::1
+DEBUG - 2025-09-25 10:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:01:58 --> User IP: ::1
+DEBUG - 2025-09-25 10:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:02:15 --> User IP: ::1
+DEBUG - 2025-09-25 10:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:02:31 --> User IP: ::1
+DEBUG - 2025-09-25 10:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:03:40 --> User IP: ::1
+DEBUG - 2025-09-25 10:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:04:30 --> User IP: ::1
+DEBUG - 2025-09-25 10:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:04:42 --> User IP: ::1
+DEBUG - 2025-09-25 10:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:05:06 --> User IP: ::1
+DEBUG - 2025-09-25 10:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:05:23 --> User IP: ::1
+DEBUG - 2025-09-25 10:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:06:02 --> User IP: ::1
+DEBUG - 2025-09-25 10:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:06:38 --> User IP: ::1
+DEBUG - 2025-09-25 10:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:06:51 --> User IP: ::1
+DEBUG - 2025-09-25 10:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:06:55 --> User IP: ::1
+DEBUG - 2025-09-25 10:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:07:25 --> User IP: ::1
+DEBUG - 2025-09-25 10:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:07:38 --> User IP: ::1
+DEBUG - 2025-09-25 10:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:09:02 --> User IP: ::1
+DEBUG - 2025-09-25 10:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:09:22 --> User IP: ::1
+DEBUG - 2025-09-25 10:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:10:44 --> User IP: ::1
+DEBUG - 2025-09-25 10:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:11:04 --> User IP: ::1
+DEBUG - 2025-09-25 10:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:11:10 --> User IP: ::1
+DEBUG - 2025-09-25 10:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:11:26 --> User IP: ::1
+DEBUG - 2025-09-25 10:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 10:22:41 --> User IP: ::1
+DEBUG - 2025-09-25 11:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 11:24:40 --> User IP: ::1
+DEBUG - 2025-09-25 11:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 11:24:52 --> User IP: ::1
+DEBUG - 2025-09-25 11:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 11:26:33 --> User IP: ::1
+DEBUG - 2025-09-25 11:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 11:26:49 --> User IP: ::1
+DEBUG - 2025-09-25 11:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 11:33:34 --> User IP: ::1
+DEBUG - 2025-09-25 11:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 11:36:51 --> User IP: ::1
+DEBUG - 2025-09-25 11:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 11:37:31 --> User IP: ::1
+DEBUG - 2025-09-25 11:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 11:43:48 --> User IP: ::1
+ERROR - 2025-09-25 11:43:48 --> mysqli_sql_exception: Unknown column 'e.empid' in 'where clause' in C:\xampp\htdocs\gighz-people\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gighz-people\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(a....', 0)
+#1 C:\xampp\htdocs\gighz-people\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(a....')
+#2 C:\xampp\htdocs\gighz-people\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(a....')
+#3 C:\xampp\htdocs\gighz-people\app\Controllers\HRController.php(100): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(a....', Array)
+#4 C:\xampp\htdocs\gighz-people\system\CodeIgniter.php(933): App\Controllers\HRController->getStaffDetails()
+#5 C:\xampp\htdocs\gighz-people\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HRController))
+#6 C:\xampp\htdocs\gighz-people\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gighz-people\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gighz-people\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\gighz-people\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-09-25 11:43:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'e.empid' in 'where clause'
+[Method: GET, Route: hrcontroller/getStaffDetails]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\HRController.php(100): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(a.work_status) AS leave_total from attendance a 
+                                                JOIN employees e on e.attendance_id = a.user_id
+                                                WHERE a.work_status = ? OR a.work_status = ? OR a.work_status = ? AND 
+                                                       e.empid = ? and a.date between ? and ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HRController->getStaffDetails()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HRController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-25 11:43:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'e.empid' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(a.work_status) AS leave_total from attendance a 
+                                                JOIN employees e on e.attendance_id = a.user_id
+                                                WHERE a.work_status = \'APL\' OR a.work_status = \'NA\' OR a.work_status = \'RA\' AND 
+                                                       e.empid = \'GZ21\' and a.date between 1735084800 and 1758672000')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(a.work_status) AS leave_total from attendance a 
+                                                JOIN employees e on e.attendance_id = a.user_id
+                                                WHERE a.work_status = \'APL\' OR a.work_status = \'NA\' OR a.work_status = \'RA\' AND 
+                                                       e.empid = \'GZ21\' and a.date between 1735084800 and 1758672000')
+ 3 APPPATH\Controllers\HRController.php(100): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(a.work_status) AS leave_total from attendance a 
+                                                JOIN employees e on e.attendance_id = a.user_id
+                                                WHERE a.work_status = ? OR a.work_status = ? OR a.work_status = ? AND 
+                                                       e.empid = ? and a.date between ? and ?', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HRController->getStaffDetails()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HRController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-25 11:43:48 --> [Caused by] mysqli_sql_exception: Unknown column 'e.empid' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(a.work_status) AS leave_total from attendance a 
+                                                JOIN employees e on e.attendance_id = a.user_id
+                                                WHERE a.work_status = \'APL\' OR a.work_status = \'NA\' OR a.work_status = \'RA\' AND 
+                                                       e.empid = \'GZ21\' and a.date between 1735084800 and 1758672000', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(a.work_status) AS leave_total from attendance a 
+                                                JOIN employees e on e.attendance_id = a.user_id
+                                                WHERE a.work_status = \'APL\' OR a.work_status = \'NA\' OR a.work_status = \'RA\' AND 
+                                                       e.empid = \'GZ21\' and a.date between 1735084800 and 1758672000')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(a.work_status) AS leave_total from attendance a 
+                                                JOIN employees e on e.attendance_id = a.user_id
+                                                WHERE a.work_status = \'APL\' OR a.work_status = \'NA\' OR a.work_status = \'RA\' AND 
+                                                       e.empid = \'GZ21\' and a.date between 1735084800 and 1758672000')
+ 4 APPPATH\Controllers\HRController.php(100): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(a.work_status) AS leave_total from attendance a 
+                                                JOIN employees e on e.attendance_id = a.user_id
+                                                WHERE a.work_status = ? OR a.work_status = ? OR a.work_status = ? AND 
+                                                       e.empid = ? and a.date between ? and ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HRController->getStaffDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HRController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 11:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 11:43:57 --> User IP: ::1
+DEBUG - 2025-09-25 11:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 11:47:29 --> User IP: ::1
+DEBUG - 2025-09-25 11:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 11:47:44 --> User IP: ::1
+DEBUG - 2025-09-25 11:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 11:49:33 --> User IP: ::1
+DEBUG - 2025-09-25 11:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 11:51:19 --> User IP: ::1
+DEBUG - 2025-09-25 12:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:32:31 --> User IP: ::1
+DEBUG - 2025-09-25 12:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:35:18 --> User IP: ::1
+DEBUG - 2025-09-25 12:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:46:56 --> User IP: ::1
+CRITICAL - 2025-09-25 12:46:57 --> ErrorException: Undefined variable $permission_TOTAL
+[Method: GET, Route: hrcontroller/getStaffDetails]
+in APPPATH\Controllers\HRController.php on line 135.
+ 1 APPPATH\Controllers\HRController.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $permission_TOTAL', 'C:\\xampp\\htdocs\\gighz-people\\app\\Controllers\\HRController.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HRController->getStaffDetails()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HRController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-25 12:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:48:27 --> User IP: ::1
+DEBUG - 2025-09-25 12:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:48:35 --> User IP: ::1
+DEBUG - 2025-09-25 12:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:48:50 --> User IP: ::1
+DEBUG - 2025-09-25 13:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 13:05:02 --> User IP: ::1

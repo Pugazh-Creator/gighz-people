@@ -1,13 +1,12 @@
 <?php
-$holiday_edit = '1';
-$holiday_delete = '1';
+$holliday_permission = '';
 foreach ($basedata["emp_info"] as $emp_data) {
 
     $catogory_name = $emp_data['user_category'];
     // print_r($catogory_name);
     $array_main_menu = json_decode($emp_data['permission']);
     //    print_r($array_main_menu);
-    $array_main_menu_data = ($array_main_menu[0]->permission[0]->main_menu[0]);
+    $holliday_permission = ($array_main_menu[0]->permission[0]->main_menu[0]->hrmanagement[0]->sub_menu[0]->holiday);
 }
 ?>
 <div class="holidays_page">
@@ -25,7 +24,11 @@ foreach ($basedata["emp_info"] as $emp_data) {
             </select>
         </div>
         <div class="">
-            <button id="add_holiday_btn">Add Holiday</button>
+            <?php 
+                if($holliday_permission[0]->add == '1'){
+                    echo '<button id="add_holiday_btn">Add Holiday</button>';
+                }
+            ?>
         </div>
     </div>
     <div class="holidaybody">
@@ -114,7 +117,7 @@ foreach ($basedata["emp_info"] as $emp_data) {
             })
         }
 
-        const isHR = '<?= $holiday_edit == '1'?>' // PHP variable injected into JS
+        const isHR = '<?= $holliday_permission[0]->edit == '1' ?>' // PHP variable injected into JS
 
         function buildCalendar(year, holidays) {
             $("#calendar").empty();

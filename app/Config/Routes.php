@@ -66,10 +66,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     // $routes->get('/companyHoliday', 'HRController::fetchHollidays');
     $routes->post('insert_holidays', 'HRController::addAndFetchHoliday');
     $routes->get('/leaveRquest', 'HRController::leaveRequest');
-    $routes->get('/hr/change-status/(:num)/(:segment)/(:segment)/(:num)', 'HRController::change_status/$1/$2/$3/$4');
-    $routes->post('/hr/change-status/(:num)/(:segment)/(:segment)/(:num)', 'HRController::change_status/$1/$2/$3/$4');
-    // $routes->get('/hr/change-status/(:num)/(:alpha)/(:alpha)/(:num)', 'HRController::change_status/$1/$2/$3/$4');
-    // $routes->get('/hr/change-status/(:num)/(:alpha)/(:num)/(:num)', 'HRController::change_status/$1/$2/$3/$4');
+
     $routes->get('dashboard/applyLeave', 'EmployeeController::applyLeave');
     $routes->get('/hr/check_new_leave_requests', 'HRController::check_new_leave_requests');
     $routes->get('leaveRequests2', 'HRController::ShowingLeaveRequests');
@@ -93,8 +90,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('/compensation-request', 'CompensationController::applyCompensation');
     $routes->get('/showCompen', 'CompensationController::showAllCompensation');
     $routes->get('/compensation', 'CompensationController::getMycompensation');
-    $routes->get('/update-compen-status/(:num)/(:segment)/(:segment)/(:num)', 'CompensationController::changeCompenStatus/$1/$2/$3/$4');
-
+    
     /**
      * Attendance Logs
      */

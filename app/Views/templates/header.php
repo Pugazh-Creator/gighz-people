@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="<?= base_url('asset/css/index.css') ?>">
     <link rel="stylesheet" href="<?= base_url('asset/css/applyleave.css') ?>">
     <link rel="stylesheet" href="<?= base_url('asset/css/hrdashboard.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('asset/css/leaveRequest.css') ?>">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

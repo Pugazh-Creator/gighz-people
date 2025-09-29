@@ -43,7 +43,7 @@ foreach ($attendance as $userId => $row) {
                         <img src="<?= base_url("asset/icons/soil-clack.png") ?>" alt="">
                     </span>
                 </div>
-                <div class="eff1"><a href="<?= base_url()?>dashboard/getEmployeesAttendance">View More</a></div>
+                <div class="eff1"><a href="<?= base_url() ?>dashboard/getEmployeesAttendance">View More</a></div>
             </div>
         </div>
         <div class="dashboard-reports">
@@ -106,8 +106,10 @@ foreach ($attendance as $userId => $row) {
     </div>
 </div>
 <script>
+    const empID = '<?= $basedata['emp_id'] ?>';
+    console.log(empID);
     $.ajax({
-        url: baseurl + "dashboard/dashboardDatas",
+        url: baseurl + "dashboard/dashboardDatas/" + empID,
         method: 'POST',
         success: function(res) {
             console.log(res)

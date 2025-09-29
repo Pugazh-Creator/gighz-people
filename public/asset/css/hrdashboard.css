@@ -93,6 +93,22 @@
     backdrop-filter: blur(10px);
 }
 
+.hrdasboard_body .user_detail_container .userDetails {
+    display: none;
+}
+
+.hrdasboard_body .user_detail_container .nodata {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hrdasboard_body .user_detail_container .nodata img {
+    width: 100%;
+    height: 100%;
+}
+
 .hrdasboard_body .user_detail_container .userDetails>div:nth-child(1) {
     /* background: lightblue; */
     display: flex;
@@ -126,7 +142,7 @@ body.dark-mode .hrdasboard_body .user_detail_container .userDetails .plan-sec>di
     background: var(--theme-red--);
 }
 
-.hrdasboard_body .plan-sec>div>div p {
+.hrdasboard_body .plan-sec p {
     height: 160px;
     width: 100%;
     font-size: 13px;

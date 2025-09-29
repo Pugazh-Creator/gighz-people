@@ -1,19 +1,19 @@
 <div class="hrdasbord_container">
     <div class="hrdasboard_header">
         <div class="navigations eff1">
-            <a href="">
+            <a href="<?= base_url() ?>hrcontroller/ShowingLeaveRequests">
                 <div>Leave<br>Requests</div>
                 <div class="value" id="leave_requests">0/0</div>
             </a>
         </div>
         <div class="navigations eff1">
-            <a href="">
+            <a href="<?= base_url() ?>hrcontroller/showAllCompensation">
                 <div>Compensation<br> Requests</div>
                 <div class="value" id="compensation_requests">0/0</div>
             </a>
         </div>
         <div class="navigations eff1">
-            <a href="">
+            <a href="<?= base_url() ?>hrcontroller/getallpermission">
                 <div>Permission<br>Requests</div>
                 <div class="value" id="permission_requests">0/0</div>
             </a>
@@ -39,37 +39,37 @@
         <div class="user_detail_container">
             <div class="userDetails">
                 <div>
-                    <h2 class="name">Demo</h2>
+                    <h2 id="employeeName"></h2>
                     <div>
-                        <div id="leaveBalence">Leavebalence [3]</div>
-                        <div id="shortFall">Shortfall [00:00]</div>
+                        <div id="leaveBalence"></div>
+                        <div id="shortFall"></div>
                     </div>
                 </div>
                 <div class="plan-sec">
                     <h4>OE Plan</h4>
                     <div>
-                        <div class="leave">
+                        <div id="leavePlans">
                             <h4 class="">
                                 Leave
-                                <span>2</span>
+                                <span id="leavePlanCount">0</span>
                             </h4>
-                            <div class="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eum!</p>
+                            <div class="" id="leavePlan">
+                                <p></p>
 
                             </div>
                         </div>
                         <div class="compen">
-                            <h4 class="">
+                            <h4>
                                 Compensation
-                                <span>2</span>
+                                <span id="compenPlanCount">0</span>
                             </h4>
                             <div class="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eum!</p>
+                                <p id="compenPlan"></p>
                             </div>
                         </div>
                         <div class="permission">
-                            <h4 class="">Permission</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eum!</p>
+                            <h4>Permission</h4>
+                            <p id="permissionPlan"></p>
                         </div>
                     </div>
                 </div>
@@ -77,28 +77,15 @@
                     <div class="">
                         <h4>After 8pm</h4>
                         <div class="after8pm-cont">
-                            <div>
-                                <div>12 Aug</div>
-                                <div>20:12</div>
-                            </div>
-                            <div>
-                                <div>12 Aug</div>
-                                <div>20:12</div>
-                            </div>
-                            <div>
-                                <div>12 Aug</div>
-                                <div>20:12</div>
-                            </div>
-                            <div>
-                                <div>12 Aug</div>
-                                <div>20:12</div>
-                            </div>
                         </div>
                     </div>
                     <div class="">
 
                     </div>
                 </div>
+            </div>
+            <div class="nodata">
+                <img src="https://i.pinimg.com/originals/8d/b8/e6/8db8e6f39203f657ee8efad634cacad1.gif" alt="no Data">
             </div>
         </div>
     </div>
@@ -115,10 +102,10 @@
 
                 $('#leave_requests').text(``);
                 $('#leave_requests').text(`${res.pending}/${res.total}`);
-                
+
                 $('#compensation_requests').text(``);
                 $('#compensation_requests').text(`${res.pendingCompen}/${res.totalCompen}`);
-                
+
                 $('#permission_requests').text(``);
                 $('#permission_requests').text(`${res.per_pending}/${res.per_total}`);
 
@@ -169,12 +156,64 @@
     });
     $(document).on('click', '.user-data', function(e) {
         e.preventDefault();
+        $('.userDetails').fadeIn();
+        $('.nodata').fadeOut();
+
         let user_id = $(this).data('id');
         $.ajax({
-            url: baseurl + '' + user_id,
+            url: baseurl + 'dashboard/dashboardDatas/' + user_id,
             method: 'GET',
             success: function(res) {
+                console.log(res)
+                const after8 = res.affter8pm;
+                let after8Pm = '';
+                if (after8.length > 0) {
+                    after8.forEach(e => {
+                        let parts = e.timestamp.split(" ");
+                        let datePart = parts[0]; // "2025-09-01"
+                        let timePart = parts[1]; // "20:07:24"
 
+                        // Format date as "12 Aug"
+                        let d = new Date(datePart);
+                        let options = {
+                            day: "2-digit",
+                            month: "short"
+                        };
+                        let formattedDate = d.toLocaleDateString("en-GB", options);
+
+                        // Remove seconds from time
+                        let formattedTime = timePart.slice(0, 5); // "20:07"
+
+                        after8Pm += `<div>
+                                        <div>${formattedDate}</div>
+                                        <div>${formattedTime}</div>
+                                    </div>`
+                    });
+                } else {
+                    after8Pm += 'No Data'
+                }
+
+                $('.after8pm-cont').empty();
+                $('#employeeName').text('');
+                $('#leaveBalence').text('');
+                $('#shortFall').text('');
+                $('#leavePlan').text('');
+                $('#leavePlanCount').text('');
+                $('#compenPlan').text('');
+                $('#compenPlanCount').text('');
+                $('#permissionPlan').text('');
+
+                $('.after8pm-cont').append(after8Pm);
+                $('#employeeName').text(res.employeeData.name);
+                $('#leaveBalence').text(`Leave Balence [${res.employeeData.remaining_leaves}]`);
+                $('#shortFall').text(`Short Fall [${res.Attendance.sortfall}]`);
+                if (res.planLeave != null) {
+                    $('#leavePlan').text(res.planLeave.tentative || '');
+                    $('#leavePlanCount').text(res.planLeave.tentative_leave_count || 0);
+                    $('#compenPlan').text(res.planLeave.tentative_leave_compensation || '');
+                    $('#compenPlanCount').text(res.planLeave.tentative_leave_compensation_count || 0);
+                    $('#permissionPlan').text(res.planLeave.tentative_leave_permission || '');
+                }
             }
         })
     })

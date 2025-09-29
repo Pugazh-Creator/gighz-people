@@ -92,6 +92,70 @@
         font-size: 20px;
         cursor: pointer;
     }
+
+
+    /* ----------------------------------------------------------- */
+
+    /* Loader background */
+    #ajax-loader {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.95);
+        z-index: 9999;
+        display: none;
+        /* hidden by default */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* Balls container */
+    .balls {
+        display: flex;
+        gap: 10px;
+    }
+
+    .ball {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #3498db;
+        animation: bounce 0.6s infinite alternate;
+    }
+
+    .ball:nth-child(2) {
+        background: #e67e22;
+        animation-delay: 0.2s;
+    }
+
+    .ball:nth-child(3) {
+        background: #2ecc71;
+        animation-delay: 0.4s;
+    }
+
+    @keyframes bounce {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(-20px);
+        }
+    }
+
+    /* Loading text */
+    .loading-text {
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #444;
+        letter-spacing: 1px;
+        font-family: "Segoe UI", sans-serif;
+    }
 </style>
 
 <!-- Popup HTML (footer) -->
@@ -101,6 +165,18 @@
         <div class="icon" id="popupIcon">✅</div>
         <div class="message" id="popupMessage"></div>
     </div>
+</div>
+
+<!-- AJAX SPINNER LOADER -->
+<!-- Loader -->
+
+<div id="ajax-loader">
+    <div class="balls">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+    <div class="loading-text">Loading...</div>
 </div>
 <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
 
@@ -131,6 +207,14 @@
                 $knobIcon.removeClass("bx-moon").addClass("bx-sun");
             }
         });
+    });
+
+    /** ajax Pinner */
+    // Global loader for all AJAX
+    $(document).ajaxStart(function() {
+        $("#ajax-loader").fadeIn();
+    }).ajaxStop(function() {
+        $("#ajax-loader").fadeOut();
     });
 
 

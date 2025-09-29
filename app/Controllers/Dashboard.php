@@ -104,23 +104,41 @@ class Dashboard extends BaseController
     }
 
 
-    public function dashboardDatas()
+    public function dashboardDatas($empid)
     {
         $db = db_connect();
+        $remoteDB = Database::Connect('hostinger');
         $session = session();
-        $empid = "GZ44";
+        $getDate = $this->getStartAndEndDate();
+        $oeStartDate = $getDate['startDate'];
+        $oeEndDate = $getDate['endDate'];
+
+        $lastoeStartDate = date('Y-m-d', strtotime($getDate['startDate'] . ' -1 month'));
+        $lastoeEndDate   = date('Y-m-d', strtotime($getDate['endDate'] . ' -1 month'));
+
+
+        // $empid = "GZ44";
         // $empid = $session->get('emp_id');
         $attendancemodel = new AttendanceModel;
         $versionModel = new VersionUpdateModel;
+        $data['employeeData'] = $db->query('SELECT * FROM employees WHERE emp_id = ? limit 1', [$empid])->getRowArray();
+        $data['planLeave'] = $remoteDB->query("SELECT l.* FROM tbl_planedleave l JOIN tbl_employee e ON e.emp_id = l.tentative_user
+                            WHERE e.emp_id_no = ? and l.tentative_created between ? and ?", [$empid, $oeStartDate, $oeEndDate])->getRowArray();
+
+
         $getAttendanceID = $db->query('SELECT user_id from attendance_users where emp_id = ?', [$empid])->getRowArray();
         $data['Attendance'] = [];
         $data['Attendance'] = [];
         $data['records'] = [];
+        $data['affter8pm'] = [];
+        $data['oestartDate'] = [$lastoeStartDate, $lastoeEndDate];
+
 
         if (!empty($getAttendanceID)) {
 
             $userID = $getAttendanceID['user_id'];
 
+            $data['affter8pm'] = $db->query("SELECT * FROM gighz.attendance_logs where employee_id = ? and TIME(timestamp) >= '20:00:00' and DATE(timestamp) between ? and ?;", [$userID, $lastoeStartDate, $lastoeEndDate])->getResultArray() ?? NULL;
 
             if (!empty($attendancemodel->getEmployeesLeaves($empid)['data'])) {
                 $data['Attendance'] = $attendancemodel->getEmployeesLeaves($empid)['data'][$userID];
@@ -129,9 +147,7 @@ class Dashboard extends BaseController
         }
 
 
-        $getDate = $this->getStartAndEndDate();
-        $oeStartDate = $getDate['startDate'];
-        $oeEndDate = $getDate['endDate'];
+
 
         $data['rr'] = $this->getworkedRRAndGeneralWorks($empid, $oeStartDate, $oeEndDate)['R&R'];
         $data['general'] = $this->getworkedRRAndGeneralWorks($empid, $oeStartDate, $oeEndDate)['General'];

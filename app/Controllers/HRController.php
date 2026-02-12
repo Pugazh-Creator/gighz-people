@@ -10,10 +10,7 @@ use App\Models\EmployeeModel;
 use App\Models\LeaveHistoryModel;
 use App\Models\LeaveRquestModel;
 use App\Models\UserModel;
-use CodeIgniter\Entity\Cast\StringCast;
-use CodeIgniter\HTTP\ResponseInterface;
-use DateInterval;
-use DatePeriod;
+use Config\Database;
 use DateTime;
 use Stringable;
 
@@ -28,6 +25,20 @@ class HRController extends BaseController
     public function index()
     {
         $db = db_connect();
+        $dashboard = new Dashboard;
+
+        $data['basedata'] = $dashboard->baseDatas();
+        $data['thisPage'] = 'HR Dashboard';
+
+        echo view('templates/header', $data);
+        echo view('templates/sidebar', $data);
+        echo view('dashboard/hrdashboard', $data);
+        echo view('templates/footer', $data);
+    }
+
+    public function getStaffDetails()
+    {
+        $db = db_connect();
         $compensationModel = new CompensationModel;
         $compensation = $compensationModel->getAllCompensationrequest2();
         $totalCompen = $compensation['count'];
@@ -39,14 +50,25 @@ class HRController extends BaseController
         $pending = $total['pending'];
         // $pending = $leaveRequest->where('status', 'pending')->countAllResults();
 
-        $permissiondb = $db->query("SELECT COUNT(permission_status) as count FROM permission_hrs WHERE permission_status = ?",['pending'])->getResultArray();
-        $permission_pending = $permissiondb[0]['count'];
+        // Pending count (last 60 days)
+        $permissiondb = $db->query("
+    SELECT COUNT(permission_status) AS count 
+    FROM permission_hrs 
+    WHERE permission_status = ? 
+      AND permission_date >= DATE_SUB(CURDATE(), INTERVAL 60 DAY)
+", ['pending'])->getResultArray();
 
-        $permissiondb = $db->query("SELECT COUNT(permission_status) AS count FROM permission_hrs")->getResultArray();
-        $permission_TOTAL = $permissiondb[0]['count'];
+        $permission_pending = $permissiondb[0]['count'] ?? 0;
 
-        $companyHolidayModel = new CompanyHolidayModel();
-        $attendanceModel = new AttendanceModel();
+        // Total count (last 60 days)
+        $permissiondb = $db->query("
+    SELECT COUNT(permission_status) AS count 
+    FROM permission_hrs 
+    WHERE permission_date >= DATE_SUB(CURDATE(), INTERVAL 60 DAY)
+")->getResultArray();
+
+        $permission_TOTAL = $permissiondb[0]['count'] ?? 0;
+
         $EmployeeModel = new EmployeeModel();
 
         $today = date('Y-m-d');
@@ -75,6 +97,7 @@ class HRController extends BaseController
                     if (!isset($data[$empId])) {
                         $data[$empId] = [
                             'name' => $staff['name'],
+                            'dept' => $staff['dept'],
                             'records' => [],
                         ];
                     }
@@ -86,40 +109,21 @@ class HRController extends BaseController
                         ];
                     }
 
-                    // Get data for attendance and compensation
-                    $attendance = $attendanceModel->getLeaves($empId, $startDate, $endDate);
+                    $attendance = $db->query("SELECT COUNT(a.work_status) AS leave_total from attendance a 
+                                                    JOIN employees e on e.attendance_id = a.user_id
+                                                    WHERE (a.work_status = ? OR a.work_status = ? OR a.work_status = ?) AND 
+                                                        e.emp_id = ? and a.date between ? and ?", ['APL', 'NA', 'RA', $empId, $startDate, $endDate])->getRowArray();
+
+                    $data[$empId]['records'][$oeKey]['leaves'] = $attendance['leave_total'];
+
                     $data[$empId]['records'][$oeKey]['compensation'] = $compensationModel->getEmployeeCompensation($empId, $startDate, $endDate);
-
-                    // Sum up compensations
-                    // foreach ($compensations as $compensation) {
-                    //     $data[$empId]['records'][$oeKey]['compensation'] += $compensation['num_of_days'];
-                    // }
-
-                    // Count leaves excluding holidays and Sundays
-                    foreach ($attendance as $attendand) {
-                        $leaves = $attendand['date'];
-
-                        if ($staff['leave_grade'] == 3) {
-                            $holidayExists = $companyHolidayModel->where('holiday_date', $leaves)->first();
-                        } else {
-                            $holidayExists = $companyHolidayModel->where('holiday_date', $leaves)
-                                ->whereIn('holiday_type', ['festival', 'first_saturday'])
-                                ->first();
-                        }
-
-                        $isSunday = (date('w', strtotime($leaves)) == 0);
-                        if (!$holidayExists && !$isSunday) {
-                            $data[$empId]['records'][$oeKey]['leaves']++;
-                        }
-                    }
 
                     // Move to the next OE period
                     $start = strtotime("$endDate +1 day");
                 }
             }
         }
-
-        return view('dashboard/hr', [
+        $datas = [
             'total' => $totals,
             'pending' => $pending,
             'totalCompen' => $totalCompen,
@@ -128,11 +132,17 @@ class HRController extends BaseController
             'oe' => $oe,
             'per_pending' => $permission_pending,
             'per_total' => $permission_TOTAL
-        ]);
+        ];
+
+        return $this->response->setJSON($datas);
     }
 
-    // -------------------   change Leave status   ---------------------------- \\
 
+
+    // ---------------------------------------------   LEAVE REQUESTS   ----------------------------------------- \\
+
+
+    // CHANGE LEAVE REQUEST STATUS
     public function change_status($id, $status, $emp_id, $noDays)
     {
         $today = date('Y-m-d');
@@ -152,6 +162,7 @@ class HRController extends BaseController
             $approved_leave = $noDays;
             $rejectLeave = '0';
         }
+        $reject_reason = '';
 
         // Extract data
         $start = $leaves['start_date'];
@@ -162,28 +173,22 @@ class HRController extends BaseController
         $balLeave = $leaves['balence_leave'];
         $state = $leaves['status'];
 
-        if ($start < $today) {
-            $db->query("SELECT * FROM tbl_lop WHERE lop_date between ? and  ?");
-        }
         $employee = $userModel->find($emp_id);
-        $empmail =  "seraki9689@pngzero.com"; ///$employee['official_mail'] ??
+        $empmail =  "jicol78930@hiepth.com"; ///$employee['official_mail'] ??
 
         // Deletion flow
         if ($status == 'delete') {
             if ($userModel->update($emp_id, ['remaining_leaves' => $leaveID['hold_balence_leave']])) {
                 $leaveRequestModel->deleteLeave($id);
-                return redirect()->back()->with('success', 'Leave Deleted Successfully');
+                return $this->response->setJSON(['status' => 'success', 'message' => 'Leave Deleted Successfully.']);
             } else {
-                return redirect()->back()->with('fail', 'Failed to delete leave');
+                return $this->response->setJSON(['status' => 'success', 'message' => 'Failed to delete leave.']);
             }
         }
 
-        // // Approval logic: update balance if status is approved and current is pending
-        // if ($state == 'pending' && $status == 'approved') {
-        //     $newBalance = max(0, $employee['remaining_leaves'] - $noDays);
-        //     $userModel->update($emp_id, ['remaining_leaves' => $newBalance]);
-        // }
-
+        if ($status == 'rejected') {
+            $reject_reason = '<p><strong>Reject Reason:</strong> ' . $reason_data . '</p></br><p>Approved:' . $approved_leave . '</p><p>Rejected: ' . $rejectLeave . '</p>';
+        }
         // Update leave request
         $updateData = [
             'status' => $status,
@@ -193,12 +198,15 @@ class HRController extends BaseController
             'leave_actual' => $approved_leave,
         ];
 
+
+
         if ($leaveRequestModel->set($updateData)->where('id', $id)->update()) {
             $subject = "Leave Request Update";
             $message = "<p>{$name}, your leave request has been <strong>{$status}</strong>.</p>
             <p><strong>Leave Type:</strong> {$leavetype}</p>
             <p><strong>Dates:</strong> {$start} to {$end}</p>
             <p><strong>Reason:</strong> {$reason}</p>
+            {$reject_reason}
             
             <p><strong>Best Regards</strong></p>
             <p>HR Team</p>";
@@ -206,15 +214,14 @@ class HRController extends BaseController
             send_email($empmail, $subject, $message);
 
             if ($status == 'rejected') {
-                return $this->response->setJSON(['status' => 'success']);
+                return $this->response->setJSON(['status' => 'success', 'message' => 'Leave Request Deleted Successfully.']);
             }
-
-            return redirect()->to('leaveRequests2')->with('success', 'Leave request updated successfully.');
+            return $this->response->setJSON(['status' => 'success', 'message' => 'Leave request Approve successfully.']);
         } else {
             if ($status == 'rejected') {
-                return $this->response->setJSON(['status' => 'error']);
+                return $this->response->setJSON(['status' => 'error', 'message' => 'Failed to Reject Leave Request.']);
             }
-            return redirect()->to('leaveRequests2')->with('fail', 'Failed to update Leave Request.');
+            return $this->response->setJSON(['status' => 'success', 'message' => 'Failed to Approve Leave Request.']);
         }
     }
 
@@ -240,7 +247,7 @@ class HRController extends BaseController
     }
 
 
-    // this function for sending notification to the HR Department page 
+    // SENDING LEAVE NOTIFICATIONS TO HR
     public function check_new_leave_requests()
     {
         $leaveRequestModel = new LeaveRquestModel();
@@ -264,69 +271,32 @@ class HRController extends BaseController
 
 
 
-    //this function for showing data and sorting,searching 
+    //PATH TO LEAVE REQUEST PAGE
     public function ShowingLeaveRequests()
     {
-        // Get the current search and sort options from query parameters
-        $search = $this->request->getGet('search');
-        $sortBy = $this->request->getGet('sort_by') ?: 'id';
-        $sortOrder = $this->request->getGet('sort_order') ?: 'desc';
+        $dashboard = new Dashboard;
+        $data =  [
+            'basedata' => $dashboard->baseDatas(),
+            'thisPage' => 'Leave Requests',
+        ];
 
-        // Load the pagination library
-        $pager = \Config\Services::pager();
-
-        // Define the number of records per page
-        $perPage = 8;
-
-        // Get the current page number from the query string (default is 1)
-        $page = $this->request->getGet('page') ?: 1;
-
-        // Calculate the offset for the query
-        $offset = ($page - 1) * $perPage;
-
-        // Fetch the leave requests
-        $leaveRequestModel = new LeaveRquestModel();
-        $leaveRequests = $leaveRequestModel->getAllLeaveRequests($search, $sortBy, $sortOrder, $perPage, $offset);
-
-        // Get the total number of leave requests
-        $totalRequests = $leaveRequestModel->getTotalLeaveRequests($search);
-
-        // Get the total number of pages
-        $totalPages = ceil($totalRequests / $perPage);
-
-
-
-        //calculate leaves eliminates company holidays and sundays
-        foreach ($leaveRequests as &$leave) {
-            $leaveStart = new \DateTime($leave['start_date']);
-            $leaveEnd = new \DateTime($leave['end_date']);
-            $leaveDays = $this->calculateLeaveDays($leaveStart, $leaveEnd);
-            $leave['num_leave_days'] = $leaveDays;
-        }
-
-
-        // Get the total number of leaves taken by each employee
-        $employeeModel = new UserModel();
-        $employeeData = $employeeModel->findAll();
-
-
-
-
-
-        return view('dashboard/leaveRequests', [
-            'leaveRequests' => $leaveRequests,
-            'employeeData' => $employeeData,
-            'search' => $search,
-            'sortBy' => $sortBy,
-            'sortOrder' => $sortOrder,
-            'pager' => $pager,
-            'totalRequests' => $totalRequests,
-            'totalPages' => $totalPages,
-            'currentPage' => $page
-        ]);
+        echo view('templates/header', $data);
+        echo view('templates/sidebar', $data);
+        echo view('applications/leaveRequests', $data);
+        echo view('templates/footer', $data);
     }
 
-    //calculate no of leave days...
+    // GETTING ALL LEAVE REQUESTS
+    public function getEmployeeLeaveRequests()
+    {
+        $db = db_connect();
+
+        $data = $db->query("SELECT l.*, e.name, e.dept, e.remaining_leaves FROM leave_request l JOIN employees e ON e.emp_id = l.emp_id
+                             WHERE l.created_at >= DATE_SUB(CURDATE(), INTERVAL 120 DAY) ")->getResultArray();
+        return $this->response->setJSON($data);
+    }
+
+    //CALCULATE NO OF LEAVE DAYS
     public function calculateLeaveDays(\DateTime $start, \DateTime $end)
     {
         //fetch company holidays
@@ -351,12 +321,7 @@ class HRController extends BaseController
         return $laeveDays;
     }
 
-
-    // public function leaverequest2()
-    // {
-    //     return view('dashboard/leaveRequests');
-    // }
-
+    // INCREASE LEAVE BASED ON OE
     public function updateEmployeeLeaves()
     {
         $employeeModel = new EmployeeModel;
@@ -367,83 +332,7 @@ class HRController extends BaseController
         }
     }
 
-
-    public function companyHoliday()
-    {
-        $companyHolidays = new CompanyHolidayModel();
-        $data['session'] = session()->get('role');
-        // $holidays = $companyHolidays->getCompanyHalidays();
-        $data['holidays'] = $companyHolidays->getHolidaysByType('festival');
-        $data['saturday'] = $companyHolidays->getHolidaysByType('first_saturday');
-
-
-        return view('leave\companyHoliday', $data);
-    }
-
-    public function addAndFetchHoliday()
-    {
-        $companyHolidays = new CompanyHolidayModel();
-
-        $holidayName = $this->request->getPost('holiday_name');
-        $holidayDate = $this->request->getPost('holiday_date');
-        $holidayType = $this->request->getPost('holiday_type');
-
-        $dateObject = new DateTime($holidayDate);
-        $day = $dateObject->format('l');
-        $month = $dateObject->format('F');
-
-        // echo $day." ".$month;
-
-        $data = [
-            'holiday_date' => $holidayDate,
-            'holiday_name' => $holidayName,
-            'month' =>  $month,
-            'day' => $day,
-            'holiday_type' => $holidayType
-        ];
-
-        if ($companyHolidays->insert($data)) {
-            return redirect()->back()->with('success', 'Leave added Successfully.');
-        }
-        return redirect()->back()->with('fail', 'Leave added failed.');
-    }
-
-    public function updateHoliday()
-    {
-        $companyHoliday = new CompanyHolidayModel;
-
-        $id = $this->request->getPost('id');
-        $holidayName = $this->request->getPost('holiday_name');
-        $holidayDate = $this->request->getPost('holiday_date');
-
-        $dateObject = new DateTime($holidayDate);
-        $day = $dateObject->format('l');
-        $month = $dateObject->format('F');
-
-        $data = [
-            'holiday_date' => $holidayDate,
-            'holiday_name' => $holidayName,
-            'month' =>  $month,
-            'day' => $day
-        ];
-
-        if ($holidayName == '' || $holidayDate == '') {
-            return redirect()->back()->with('fail', 'Holiday updated failed');
-        }
-        $companyHoliday->update($id, $data);
-        return redirect()->back()->with('success', 'Updated successfully');
-    }
-
-    public function deleteHoliday($id)
-    {
-        $companyHoliday = new CompanyHolidayModel;
-        if ($companyHoliday->delete($id)) {
-            return redirect()->back()->with('success', 'Deleted successfully');
-        }
-        return redirect()->back()->with('fail', 'Deleted failed');
-    }
-
-
+    // GETTING FIRST SATURDAYS 
     function getFirstSaturdays()
     {
         $firstSaturdays = [];
@@ -483,90 +372,29 @@ class HRController extends BaseController
     }
 
 
-    /** Getting All Permission */
+    /** -----------------------------------PERMISSION REQUESTS ---------------------------------- */
 
     public function getallpermission()
     {
+        $dashboard = new Dashboard;
 
+        $data['basedata'] = $dashboard->baseDatas();
+        $data['thisPage'] = "Permission Request";
+
+        echo view('templates/header', $data);
+        echo view('templates/sidebar', $data);
+        echo view('applications/permission', $data);
+        echo view('templates/footer', $data);
+    }
+
+    public function getPermission()
+    {
         $db = db_connect();
+        $data = $db->query("SELECT p.*,  e.name, e.dept, e.remaining_leaves FROM permission_hrs p
+                    JOIN employees e ON e.emp_id = p.permission_user_id
+                    WHERE p.permission_created >= DATE_SUB(CURDATE(), INTERVAL 120 DAY)")->getResultArray();
 
-        // $query = $db->query("SELECT * FROM permission_hrs ORDER BY permission_created DESC")->getResultArray();
-
-        // Get the current search and sort options from query parameters
-        $search = $this->request->getGet('search');
-        $sortBy = $this->request->getGet('sort_by') ?: 'permission_id';
-        $sortOrder = $this->request->getGet('sort_order') ?: 'desc';
-        $role = session()->get('role');
-        // Load the pagination library
-        $pager = \Config\Services::pager();
-
-        // Define the number of records per page
-        $perPage = 8;
-
-        // Get the current page number from the query string (default is 1)
-        $page = $this->request->getGet('page') ?: 1;
-
-        // Calculate the offset for the query
-        $offset = ($page - 1) * $perPage;
-
-        $builder = $db->table('permission_hrs');
-        $builder->select('permission_hrs.*,employees.name');
-        $builder->join('employees', 'permission_hrs.permission_user_id = employees.emp_id');
-
-        if ($search) {
-            // $builder->like('employees.name', $search); // You can adjust this to search by leave type, status, etc.
-            $builder->groupStart()
-                ->like('employees.name', $search)
-                ->orLike('permission_hrs.permission_status', $search)
-                ->orLike('employees.emp_id', $search)
-                ->orLike('permission_hrs.permission_date', $search)
-                ->orLike('permission_hrs.permission_time', $search)
-                ->orLike('permission_hrs.permission_reason', $search)
-                ->groupEnd();
-        }
-
-        $builder->orderBy($sortBy, $sortOrder);
-
-        // Set the limit and offset for pagination
-        $builder->limit($perPage, $offset);
-        $datas = $builder->get()->getResultArray();
-        $totalRequests = $builder->countAll();
-
-        // Get the total number of pages
-        $totalPages = ceil($totalRequests / $perPage);
-
-        // Get the total number of leaves taken by each employee
-        $employeeModel = new UserModel();
-        $employeeData = $employeeModel->findAll();
-
-        // $data = [
-        //     'datas' => $datas,
-        //     'employeeData' => $employeeData,
-        //     'search' => $search,
-        //     'sortBy' => $sortBy,
-        //     'sortOrder' => $sortOrder,
-        //     'pager' => $pager,
-        //     'totalRequests' => $totalRequests,
-        //     'totalPages' => $totalPages,
-        //     'currentPage' => $page,
-        //     'role' => $role
-        // ];
-
-        // return $this->response->setJSON($data);
-
-
-        return view('leave/permission', [
-            'datas' => $datas,
-            'employeeData' => $employeeData,
-            'search' => $search,
-            'sortBy' => $sortBy,
-            'sortOrder' => $sortOrder,
-            'pager' => $pager,
-            'totalRequests' => $totalRequests,
-            'totalPages' => $totalPages,
-            'currentPage' => $page,
-            'role' => $role
-        ]);
+        return $this->response->setJSON($data);
     }
 
     public function changepermissionstatus($id, $status, $userID)
@@ -575,8 +403,13 @@ class HRController extends BaseController
         $db = db_connect();
         $table = $db->table('permission_hrs');
         if ($status == 'delete') {
-            $table->where(['permission_id' => $id, 'permission_user_id' => $userID])->delete();
-            return redirect()->back()->with('success', 'Permission hours deleted successfully.');
+
+            $deleted = $table->where(['permission_id' => $id, 'permission_user_id' => $userID])->delete();
+            if ($deleted) {
+                return $this->response->setJSON(['status' => 'success', 'message' => 'Successfully Deleted']);
+            } else {
+                return $this->response->setJSON(['status' => 'error', 'message' => 'Failed to Delete']);
+            }
         } else if ($status != 'pending') {
             $updated = $table->set('permission_status', $status)->where(['permission_id' => $id, 'permission_user_id' => $userID])->update();
             if ($updated) {
@@ -591,7 +424,7 @@ class HRController extends BaseController
                 }
 
                 if (!empty($empmail)) {
-                    $employeeEmail = $empmail; // Fetch from database
+                    $employeeEmail = 'jicol78930@hiepth.com'; // Fetch from database
                     $subject = "Permission Request {$status}";
                     $message = "<p>Dear {$name}</p> 
                         </br>
@@ -607,14 +440,239 @@ class HRController extends BaseController
                 }
 
 
-                return redirect()->back()->with('success', 'Permission hours Status Updated successfully.');
+                return $this->response->setJSON(['status' => 'success', 'message' => "$status Successfully"]);
             }
         }
-        return redirect()->back()->with('fail', 'Something went rong please try again.');
+        return $this->response->setJSON(['status' => 'error', 'message' => "Something went rong please try again."]);
     }
 
 
-    /** 
-     * REject reason POP-UP 
+    /**
+     *  ----------------------------------- COMPANY HOLIDAYS ----------------------------------
      */
+
+    public function companyHoliday()
+    {
+        $dashboard = new Dashboard;
+        $data['basedata'] = $dashboard->baseDatas();
+        $data['thisPage'] = 'Company Holiday';
+
+        $currentYear = date('Y');
+        $data['currentYear'] = $currentYear;
+        $data['year_selection'] = [];
+
+        for ($year = 2020; $year <= $currentYear; $year++) {
+            $data['year_selection'][] = $year;
+        }
+
+        echo view('templates/header', $data);
+        echo view('templates/sidebar', $data);
+        echo view('leave\companyHoliday', $data);
+        echo view('templates/footer', $data);
+    }
+
+    public function getHolidays($year)
+    {
+        $db  = db_connect();
+
+        $data = $db->query("SELECT * FROM company_holiday WHERE YEAR(holiday_date) = ? ", [$year])->getResultArray();
+
+        return $this->response->setJSON($data);
+    }
+
+    public function getHolidayById($id)
+    {
+        $db  = db_connect();
+
+        $data = $db->query("SELECT * FROM company_holiday WHERE id = ? ", [$id])->getRowArray();
+
+        return $this->response->setJSON($data);
+    }
+
+    public function deleteHoliday($id)
+    {
+        $companyHoliday = new CompanyHolidayModel();
+
+        try {
+            if ($companyHoliday->delete($id)) {
+                return $this->response->setJSON([
+                    'status' => 'success',
+                    'message' => 'Holiday Deleted Successfully.'
+                ]);
+            } else {
+                return $this->response->setJSON([
+                    'status' => 'error',
+                    'message' => 'Holiday Deletion Failed.'
+                ]);
+            }
+        } catch (\Exception $e) {
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => 'Error: ' . $e->getMessage()
+            ]);
+        }
+    }
+
+    public function updateHoliday($id)
+    {
+        $companyHoliday = new CompanyHolidayModel;
+
+        $holidayName = $this->request->getPost('holiday_name');
+        $holidayDate = $this->request->getPost('holiday_date');
+
+        $dateObject = new DateTime($holidayDate);
+        $day = $dateObject->format('l');
+        $month = $dateObject->format('F');
+
+        $data = [
+            'holiday_date' => $holidayDate,
+            'holiday_name' => $holidayName,
+            'month' =>  $month,
+            'day' => $day
+        ];
+
+        if ($holidayName == '' || $holidayDate == '') {
+            return $this->response->setJSON(['status' => 'error', 'message' => 'Holiday Update Failed']);
+        }
+        $companyHoliday->update($id, $data);
+        return $this->response->setJSON(['status' => 'success', 'message' => 'Holiday Updated successfully']);
+    }
+
+    public function addAndFetchHoliday()
+    {
+        $companyHolidays = new CompanyHolidayModel();
+
+        $holidayName = $this->request->getPost('holiday_name');
+        $holidayDate = $this->request->getPost('holiday_date');
+        $holidayType = $this->request->getPost('holiday_type');
+
+        $dateObject = new DateTime($holidayDate);
+        $day = $dateObject->format('l');
+        $month = $dateObject->format('F');
+
+        // echo $day." ".$month;
+
+        $data = [
+            'holiday_date' => $holidayDate,
+            'holiday_name' => $holidayName,
+            'month' =>  $month,
+            'day' => $day,
+            'holiday_type' => $holidayType
+        ];
+
+        if ($companyHolidays->insert($data)) {
+            return $this->response->setJSON(['status' => 'success', 'message' => 'Leave added Successfully.']);
+        }
+        return $this->response->setJSON(['status' => 'success', 'message' => 'Leave added failed.']);
+    }
+
+
+
+
+    /**
+     * ------------------ PERMISSION ---------------------
+     */
+
+    public function updatePermission()
+    {
+        $hostdb = Database::Connect('hostinger');
+
+        $db = db_connect();
+
+        // Step 1: Clear destination table
+        $db->table('tbl_user_permission')->truncate();
+
+        // Step 2: Fetch data from source table
+        $sourceData = $hostdb->table('tbl_user_permission')->get()->getResultArray();
+
+        // Step 3: Insert into destination table
+        if (!empty($sourceData)) {
+            $db->table('tbl_user_permission')->insertBatch($sourceData);
+        }
+
+        return $this->response->setJSON([
+            'status'  => 'success',
+            'message' => 'Data copied successfully from table1 to table2'
+        ]);
+    }
+
+    /** ---------------------------- COMPENSATION ----------------------------------  */
+    public function showAllCompensation()
+    {
+        $dashboard = new Dashboard;
+        $data['basedata'] = $dashboard->baseDatas();
+        $data['thisPage'] = "Compensation Requests";
+
+        echo view('templates/header', $data);
+        echo view('templates/sidebar', $data);
+        echo view('applications/compensation', $data);
+        echo view('templates/footer', $data);
+    }
+
+    public function getAllCompensationRequests()
+    {
+        $db = db_connect();
+
+        $data = $db->query("SELECT c.*,  e.name, e.dept, e.remaining_leaves FROM compensation_request c
+                    JOIN employees e ON e.emp_id = C.emp_id
+                    WHERE C.created_at >= DATE_SUB(CURDATE(), INTERVAL 120 DAY)")->getResultArray();
+        return $this->response->setJSON($data);
+    }
+
+    public function changeCompenStatus($id, $status, $emp_id, $noDays)
+    {
+        $compenModel = new CompensationModel;
+        $employeeModel = new EmployeeModel;
+        $emp = $employeeModel->find($emp_id);
+
+
+        $compenID = $compenModel->find($id);
+
+        $start = $compenID['start_date'];
+        $end = $compenID['end_date'];
+        $reason = $compenID['reason'];
+        $name = $emp['name'];
+        $state = $compenID['status'];
+        // $empmail = $leaves['official_mail']
+
+        if ($status == 'delete') {
+
+            if ($compenModel->delete($id)) {
+                return $this->response->setJSON(['status' => 'success', 'message' => 'Compensation Deleted Successfully.']);
+            } else {
+                return $this->response->setJSON(['status' => 'error', 'message' => 'Failed to delete Compesation.']);
+            }
+        } else {
+            // $leaves = $leaveRequestModel->find($id);
+
+
+            $empmail = "jicol78930@hiepth.com";
+            // $empmail = $emp['official_mail'];
+
+
+            // Update the leave request status
+            $datas = ['status' => $status];
+
+
+
+            // $this->sendNotification("Employee", "Your leave request has been approved!");
+            if ($compenModel->update($id, $datas)) {
+                // Send Email to Employee
+                $employeeEmail = $empmail; // Fetch from database
+                $subject = "compensation Request {$status}";
+                $message = "<p>{$name} Your compensation request has been <strong>{$status}</strong>.</p>
+                <p><strong>Dates:</strong> {$start} to {$end} totaly {$noDays}</p>
+                <p><strong>Reason:</strong> {$reason}</p>
+                </br>
+                <p>Best Regards</p>
+                <p>HR Team</p>";
+
+                send_email($employeeEmail, $subject, $message);
+
+                return $this->response->setJSON(['status' => 'success', 'message' => 'Request updated Successfully.']);
+            } else {
+                return $this->response->setJSON(['status' => 'success', 'message' => 'Request updated Failed.']);
+            }
+        }
+    }
 }

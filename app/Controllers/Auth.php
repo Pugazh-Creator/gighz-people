@@ -11,6 +11,7 @@ use App\Models\UserModel;
 use CodeIgniter\Entity\Cast\StringCast;
 use CodeIgniter\HTTP\ResponseInterface;
 use Exception;
+use PhpOffice\PhpWord\Shared\Microsoft\PasswordEncoder;
 use ReturnTypeWillChange;
 
 class Auth extends BaseController
@@ -296,4 +297,27 @@ class Auth extends BaseController
     /**
      * -------------------------------- New Updated --------------------------------------------
      */
+
+    public function getcredential()
+    {
+
+        $db = db_connect();
+
+        $emp_id = session()->get('emp_id');
+
+        $query = $db->query("SELECT * FROM user WHERE emp_id = ? LIMIT 1", [$emp_id])->getRowArray();
+
+        $data['emp_id'] = $query['emp_id'];
+
+        $data['password'] = $query['password'];
+
+        return $this->response->setJSON($data);
+    }
+
+    public function testing()
+    {
+        $data['test'] = '$2y$10$b/DnrsQLHXRxU4h6qjeCpeG2J.YDADxR9gLJr5mZGYtww9STJuoSS' === 
+                        '$2y$10$b/DnrsQLHXRxU4h6qjeCpeG2J.YDADxR9gLJr5mZGYtww9STJuoSS';
+        return $this->response->setJSON($data);
+    }
 }

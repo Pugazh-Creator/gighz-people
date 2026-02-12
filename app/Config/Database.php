@@ -189,7 +189,7 @@ class Database extends Config
 
     public array $hostinger = [
         'DSN'      => '',
-        'hostname' => 'srv827.hstgr.io',
+        'hostname' => 'srv864.hstgr.io',
         'username' => 'u853418576_Test',
         'password' => 'Gighz@_1',
         'database' => 'u853418576_Test',

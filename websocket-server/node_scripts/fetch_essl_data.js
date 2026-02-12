@@ -218,8 +218,6 @@ async function calculateEmployeeHours(connection) {
                                 lop = true;
                             } else {
                                 workType = 'NA';
-                                // newLeaveBalance = Math.max(0, leaveBalance - 1);
-                                // lop = true;
                             }
 
                             await connection.execute(
